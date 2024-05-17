@@ -1,0 +1,50 @@
+<div id="rs-modal-ordercomment" class="uk-modal" aria-hidden="true" style="display: none;">
+    <div class="uk-modal-dialog" style="min-width: 800px;">
+        <div class="uk-overflow-container">
+            <div class="uk-grid uk-grid-match uk-margin-remove" style=" padding-top: 4px !important;">
+                <div class="uk-width-1-1">
+                    <resultsheader selectedorder="vmd.vm.selectedOrder" orderdetail="vmd.vm.orderDetail"
+                        ordercolor="vmd.vm.getOrderTypeColor(vmd.vm.selectedOrder.orderType)"></resultsheader>
+                </div>
+            </div>
+        </div>
+        <div class="uk-modal-footer">
+            <div style="padding-left: 6px;">
+                <div class="md-card" style="height: calc(100% - -3px)">
+                    <div class="md-card-toolbar" style="height: 46px;">
+                        <h3 class="md-card-toolbar-heading-text">
+                            <strong>{{ (vmd.type == 1 ? '0465' : '0464') | translate}}</strong>
+                        </h3>
+                    </div>
+                    <div class="md-card-content" style="height: calc(100% - 84px); overflow: auto;width: 96%;">
+                        <div class="uk-width-1-1" style="margin-top: 15px;">
+                            <textarea ng-required="true" name="name" id="name" ui-tinymce="vmd.customMenu"
+                                ng-model="temporalComment" ng-disabled="vmd.type !== 1"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <div class="uk-flex uk-flex-right">
+                <div class="uk-flex uk-flex-column">
+                    <!-- guardar -->
+                    <button type="button" ng-show="vmd.type == 1" ng-disabled="!vmd.vm.detailButton || !commentChanged"
+                        class="md-fab md-fab-small md-fab-wave-light waves-light rs-button-margin waves-effect md-bg-green-500 uk-modal-close"
+                        ng-class="{'md-bg-blue-grey-100' : !commentChanged}" ng-click="vmd.save()">
+                        <i class="material-icons md-color-light-blue-50" title="{{'0007' | translate}}"
+                            data-uk-tooltip="{pos:'top-left', delay: 3000}">&#xE161;</i>
+                    </button>
+                </div>
+                <div class="uk-flex uk-flex-column">
+                    <!-- cancelar -->
+                    <button type="button"
+                        class="md-fab md-fab-small md-fab-wave-light waves-light rs-button-margin waves-effect md-bg-red-500 uk-modal-close">
+                        <i class="material-icons md-color-light-blue-50" title="{{'0008' | translate}}"
+                            data-uk-tooltip="{pos:'top-left', delay: 3000}">&#xE14C;</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<style>
+    label {
+        font-size: 12px;
+        color: #727272;
+    }
+</style>
+
+<div class="md-card md-card-hover" style="height: 100%;">
+    <div class="uk-padding-remove uk-margin-remove" style="height: 98%;">
+        <div class="uk-grid uk-flex uk-flex-middle" style="margin-left: 0px;margin-right: 0px;height: 100%;">
+            <div class="uk-width-3-10 uk-text-center">
+                <div class="uk-width-1-1">
+                    <img style="width: 50px !important;height: 50px !important;"
+                        class="md-user-image md-list-addon-avatar" ng-src="images/user1.png"
+                        ng-if="vma.photopatient ==''" style="width: 100% !important; height: 100% !important">
+                    <img style="width: 50px !important;height: 50px !important;"
+                        class="md-user-image md-list-addon-avatar" ng-src="{{vma.photopatient}}"
+                        ng-if="vma.photopatient !=''" style="width: 100% !important; height: 100% !important" />
+                </div>
+                <div class="uk-width-1-1 uk-margin-small-top">
+                    <h3 class="md-card-head-text uk-text-center patient-header-text"
+                        style="font: 500 10px / 13px 'Roboto', sans-serif; padding: 8px 5px 5px;">
+                        {{vma.selectedorder.patientLastName | uppercase }}
+                        {{vma.selectedorder.patientName | uppercase}}
+                        <span>
+                            <b style="font: 400 10px / 18px 'Roboto', sans-serif;">
+                                {{vma.selectedorder.idtype | uppercase}}
+                                {{vma.selectedorder.patientCode}}</b>
+                        </span>
+                    </h3>
+                </div>
+            </div>
+            <div class="uk-width-7-10">
+                <div class="md-list-content">
+                    <span class="uk-badge" style="background-color: {{vma.ordercolor}}; font-size: 140%; padding: 6px;">
+                        {{vma.selectedorder.orderType}}
+                    </span>
+                    <span class="uk-badge"
+                        style="background-color: transparent; color: #000; font-size: 190%; padding: 6px;">
+                        <!-- background-color: #68C3F0; -->
+                        {{vma.selectedorder.order.toString().substring(3)}}
+                    </span>
+                    <hr class="uk-divider-small" style="margin: 7px">
+                    <div class="uk-margin-small-top">
+
+                        <span class="uk-margin-right" title="{{'0124' | translate}}"
+                            data-uk-tooltip="{cls:'uk-tooltip-small long-text', pos:'top'}">
+                            <img style="height: 20px;width: 20px;" ng-src="images/patient/genders.png" /> <span
+                                class="uk-text-muted">{{vma.orderdetail.gender}}</span>
+                        </span>
+                        <span class="uk-margin-right" title="{{'0102' | translate}}"
+                            data-uk-tooltip="{cls:'uk-tooltip-small long-text', pos:'top'}">
+                            <img style="height: 20px;width: 20px;" ng-src="images/patient/age.png" /> <span
+                                class="uk-text-muted">{{vma.orderdetail.age}}</span>
+                        </span>
+                        <span title="{{'1148' | translate}}"
+                            data-uk-tooltip="{cls:'uk-tooltip-small long-text', pos:'top'}" class="uk-margin-right"
+                            ng-if="vma.selectedorder.daughterOrder.length > 0">
+                            <img style="height: 20px;width: 20px;" ng-src="images/order/retakechild.png" />
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="" aria-haspopup="true"
+                                aria-expanded="false">
+                                <a>({{vma.selectedorder.daughterOrder.length}})</a>
+                                <div class="uk-dropdown uk-dropdown-bottom" aria-hidden="true" tabindex=""
+                                    style="min-width: 100px; top: 10px;">
+                                    <ul class="md-list">
+                                        <li ng-repeat="order in vma.selectedorder.daughterOrder"><a
+                                                ng-click="vma.loadOrder(order)">{{order}}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </span>
+                        <span title="{{'1147' | translate}}"
+                            data-uk-tooltip="{cls:'uk-tooltip-small long-text', pos:'top'}" class="uk-margin-right"
+                            ng-if="vma.selectedorder.fatherOrder !== undefined">
+                            <img style="height: 20px;width: 20px;" ng-src="images/order/retakefather.png" />
+                            <a
+                                ng-click="vma.loadOrder(vma.selectedorder.fatherOrder)">{{vma.selectedorder.fatherOrder}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<modalexceptions openmodal="vm.ShowPopupError" detailerror="vm.Error"></modalexceptions>
+<div id="page_content">
+  <loadpage view="vm.loading"></loadpage>
+  <div id="page_content_inner" style="overflow: hidden">
+    <div style="height: calc(100% - 75px)" class="uk-grid" data-uk-grid-margin>
+      <div style="height:100%" class="uk-width-1-1">
+        <div class="md-card contentscroll" style="margin-bottom: 5px ;height: 100%;overflow: auto;">
+          <div class="md-card-content uk-grid uk-grid-small">
+
+            <div class="uk-width-5-10">
+              <fieldset class="fieldset" style="height: 58px;padding: 12px 15px 1px 23px;">
+                <orderfilter rangeinit="vm.rangeInit" rangeend="vm.rangeEnd" typefilter="vm.filterRange"
+                  isopenreport="vm.isOpenReport" typeview="2">
+                </orderfilter>
+              </fieldset>
+            </div>
+
+            <div class="uk-width-5-10">
+              <fieldset class="fieldset uk-grid" style="height: 58px;padding: 12px 15px 1px 0px;margin-left: 0px;">
+                <div class="uk-width-1-2" style="padding-left: 14px;">
+                  <label style="top: -6px; font-size: 12px;">{{'0003' | translate}}</label>
+                  <select class="md-input" ng-options="obj.id as obj.name for obj in vm.branch"
+                    data-ng-model="vm.databranch"></select>
+                </div>
+                <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                  <md-checkbox ng-model="vm.calculate" class="md-primary" aria-label="Finished?">
+                    {{'1853' | translate}}
+                  </md-checkbox>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="uk-width-1-1">
+              <filterdemographic id="'filterDemographics'" demographic="vm.demographics" demosmask="vm.demosmask">
+              </filterdemographic>
+            </div>
+
+            <div class="uk-width-1-1" style="margin-top: 10px">
+              <div class="uk-width-1-1">
+                <textarea name="name" id="name" ui-tinymce="vm.customMenu" ng-model="vm.comment"></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+      
+      <div class="uk-width-1-1">
+        <button style="float: right; margin-left: 5px" type="button" class="md-fab md-fab-small md-bg-green-600"
+          ng-click="vm.report = true; vm.print('pdf')"
+          ng-disabled="vm.databranch === undefined"
+          ng-class="{'md-bg-blue-grey-100' : vm.databranch === undefined }">
+          <i class="uk-icon-money md-color-light-blue-50" data-uk-tooltip="{pos:'top'}"
+            title="{{ '1927' | translate }}"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ventana modal para cuando no se encuentran datos -->
+<div id="nofoundfilter" class="uk-modal">
+  <div class="uk-modal-dialog">
+    <div class="uk-form-row">
+      <form class="form" name="myForm">
+        <div class="uk-grid uk-container-center">
+          <div class="uk-width-2-10" style="padding-left: 17px;">
+            <img src="images/iconinfo.png" height="90" width="90">
+          </div>
+          <div class="uk-width-8-10" style="margin-top: 3%;">
+            <span class="uk-text-justify">{{'0962' | translate}}</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="modalprogress" class="uk-modal" data-uk-modal>
+  <div class="uk-modal-dialog">
+    <div class="uk-progress  uk-active" style="margin-bottom: 3px">
+      <div class="uk-progress-bar" style="width: {{vm.porcent}}%;"></div>
+    </div>
+    <div class="uk-width-1-1 uk-text-center uk-text-bold uk-text-small">
+      {{ '2024' | translate }} ....
+    </div>
+  </div>
+</div>
+
+<!-- common functions -->
+<script src="assets/js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="assets/js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="assets/js/altair_admin_common.js"></script>

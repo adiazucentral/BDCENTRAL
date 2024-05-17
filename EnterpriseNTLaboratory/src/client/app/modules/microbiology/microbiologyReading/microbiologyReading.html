@@ -1,0 +1,1643 @@
+<style type="text/css">
+  .rs-tmp-row-head {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    background-color: #EEE;
+  }
+
+  .rs-tmp-row {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .rs-tmp-row-area {
+    flex: 1 1 auto;
+    padding-right: 4px;
+  }
+
+  form#test_list div.rs-tmp-row:hover {
+    background-color: #f2fcff;
+  }
+
+  .rs-image-format {
+    font-size: 13px;
+  }
+
+  .rs-order-complete {
+    text-decoration: line-through;
+  }
+
+  .md-list .uk-nestable-list>li,
+  .md-list>li {
+    padding: 4px 0px;
+  }
+
+  .filterinit {
+    background-color: #f5f5f5;
+    min-height: 82px;
+  }
+
+  .filter-history-order {
+    height: 32px;
+    min-height: 32px !important;
+    font-size: 12px !important
+  }
+
+  .highlight {
+    color: #ff0000;
+  }
+
+
+  .buttonNormalLine {
+    width: 47px;
+    line-height: 10px;
+  }
+
+  .textbutton {
+    font-size: 8.5px;
+    text-align: center;
+    display: block;
+    margin-top: 6px;
+  }
+
+  .labeldisabled {
+    color: rgba(0, 0, 0, 0.26) !important;
+  }
+
+  .labelenabled {
+    color: #727272 !important;
+  }
+
+  .targetactive {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px #3131315c, 0 3px 0 #eee, 0px 3px 10px rgba(0, 0, 0, 0.4), inset 0px 0px 3px rgba(255, 255, 255, 0.2), inset 0 -2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .my-tooltip {
+    max-width: 100%;
+    word-break: break-all
+  }
+
+  .rs-grid-row {
+    cursor: default;
+  }
+
+  .scrollbar {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  /*
+   *  STYLE 3
+   */
+
+  .contentscroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+  }
+
+  .contentscroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+  }
+
+  .contentscroll::-webkit-scrollbar-thumb {
+    background-color: #999;
+  }
+
+  /* JUST COMMON TABLE STYLES... */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    background: #fff;
+    padding: 8px 16px;
+  }
+
+
+  .tableFixHead {
+    overflow: auto;
+    height: 63vh;
+  }
+
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    background: #eee;
+    z-index: 100;
+  }
+
+  div.tableFixHead p {
+    margin: 0px !important
+  }
+
+  md-checkbox {
+    margin: 5px;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0;
+    line-height: 15px;
+    min-width: 18px;
+    min-height: 18px;
+  }
+</style>
+
+<div id="page_content" style="overflow: hidden">
+  <div id="page_content_inner" class="uk-grid uk-grid-small" style="padding: 0px 0px 0px 21px">
+    <div class="uk-width-9-10">
+      <div class="uk-grid uk-grid-small">
+        <!--contenedor datos del paciente -->
+        <div class="uk-width-3-10" style="padding: 0px 10px 10px 0px;">
+          <div class="md-card md-card-hover md-card1-horizontal" style="height: 210px">
+            <div class="md-card1-head" ng-class="{'md-bg-cyan-600' : user.featured}" style="width: 164px">
+              <div class="uk-text-center" ng-if="vm.photopatient === ''">
+                <img class="md-card-head-avatar" ng-src="images/user1.png" alt="" />
+              </div>
+              <div class="uk-text-center" ng-if="vm.photopatient !== ''">
+                <img class="md-card-head-avatar" ng-src="{{vm.photopatient}}" alt="" />
+              </div>
+              <h3 class="md-card-head-text uk-text-center" ng-class="{'md-color-white' : user.featured}">
+                {{vm.patient.name}}
+                <span class="uk-text-truncate">{{vm.patient.document}}</span>
+                <span class="uk-text-truncate">{{vm.patient.age}}</span>
+                <span class="uk-text-truncate">{{vm.patient.gender}}</span>
+              </h3>
+            </div>
+            <div class="uk-button-dropdown" style="display: block;position: relative;"
+              data-uk-dropdown="{mode:'click'}">
+              <button class="md-btndrobox">
+                <i class="md-icon material-icons" style="font-size: 20px;float: right;">&#xE5D4;</i>
+              </button>
+              <div class="uk-dropdown uk-dropdown-width-2" style="min-width:924px;">
+                <div class="uk-grid uk-dropdown-grid">
+                  <div class="uk-width-1-3" style="padding-left: 8px;padding-right: 8px;height: 410px;">
+                    <patient order="vm.orderselect"></patient>
+                  </div>
+                  <div class="uk-width-1-3" style="padding-left: 8px;padding-right: 8px">
+                    <orderinfo ordernumber="vm.orderselect"></orderinfo>
+                  </div>
+                  <div class="uk-width-1-3" style="padding-left: 8px;padding-right: 8px;height: 408px;">
+                    <interview order="vm.orderselect" state="true"></interview>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md-card-content" style="padding: 0px 24px 0px 24px; margin-left: 164px">
+              <ul class="md-list">
+                <li>
+                  <div class="md-list-content">
+                    <span class="uk-badge"
+                      style="background-color: {{vm.patient.typeordercolor}}; font-size: 19px; float: left; margin-top: 15px; margin-right: 5px;">
+                      {{vm.patient.typeordercode}}
+                    </span>
+                    <span class="uk-text-bold"
+                      style="font-size: 17px; margin-top: 13px; text-align: center">{{vm.patient.order}}</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="md-list-content">
+                    <span class="md-list-heading">sede</span>
+                    <span class="text-small-patient uk-text-muted uk-text-truncate">{{vm.patient.branch}}</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="md-list-content">
+                    <span class="md-list-heading">servicio</span>
+                    <span class="text-small-patient uk-text-muted">{{vm.patient.service}}</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--contenedor comentario de la orden -->
+        <div class="uk-width-2-10" style="padding-left: 0px">
+          <div class="" style="height: 210px">
+            <commentOrder idcontrol="'order'" orderhistory="vm.orderselect" state="1" size="2" type="1">
+            </commentOrder>
+          </div>
+        </div>
+        <!--contenedor alerta -->
+        <div class="uk-width-2-10">
+          <div class="md-card  md-card-hover" style="height: 210px">
+            <div class="md-card-toolbar" style="height: 37px">
+              <h3 class="md-card-toolbar-heading-text" style="margin-top: -6px">
+                <strong>Alerta</strong>
+              </h3>
+            </div>
+            <div class="md-card-content" style="height: calc(100% - 84px);overflow: auto;width: 90%;"
+              ng-bind-html="vm.detail.order.comment | trust">
+            </div>
+          </div>
+        </div>
+        <!--contenedor comentario de microbiologia-->
+        <div class="uk-width-3-10" style="height: 203px;">
+          <div style="height: 190px">
+            <commentmicrobiology orderhistory="vm.orderselect" idsample="vm.selectedTest[0].sampleId" state="2"
+              setnotes="vm.notes" idtest="vm.selectedTest[0].testId">
+            </commentmicrobiology>
+          </div>
+          <div style="margin-top: 5px;">
+            <span class="uk-text-bold">SIEMBRA:</span>
+            {{vm.microbiologyGrowth}}
+          </div>
+        </div>
+        <!--contenedor grilla de resultados-->
+        <div class="md-card uk-width-1-1" style="height: calc(100vh - 360px)">
+          <div class="md-card-content" style="padding: 13px 10px 0px 0px">
+            <div class="rs-grid uk-grid-width-1-1" style="font-size: 12px">
+              <div class="rs-grid-body">
+                <div class="contentscroll tableFixHead scrollbar">
+                  <!-- Grilla de resultados -->
+                  <table class="uk-table uk-table-small uk-table-middle  uk-table-divider">
+                    <thead>
+                      <tr>
+                        <th colspan="2"></th>
+                        <th colspan="9"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center md-bg-indigo-100">
+                          Resultado</th>
+                        <th colspan="3"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center md-bg-blue-100">
+                          Valores de Referencia</th>
+                        <th colspan="3"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center md-bg-light-orange-100">
+                          Microbiologia</th>
+                        <th colspan="2"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center md-bg-light-blue-100">
+                          Acciones</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <md-checkbox class="md-primary" style="margin-bottom: 0px;" ng-model="vm.selectall"
+                            aria-label="" ng-change="vm.selectobjectall(vm.selectall,vm.listtest)">
+                          </md-checkbox>
+                        </th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove">Abreviatura
+                        </th>
+                        <th class="uk-padding-remove">Resultado</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Estado</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove">Seguimiento
+                        </th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove">Ultimo
+                          Resultado</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove">Unidad</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                        </th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                        </th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                        </th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                        </th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Referencia</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Panicos</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Delta</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Metodo</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Sitio</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          Muestra</th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove"></th>
+                        <th class="uk-table-shrink uk-text-nowrap uk-padding-remove"></th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="obj in vm.listtest">
+                        <td style="padding: 8px 8px !important;"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove">
+                          <md-checkbox class="md-primary" style="margin-bottom: 0px;" ng-model="obj.isSelected"
+                            aria-label=""
+                            ng-disabled="obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true"
+                            ng-change="vm.selectTest(obj, obj.isSelected,'checkbox')">
+                          </md-checkbox>
+                          <img ng-if="obj.blockdays" data-uk-tooltip="{pos:'bottom', cls:'my-tooltip'}"
+                            title="{{obj.blockdaysMessage}}" style="margin:4px; width: 16px; height: 16px"
+                            src="images/analytical/resultsentry/timeouttest.png">
+                        </td>
+                        <td data-uk-tooltip="{pos:'bottom', cls:'my-tooltip'}" title="{{obj.testName}}"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove">
+                          <div class="uk-flex uk-text-small">
+                            {{obj.testCode}}
+                            <span ng-if="obj.confidential" class="uk-badge" style="padding: 0px 3px;
+                                                    font-size: 9px;
+                                                    background: #dd4765;
+                                                    line-height: 11px;
+                                                    height: 12px;
+                                                    margin: 2px;">C</span>
+                          </div>
+                          <div class="uk-flex uk-text-italic" style="font-size: 10px">
+                            {{obj.abbreviation}}
+                          </div>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-padding-remove">
+                          <div class="md-input-wrapper uk-form-icon rs-grid-md-input-wrapper">
+                            <i
+                              class="{{vm.getResultTypeIcon(obj.resultType, obj.literalResult.length, obj.formula)}}"></i>
+                            <div angucomplete-alt id="{{'input_result-' + obj.testId}}"
+                              ng-if="obj.literalResult.length > 0" style="margin-left: 31px;" focus-first="true"
+                              placeholder="" maxlength="50" pause="100" local-search="vm.filterListresultliteral"
+                              field-tabindex="{{$index}}" selected-object="vm.selectresult"
+                              local-data="obj.literalResult" search-fields="name" title-field="name" minlength="0"
+                              input-class="orderentrytab md-input masked_input uk-text-left uk-text-primary rs-grid-md-input"
+                              match-class="highlight" initial-value="obj.result"
+                              disable-input="obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays"
+                              ng-keyup="vm.resultKeyEventlist(obj, $event, $index)" ng-keydown="vm.getkeys($event, obj)"
+                              focus-in="vm.eventkey = false; vm.selectTestlist(obj, false)"
+                              focus-out="vm.resultKeyEventlist(obj,$event)"></div>
+
+                            <input type="text" ng-if="obj.literalResult.length === 0 || obj.literalResult === undefined"
+                              class="md-input masked_input uk-text-left uk-text-primary rs-grid-md-input"
+                              id="{{'input_result-' + obj.testId}}" maxlength="19" ng-model="obj.result"
+                              ng-keyup="vm.resultKeyEvent(obj, $event, $index)" ng-blur="vm.resultKeyEvent(obj)"
+                              ng-readonly="obj.state > vm.testState.REPORTED ? true : false" autocomplete="off"
+                              tabindex="{{$index}}" restrict-input="{digits:obj.digits,resultType:obj.resultType}"
+                              placeholder="{{obj.literalResult.length > 0 ? '...' : ''}}"
+                              ng-click="vm.selectTest(obj, false,'input')"
+                              ng-disabled="obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays"
+                              ng-focus="vm.calcFormula(obj,  obj.resultType, obj.formula, obj.state)"
+                              ng-keydown="vm.getkeys($event, obj)" ng-keypress="vm.keyselect(obj,$event)" />
+                            <span class="md-input-bar"></span>
+                          </div>
+                        
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          <span ng-if="obj.state === 0" data-uk-tooltip="{pos:'top'}" title="{{'0767' | translate}}"
+                            class="uk-icon-circle-thin uk-text-primary"></span>
+                          <span ng-if="obj.state === 1" data-uk-tooltip="{pos:'top'}" title="{{'0355' | translate}}"
+                            class="uk-icon-repeat uk-text-primary"></span>
+                          <span ng-if="obj.state === 2" data-uk-tooltip="{pos:'top'}" title="{{'0635' | translate}}"
+                            class="uk-icon-file-text-o uk-text-primary"></span>
+                          <span ng-if="obj.state === 3" data-uk-tooltip="{pos:'top'}" title="{{'0768' | translate}}"
+                            class="uk-icon-search uk-text-success"></span>
+                          <span ng-if="obj.state === 4" data-uk-tooltip="{pos:'top'}" title="{{'0416' | translate}}"
+                            class="material-icons uk-text-success">&#xE877;</span>
+                          <span ng-if="obj.state === 5" data-uk-tooltip="{pos:'top'}" title="{{'0379' | translate}}"
+                            class="uk-icon-print uk-text-success"></span>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove">
+                          <div ng-click="vm.tendencyGraph(obj);"
+                            ng-if="obj.state >= vm.testState.REPORTED && obj.resultType === 1 && obj.secondLastResult !== undefined && obj.lastResult !== undefined">
+                            <peity-line-chart data="[obj.secondLastResult,obj.lastResult,obj.result]"
+                              options="vm.LineChart.options">
+                            </peity-line-chart>
+                          </div>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove">
+                          <div class="uk-flex uk-text-small">
+                            {{obj.lastResult}}
+                          </div>
+                          <div class="uk-flex uk-text-italic" style="font-size: 10px">
+                            {{obj.lastResultDate}}
+                          </div>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove">
+                          <div class="uk-flex uk-flex-middle">
+                            <div ng-bind-html="obj.unit | trust">
+                            </div>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          <i class="uk-icon-commenting md-color-grey-300" data-uk-tooltip="{pos:'top'}"
+                            title="{{'0114' | translate}}" ng-class="{' uk-text-primary' : obj.hasComment}"></i>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          <i class="material-icons md-color-grey-300"
+                            ng-class="{'uk-text-primary' : obj.attachmentTest === 1}" title="{{'0376' | translate}}"
+                            data-uk-tooltip="{pos:'top'}">&#xE226;</i>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          <i class="uk-icon-flask md-color-grey-300" data-uk-tooltip="{pos:'top'}"
+                            title="{{'0414' | translate}}" ng-class="{' uk-text-primary' : obj.hasAntibiogram}"></i>
+                        </td>
+                        <td
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}"
+                          class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center">
+                          <i class="material-icons md-color-grey-300" data-uk-tooltip="{pos:'top'}"
+                            title="{{'0599' | translate}}"
+                            ng-class="{' uk-text-primary' : obj.hasTemplate}">&#xE86D;</i>
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': ((obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ) && (obj.pathology !== 2 && obj.pathology !== 3 )), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED, 'md-bg-orange-100': obj.pathology === 2 || obj.pathology === 3}">
+                          <div class="uk-flex uk-flex-center"
+                            ng-class="{'md-color-orange-A700': obj.pathology === 2 || obj.pathology === 3 }">
+                            <i ng-if="obj.pathology === 2"
+                              class="material-icons md-color-orange-A700">keyboard_arrow_down</i>
+                            <i ng-if="obj.pathology === 3"
+                              class="material-icons md-color-orange-A700">keyboard_arrow_up</i>{{obj.refInterval}}
+                          </div>
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': ((obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ) && (obj.pathology !== 5 && obj.pathology !== 6 )), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED ,'md-bg-orange-100': obj.pathology === 5 || obj.pathology === 6}">
+                          <div class="uk-flex uk-flex-center"
+                            ng-class="{'md-color-orange-A700': obj.pathology === 5 || obj.pathology === 6 }">
+                            <i ng-if="obj.pathology === 5"
+                              class="material-icons md-color-orange-A700">keyboard_arrow_down</i>
+                            <i ng-if="obj.pathology === 6"
+                              class="material-icons md-color-orange-A700">keyboard_arrow_up</i>
+                            {{obj.panicInterval}}
+                          </div>
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}">
+                          {{obj.deltaInterval}}
+                        </td>
+
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          style="font-size:10px"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}">
+                          {{obj.microbiologyGrowth.collectionMethod.name}}
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          style="font-size:10px"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}">
+                          {{obj.microbiologyGrowth.anatomicalSite.name}}
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center" style="font-size:10px; white-space: nowrap;
+                                            text-overflow: ellipsis;"
+                          ng-style="{'color' :  obj.reportTask === true ? '#7cb342': '#444'}"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}">
+                          {{obj.microbiologyGrowth.sample.name}}
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}">
+                          <a href="#" data-uk-tooltip="{pos:'bottom'}" title="{{'0839' | translate}}"
+                            ng-click="vm.testInformation(obj);">
+                            <i class="rs-grid-md-icon material-icons uk-text-success">&#xE88F;</i>
+                          </a>
+                        </td>
+                        <td class="uk-table-shrink uk-text-nowrap uk-padding-remove uk-text-center"
+                          ng-class="{'md-bg-orange-50' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-200': (obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true ), 'md-bg-light-green-50' : obj.state >= vm.testState.VALIDATED}">
+                          <a data-uk-tooltip="{pos:'bottom'}" title="{{'1139' | translate}}" href="#"
+                            ng-click="obj.grantAccess ? vm.blockTest(obj, true) : ''" ng-if="!obj.block.blocked">
+                            <i class="rs-grid-md-icon material-icons uk-text-primary md-inactive">&#xE898;</i>
+                          </a>
+                          <a data-uk-tooltip="{pos:'bottom'}" title="{{'1140' | translate}}" href="#unblocked_modal"
+                            data-uk-modal="{ center:true, bgclose:false }" ng-if="obj.block.blocked"
+                            ng-click="obj.grantAccess ? vm.blockTest(obj, false) : ''">
+                            <i class="rs-grid-md-icon material-icons uk-text-danger">lock</i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Grilla de resultados: Encabezado -->
+                <!--  <div class="rs-grid-row-head">
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold"></div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">Código</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">Abreviatura</div>
+                                    <div class="rs-grid-head uk-width-2-18 uk-text-bold">Resultado</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">Unidad</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold"></div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold"></div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold"></div>
+                                    <div class="rs-grid-head uk-width-2-18 uk-text-bold">Referencia</div>
+                                    <div class="rs-grid-head uk-width-2-18 uk-text-bold">Pánico</div>
+                                    <div class="rs-grid-head uk-width-2-18 uk-text-bold">Delta</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">metodo de recoleccion</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">sitio anatomico</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">Muestra</div>
+                                    <div class="rs-grid-head uk-width-1-18 uk-text-bold">Acciones</div>
+                                </div> -->
+                <!-- Grilla de resultados: Examenes -->
+                <!-- <div style="overflow-y: scroll;" ng-repeat="obj in vm.listtest" class="rs-grid-row"  ng-class="{'md-bg-orange-100' : (obj.isSelected === true || obj.isSelectedUnique === true), 'md-bg-grey-300': (obj.block.blocked || !obj.grantAccess), 'md-bg-light-green-50' : obj.state >= 4}">
+                                    <div class="rs-grid-cell uk-width-1-18">
+                                        <input ng-if="!obj.blockdays" type="checkbox" icheck ng-model="obj.isSelected" ng-change="vm.selectTest($event, obj, true)" class="check_row" table-check-row ng-disabled="obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays === true">
+                                        <img ng-if="obj.blockdays"  data-uk-tooltip="{pos:'bottom', cls:'my-tooltip'}" title="{{obj.blockdaysMessage}}" style="margin:4px; width: 16px; height: 16px"   src="images/analytical/resultsentry/timeouttest.png">
+                                    </div>
+                                    <div class="rs-grid-cell uk-width-1-18">{{obj.testCode}}</div>
+                                    <div class="rs-grid-cell uk-width-1-18">{{obj.abbreviation}}</div>
+                                    <div class="rs-grid-cell uk-width-2-18">
+                                        <div class="md-input-wrapper uk-form-icon rs-grid-md-input-wrapper ">
+                                            <i ng-class="{'uk-icon-hashtag':obj.resultType === 1, 'uk-icon-list': obj.resultType === 2, 'uk-icon-superscript' : obj.resultType === 0 }"></i>
+                                            <input type="text" class="md-input masked_input uk-text-left uk-text-primary rs-grid-md-input" id="{{'input_result-' + obj.testId}}" maxlength="16" ng-model="obj.result" ng-keyup="vm.resultKeyEvent(obj, $event)" ng-readonly="obj.state > 1 ? true : false" autocomplete="off" tabindex="999" list="{{'litetal_list-' + obj.testId}}" placeholder="{{obj.literalResult.length > 0 ? '...' : ''}}" restrict-input="{digits:obj.digits,resultType:obj.resultType}" ng-click="vm.selectTest($event, obj, false)"  ng-disabled="obj.block.blocked || !obj.grantAccess || obj.sampleState === 1 || obj.blockdays" />
+                                            <span class="md-input-bar"></span>
+                                        </div>
+                                        <datalist id="{{'litetal_list-' + obj.testId}}" ng-show="obj.literalResult.length > 0">
+                                            <option ng-repeat="literalItem in obj.literalResult" value={{literalItem.name}}>
+                                        </datalist>
+                                    </div>
+                                    <div class="rs-grid-cell uk-width-1-18"  ng-bind-html="obj.unit | trust"></div>
+                                    <div class="rs-grid-cell uk-width-1-18">
+                                        <span ng-class="{'uk-icon-heartbeat uk-text-danger': obj.pathology === 9}"></span>
+                                    </div>
+                                    <div class="rs-grid-cell uk-width-1-18">
+                                        <span class="{{vm.getPathologyIcon(obj.pathology, false)}}"></span>
+                                    </div>
+                                    <div ng-if="obj.sampleState !== 1" class="rs-grid-cell uk-width-1-18">
+                                        <span class="{{vm.getStateIcon(obj.state)}}"></span>
+                                    </div>
+                                    <div ng-if="obj.sampleState === 1" class="rs-grid-cell uk-width-1-18" style="padding-left: 2px">
+                                        <span style="font-size: 15px" class="material-icons uk-text-success">&#xE889;</span>
+                                    </div>
+
+                                    <div class="rs-grid-cell uk-width-2-18">{{obj.refInterval}}</div>
+                                    <div class="rs-grid-cell uk-width-2-18">{{obj.panicInterval}}</div>
+                                    <div class="rs-grid-cell uk-width-2-18">{{obj.deltaInterval}}</div>
+                                    <div class="rs-grid-cell uk-width-1-18">{{obj.microbiologyGrowth.collectionMethod.name}}</div>
+                                    <div class="rs-grid-cell uk-width-1-18">{{obj.microbiologyGrowth.anatomicalSite.name}}</div>
+                                    <div class="rs-grid-cell uk-width-1-18"  ng-style="{'color' :
+                                        obj.reportTask === true ? '#7cb342': '#444'}">{{obj.microbiologyGrowth.sample.name}}</div>
+                                    <div class="rs-grid-cell uk-width-1-18 uk-text-left">
+                                        <a href="#" data-uk-tooltip="{pos:'bottom'}" title="{{'0839' | translate}}" ng-click="vm.selectedTestinformation = obj; vm.openinformation = true">
+                                            <i class="rs-grid-md-icon material-icons uk-text-success">&#xE88F;</i>
+                                        </a>
+                                        <a data-uk-tooltip="{pos:'bottom'}" title="{{'1139' | translate}}" href="#" ng-click="obj.grantAccess ? vm.blockTest(obj, true) : ''" ng-if="!obj.block.blocked">
+                                            <i class="rs-grid-md-icon material-icons uk-text-primary md-inactive">&#xE898;</i>
+                                        </a>
+                                        <a data-uk-tooltip="{pos:'bottom'}" title="{{'1140' | translate}}" href="#unblocked_modal"  data-uk-modal="{ center:true, bgclose:false }" ng-if="obj.block.blocked" ng-click="obj.grantAccess ? vm.blockTest(obj, false) : ''">
+                                            <i class="rs-grid-md-icon material-icons uk-text-danger">lock</i>
+                                        </a>
+                                        <a href="#" data-uk-tooltip="{pos:'bottom'}" title="{{'1138' | translate}}" ng-click="vm.selectedTestgraph = obj; vm.opentendency = true;" ng-show="obj.resultType == 1">
+                                            <i class="rs-grid-md-icon material-icons uk-text-warning">&#xE24B;</i>
+                                        </a>
+                                    </div>
+                                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="uk-width-1-10">
+      <!-- Lista sencilla de órdenes -->
+      <form class="uk-form-stacked">
+        <div class="md-card">
+          <div class="md-card-content" style="padding-top: 27px !important; padding-right: 5px;">
+            <div class="uk-grid uk-grid-small">
+              <div class="uk-width-1-1 uk-text-bold">
+                <label>{{ '0110' | translate }}</label>
+              </div>
+              <div vs-repeat="20"
+                style="overflow-y: scroll; height: calc(100vh - 205px); width: 100%; padding-left: 0px">
+                <div ng-repeat="obj in vm.listOrder | filter: filter | orderBy : 'orderNumber'"
+                  ng-click="vm.selectOrder(1, obj,obj.orderNumber);"
+                  ng-class="{'md-bg-light-blue-100': obj.orderNumber == vm.orderselect}"
+                  style="border: 1px solid rgb(235, 235, 235)">
+                  <div class="uk-width-1-1" ng-class="{'rs-order-complete' : (obj.orderState >= 4)}"
+                    ng-style="{'border-left' :
+                                        obj.type.color !== '' ? '2px solid {{obj.type.color}}' :obj.type.code === 'R' ? '2px solid #a5d6a7' :obj.type.code === 'S' ? '2px solid #ef5350' :obj.type.code === 'P' ? '2px solid #ce93d8' :obj.type.code === 'A' ? '2px solid #90caf9' :obj.type.code === 'C' ? '2px solid #fff176' :'2px solid #90caf9'}">
+                    <a>{{obj.orderinformation}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+    <!-- Barra lateral -->
+    <div id="style_switcher_results" ng-class="{'switcher_active':vm.styleSwitcherActive}">
+      <loadpage view="vm.loading"></loadpage>
+
+      <div id="style_switcher_toggle_results" ng-click="vm.toggleStyleSwitcher($event)"
+        ng-show="!vm.styleSwitcherActive">
+        <i class="material-icons">&#xE241;</i>
+      </div>
+      <!-- Indicadores -->
+      <div class="uk-visible-large uk-margin-small-bottom">
+        <div class="uk-grid">
+          <div class="uk-width-1-5" style="width: 17%">
+            <div class="uk-width-1-1">
+              <button data-uk-modal="{target:'#modaldate',bgclose:false}"
+                style="width: 100%; height: 80px; text-align: left;" class="md-btn">
+                <ul class="md-list md-list-addon" style="margin-left: 16px">
+                  <li style="min-height: 38px; padding-top: 0px; padding-bottom: 0px; margin-left: 0px">
+                    <div class="md-list-addon-element" style="left: -15px; width: 27px; top:-10px">
+                      <i ng-if="vm.filterRange === '0' && vm.typefilterorder === 0"
+                        class="md-list-addon-icon material-icons md-color-blue-400">&#xE916;</i>
+                      <i ng-if="vm.filterRange === '1' || vm.typefilterorder === 1"
+                        class="md-list-addon-icon material-icons md-color-blue-400">&#xE2C9;</i>
+                    </div>
+                    <div class="md-list-content" style="padding-left: 30px;">
+                      <span class="md-list-heading uk-text-small">{{vm.filterinfo.textinit}}</span>
+                      <span class="uk-text-small uk-text-muted">{{vm.filterinfo.valueinit}}</span>
+                    </div>
+                  </li>
+                  <li style="min-height: 38px; padding-top: 5px; margin-left: 0px">
+                    <div class="md-list-addon-element" style="left: -15px; width: 27px; top:-10px">
+                      <i ng-if="vm.filterRange === '0' && vm.typefilterorder === 0"
+                        class="md-list-addon-icon material-icons md-color-green-400">&#xE916;</i>
+                      <i ng-if="vm.filterRange === '1' && vm.typefilterorder === 0"
+                        class="md-list-addon-icon material-icons md-color-green-400">&#xE2C9;</i>
+                      <img style="padding-top:10px" ng-if="vm.typefilterorder === 1"
+                        src="images/microbiology/blood-sample.png">
+                    </div>
+                    <div class="md-list-content" style="padding-left: 30px;">
+                      <span class="md-list-heading uk-text-small">{{vm.filterinfo.textend}}</span>
+                      <span class="uk-text-small uk-text-muted">{{vm.filterinfo.valueend}}</span>
+                    </div>
+                  </li>
+                </ul>
+              </button>
+            </div>
+          </div>
+          <div class="uk-width-1-5">
+            <div class="uk-width-1-1">
+              <button data-uk-modal="{target:'#modaltestreport',bgclose:false}"
+                style="width: 100%; height: 80px; text-align: left;" class="md-btn">
+                <ul class="md-list md-list-addon" style="margin-left: 16px">
+                  <li style="min-height: 38px; padding-top: 0px; padding-bottom: 0px; margin-left: 0px">
+                    <div class="md-list-addon-element" style="left: -15px; width: 27px; top:-7px">
+                      <img src="images/microbiology/test.png">
+                    </div>
+                    <div class="md-list-content" style="padding-left: 30px;">
+                      <span class="md-list-heading uk-text-small">Prueba</span>
+                      <span class="uk-text-small uk-text-muted uk-text-truncate">{{vm.testselected.code}}
+                        {{vm.testselected.name}}</span>
+                    </div>
+                  </li>
+                  <li style="min-height: 38px; padding-top: 5px; margin-left: 0px">
+                    <div class="md-list-addon-element" style="left: -15px; width: 27px; top:-7px">
+                      <img src="images/microbiology/report.png">
+                    </div>
+                    <div class="md-list-content" style="padding-left: 30px;">
+                      <span class="md-list-heading uk-text-small">Reportar</span>
+                      <span class="uk-text-small uk-text-muted">{{vm.report.name}}</span>
+                    </div>
+                  </li>
+                </ul>
+              </button>
+            </div>
+          </div>
+          <div class="uk-width-1-5" style="width: 21%">
+            <div class="md-card md-card-hover" ng-class="{'filterinit': vm.filterinfo.valueinit === 'N/A'}">
+              <a href="#" ng-click="vm.filterinfo.valueinit === 'N/A' ? '' : vm.getOrderlist(undefined, 1)">
+                <div class="md-card-content" style="padding-top: 5px">
+                  <div>
+                    <span
+                      class="{{vm.filterResultsPending === true ? 'uk-text-bold uk-text-small':'uk-text-muted uk-text-small'}}">Pruebas
+                      sin procesar</span>
+                  </div>
+                  <div style="margin-top: 5px" class="uk-float-right progress-wrapper">
+                    <round-progress max="vm.indicatorOrder.total" current="vm.indicatorOrder.result" color="#4073FF"
+                      bgcolor="#eaeaea" radius="20" stroke="8" semi="false" rounded="true" clockwise="true"
+                      responsive="false" duration="800" animation="easeInOutQuart" animation-delay="100">
+                    </round-progress>
+                  </div>
+
+                  <h2 style="margin-top: 8px; margin-bottom: 0px;">
+                    <i class="uk-icon-filter uk-text-danger" ng-if="vm.filterResultsPending"></i>
+                    <span class="countUpMe">{{vm.indicatorOrder.result}}</span>
+                  </h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="uk-width-1-5" style="width: 21%">
+            <div class="md-card md-card-hover" ng-class="{'filterinit': vm.filterinfo.valueinit === 'N/A' }">
+              <a href="#" ng-click="vm.filterinfo.valueinit === 'N/A' ? '' : vm.getOrderlist(undefined, 2)">
+                <div class="md-card-content" style="padding-top: 5px">
+                  <div>
+                    <span
+                      class="{{vm.filterPreValidationPending? 'uk-text-bold uk-text-small':'uk-text-muted uk-text-small'}}">Pruebas
+                      sin Pre-validacion</span>
+                  </div>
+                  <div style="margin-top: 5px" class="uk-float-right progress-wrapper">
+                    <round-progress max="vm.indicatorOrder.total" current="vm.indicatorOrder.preview" color="#ff7171"
+                      bgcolor="#eaeaea" radius="20" stroke="8" semi="false" rounded="true" clockwise="true"
+                      responsive="false" duration="800" animation="easeInOutQuart" animation-delay="100">
+                    </round-progress>
+                  </div>
+
+                  <h2 style="margin-top: 8px; margin-bottom: 0px;">
+                    <i class="uk-icon-filter uk-text-danger" ng-if="vm.filterPreValidationPending"></i>
+                    {{vm.indicatorOrder.preview}}
+                  </h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="uk-width-1-5" style="width: 21%">
+            <div class="md-card md-card-hover" ng-class="{'filterinit': vm.filterinfo.valueinit === 'N/A' }">
+              <a href="#" ng-click="vm.filterinfo.valueinit === 'N/A' ? '' : vm.getOrderlist(undefined, 3)">
+                <div class="md-card-content" style="padding-top: 5px">
+                  <div>
+                    <span
+                      class="{{vm.filterValidationPending === true ? 'uk-text-bold uk-text-small':'uk-text-muted uk-text-small'}}">Pruebas
+                      sin validacion</span>
+                  </div>
+                  <div style="margin-top: 5px" class="uk-float-right progress-wrapper">
+                    <round-progress max="vm.indicatorOrder.total" current="vm.indicatorOrder.validation" color="#03A45E"
+                      bgcolor="#eaeaea" radius="20" stroke="8" semi="false" rounded="true" clockwise="true"
+                      responsive="false" duration="800" animation="easeInOutQuart" animation-delay="100">
+                    </round-progress>
+                  </div>
+
+                  <h2 style="margin-top: 8px; margin-bottom: 0px;">
+                    <i class="uk-icon-filter uk-text-danger" ng-if="vm.filterValidationPending"></i>
+                    <span class="countUpMe">{{vm.indicatorOrder.validation}}</span>
+                  </h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lista de órdenes -->
+      <form id="order_list" class="uk-form-stacked">
+        <div class="md-card">
+          <div class="md-card-content" style="overflow-y: hidden; height: calc(100vh - 290px);">
+            <div class="uk-grid-width-1-1">
+              <div class="uk-grid uk-grid-small">
+                <div class="uk-width-1-10 uk-text-bold"
+                  ng-click="vm.sortType = 'orderNumber'; vm.sortReverse = !vm.sortReverse">
+                  <resultssort sortvalue="'orderNumber'" sorttype="vm.sortType" sortreverse="vm.sortReverse">
+                  </resultssort>Orden
+                </div>
+                <div
+                  ng-class="{'uk-width-4-10' : vm.serviceManagement === 'False', 'uk-width-2-10' : vm.serviceManagement === 'True'}"
+                  class="uk-text-bold" ng-click="vm.sortType = 'patient.lastName'; vm.sortReverse = !vm.sortReverse">
+                  <resultssort sortvalue="'patient.lastName'" sorttype="vm.sortType" sortreverse="vm.sortReverse">
+                  </resultssort>Paciente
+                </div>
+                <div ng-if="vm.serviceManagement === 'True'" class="uk-width-2-10 uk-text-bold"
+                  ng-click="vm.sortType = 'service.code'; vm.sortReverse = !vm.sortReverse">
+                  <resultssort sortvalue="'service.code'" sorttype="vm.sortType" sortreverse="vm.sortReverse">
+                  </resultssort>Servicio
+                </div>
+                <div class="uk-width-2-10 uk-text-bold"
+                  ng-click="vm.sortType = 'branch.code'; vm.sortReverse = !vm.sortReverse">
+                  <resultssort sortvalue="'branch.code'" sorttype="vm.sortType" sortreverse="vm.sortReverse">
+                  </resultssort>Sede
+                </div>
+                <div class="uk-width-1-10 uk-text-bold"
+                  ng-click="vm.sortType = 'type.color'; vm.sortReverse = !vm.sortReverse">
+                  <resultssort sortvalue="'type.color'" sorttype="vm.sortType" sortreverse="vm.sortReverse">
+                  </resultssort>Tipo Orden
+                </div>
+                <div class="uk-width-1-10 uk-text-bold"></div>
+              </div>
+              <div vs-repeat="25" style="overflow-y: scroll; height: calc(100vh - 300px)">
+                <div style="margin-top: 0px; border: 1px solid rgb(235, 235, 235)" class="uk-grid uk-grid-small"
+                  ng-repeat="obj in vm.listOrder | filter: filter | orderBy:vm.sortType:vm.sortReverse"
+                  ng-click="vm.selectOrder(1, obj, obj.orderNumber); vm.toggleStyleSwitcher($event);"
+                  ng-class="{'md-bg-light-blue-100': obj.orderNumber == vm.orderselect}">
+                  <div class="uk-width-1-10"
+                    ng-style="{'border-right' :
+                                        obj.type.color !== '' ? '0px solid {{obj.type.color}}' :obj.type.code === 'R' ? '0px solid #a5d6a7' :obj.type.code === 'S' ? '0px solid #ef5350' :obj.type.code === 'P' ? '0px solid #ce93d8' :obj.type.code === 'A' ? '0px solid #90caf9' :obj.type.code === 'C' ? '0px solid #fff176' :'0px solid #90caf9'}">
+                    <a href="#">{{obj.orderNumber.toString().substring(3)}}</a>
+                  </div>
+                  <div
+                    ng-class="{'uk-width-4-10' : vm.serviceManagement === 'False', 'uk-width-2-10' : vm.serviceManagement === 'True'}">
+                    {{obj.patient.lastName}} {{obj.patient.name1}} {{obj.patient.name2}}</div>
+                  <div ng-if="vm.serviceManagement === 'True'" class="uk-width-2-10">
+                    {{obj.service.code}}. {{obj.service.name}}</div>
+                  <div class="uk-width-2-10">{{obj.branch.code}}. {{obj.branch.name}}</div>
+                  <div class="uk-width-1-10">
+                    <span class="uk-badge"
+                      ng-style="{'background-color' :
+                                        obj.type.color !== '' ? '{{obj.type.color}}' :obj.type.code === 'R' ? '#a5d6a7' :obj.type.code === 'S' ? '#ef5350' :obj.type.code === 'P' ? '#ce93d8' :obj.type.code === 'A' ? '#90caf9' :obj.type.code === 'C' ? '#fff176' : '#90caf9'}">{{obj.type.name}}</span>
+                  </div>
+                  <div class="uk-width-1-10 uk-text-left">
+                    <span class="{{vm.getOportunityIcon(1)}}"></span>
+                    <span class="{{vm.getPathologyIcon(obj.pathology, true)}}"></span>
+                    <span class="{{vm.getCriticIcon(obj.pathology)}}"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </form>
+
+      <!-- Botonera para acciones con las ordenes -->
+      <div style="margin-left: 60px; padding-top: 5px; justify-content: center; display: flex">
+        <div style="padding-top: 5px; float: right" class="uk-grid uk-grid-small uk-container-center">
+
+          <!-- tareas -->
+          <div class="uk-text-center buttonNormalLine">
+            <button type="button" ng-disabled="vm.listOrder.length === 0" class="md-fab md-fab-small md-bg-teal-A700"
+              ng-class="{'md-bg-blue-grey-100' : vm.listOrder.length === 0}" ng-click="vm.tasksreport()">
+              <i clas="material-icons md-color-light-blue-50">&#xE03F;</i>
+            </button>
+            <span class="uk-text-middle textbutton">{{'0578' | translate}}</span>
+          </div>
+          <!-- tareas paciente -->
+          <div class="uk-text-center buttonNormalLine">
+            <button type="button" ng-disabled="vm.listOrder.length === 0" class="md-fab md-fab-small md-bg-purple-A700"
+              ng-class="{'md-bg-blue-grey-100' : vm.listOrder.length === 0}" ng-click="vm.tasksperpatient()">
+              <i class="material-icons md-color-grey-50">&#xE85E;</i>
+            </button>
+            <span class="uk-text-middle textbutton">{{'0583' | translate}}</span>
+          </div>
+          <!-- pendientes de verificacion-->
+          <div class="uk-text-center buttonNormalLine">
+            <button type="button" ng-disabled="vm.filterinfo.valueinit === 'N/A'"
+              class="md-fab md-fab-small md-bg-amber-A200"
+              ng-class="{'md-bg-blue-grey-100' : vm.filterinfo.valueinit === 'N/A'}"
+              ng-click="vm.getpendingverificationreport()">
+              <i class="material-icons md-color-grey-50">&#xE858;</i>
+            </button>
+            <span class="uk-text-middle textbutton">{{'0210' | translate}}</span>
+          </div>
+          <!-- reiniciar tareas -->
+          <div class="uk-text-center buttonNormalLine">
+            <button data-uk-modal="{target:'#modalrestarttask',bgclose:false}" id="buttonrestarttask" type="button"
+              ng-disabled=" vm.listOrder.length === 0" class="md-fab md-fab-small md-bg-red-500"
+              ng-class="{'md-bg-blue-grey-100' :  vm.listOrder.length === 0}">
+              <i class="material-icons md-color-light-blue-50">&#xE8BA;</i>
+            </button>
+            <span class="uk-text-middle textbutton">{{'0591' | translate}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ventana modal para el filtro de fechas -->
+  <div id="modaldate" class="uk-modal" bg-close="false" aria-hidden="true"
+    style="display: none; overflow-y: scroll; min-height: 300px">
+    <div class="uk-modal-dialog uk-modal-dialog-large">
+      <div class="uk-modal-header">
+
+        <h3 class="uk-modal-title">
+
+          <i style="padding-top: 5px; padding-right: 5px" class="material-icons md-color-light-blue-50">&#xE8B6;</i>
+          Busqueda de ordenes
+        </h3>
+      </div>
+      <div class="uk-overflow-container">
+
+        <div class="uk-width-1-1">
+          <ul class="uk-tab" data-uk-tab="{connect:'#tabs_1', animation:'slide-horizontal'}">
+            <li class="uk-active" ng-click="vm.sample = null; vm.typefilterorder = 0"><a>Rango</a></li>
+            <li ng-click="vm.typefilterorder = 1; vm.orderfilter = ''; vm.menssageinformative = ''; vm.sample = null">
+              <a>Orden y/o muestra</a>
+            </li>
+
+          </ul>
+          <ul id="tabs_1" class="uk-switcher uk-margin">
+            <li style="padding: 1px 20px">
+              <div class="md-card md-card-hover" style="height: 95px">
+                <div class="md-card-content">
+                  <orderfilter rangeinit="vm.rangeInit" rangeend="vm.rangeEnd" typefilter="vm.filterRange"
+                    isopenreport="vm.isOpenReport"></orderfilter>
+                </div>
+              </div>
+            </li>
+            <li style="padding: 1px 150px">
+              <div class="md-card md-card-hover">
+                <div class="md-card-content">
+                  <ordersample order="vm.orderfilter" sample="vm.sample" size='30' functionexecute="vm.getSampleOrder"
+                    classdanger="vm.menssageinformative !=='' ">
+                  </ordersample>
+                  <span ng-if="vm.menssageinformative!==''"
+                    class="uk-container-center help-block">{{vm.menssageinformative}}</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="uk-width-1-1 dropdown-up">
+
+        </div>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button ng-if="vm.typefilterorder === 0" type="button"
+          class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light uk-modal-close"
+          ng-disabled="(!vm.isOpenReport && vm.typefilterorder === 0) || (vm.orderfilter === null && vm.typefilterorder === 1)"
+          ng-class="{'md-bg-blue-grey-100':(!vm.isOpenReport && vm.typefilterorder === 0) || (vm.orderfilter === null && vm.typefilterorder === 1)}"
+          ng-click="vm.getIndicatorOrderCount()">{{'0246' | translate}}</button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ventana modal para el filtro de pruebas y reportar -->
+  <div id="modaltestreport" class="uk-modal" bg-close="false" aria-hidden="true">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-header">
+        <h3 class="uk-modal-title">
+          <i style="padding-top: 5px; padding-right: 5px" class="material-icons">&#xE152;</i>{{'0600' | translate}}
+        </h3>
+      </div>
+
+      <div style="z-index: 9999">
+        <div class="uk-grid">
+          <div class="uk-width-1-1">
+
+            <div class="uk-input-group " style="width: 100%">
+              <span class="uk-input-group-addon" style="font-size: 21px;">
+                <img class="md-list-addon-icon material-icons" ng-src="images/microbiology/test.png" />
+              </span>
+              <label class="labels-selectize">{{'0459' | translate}}</label>
+              <loadcombobox listorigin="vm.listTestMicrobiology" ng-model="vm.testselected" placeholder="'0153'">
+              </loadcombobox>
+            </div>
+          </div>
+
+          <div class="uk-width-1-1">
+            <div class="uk-input-group uk-overflow-container">
+              <span class="uk-input-group-addon" style="font-size: 21px;">
+                <img class="md-list-addon-icon material-icons" ng-src="images/microbiology/report.png" />
+              </span>
+              <label class="labels-selectize">{{'0593' | translate}}</label>
+
+              <ui-select ng-model="vm.report" theme="select2" style="width: 100%">
+                <ui-select-match>{{$select.selected.name}}</ui-select-match>
+                <ui-select-choices repeat="item in vm.reportfilter | filter: $select.search">
+                  <span ng-bind-html="item.name | highlight: $select.search"></span>
+                </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-modal-footer uk-text-right">
+        <button type="button"
+          class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light uk-modal-close"
+          ng-disabled="vm.report === undefined || vm.testselected === undefined "
+          ng-class="{'md-bg-blue-grey-100':vm.report === undefined || vm.testselected === undefined}"
+          ng-click="vm.getIndicatorOrderCount()">{{'0246' | translate}}</button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ventana modal para confirmacion del reinicio de tareas -->
+  <div id="modalrestarttask" class="uk-modal" bg-close="false" aria-hidden="true">
+    <div class="uk-modal-dialog ">
+
+      <div class="uk-overflow-container" style="margin-top: 0px">
+        <div style="width: 15%; float: left">
+          <img class="img-responsive" src="images/QuestionRed.png">
+        </div>
+        <div style="margin-top: 10px">
+          {{vm.messagerestartTask}}
+        </div>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button type="button"
+          class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light uk-modal-close md-bg-red-500"
+          ng-click="vm.restartTask()">{{'0246' | translate}}</button>
+        <button class="md-btn md-btn-wave waves-effect waves-button uk-modal-close" type="button">{{'0008' |
+          translate}}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ventana modal comentario de microbiologia -->
+  <div class="uk-modal uk-modal-card-fullscreen" id="modal_fullcomment">
+    <div class="uk-modal-dialog uk-modal-dialog-blank">
+      <div class="md-card uk-height-viewport">
+        <div class="md-card-toolbar md-bg-blue-700">
+
+          <span style="float: left; margin: 8px 8px 0 0; display: block;"
+            class="md-icon material-icons md-color-blue-50 uk-modal-close"
+            ng-click=" vm.enablecomment=false;vm.commentMicrobiology=''" data-uk-tooltip="{pos:'top'}"
+            title="{{'0329'| translate}}">&#xE5C4;</span>
+          <h3 class="md-card-toolbar-heading-text md-color-blue-50">
+            {{'0466'| translate}}
+          </h3>
+        </div>
+        <div class="md-card-content">
+          <div class="uk-grid uk-grid-width-1-2 uk-grid-medium uk-container-center" id="notes_grid"
+            style="margin-top: 4px">
+            <div ng-repeat="note in vm.notes | orderBy:'time':!sortReverse">
+              <div class="md-card {{note.color}}">
+                <div class="md-card-content" style="margin-top: 10px; margin-bottom: 10px;">
+                  <p ng-bind-html="note.content | trust"></p>
+                  <ul class="uk-list">
+                    <li class="uk-margin-small-top" ng-repeat="checkbox in note.checklist">
+                      <input type="checkbox" id="checkbox_{{$parent.$index}}_{{$index}}" icheck
+                        ng-model="checkbox.checked" ng-disabled="true" />
+                      <label for="checkbox_{{$parent.$index}}_{{$index}}" class="inline-label">{{ checkbox.title
+                        }}</label>
+                    </li>
+                  </ul>
+                  <span class="uk-margin-top uk-text-italic uk-text-muted uk-display-block uk-text-small">{{ note.time |
+                    date: vm.formatDate }}
+                    - {{note.user}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botonera para la gestion con los examenes -->
+  <footer id="footer" style="padding-top: 5px; justify-content: center; display: flex">
+    <div class="uk-grid uk-grid-small uk-container-center">
+
+      <!-- Inconsistencias -->
+      <div class="uk-text-center buttonNormalLine" style="width: 52px">
+        <button style="margin-left: 7px"
+          class="md-fab md-fab-small md-fab-wave-light waves-light waves-effect md-bg-yellow-100"
+          ng-disabled="vm.patient.inconsistency === false"
+          ng-class="{'md-bg-blue-grey-100' : vm.patient.inconsistency === false}"
+          ng-click="vm.openorderinconsistency = true">
+          <i class="material-icons  md-color-grey-50" title="{{'0051' | translate}}"
+            data-uk-tooltip="{pos:'top-left'}">&#xE8A6;</i>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0051' | translate}}</span>
+      </div>
+
+      <!-- Codigo de barras -->
+      <div class="uk-text-center buttonNormalLine uk-margin-left">
+        <button type="button" ng-disabled="vm.selectedTest.length === 0"
+          class="md-fab md-fab-small md-bg-teal-100 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : vm.selectedTest.length === 0}" ng-click="vm.openmodalbarcode = true">
+          <i class="uk-icon-barcode md-color-grey-50"></i>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0211' | translate}}</span>
+      </div>
+
+      <!-- agregar y quitar pruebas -->
+      <div ng-if="vm.permissionuser.creatingItems" class="uk-text-center buttonNormalLine">
+        <button class="md-fab md-fab-small md-fab-wave-light waves-effect waves-light  md-bg-teal-200"
+          ng-click="vm.openmodaladdremovetest = true">
+          <i class="material-icons md-color-grey-50" title="{{'0654' | translate}}"
+            data-uk-tooltip="{pos:'top-left', delay: 1000}">&#xE145;</i>
+        </button>
+        <span class="uk-text-middle textbutton"> +/- pruebas</span>
+      </div>
+
+      <!-- retoma -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="vm.orderselect === undefined"
+          class="md-fab md-fab-small md-bg-teal-300 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : vm.orderselect === undefined}" ng-click="vm.openmodalpostponement = true">
+          <i class="material-icons md-color-grey-50">&#xE889;</i>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0209' | translate}}</span>
+      </div>
+
+
+      <!-- Comentario -->
+      <div class="uk-text-center buttonNormalLine uk-margin-left">
+        <button type="button" ng-disabled="!vm.commentButton"
+          class="md-fab md-fab-small md-bg-light-blue-A100 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : !vm.commentButton}" ng-click="vm.openresultcomment = true">
+          <i class="material-icons md-color-grey-50">&#xE0B9;</i>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0114' | translate}}</span>
+      </div>
+
+      <!-- Plantilla de resultados-->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="!vm.commentButton"
+          class="md-fab md-fab-small md-bg-light-blue-A200 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : !vm.commentButton}" ng-click="vm.openmodalresultstemplate = true">
+          <i class="material-icons md-color-grey-50" style="font-size: 28px;">&#xE86D;</i>
+          <span class="uk-text-middle textbutton md-color-grey-50" style="margin-top: 34px">[F4]</span>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0599' | translate}}</span>
+      </div>
+      <!-- Adjuntos -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="vm.selectedOrder===''"
+          class="md-fab md-fab-small md-bg-light-blue-A400 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : vm.selectedOrder===''}" ng-click="vm.openattachment = true">
+          <i class="material-icons md-color-grey-50">&#xE226;</i>
+        </button>
+        <span class="uk-text-middle textbutton"> {{'0376' | translate}}</span>
+      </div>
+
+      <!--realizar repeticion -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="!vm.repetitionButton"
+          class="md-fab md-fab-small md-bg-light-blue-A700 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : !vm.repetitionButton}" ng-click="vm.openresultrepetition = true">
+          <i class="material-icons md-color-grey-50">&#xE040;</i>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0594' | translate}} </span>
+      </div>
+
+      <!-- consulta de repeticiones -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="vm.selectedTest.length === 0"
+          class="md-fab md-fab-small md-bg-light-blue-700 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : vm.selectedTest.length === 0}" ng-click="vm.openmodalrepeat = true">
+          <i class="material-icons md-color-grey-50">format_indent_decrease</i>
+        </button>
+        <span class="uk-text-middle textbutton">Consulta de repeticiones</span>
+      </div>
+
+      <!-- trazabilidad -->
+      <div class="uk-text-center buttonNormalLine uk-margin-left">
+        <button type="button" ng-disabled="vm.selectedTest.length === 0"
+          class="md-fab md-fab-small md-bg-purple-A100 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : vm.selectedTest.length === 0}" ng-click="vm.trackingmicrobiologytask()">
+          <i class="material-icons md-color-grey-50">&#xE068;</i>
+        </button>
+        <span class="uk-text-middle textbutton">{{'0046' | translate}}</span>
+      </div>
+
+      <!-- Antibiograma -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="!vm.microbiologyButton"
+          class="md-fab md-fab-small md-bg-purple-A200 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : !vm.microbiologyButton}" ng-click="vm.openmodalsensitivities = true">
+          <img style="height: 25px;width: 25px;" ng-src="images/microbiology/antibiograma.png" />
+          <span class="uk-text-middle textbutton md-color-grey-50">[F3]</span>
+        </button>
+        <span class="uk-text-middle textbutton">Antibiograma</span>
+      </div>
+      <!-- medios de cultivo -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="!vm.microbiologytaskButton"
+          class="md-fab md-fab-small md-bg-purple-A400 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : !vm.microbiologytaskButton}"
+          ng-click="vm.openmediacultures = true;vm.type=1">
+          <img ng-src="images/microbiology/celLwhite.png" />
+        </button>
+        <span class="uk-text-middle textbutton">{{'0486'| translate}}</span>
+      </div>
+      <!-- procedimientos -->
+      <div class="uk-text-center buttonNormalLine" style="width: 52px">
+        <button style="margin-left: 4px" type="button" ng-disabled="!vm.microbiologytaskButton"
+          class="md-fab md-fab-small md-bg-purple-A700 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' : !vm.microbiologytaskButton}"
+          ng-click="vm.openmediacultures = true;vm.type=2">
+          <img ng-src="images/microbiology/test-tubewhite.png" />
+        </button>
+        <span class="uk-text-middle textbutton">{{'0487'| translate}}</span>
+      </div>
+      <!-- Seguimiento de microbiologia -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" ng-disabled="!vm.microbiologytaskButton"
+          class="md-fab md-fab-small md-bg-purple-300 md-fab-wave-light waves-effect waves-light"
+          ng-class="{'md-bg-blue-grey-100' :!vm.microbiologytaskButton}" ng-click="vm.openmicrobiology = true">
+          <img ng-src="images/microbiology/microscope-side-view.png" />
+        </button>
+        <span class="uk-text-middle textbutton">{{'0582'| translate}}</span>
+
+      </div>
+
+
+
+
+      <!-- Pre-validacion -->
+      <div class="uk-text-center buttonNormalLine uk-margin-left">
+        <button type="button"
+          class="md-fab md-fab-small md-bg-light-green-300 md-fab-wave-light waves-effect waves-light"
+          ng-disabled="!vm.previewButton" ng-class="{'md-bg-blue-grey-100' : !vm.previewButton}"
+          ng-click="vm.validateTestsPreview()">
+          <i class="material-icons md-color-brown-50">done</i>
+        </button>
+        <span class="uk-text-middle textbutton">Pre-validación</span>
+      </div>
+      <!-- Validacion -->
+      <div class="uk-text-center buttonNormalLine">
+        <button class="md-fab md-fab-small md-fab-wave-light waves-effect waves-light md-bg-light-green-400"
+          ng-click="vm.validateTestsWarnings(false)">
+          <i class="material-icons md-color-brown-50">&#xE877;</i>
+          <span class="uk-text-middle textbutton md-color-grey-50" style="margin-top: 32px">[F7]</span>
+        </button>
+        <span class="uk-text-middle textbutton">Validación</span>
+      </div>
+      <!-- Validacion y siguiente -->
+      <div class="uk-text-center buttonNormalLine">
+        <button class="md-fab md-fab-small md-fab-wave-light waves-effect waves-light md-bg-light-green-500"
+          ng-click="vm.validateTestsWarnings(true)">
+          <i class="material-icons md-color-brown-50">&#xE5DD;</i>
+        </button>
+        <span class="uk-text-middle textbutton">Validación y siguiente</span>
+      </div>
+      <!-- deshacer-validacion -->
+      <div class="uk-text-center buttonNormalLine" ng-if="vm.permissionuser.quitValidation">
+        <button type="button"
+          class="md-fab md-fab-small md-bg-light-green-600 md-fab-wave-light waves-effect waves-light"
+          ng-disabled="!vm.desvalidateButton" ng-class="{'md-bg-blue-grey-100' : !vm.desvalidateButton}"
+          ng-click="vm.desvalidateTests()">
+          <i class="material-icons md-color-brown-50">settings_backup_restore</i>
+        </button>
+        <span class="uk-text-middle textbutton">Desvalidar</span>
+      </div>
+
+
+      <!-- Historico -->
+      <div class="uk-text-center buttonNormalLine uk-margin-left">
+        <button type="button" class="md-fab md-fab-small md-bg-indigo-100 md-fab-wave-light waves-effect waves-light"
+          ng-click="vm.openresulthistory = true" ng-disabled="!vm.historyButton"
+          ng-class="{'md-bg-blue-grey-100' : !vm.historyButton}">
+          <i class="uk-icon-line-chart md-color-brown-50"></i>
+        </button>
+        <span class="uk-text-middle textbutton">Historico </span>
+      </div>
+      <!-- Preliminar -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" class="md-fab md-fab-small md-bg-indigo-200 md-fab-wave-light waves-effect waves-light"
+          ng-click="vm.openreportpreliminary = true">
+          <i class="uk-icon-file-pdf-o md-color-brown-50"></i>
+        </button>
+        <span class="uk-text-middle textbutton">Preliminar</span>
+      </div>
+      <!-- Imprimir -->
+      <div class="uk-text-center buttonNormalLine">
+        <button type="button" class="md-fab md-fab-small md-bg-indigo-300 md-fab-wave-light waves-effect waves-light"
+          ng-click="vm.openreportfinal = true">
+          <i class="uk-icon-print md-color-brown-50"></i>
+          <span class="uk-text-middle textbutton md-color-grey-50" style="margin-top: 35px">[F8]</span>
+        </button>
+        <span class="uk-text-middle textbutton">Imprimir</span>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- Ventana modal para la edicion de la entrevista -->
+<div class="uk-modal uk-modal-card-fullscreen" id="modal_fullcommentinterview">
+  <div class="uk-modal-dialog uk-modal-dialog-blank">
+    <div class="md-card uk-height-viewport">
+      <div class="md-card-toolbar md-bg-blue-700">
+        <div class="md-card-toolbar-actions">
+        </div>
+        <span style="float: left; margin: 8px 8px 0 0; display: block;"
+          class="md-icon material-icons md-color-blue-50 uk-modal-close" data-uk-tooltip="{pos:'top'}"
+          title="{{'0329'| translate}}">&#xE5C4;</span>
+        <h3 class="md-card-toolbar-heading-text md-color-blue-50">
+          {{'0466'| translate}}
+        </h3>
+      </div>
+      <div class="md-card-content">
+        <div class="uk-grid">
+          <div class="uk-width-1-3">
+            <patient order="vm.orderselect"></patient>
+          </div>
+          <div class="uk-width-1-3">
+            <patient order="vm.orderselect"></patient>
+          </div>
+          <div class="uk-width-1-3">
+            <interview order="vm.selectedTest.order" openmodal="vm.openinterview"></interview>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ventana modal para el filtro de pruebas y reportar -->
+<div id="modaltestreport" class="uk-modal" bg-close="false" aria-hidden="true">
+  <div class="uk-modal-dialog">
+    <div class="uk-modal-header">
+      <h3 class="uk-modal-title">
+        <i style="padding-top: 5px; padding-right: 5px" class="material-icons">&#xE152;</i>Filtrar ordenes por
+      </h3>
+    </div>
+
+    <div style="z-index: 9999">
+      <div class="uk-grid">
+        <div class="uk-width-1-1">
+
+          <div class="uk-input-group " style="width: 100%">
+            <span class="uk-input-group-addon" style="font-size: 21px;">
+              <img class="md-list-addon-icon material-icons" ng-src="images/microbiology/test.png" />
+            </span>
+            <label class="labels-selectize">{{'0459' | translate}}</label>
+
+            <ui-select ng-model="vm.testselected" theme="select2" style="width: 100%">
+              <ui-select-match>{{$select.selected.code}} - {{$select.selected.name}}</ui-select-match>
+              <ui-select-choices repeat="item in vm.listTestMicrobiology  | filter: $select.search">
+                <span ng-bind-html="item.code | highlight: $select.search"></span>
+                <span ng-bind-html="item.name | highlight: $select.search"></span>
+              </ui-select-choices>
+            </ui-select>
+          </div>
+        </div>
+
+        <div class="uk-width-1-1">
+          <div class="uk-input-group uk-overflow-container">
+            <span class="uk-input-group-addon" style="font-size: 21px;">
+              <img class="md-list-addon-icon material-icons" ng-src="images/microbiology/report.png" />
+            </span>
+            <label class="labels-selectize">{{'0593' | translate}}</label>
+
+            <ui-select ng-model="vm.report" theme="select2" style="width: 100%">
+              <ui-select-match>{{$select.selected.name}}</ui-select-match>
+              <ui-select-choices repeat="item in vm.reportfilter | filter: $select.search">
+                <span ng-bind-html="item.name | highlight: $select.search"></span>
+              </ui-select-choices>
+            </ui-select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uk-modal-footer uk-text-right">
+      <button type="button"
+        class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light uk-modal-close"
+        ng-disabled="!vm.isOpenReport" ng-class="{'md-bg-blue-grey-100':!vm.isOpenReport}"
+        ng-click="vm.getIndicatorOrderCount()">{{'0246' | translate}}</button>
+
+    </div>
+  </div>
+</div>
+
+<!-- ventana modal para confirmacion del reinicio de tareas -->
+<div id="modalrestarttask" class="uk-modal" bg-close="false" aria-hidden="true">
+  <div class="uk-modal-dialog ">
+    <div class="uk-overflow-container" style="margin-top: 0px">
+      <div style="width: 15%; float: left">
+        <img class="img-responsive" src="images/QuestionRed.png">
+      </div>
+      <div style="margin-top: 10px">
+        {{vm.messagerestartTask}}
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button type="button"
+        class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light uk-modal-close md-bg-red-500"
+        ng-click="vm.restartTask()">{{'0246' | translate}}</button>
+      <button class="md-btn md-btn-wave waves-effect waves-button uk-modal-close" type="button">{{'0008' |
+        translate}}</button>
+    </div>
+  </div>
+</div>
+
+<!-- ventana modal comentario de microbiologia -->
+<div class="uk-modal uk-modal-card-fullscreen" id="modal_fullcomment">
+  <div class="uk-modal-dialog uk-modal-dialog-blank">
+    <div class="md-card uk-height-viewport">
+      <div class="md-card-toolbar md-bg-blue-700">
+
+        <span style="float: left; margin: 8px 8px 0 0; display: block;"
+          class="md-icon material-icons md-color-blue-50 uk-modal-close"
+          ng-click=" vm.enablecomment=false;vm.commentMicrobiology=''" data-uk-tooltip="{pos:'top'}"
+          title="{{'0329'| translate}}">&#xE5C4;</span>
+        <h3 class="md-card-toolbar-heading-text md-color-blue-50">
+          {{'0466'| translate}}
+        </h3>
+      </div>
+      <div class="md-card-content">
+        <div class="uk-grid uk-grid-width-1-2 uk-grid-medium uk-container-center" id="notes_grid"
+          style="margin-top: 4px">
+          <div ng-repeat="note in vm.notes | orderBy:'time':!sortReverse">
+            <div class="md-card {{note.color}}">
+              <div class="md-card-content" style="margin-top: 10px; margin-bottom: 10px;">
+                <p ng-bind-html="note.content | trust"></p>
+                <ul class="uk-list">
+                  <li class="uk-margin-small-top" ng-repeat="checkbox in note.checklist">
+                    <input type="checkbox" id="checkbox_{{$parent.$index}}_{{$index}}" icheck
+                      ng-model="checkbox.checked" ng-disabled="true" />
+                    <label for="checkbox_{{$parent.$index}}_{{$index}}" class="inline-label">{{ checkbox.title
+                      }}</label>
+                  </li>
+                </ul>
+                <span class="uk-margin-top uk-text-italic uk-text-muted uk-display-block uk-text-small">{{ note.time |
+                  date: vm.formatDate }}
+                  - {{note.user}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modaldeleteresult" aria-hidden="true" class="uk-modal"
+  style="display: none; overflow-y: scroll; min-height: 300px">
+  <div class="uk-modal-dialog">
+    <div class="uk-overflow-container" style="margin-top: 0px">
+      <div style="float: left;">
+        <img class="img-responsive" src="images/Question.png">
+      </div>
+      <div class="uk-grid" style="margin-top: 20px">
+        <div class="uk-width-1-1">
+          <h5>¿Esta seguro de borrar el resultado?</h5>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button ng-if="vm.reasonResultEdit === false" class="md-btn md-btn-primary uk-modal-close" type="button"
+        ng-click="vm.deletedResult()">{{ '0219' | translate }}</button>
+      <button ng-if="vm.reasonResultEdit === true" class="md-btn md-btn-primary uk-modal-close" type="button"
+        ng-click="vm.openresultedit = true">{{ '0219' | translate }}</button>
+      <button class="md-btn md-btn-default uk-modal-close" type="button" ng-click="vm.canceleditresult()">{{ '0220' |
+        translate }}</button>
+    </div>
+  </div>
+</div>
+
+<div class="uk-modal" id="modalReportError" tabindex="1" aria-hidden="false">
+  <div class="uk-modal-dialog">
+    <button type="button" class="uk-modal-close uk-close"></button>
+    <div class="uk-modal-body" style="height: 100px; top: 0px">
+      <div style="width: 20%; float: left">
+        <img class="img-responsive" src="images/iconinfo.png">
+      </div>
+      <div class="messageText">
+        <label style="margin-top: 20px; margin-left: 5px">{{'0152' | translate}}</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal: Desbloqueo de prueba -->
+<div class="uk-modal" id="unblocked_modal">
+  <div class="uk-modal-dialog" style="width: 600px;">
+    <div class="uk-modal-header md-bg-red-500 md-color-blue-50">
+      {{vm.currentTest.testName}}
+    </div>
+    <div class="md-card">
+      <div class="md-card-content">
+        <ul class="md-list md-list-addon">
+          <li class="patient-demo-item">
+            <div class="md-list-addon-element patient-addon-element">
+              <img class="md-list-addon-icon material-icons md-22" ng-src="images/patient/age.png" />
+            </div>
+            <div class="md-list-content patient-list-content">
+              <span class="uk-text-small uk-text-muted patient-list-content">{{'0325' | translate}}</span>
+              <span class="md-list-heading" ng-class="{'md-color-grey-50' : vm.currentTest.block.date===undefined}">
+                {{vm.currentTest.block.date===undefined ? '.': vm.currentTest.block.dateFormatted}}
+              </span>
+            </div>
+          </li>
+          <li class="patient-demo-item">
+            <div class="md-list-addon-element patient-addon-element">
+              <img class="md-list-addon-icon material-icons md-22" ng-src="images/user.png" />
+            </div>
+            <div class="md-list-content patient-list-content">
+              <span class="uk-text-small uk-text-muted patient-list-content">{{'0001' | translate}}</span>
+              <span class="md-list-heading"
+                ng-class="{'md-color-grey-50' : vm.currentTest.block.user.userName===undefined}">
+                {{vm.currentTest.block.user.userName===undefined ? '.': vm.currentTest.block.user.userName}}
+              </span>
+            </div>
+          </li>
+          <li class="patient-demo-item">
+            <div class="md-list-addon-element patient-addon-element">
+              <img class="md-list-addon-icon material-icons md-22" ng-src="images/patient/history.png" />
+            </div>
+            <div class="md-list-content patient-list-content">
+              <span class="uk-text-small uk-text-muted patient-list-content">{{'0118' | translate}}</span>
+              <span class="md-list-heading"
+                ng-class="{'md-color-grey-50' : vm.currentTest.block.user.userName===undefined}">
+                {{vm.currentTest.block.user.userName===undefined ? '.': vm.currentTest.block.user.name + ' ' +
+                vm.currentTest.block.user.lastName }}
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <a href="#" data-uk-modal="{ center:true, bgclose:false }">
+        <button type="button" class="md-btn md-btn-flat uk-modal-close md-btn-danger" ng-click="vm.saveunblocktest();"
+          ng-disabled="!vm.enabledunblockedtest" ng-class="{'md-bg-blue-grey-100' : !vm.enabledunblockedtest}">{{ '0696'
+          | translate }}</button>
+      </a>
+      <a href="#" data-uk-modal="{ center:true, bgclose:false }">
+        <button type="button" class="md-btn md-btn-flat uk-modal-close">{{ '0008' | translate }}</button>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="modaleditresult" aria-hidden="true" class="uk-modal"
+  style="display: none; overflow-y: scroll; min-height: 300px">
+  <div class="uk-modal-dialog">
+    <div class="uk-overflow-container" style="margin-top: 0px">
+      <div style="float: left;">
+        <img class="img-responsive" src="images/Question.png">
+      </div>
+      <div class="uk-grid" style="margin-top: 20px">
+        <div class="uk-width-1-1">
+          <h5>¿Esta seguro de modificar el resultado?</h5>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button ng-if="vm.reasonResultEdit === false" class="md-btn md-btn-primary uk-modal-close" type="button"
+        ng-click="vm.editResult()">{{ '0219' | translate }}</button>
+      <button ng-if="vm.reasonResultEdit === true" class="md-btn md-btn-primary uk-modal-close" type="button"
+        ng-click="vm.openresultedit = true">{{ '0219' | translate }}</button>
+      <button class="md-btn md-btn-default uk-modal-close" type="button"
+        ng-click="vm.testedit.result = vm.testedit.resultedit">{{ '0220' | translate }}</button>
+    </div>
+  </div>
+</div>
+
+
+<modalexceptions openmodal="vm.ShowPopupError" detailerror="vm.Error"></modalexceptions>
+
+<!-- Modal: directiva para visualizar la información de la prueba vm.currentTest.microbiologyGrowth.sample.id-->
+<modalinformation openmodal="vm.openinformation" order="vm.currentTest.order" sample="1" idtest=" vm.currentTest.testId"
+  testcode=" vm.currentTest.testCode" testname=" vm.currentTest.testName" patientinformation="vm.patient"
+  photopatient="vm.photopatient"></modalinformation>
+
+<!-- Modal: directiva para los la gráfica de tendencia -->
+<resultstestgraph openmodal="vm.opentendency" currenttest="vm.selectedTestgraph"></resultstestgraph>
+<resultstestedit openmodal="vm.openresultedit" order="vm.selectedOrder.order" idtest="vm.selectedTest[0].testId"
+  testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName" patientinformation="vm.patient"
+  photopatient="vm.photopatient" functionexecute="vm.editResult" functioncancel="vm.canceleditresult"
+  motive="vm.motiveEditResult" comment="vm.reasonCommentEditResult"></resultstestedit>
+
+<modalsensitivities openmodal="vm.openmodalsensitivities" prevalidationuser="" prevalidationdate=""
+  order="vm.orderselect" prevalidationuser="" prevalidationdate="" testid="vm.selectedTest[0].testId"
+  testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName"
+  sampleid="vm.selectedTest[0].microbiologyGrowth.sample.id" patientinformation="vm.patient"
+  photopatient="vm.photopatient" functionexecute="vm.reloadgridresult"></modalsensitivities>
+
+<modaltask openmodal="vm.openmediacultures" order="vm.orderselect" test="vm.selectedTest[0].testId"
+  testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName" typetaask="vm.type"
+  functionexecute="vm.reloadgridresult" patientinformation="vm.patient" photopatient="vm.photopatient"></modaltask>
+<modaltaskmicrobiology openmodal="vm.openmicrobiology" order="vm.orderselect" sample="vm.selectedTest[0].sampleCode"
+  idtest="vm.selectedTest[0].testId" functionexecute="vm.reloadgridresult" patientinformation="vm.patient"
+  photopatient="vm.photopatient" notes="vm.notes"></modaltaskmicrobiology>
+
+<modalpostponement openmodal="vm.openmodalpostponement" order="vm.orderselect" idtest="vm.selectedTest[0].testId"
+  testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName" patientinformation="vm.patient"
+  photopatient="vm.photopatient" dataordesample="vm.datapostponement" functionexecute="vm.postponement"
+  listtestsample="vm.listtest" patientinformation="vm.patient" photopatient="vm.photopatient">
+</modalpostponement>
+
+<resultstestrepetition openmodal="vm.openresultrepetition" order="vm.orderselect" idtest="vm.selectedTest[0].testId"
+  testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName" patientinformation="vm.patient"
+  photopatient="vm.photopatient" functionexecute="vm.saverepeattest" motive="vm.motiveRepeat"
+  comment="vm.reasonComment"></resultstestrepetition>
+
+<attachment openmodal="vm.openattachment" order="vm.orderselect" idtest="vm.selectedTest[0].testId"
+  testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName" teststate="vm.selectedTest[0].state"
+  patientinformation="vm.patient" photopatient="vm.photopatient" functionexecute="vm.reloadgridresult">
+</attachment>
+<modalbarcode openmodal="vm.openmodalbarcode" order="vm.orderselect" sample=" vm.selectedTest[0].sampleId">
+</modalbarcode>
+<modalrepeat openmodal="vm.openmodalrepeat" order="vm.orderselect" test="vm.selectedTest[0].testId"
+  typeordercolor="vm.patient.typeordercolor" typeordercode="vm.patient.typeordercode" patientinformation="vm.patient"
+  photopatient="vm.photopatient" notes="vm.commentOrder"></modalrepeat>
+
+<modalresultstemplate openmodal="vm.openmodalresultstemplate" order="vm.orderselect" notes="vm.commentOrder"
+  test="vm.selectedTest[0].testId" patientinformation="vm.patient" photopatient="vm.photopatient"
+  functionexecute="vm.reloadgridresult"></modalresultstemplate>
+
+<resultstestcomment openmodal="vm.openresultcomment" patientinformation="vm.patient" photopatient="vm.photopatient"
+  order="vm.orderselect" testcode="vm.selectedTest[0].testCode" testname="vm.selectedTest[0].testName"
+  commentresult="vm.selectedTest[0].resultComment.comment" commentpatology="vm.selectedTest[0].resultComment.pathology2"
+  functionexecute="vm.savecommenttest">
+</resultstestcomment>
+
+
+<resultsorderinconsistency openmodal="vm.openorderinconsistency" patientinformation="vm.patient"
+  photopatient="vm.photopatient" order="vm.orderselect" testcode="vm.selectedTest[0].testCode">
+</resultsorderinconsistency>
+<modaladdremovetest openmodal="vm.openmodaladdremovetest" order="vm.orderselect" test="vm.selectedTest"
+  patientinformation="vm.patient" validpatientest="vm.patientDateValues" photopatient="vm.photopatient"
+  notes="vm.commentOrder" getaddtests="vm.addTests" functionexecute="vm.reloadgridresult"></modaladdremovetest>
+
+<resultstesthistory openmodal="vm.openresulthistory" tests="vm.selectedTest" patientid="vm.patient.id"
+  photopatient="vm.photopatient" patientname="vm.patient.name"></resultstesthistory>
+<!-- Modal: alertas por validacion con resultados en panico-->
+<resultswarnings openmodal="vm.openalarmvalidate" currentwarnings="vm.alarms" questions="vm.panicQuestions"
+  panictest="vm.panicTest" functionexecute="vm.validateTests"></resultswarnings>
+<resultstestblock openmodal="vm.opentestblock" order="vm.orderselect" idtest="vm.currentTest.testId"
+  testcode="vm.currentTest.testCode" testname="vm.currentTest.testName" patientinformation="vm.patient"
+  photopatient="vm.photopatient" functionexecute="vm.saveblocktest" motive="vm.motiveBlock"
+  comment="vm.motiveBlockComment">
+</resultstestblock>
+
+<!-- Modal: Directiva para imprimir directamente -->
+<reportend openreport="vm.openreportfinal" order="vm.orderselect" functionexecute="vm.reloadgridresult">
+</reportend>
+
+<!--Modal para impresion de reporte preliminar de una orden -->
+<resultreportpreliminary openreport="vm.openreportpreliminary" order="vm.orderselect" tests="vm.listtest">
+</resultreportpreliminary>
+
+<!-- common functions -->
+<script src="assets/js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="assets/js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="assets/js/altair_admin_common.js"></script>

@@ -1,0 +1,2200 @@
+{
+  "ReportVersion": "2020.1.1.0",
+  "ReportGuid": "84ecab9bf46343469bc1192b18aa9da6",
+  "ReportName": "Report",
+  "ReportAlias": "Areas",
+  "ReportAuthor": "Stimulsoft",
+  "ReportDescription": "This sample demonstrates how to create a simple list report.",
+  "ReportCreated": "/Date(1085090340000+0000)/",
+  "ReportChanged": "/Date(1437248952000+0000)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Report : Stimulsoft.Report.StiReport\r\n    {\r\n        public Report()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Name": "Title1",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": ";19;;",
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:193,152,89",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "1": {
+      "Ident": "StiStyle",
+      "Name": "Title2",
+      "VertAlignment": "Center",
+      "Font": ";9;;",
+      "Border": ";102,77,38;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:102,77,38",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "2": {
+      "Ident": "StiStyle",
+      "Name": "Header1",
+      "VertAlignment": "Center",
+      "Font": ";19;;",
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:193,152,89",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "3": {
+      "Ident": "StiStyle",
+      "Name": "Header2",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": ";12;Bold;",
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:193,152,89",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "4": {
+      "Ident": "StiStyle",
+      "Name": "Header3",
+      "HorAlignment": "Center",
+      "VertAlignment": "Center",
+      "Font": ";9;Bold;",
+      "Border": "All;193,152,89;;;;;;solid:Black",
+      "Brush": "solid:242,234,221",
+      "TextBrush": "solid:193,152,89",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "5": {
+      "Ident": "StiStyle",
+      "Name": "Data1",
+      "VertAlignment": "Center",
+      "Font": ";9;;",
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:102,77,38",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "6": {
+      "Ident": "StiStyle",
+      "Name": "Data2",
+      "Font": ";9;;",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "solid:240,237,232",
+      "TextBrush": "solid:Black",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseFont": false,
+      "AllowUseBorderFormatting": false,
+      "AllowUseBorderSides": false,
+      "AllowUseTextBrush": false
+    },
+    "7": {
+      "Ident": "StiStyle",
+      "Name": "Data3",
+      "VertAlignment": "Center",
+      "Font": ";9;;",
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:240,237,232",
+      "TextBrush": "solid:102,77,38",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "8": {
+      "Ident": "StiStyle",
+      "Name": "Footer1",
+      "VertAlignment": "Center",
+      "Font": ";9;;",
+      "Border": "Top;193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:102,77,38",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    },
+    "9": {
+      "Ident": "StiStyle",
+      "Name": "Footer2",
+      "HorAlignment": "Right",
+      "VertAlignment": "Center",
+      "Font": ";12;Bold;",
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "TextBrush": "solid:193,152,89",
+      "NegativeTextBrush": "solid:Red",
+      "AllowUseBorderSides": false
+    }
+  },
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Dictionary": {
+    "Resources": {
+      "0": {
+        "Name": "worklist",
+        "Alias": "worklist",
+        "Type": "Json",
+        "Image": "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"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "Variables",
+        "Alias": "Variables",
+        "Key": "f80fc8dd1d244f71b10721ac5c6284f3",
+        "Columns": {
+          "0": {
+            "Name": "ACCOUNT",
+            "Index": -1,
+            "NameInSource": "ACCOUNT",
+            "Alias": "ACCOUNT",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "RANGE_INI",
+            "Index": -1,
+            "NameInSource": "RANGE_INI",
+            "Alias": "RANGE_INI",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "RANGE_END",
+            "Index": -1,
+            "NameInSource": "RANGE_END",
+            "Alias": "RANGE_END",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "TODAY",
+            "Index": -1,
+            "NameInSource": "TODAY",
+            "Alias": "TODAY",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "SHEET",
+            "Index": -1,
+            "NameInSource": "SHEET",
+            "Alias": "SHEET",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "ORDERTYPE",
+            "Index": -1,
+            "NameInSource": "ORDERTYPE",
+            "Alias": "ORDERTYPE",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "USERNAME",
+            "Index": -1,
+            "NameInSource": "USERNAME",
+            "Alias": "USERNAME",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.Variables"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "data",
+        "Alias": "data",
+        "Key": "2f6d9aacfe8145b8a8dfb9ef552693d1",
+        "Columns": {
+          "0": {
+            "Name": "group",
+            "Index": -1,
+            "NameInSource": "group",
+            "Alias": "group",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "orderNumber",
+            "Index": -1,
+            "NameInSource": "orderNumber",
+            "Alias": "orderNumber",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "createdDateShort",
+            "Index": -1,
+            "NameInSource": "createdDateShort",
+            "Alias": "createdDateShort",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "codeType",
+            "Index": -1,
+            "NameInSource": "codeType",
+            "Alias": "codeType",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "nameType",
+            "Index": -1,
+            "NameInSource": "nameType",
+            "Alias": "nameType",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "createdDate",
+            "Index": -1,
+            "NameInSource": "createdDate",
+            "Alias": "createdDate",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "patientId",
+            "Index": -1,
+            "NameInSource": "patientId",
+            "Alias": "patientId",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "name1",
+            "Index": -1,
+            "NameInSource": "name1",
+            "Alias": "name1",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "name2",
+            "Index": -1,
+            "NameInSource": "name2",
+            "Alias": "name2",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "lastName",
+            "Index": -1,
+            "NameInSource": "lastName",
+            "Alias": "lastName",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "surName",
+            "Index": -1,
+            "NameInSource": "surName",
+            "Alias": "surName",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "sex",
+            "Index": -1,
+            "NameInSource": "sex",
+            "Alias": "sex",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "birthday",
+            "Index": -1,
+            "NameInSource": "birthday",
+            "Alias": "birthday",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "years",
+            "Index": -1,
+            "NameInSource": "years",
+            "Alias": "years",
+            "Type": "System.String"
+          },
+          "14": {
+            "Name": "email",
+            "Index": -1,
+            "NameInSource": "email",
+            "Alias": "email",
+            "Type": "System.String"
+          },
+          "15": {
+            "Name": "address",
+            "Index": -1,
+            "NameInSource": "address",
+            "Alias": "address",
+            "Type": "System.String"
+          },
+          "16": {
+            "Name": "phone",
+            "Index": -1,
+            "NameInSource": "phone",
+            "Alias": "phone",
+            "Type": "System.String"
+          },
+          "17": {
+            "Name": "size",
+            "Index": -1,
+            "NameInSource": "size",
+            "Alias": "size",
+            "Type": "System.Decimal"
+          },
+          "18": {
+            "Name": "weight",
+            "Index": -1,
+            "NameInSource": "weight",
+            "Alias": "weight",
+            "Type": "System.Decimal"
+          },
+          "19": {
+            "Name": "abbrDoc",
+            "Index": -1,
+            "NameInSource": "abbrDoc",
+            "Alias": "abbrDoc",
+            "Type": "System.String"
+          },
+          "20": {
+            "Name": "nameDoc",
+            "Index": -1,
+            "NameInSource": "nameDoc",
+            "Alias": "nameDoc",
+            "Type": "System.String"
+          },
+          "21": {
+            "Name": "miles",
+            "Index": -1,
+            "NameInSource": "miles",
+            "Alias": "miles",
+            "Type": "System.Decimal"
+          },
+          "22": {
+            "Name": "active",
+            "Index": -1,
+            "NameInSource": "active",
+            "Alias": "active",
+            "Type": "System.Boolean"
+          },
+          "23": {
+            "Name": "codeTest",
+            "Index": -1,
+            "NameInSource": "codeTest",
+            "Alias": "codeTest",
+            "Type": "System.String"
+          },
+          "24": {
+            "Name": "abbrTest",
+            "Index": -1,
+            "NameInSource": "abbrTest",
+            "Alias": "abbrTest",
+            "Type": "System.String"
+          },
+          "25": {
+            "Name": "nameTest",
+            "Index": -1,
+            "NameInSource": "nameTest",
+            "Alias": "nameTest",
+            "Type": "System.String"
+          },
+          "26": {
+            "Name": "confidential",
+            "Index": -1,
+            "NameInSource": "confidential",
+            "Alias": "confidential",
+            "Type": "System.Boolean"
+          },
+          "27": {
+            "Name": "abbr0",
+            "Index": -1,
+            "NameInSource": "abbr0",
+            "Alias": "abbr0",
+            "Type": "System.String"
+          },
+          "28": {
+            "Name": "abbr1",
+            "Index": -1,
+            "NameInSource": "abbr1",
+            "Alias": "abbr1",
+            "Type": "System.String"
+          },
+          "29": {
+            "Name": "abbr2",
+            "Index": -1,
+            "NameInSource": "abbr2",
+            "Alias": "abbr2",
+            "Type": "System.String"
+          },
+          "30": {
+            "Name": "abbr3",
+            "Index": -1,
+            "NameInSource": "abbr3",
+            "Alias": "abbr3",
+            "Type": "System.String"
+          },
+          "31": {
+            "Name": "abbr4",
+            "Index": -1,
+            "NameInSource": "abbr4",
+            "Alias": "abbr4",
+            "Type": "System.String"
+          },
+          "32": {
+            "Name": "abbr5",
+            "Index": -1,
+            "NameInSource": "abbr5",
+            "Alias": "abbr5",
+            "Type": "System.String"
+          },
+          "33": {
+            "Name": "abbr6",
+            "Index": -1,
+            "NameInSource": "abbr6",
+            "Alias": "abbr6",
+            "Type": "System.String"
+          },
+          "34": {
+            "Name": "abbr7",
+            "Index": -1,
+            "NameInSource": "abbr7",
+            "Alias": "abbr7",
+            "Type": "System.String"
+          },
+          "35": {
+            "Name": "abbr8",
+            "Index": -1,
+            "NameInSource": "abbr8",
+            "Alias": "abbr8",
+            "Type": "System.String"
+          },
+          "36": {
+            "Name": "abbr9",
+            "Index": -1,
+            "NameInSource": "abbr9",
+            "Alias": "abbr9",
+            "Type": "System.String"
+          },
+          "37": {
+            "Name": "abbr10",
+            "Index": -1,
+            "NameInSource": "abbr10",
+            "Alias": "abbr10",
+            "Type": "System.String"
+          },
+          "38": {
+            "Name": "abbr11",
+            "Index": -1,
+            "NameInSource": "abbr11",
+            "Alias": "abbr11",
+            "Type": "System.String"
+          },
+          "39": {
+            "Name": "abbr12",
+            "Index": -1,
+            "NameInSource": "abbr12",
+            "Alias": "abbr12",
+            "Type": "System.String"
+          },
+          "40": {
+            "Name": "abbr13",
+            "Index": -1,
+            "NameInSource": "abbr13",
+            "Alias": "abbr13",
+            "Type": "System.String"
+          },
+          "41": {
+            "Name": "testOrder0",
+            "Index": -1,
+            "NameInSource": "testOrder0",
+            "Alias": "testOrder0",
+            "Type": "System.String"
+          },
+          "42": {
+            "Name": "testOrder1",
+            "Index": -1,
+            "NameInSource": "testOrder1",
+            "Alias": "testOrder1",
+            "Type": "System.String"
+          },
+          "43": {
+            "Name": "testOrder2",
+            "Index": -1,
+            "NameInSource": "testOrder2",
+            "Alias": "testOrder2",
+            "Type": "System.String"
+          },
+          "44": {
+            "Name": "testOrder3",
+            "Index": -1,
+            "NameInSource": "testOrder3",
+            "Alias": "testOrder3",
+            "Type": "System.String"
+          },
+          "45": {
+            "Name": "testOrder4",
+            "Index": -1,
+            "NameInSource": "testOrder4",
+            "Alias": "testOrder4",
+            "Type": "System.String"
+          },
+          "46": {
+            "Name": "testOrder5",
+            "Index": -1,
+            "NameInSource": "testOrder5",
+            "Alias": "testOrder5",
+            "Type": "System.String"
+          },
+          "47": {
+            "Name": "testOrder6",
+            "Index": -1,
+            "NameInSource": "testOrder6",
+            "Alias": "testOrder6",
+            "Type": "System.String"
+          },
+          "48": {
+            "Name": "testOrder7",
+            "Index": -1,
+            "NameInSource": "testOrder7",
+            "Alias": "testOrder7",
+            "Type": "System.String"
+          },
+          "49": {
+            "Name": "testOrder8",
+            "Index": -1,
+            "NameInSource": "testOrder8",
+            "Alias": "testOrder8",
+            "Type": "System.String"
+          },
+          "50": {
+            "Name": "testOrder9",
+            "Index": -1,
+            "NameInSource": "testOrder9",
+            "Alias": "testOrder9",
+            "Type": "System.String"
+          },
+          "51": {
+            "Name": "testOrder10",
+            "Index": -1,
+            "NameInSource": "testOrder10",
+            "Alias": "testOrder10",
+            "Type": "System.String"
+          },
+          "52": {
+            "Name": "testOrder11",
+            "Index": -1,
+            "NameInSource": "testOrder11",
+            "Alias": "testOrder11",
+            "Type": "System.String"
+          },
+          "53": {
+            "Name": "testOrder12",
+            "Index": -1,
+            "NameInSource": "testOrder12",
+            "Alias": "testOrder12",
+            "Type": "System.String"
+          },
+          "54": {
+            "Name": "testOrder13",
+            "Index": -1,
+            "NameInSource": "testOrder13",
+            "Alias": "testOrder13",
+            "Type": "System.String"
+          },
+          "55": {
+            "Name": "testOrder",
+            "Index": -1,
+            "NameInSource": "testOrder",
+            "Alias": "testOrder",
+            "Type": "System.String"
+          },
+          "56": {
+            "Name": "branch",
+            "Index": -1,
+            "NameInSource": "branch",
+            "Alias": "branch",
+            "Type": "System.String"
+          },
+          "57": {
+            "Name": "service",
+            "Index": -1,
+            "NameInSource": "service",
+            "Alias": "service",
+            "Type": "System.String"
+          },
+          "58": {
+            "Name": "physician",
+            "Index": -1,
+            "NameInSource": "physician",
+            "Alias": "physician",
+            "Type": "System.String"
+          },
+          "59": {
+            "Name": "account",
+            "Index": -1,
+            "NameInSource": "account",
+            "Alias": "account",
+            "Type": "System.String"
+          },
+          "60": {
+            "Name": "rate",
+            "Index": -1,
+            "NameInSource": "rate",
+            "Alias": "rate",
+            "Type": "System.String"
+          },
+          "61": {
+            "Name": "demo_1_name",
+            "Index": -1,
+            "NameInSource": "demo_1_name",
+            "Alias": "demo_1_name",
+            "Type": "System.String"
+          },
+          "62": {
+            "Name": "demo_1_value",
+            "Index": -1,
+            "NameInSource": "demo_1_value",
+            "Alias": "demo_1_value",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.data"
+      },
+      "2": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_branch",
+        "Alias": "data_branch",
+        "Key": "7c055e3a4bdd448199cce8c84138b413",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "code",
+            "Index": -1,
+            "NameInSource": "code",
+            "Alias": "code",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.data_branch"
+      },
+      "3": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_rate",
+        "Alias": "data_rate",
+        "Key": "9c577333cc274a369c76948130786407",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.data_rate"
+      },
+      "4": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_account",
+        "Alias": "data_account",
+        "Key": "38fadac097ae4c73bcb6f28c883c80a6",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.data_account"
+      },
+      "5": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_physician",
+        "Alias": "data_physician",
+        "Key": "bfb35c2ff3254cdca3abfb655483311c",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.data_physician"
+      },
+      "6": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_service",
+        "Alias": "data_service",
+        "Key": "1563620e1cf6444aadafd1be5d8b446f",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "code",
+            "Index": -1,
+            "NameInSource": "code",
+            "Alias": "code",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.data_service"
+      },
+      "7": {
+        "Ident": "StiDataTableSource",
+        "Name": "Labels",
+        "Alias": "Labels",
+        "Key": "6f1687d583614fd38e5844c1c847c5b6",
+        "Columns": {
+          "0": {
+            "Name": "0094",
+            "Index": -1,
+            "NameInSource": "0094",
+            "Alias": "0094",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "0095",
+            "Index": -1,
+            "NameInSource": "0095",
+            "Alias": "0095",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "0110",
+            "Index": -1,
+            "NameInSource": "0110",
+            "Alias": "0110",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "0117",
+            "Index": -1,
+            "NameInSource": "0117",
+            "Alias": "0117",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "0118",
+            "Index": -1,
+            "NameInSource": "0118",
+            "Alias": "0118",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "0013",
+            "Index": -1,
+            "NameInSource": "0013",
+            "Alias": "0013",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "0079",
+            "Index": -1,
+            "NameInSource": "0079",
+            "Alias": "0079",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "0120",
+            "Index": -1,
+            "NameInSource": "0120",
+            "Alias": "0120",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "0102",
+            "Index": -1,
+            "NameInSource": "0102",
+            "Alias": "0102",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "0103",
+            "Index": -1,
+            "NameInSource": "0103",
+            "Alias": "0103",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "0124",
+            "Index": -1,
+            "NameInSource": "0124",
+            "Alias": "0124",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "0125",
+            "Index": -1,
+            "NameInSource": "0125",
+            "Alias": "0125",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "0126",
+            "Index": -1,
+            "NameInSource": "0126",
+            "Alias": "0126",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "0127",
+            "Index": -1,
+            "NameInSource": "0127",
+            "Alias": "0127",
+            "Type": "System.String"
+          },
+          "14": {
+            "Name": "0128",
+            "Index": -1,
+            "NameInSource": "0128",
+            "Alias": "0128",
+            "Type": "System.String"
+          },
+          "15": {
+            "Name": "0129",
+            "Index": -1,
+            "NameInSource": "0129",
+            "Alias": "0129",
+            "Type": "System.String"
+          },
+          "16": {
+            "Name": "0157",
+            "Index": -1,
+            "NameInSource": "0157",
+            "Alias": "0157",
+            "Type": "System.String"
+          },
+          "17": {
+            "Name": "0185",
+            "Index": -1,
+            "NameInSource": "0185",
+            "Alias": "0185",
+            "Type": "System.String"
+          },
+          "18": {
+            "Name": "0186",
+            "Index": -1,
+            "NameInSource": "0186",
+            "Alias": "0186",
+            "Type": "System.String"
+          },
+          "19": {
+            "Name": "0187",
+            "Index": -1,
+            "NameInSource": "0187",
+            "Alias": "0187",
+            "Type": "System.String"
+          },
+          "20": {
+            "Name": "0188",
+            "Index": -1,
+            "NameInSource": "0188",
+            "Alias": "0188",
+            "Type": "System.String"
+          },
+          "21": {
+            "Name": "0189",
+            "Index": -1,
+            "NameInSource": "0189",
+            "Alias": "0189",
+            "Type": "System.String"
+          },
+          "22": {
+            "Name": "0190",
+            "Index": -1,
+            "NameInSource": "0190",
+            "Alias": "0190",
+            "Type": "System.String"
+          },
+          "23": {
+            "Name": "0027",
+            "Index": -1,
+            "NameInSource": "0027",
+            "Alias": "0027",
+            "Type": "System.String"
+          },
+          "24": {
+            "Name": "0088",
+            "Index": -1,
+            "NameInSource": "0088",
+            "Alias": "0088",
+            "Type": "System.String"
+          },
+          "25": {
+            "Name": "0262",
+            "Index": -1,
+            "NameInSource": "0262",
+            "Alias": "0262",
+            "Type": "System.String"
+          },
+          "26": {
+            "Name": "0263",
+            "Index": -1,
+            "NameInSource": "0263",
+            "Alias": "0263",
+            "Type": "System.String"
+          },
+          "27": {
+            "Name": "0226",
+            "Index": -1,
+            "NameInSource": "0226",
+            "Alias": "0226",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "worklist.Labels"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "worklist",
+        "Alias": "worklist",
+        "PathData": "resource://worklist"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "366bfdc35bcf48f3aeb38f2b5f58db21",
+      "ComponentStyle": "Data1",
+      "Interaction": {
+        "Ident": "StiInteraction",
+        "SortingEnabled": false
+      },
+      "Border": ";193,152,89;;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "ClientRectangle": "0,18.6,27.7,0.4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text6",
+              "Guid": "2335fc771d884dd694cf4ed0f256b054",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "16,0,11.6,0.4",
+              "ComponentStyle": "Footer1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0262} {PageNumber} {Labels.n0263} {TotalPageCount}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": ";193,152,89;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:102,77,38",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "Guid": "65f5c368912b4240a21d18c95400ea00",
+              "CanGrow": true,
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.1,12.4,0.4",
+              "ComponentStyle": "Title2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.USERNAME}, {Variables.TODAY}"
+              },
+              "Font": ";9;;",
+              "Border": ";102,77,38;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:102,77,38",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiReportTitleBand",
+          "Name": "ReportTitleBand2",
+          "Guid": "0e78e53250ce4a74baab882ac9d3f6e0",
+          "ClientRectangle": "0,0.4,27.7,4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "Guid": "500490d553044cf7a5c95c36a83aa171",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.4,3.4,22.2,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0226}: {data.group}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text19",
+              "Guid": "a70cde429326423ea25f6e6f3583d3b5",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.4,3.4,4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.RANGE_INI}"
+              },
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "Guid": "4b6b5ecacb4b473daef79c4a1b920d02",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "4.4,3.4,4,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.RANGE_END}"
+              },
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiImage",
+              "Name": "Image1",
+              "ShiftMode": "None",
+              "Guid": "11db8172b9a4112dd0e9d59f4f83a09a",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,-0.4,27.8,1",
+              "ComponentStyle": "Title1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "Bottom;193,152,89;;;;;;solid:Black",
+              "Brush": "solid:",
+              "ImageBytes": "iVBORw0KGgoAAAANSUhEUgAAASsAAAAVCAYAAAAeo8jdAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACHEAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABK2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAACjPY2BgMnB0cXJlEmBgyM0rKQpyd1KIiIxSYD/PwMbAzAAGicnFBY4BAT4gdl5+XioDBvh2jYERRF/WBZnFQBrgSi4oKgHSf4DYKCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A2EkQ9hMQuwjoCSD7C0h9OpjNxAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYWK3jmJecXFeQXJZakpgDVQtwHBoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPMmCPBwOC/lIGB5Q9CzKSXgWGBDgMD/1SEmJohA4OAPgPDvjkAwMZP/eeaqagAAAAJcEhZcwAADsQAAA7EAZUrDhsAAEN5aVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzExMSA3OS4xNTgzMjUsIDIwMTUvMDkvMTAtMDE6MTA6MjAgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgICAgICAgICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgICAgICAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICAgICAgICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgICAgICAgICB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIgogICAgICAgICAgICB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cyk8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhtcDpDcmVhdGVEYXRlPjIwMTctMDUtMTJUMTE6Mjc6MTItMDU6MDA8L3htcDpDcmVhdGVEYXRlPgogICAgICAgICA8eG1wOk1ldGFkYXRhRGF0ZT4yMDE3LTA1LTMwVDEzOjU2OjIzLTA1OjAwPC94bXA6TWV0YWRhdGFEYXRlPgogICAgICAgICA8eG1wOk1vZGlmeURhdGU+MjAxNy0wNS0zMFQxMzo1NjoyMy0wNTowMDwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDxwaG90b3Nob3A6Q29sb3JNb2RlPjM8L3Bob3Rvc2hvcDpDb2xvck1vZGU+CiAgICAgICAgIDxwaG90b3Nob3A6SUNDUHJvZmlsZT5BZG9iZSBSR0IgKDE5OTgpPC9waG90b3Nob3A6SUNDUHJvZmlsZT4KICAgICAgICAgPHBob3Rvc2hvcDpUZXh0TGF5ZXJzPgogICAgICAgICAgICA8cmRmOkJhZz4KICAgICAgICAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJjZSI+CiAgICAgICAgICAgICAgICAgIDxwaG90b3Nob3A6TGF5ZXJOYW1lPkVOVEVSUFJJU0UgPC9waG90b3Nob3A6TGF5ZXJOYW1lPgogICAgICAgICAgICAgICAgICA8cGhvdG9zaG9wOkxheWVyVGV4dD5FTlRFUlBSSVNFIDwvcGhvdG9zaG9wOkxheWVyVGV4dD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8cGhvdG9zaG9wOkxheWVyTmFtZT5FTlRFUlBSSVNFIDwvcGhvdG9zaG9wOkxheWVyTmFtZT4KICAgICAgICAgICAgICAgICAgPHBob3Rvc2hvcDpMYXllclRleHQ+RU5URVJQUklTRSA8L3Bob3Rvc2hvcDpMYXllclRleHQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICA8L3JkZjpCYWc+CiAgICAgICAgIDwvcGhvdG9zaG9wOlRleHRMYXllcnM+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnhtcC5paWQ6ODM3ZmFhODYtODNiYS03NTQyLWExZDEtZGJlMmEyMmIwZWFmPC94bXBNTTpJbnN0YW5jZUlEPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD5hZG9iZTpkb2NpZDpwaG90b3Nob3A6YTM5ZDQ0M2UtNDU2OS0xMWU3LThjZDUtZDZlZWFhZDYyMWI4PC94bXBNTTpEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06T3JpZ2luYWxEb2N1bWVudElEPnhtcC5kaWQ6NmFjMzg2YWUtYWRjZi0zZTRjLThjNjQtMzMwMDc0ZTY1OTFiPC94bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ+CiAgICAgICAgIDx4bXBNTTpIaXN0b3J5PgogICAgICAgICAgICA8cmRmOlNlcT4KICAgICAgICAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJjZSI+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+Y3JlYXRlZDwvc3RFdnQ6YWN0aW9uPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6aW5zdGFuY2VJRD54bXAuaWlkOjZhYzM4NmFlLWFkY2YtM2U0Yy04YzY0LTMzMDA3NGU2NTkxYjwvc3RFdnQ6aW5zdGFuY2VJRD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNy0wNS0xMlQxMToyNzoxMi0wNTowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OnNvZnR3YXJlQWdlbnQ+QWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cyk8L3N0RXZ0OnNvZnR3YXJlQWdlbnQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5zYXZlZDwvc3RFdnQ6YWN0aW9uPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6aW5zdGFuY2VJRD54bXAuaWlkOjQ5ZWYwZjRiLWI1MjUtMzQ0MC05OTcwLWFlM2JhODM5NzliMjwvc3RFdnQ6aW5zdGFuY2VJRD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNy0wNS0xMlQxMTozMjoxOC0wNTowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OnNvZnR3YXJlQWdlbnQ+QWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cyk8L3N0RXZ0OnNvZnR3YXJlQWdlbnQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpjaGFuZ2VkPi88L3N0RXZ0OmNoYW5nZWQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5zYXZlZDwvc3RFdnQ6YWN0aW9uPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6aW5zdGFuY2VJRD54bXAuaWlkOmUzM2M0ODczLTIwN2MtOTE0YS04ZmM2LTI4MTg4YWQ2ZGE4YTwvc3RFdnQ6aW5zdGFuY2VJRD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNy0wNS0zMFQxMzo1NjoyMy0wNTowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OnNvZnR3YXJlQWdlbnQ+QWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpPC9zdEV2dDpzb2Z0d2FyZUFnZW50PgogICAgICAgICAgICAgICAgICA8c3RFdnQ6Y2hhbmdlZD4vPC9zdEV2dDpjaGFuZ2VkPgogICAgICAgICAgICAgICA8L3JkZjpsaT4KICAgICAgICAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJjZSI+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+Y29udmVydGVkPC9zdEV2dDphY3Rpb24+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpwYXJhbWV0ZXJzPmZyb20gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCB0byBpbWFnZS9wbmc8L3N0RXZ0OnBhcmFtZXRlcnM+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5kZXJpdmVkPC9zdEV2dDphY3Rpb24+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpwYXJhbWV0ZXJzPmNvbnZlcnRlZCBmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nPC9zdEV2dDpwYXJhbWV0ZXJzPgogICAgICAgICAgICAgICA8L3JkZjpsaT4KICAgICAgICAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJjZSI+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+c2F2ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDo4MzdmYWE4Ni04M2JhLTc1NDItYTFkMS1kYmUyYTIyYjBlYWY8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDp3aGVuPjIwMTctMDUtMzBUMTM6NTY6MjMtMDU6MDA8L3N0RXZ0OndoZW4+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKTwvc3RFdnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmNoYW5nZWQ+Lzwvc3RFdnQ6Y2hhbmdlZD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOlNlcT4KICAgICAgICAgPC94bXBNTTpIaXN0b3J5PgogICAgICAgICA8eG1wTU06RGVyaXZlZEZyb20gcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICA8c3RSZWY6aW5zdGFuY2VJRD54bXAuaWlkOmUzM2M0ODczLTIwN2MtOTE0YS04ZmM2LTI4MTg4YWQ2ZGE4YTwvc3RSZWY6aW5zdGFuY2VJRD4KICAgICAgICAgICAgPHN0UmVmOmRvY3VtZW50SUQ+eG1wLmRpZDo2YWMzODZhZS1hZGNmLTNlNGMtOGM2NC0zMzAwNzRlNjU5MWI8L3N0UmVmOmRvY3VtZW50SUQ+CiAgICAgICAgICAgIDxzdFJlZjpvcmlnaW5hbERvY3VtZW50SUQ+eG1wLmRpZDo2YWMzODZhZS1hZGNmLTNlNGMtOGM2NC0zMzAwNzRlNjU5MWI8L3N0UmVmOm9yaWdpbmFsRG9jdW1lbnRJRD4KICAgICAgICAgPC94bXBNTTpEZXJpdmVkRnJvbT4KICAgICAgICAgPHRpZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+NzIwMDAwLzEwMDAwPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WVJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjM8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+NjU1MzU8L2V4aWY6Q29sb3JTcGFjZT4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjI4NzwvZXhpZjpQaXhlbFhEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWURpbWVuc2lvbj4yMTwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+RqI1OwAACPRJREFUeF7tnA9wFNUdx793l4TwJwkJqfyJYwiaEDQOARGxOEIpxbamQzENmVorMKa1Yu3g0GJQbOpYKo6dKag4ZsDWENFCgNAOCNJCGBCDtUYgREhCQhIIgRDy7yL5c7d33d/eu7jZ29t/uUsP3M/MG/btvX1v39u87/5+v/cWi5sHg6TW7kA9nzr6OESFWzEm0obJMcMwPMzCSpiYmJgMDkNi5XC5cfjSdeyu68TeOjs6OPaDCJvFjaQRViy8PRaZSVGYMnoY+8XExMREP7rE6sS1HhRUtmNHbQe6OH1W013RNjyZFi8I14gwKztrYmJiog1Vsep2urGtthNvlzejskuhqLcai7KIjbS5kZMah19MiUXCyDB21sTEJNAc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"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text21",
+              "Guid": "9645d706bf6b4abeaafd03ca2bd9918b",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "19.6,1.4,8,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.TODAY}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text16",
+              "Guid": "b071d40e949c43ccadc19b5b5124b41d",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.4,1.6,13,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.ACCOUNT}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";11;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "Guid": "cb09918214a24de9b712e21a588cb248",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.4,2.2,8.2,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.SHEET}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "Guid": "91a38908ccc34ff4b173cc9d3e74b118",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.4,2.8,8.2,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0088}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "8": {
+              "Ident": "StiStartPointPrimitive",
+              "Name": "StartPointPrimitive3",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "2.4,-0.4,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "e8ee4609611b872b63b5f63d6a1b1c90"
+            },
+            "9": {
+              "Ident": "StiEndPointPrimitive",
+              "Name": "EndPointPrimitive3",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "2.46,-0.38,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "e8ee4609611b872b63b5f63d6a1b1c90"
+            },
+            "10": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive6",
+              "Guid": "c4589cabeb71dbbfc185b53f6fa092b0",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,-0.4,19,0.0254",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Color": "216,216,216",
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand1",
+          "ClientRectangle": "0,5.2,27.7,0.8",
+          "ComponentStyle": "Data1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";193,152,89;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "Guid": "4702adc264fe49c6b60c027b6908ded2",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.2,3.8,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0110}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "Guid": "e4aa555f9c05483b92b47694e36b7fd4",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "3.8,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr0}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text5",
+              "Guid": "7c74ee66591d4e99a2ab42cfbe110c7c",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.5,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr1}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text7",
+              "Guid": "e06940cd445043a390b9053ecd57b1b7",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "7.2,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr2}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text9",
+              "Guid": "843ac08499034e0eac84f89172d7b2d5",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "8.9,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr3}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "Guid": "c71b1d70d5ef46eb8d88de88d1fb82dd",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "10.6,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr4}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "Guid": "a36fb18ec9c9482f9cb50c17791c763d",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "12.3,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr5}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "Guid": "df607bea94034ba49450612c088d231c",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "15.7,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr7}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text13",
+              "Guid": "9ae62de961d64fffbf97519f2d0154f7",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "17.4,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr8}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "Text14",
+              "Guid": "563ddb4b1b884273939f4a6fc95a35ef",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "19.1,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr9}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "10": {
+              "Ident": "StiText",
+              "Name": "Text15",
+              "Guid": "e54596d847db46ce813d0c50a3f5bfbe",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "20.8,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr10}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "11": {
+              "Ident": "StiText",
+              "Name": "Text25",
+              "Guid": "4b28ce4c32ee4773a9cb0e6626f206a5",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "14,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr6}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "12": {
+              "Ident": "StiText",
+              "Name": "Text38",
+              "Guid": "3b1b771599a3452bbd1005cf642ccb2e",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "22.5,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr11}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "13": {
+              "Ident": "StiText",
+              "Name": "Text39",
+              "Guid": "ed91c4cc84de4d5c9936e6de71032033",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "24.2,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr12}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            },
+            "14": {
+              "Ident": "StiText",
+              "Name": "Text40",
+              "Guid": "fba2b08d4e59484e82923e5ce7aa919b",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "25.9,0.2,1.7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.abbr13}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";7;Bold;",
+              "Border": "All;30,144,255;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:30,144,255",
+              "Margins": {
+                "Left": 4.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 0.0
+              }
+            }
+          },
+          "PrintIfEmpty": true
+        },
+        "3": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "ClientRectangle": "0,6.8,27.7,1.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "Guid": "804c9f06b2cc4c3883de54003f041541",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.6,3.8,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.orderNumber}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "DataColumn"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text22",
+              "Guid": "400362a4d3d14c88ab6a4cbc7449a4fc",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "7,0,1.8,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.sex}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "ca2d45815c0d41928b5d965a36cea1dc",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0,7,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.name1} {data.name2} {data.lastName} {data.surName}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text24",
+              "Guid": "51e00124f8964f4ea5d1acfe1df7d62c",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "8.8,0,1.8,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.years}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text26",
+              "Guid": "7ee1ce38e51f4d60abeebcd4928c9dbc",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "10.6,0,3,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.nameType}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text27",
+              "Guid": "ed7f62788c62471ba9043c6f2a52c591",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "3.8,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder0}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text28",
+              "Guid": "b88a708b6395474fa47ba5d9a1a718f8",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.5,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder1}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text29",
+              "Guid": "45a5dfa84fa04397a042f0f9f2346562",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "7.2,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder2}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text30",
+              "Guid": "420b6895f17941c287134e0b20b87f6a",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "8.9,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder3}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "Text31",
+              "Guid": "cafbafcc5c2b47808f632676bd5501df",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "10.6,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder4}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "10": {
+              "Ident": "StiText",
+              "Name": "Text32",
+              "Guid": "729ececf140941c5a2ef9af22dccb930",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "12.3,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder5}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "11": {
+              "Ident": "StiText",
+              "Name": "Text33",
+              "Guid": "38bcbf4fde934940a1af83a4d75d6100",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "14,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder6}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "12": {
+              "Ident": "StiText",
+              "Name": "Text34",
+              "Guid": "42b8bcf175784e139987c610ddde09da",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "15.7,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder7}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0.0,
+                "Right": 0.0,
+                "Top": 0.0,
+                "Bottom": 2.0
+              }
+            },
+            "13": {
+              "Ident": "StiText",
+              "Name": "Text35",
+              "Guid": "b044965bc5554e17a7434eb1ccfa1ef2",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "17.4,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder8}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "14": {
+              "Ident": "StiText",
+              "Name": "Text36",
+              "Guid": "f563d3c14acb40e898ab83f5393c4ed0",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "19.1,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder9}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "15": {
+              "Ident": "StiText",
+              "Name": "Text37",
+              "Guid": "4543671038f440ae806a355f2d82e85b",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "20.8,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder10}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "16": {
+              "Ident": "StiText",
+              "Name": "Text41",
+              "Guid": "20cf346818a44c798e271831e4dbc8e1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "22.5,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder11}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "17": {
+              "Ident": "StiText",
+              "Name": "Text42",
+              "Guid": "c698f4f03aaf48fa9fa346a13dcb93e2",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "24.2,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder12}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "18": {
+              "Ident": "StiText",
+              "Name": "Text43",
+              "Guid": "9eaa4e8e20d44695854a3aed8ea57568",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "25.9,0.6,1.7,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.testOrder13}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": ";7;;",
+              "Border": "All;165,165,165;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            }
+          },
+          "Condition": {
+            "Value": "{data.orderNumber}"
+          }
+        },
+        "4": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,9,27.7,0",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:0,0,0",
+          "Brush": "solid:",
+          "DataSourceName": "data",
+          "MinRowsInColumn": 5
+        },
+        "5": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand1",
+          "ClientRectangle": "0,9.8,27.7,0",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "6": {
+          "Ident": "StiRectanglePrimitive",
+          "Name": "RectanglePrimitive3",
+          "Guid": "e8ee4609611b872b63b5f63d6a1b1c90",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "2.4,0,0.06,0.02",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Color": "156,195,229",
+          "LeftSide": false,
+          "BottomSide": false
+        }
+      },
+      "PaperSize": "A4",
+      "Orientation": "Landscape",
+      "PageWidth": 29.7,
+      "PageHeight": 21.0,
+      "Watermark": {
+        "Font": ";;Bold;",
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 1.0,
+        "Right": 1.0,
+        "Top": 1.0,
+        "Bottom": 1.0
+      }
+    }
+  }
+}
