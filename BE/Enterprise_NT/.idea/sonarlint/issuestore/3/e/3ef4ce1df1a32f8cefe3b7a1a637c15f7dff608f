@@ -1,0 +1,197 @@
+
+E
+java:S3740¥"/Provide the parametrized type for this generic.(ì”Öm
+F
+java:S3740§"/Provide the parametrized type for this generic.(…“æƒ
+E
+java:S3740¼"/Provide the parametrized type for this generic.(ì”Öm
+F
+java:S3740¾"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740¹"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740»"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740Ñ"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740Ó"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740ë"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740í"/Provide the parametrized type for this generic.(…“æƒ
+F
+java:S3740‚"/Provide the parametrized type for this generic.(ŞÁÌ
+F
+java:S3740„"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740™"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740›"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740°"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740²"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740Æ"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740È"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740ß"/Provide the parametrized type for this generic.(€Ó·ùÿÿÿÿ
+F
+java:S3740á"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740õ"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740÷"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740‹"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740¢"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740¤"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740»"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740½"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740Ò"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740Ô"/Provide the parametrized type for this generic.(…“æƒ
+F
+java:S3740é"/Provide the parametrized type for this generic.(ŞÁÌ
+F
+java:S3740ë"/Provide the parametrized type for this generic.(åÆşê
+F
+java:S3740€"/Provide the parametrized type for this generic.(ŞÁÌ
+F
+java:S3740‚"/Provide the parametrized type for this generic.(åÆşê
+K
+java:S3740–"/Provide the parametrized type for this generic.(öÃ×æûÿÿÿÿ
+F
+java:S3740˜"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740—"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740™"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740±"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740³"/Provide the parametrized type for this generic.(…“æƒ
+F
+java:S3740È"/Provide the parametrized type for this generic.(ŞÁÌ
+F
+java:S3740Ê"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740ß"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740á"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740õ"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740÷"/Provide the parametrized type for this generic.(…“æƒ
+K
+java:S3740‡"/Provide the parametrized type for this generic.(²«‚Šşÿÿÿÿ
+F
+java:S3740‰"/Provide the parametrized type for this generic.(…“æƒ
+^
+java:S4488L"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙ·Ì
+e
+java:S4488c"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(úı×Ôøÿÿÿÿ
+`
+java:S4488v"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ú‰ë¥
+d
+java:S4488Œ"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(ª£áÄıÿÿÿÿ
+d
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(çØÕòıÿÿÿÿ
+d
+java:S4488µ"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÙÄçÕıÿÿÿÿ
+c
+java:S4488Í"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(¾‘¸ö
+c
+java:S4488à"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(ãåâï
+d
+java:S4488ó"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ô‡¿Òúÿÿÿÿ
+h
+java:S4488Š"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(ºÚç•şÿÿÿÿ
+_
+java:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ü’¡å
+_
+java:S4488²"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(œØ›ô
+_
+java:S4488É"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Àá˜›
+^
+java:S4488á"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Æè“E
+d
+java:S4488û"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ş¡¬ıúÿÿÿÿ
+V
+java:S6213€":Rename this variable to not match a restricted identifier.(»ÊøÇùÿÿÿÿ
+d
+java:S4488’"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(äû›öÿÿÿÿÿ
+_
+java:S4488©"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‹«åä
+d
+java:S4488À"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ƒÎ©ÿÿÿÿÿ
+d
+java:S4488Ö"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ıå…‹ÿÿÿÿÿ
+d
+java:S4488ï"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ó£·Åûÿÿÿÿ
+_
+java:S4488…"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ê“é¡
+_
+java:S4488›"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(œ…ÿÍ
+_
+java:S4488²"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Âò€è
+d
+java:S4488Ë"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÄŒ¬ğıÿÿÿÿ
+f
+java:S4488â"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(§Ìü±şÿÿÿÿ
+Q
+java:S6213ç":Rename this variable to not match a restricted identifier.(õ•â‡
+h
+java:S4488ù"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(°±üÿÿÿÿÿ
+V
+java:S6213ş":Rename this variable to not match a restricted identifier.(¦û–•şÿÿÿÿ
+_
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(…·áÌ
+`
+java:S4488§"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ŞÆÆC
+_
+java:S4488¹"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(êş×§
+d
+java:S4488Ğ"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(úŞÀ€ıÿÿÿÿ
+f
+java:S4488ç"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(‰ë‰ôşÿÿÿÿ
+_
+java:S4488ø"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ß°ÁÃ
+d
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¿¸›àüÿÿÿÿ
+_
+java:S4488§"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(§ûØ¢
+d
+java:S4488Á"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÑÙîôùÿÿÿÿ
+V
+java:S6213Æ":Rename this variable to not match a restricted identifier.(Ò¤¨Ïúÿÿÿÿ
+_
+java:S4488Ø"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±¡‰
+^
+java:S4488ï"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³È•g
+d
+java:S4488†"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"( –¦¦ÿÿÿÿÿ
+d
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(„®ÿ¯ûÿÿÿÿ
+_
+java:S4488¯"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(á’¢
+d
+java:S4488Ä"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ì˜½Ûûÿÿÿÿ
+d
+java:S4488Ú"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¡¸üúÿÿÿÿ
+d
+java:S4488ï"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(”¶ÔÇúÿÿÿÿ
+a
+java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÒŒÈÆ
+_
+java:S4488˜"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‚Øü
+_
+java:S4488­"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‰ˆİ¹

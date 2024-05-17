@@ -1,0 +1,2 @@
+--Script para la creacion y actualizacion de la base de datos transaccional de SQLServer
+--CONFIGURACION

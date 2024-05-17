@@ -1,0 +1,314 @@
+
+[	java:S112Û"FDefine and throw a dedicated exception instead of using a generic one.(¨¼_
+i
+java:S1192€"MDefine a constant instead of duplicating this literal "FormatoFecha" 3 times.(À§êºùÿÿÿÿ
+`
+java:S1192Ï"IDefine a constant instead of duplicating this literal "Impuesto" 4 times.(²ú²ä
+d
+java:S1192®"MDefine a constant instead of duplicating this literal "Trazabilidad" 5 times.(˜ì“Ñ
+„
+java:S1192å"hDefine a constant instead of duplicating this literal "1|Order not valid must contains patient" 3 times.(Ã¢©åÿÿÿÿÿ
+m
+java:S1192»"VDefine a constant instead of duplicating this literal "DemographicsByBranch" 10 times.(†©™€
+a
+java:S1192Ş"KDefine a constant instead of duplicating this literal "undefined" 14 times.(”ùÜc
+i
+java:S1192ë"MDefine a constant instead of duplicating this literal "DigitosOrden" 5 times.(ÑÏ™µşÿÿÿÿ
+k
+java:S1192›"ODefine a constant instead of duplicating this literal "ManejoServicio" 5 times.(è¹ş­øÿÿÿÿ
+j
+java:S1192ö"NDefine a constant instead of duplicating this literal "manejoEventos" 3 times.(‘¾³óüÿÿÿÿ
+m	java:S127Æ"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127	"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127Í	"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127ô	"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127Ç
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127ñ
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127š"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127Ã"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+m	java:S127ü"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+K
+java:S1066§"/Merge this if statement with the enclosing one.(»¾‡Õıÿÿÿÿ
+F
+java:S1066Í"/Merge this if statement with the enclosing one.(©Ãí
+F
+java:S1066ç"/Merge this if statement with the enclosing one.(ş‰ø—
+F
+java:S1066–"/Merge this if statement with the enclosing one.(²¯…¼
+K
+java:S1066Û"/Merge this if statement with the enclosing one.(—ï¬Èûÿÿÿÿ
+K
+java:S1066›"/Merge this if statement with the enclosing one.(ù˜Õ“ÿÿÿÿÿ
+K
+java:S1066ª"/Merge this if statement with the enclosing one.(—ï¬Èûÿÿÿÿ
+K
+java:S1066É"/Merge this if statement with the enclosing one.(—ï¬Èûÿÿÿÿ
+K
+java:S1066Ğ"/Merge this if statement with the enclosing one.(—ï¬Èûÿÿÿÿ
+K
+java:S1066é"/Merge this if statement with the enclosing one.(»¾‡Õıÿÿÿÿ
+Q
+java:S1141‘"5Extract this nested try block into a separate method.(ç£êúÿÿÿÿ
+8
+java:S1643®"Use a StringBuilder instead.(úû²ìøÿÿÿÿ
+8
+java:S1643ó"Use a StringBuilder instead.(óåŸûÿÿÿÿÿ
+y
+java:S1488‚"bImmediately return this expression instead of assigning it to the temporary variable "accountAux".(Ì«ê
+F
+java:S5411”"*Use the primitive boolean expression here.(Â‘àûÿÿÿÿ
+F
+java:S5411Ã"*Use the primitive boolean expression here.(Â‘àûÿÿÿÿ
+X
+java:S4973³"<Strings and Boxed types should be compared using "equals()".(ˆé™Õûÿÿÿÿ
+X
+java:S4973É"<Strings and Boxed types should be compared using "equals()".(ú¯»Ÿûÿÿÿÿ
+_
+java:S2259Å"HA "NullPointerException" could be thrown; "orderFound" is nullable here.(¹°ß
+N
+java:S3655í"7Call "Optional#isPresent()" before accessing the value.(³Ş—
+S
+java:S3655ñ"7Call "Optional#isPresent()" before accessing the value.(È½®„øÿÿÿÿ
+_
+java:S2583¦"CChange this condition so that it does not always evaluate to "true"(Æ´™ÿÿÿÿÿ
+m
+java:S2229ğ"V"saveTests's" @Transactional requirement is incompatible with the one for this method.(ÌÑµà
+o
+java:S2229«"S"create's" @Transactional requirement is incompatible with the one for this method.(ßª¬åıÿÿÿÿ
+j
+java:S2229"S"create's" @Transactional requirement is incompatible with the one for this method.(õßæ‚
+j
+java:S2229®"S"create's" @Transactional requirement is incompatible with the one for this method.(–»
+n
+java:S3776è"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Äú€åúÿÿÿÿ
+\
+java:S1612ò"@Replace this lambda with method reference 'ResultTest::isEntry'.(“Ÿ®åşÿÿÿÿ
+i
+java:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 60 to the 15 allowed.(òõÎÕ
+H
+java:S1135¯"2Complete the task associated to this TODO comment.(ƒ•^
+B
+java:S1168Ô"+Return an empty collection instead of null.(¥¹ï
+n
+java:S3776İ"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(Ö«ø­ûÿÿÿÿ
+W
+java:S1854ı";Remove this useless assignment to local variable "patient".(ì¢úÁùÿÿÿÿ
+>
+java:S1125ş"'Remove the unnecessary boolean literal.(˜Â©
+>
+java:S1125¥"'Remove the unnecessary boolean literal.(®¸»²
+Z
+java:S1155§">Use isEmpty() to check whether the collection is empty or not.(»¾‡Õıÿÿÿÿ
+W	java:S125Ø"<This block of commented-out lines of code should be removed.(¤íªÀøÿÿÿÿ
+H
+java:S1602ñ",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+C
+java:S1125ö"'Remove the unnecessary boolean literal.(‘¾³óüÿÿÿÿ
+C
+java:S1125ö"'Remove the unnecessary boolean literal.(‘¾³óüÿÿÿÿ
+H
+java:S1602ı",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+=
+java:S2111"!Use "BigDecimal.valueOf" instead.(µ‰Æªÿÿÿÿÿ
+8
+java:S2111‘"!Use "BigDecimal.valueOf" instead.(¨½Óµ
+=
+java:S2111’"!Use "BigDecimal.valueOf" instead.(’çÎÄúÿÿÿÿ
+7
+java:S2111“"!Use "BigDecimal.valueOf" instead.(ÂÊÍl
+=
+java:S2111”"!Use "BigDecimal.valueOf" instead.(Û‚¢æøÿÿÿÿ
+8
+java:S2111•"!Use "BigDecimal.valueOf" instead.(²æÓî
+8
+java:S2111–"!Use "BigDecimal.valueOf" instead.(óÙî×
+=
+java:S2111—"!Use "BigDecimal.valueOf" instead.(ƒ‹’şûÿÿÿÿ
+=
+java:S2111˜"!Use "BigDecimal.valueOf" instead.(îÍßäûÿÿÿÿ
+8
+java:S2111™"!Use "BigDecimal.valueOf" instead.(åİî…
+O
+java:S1612±"8Replace this lambda with method reference 'Test::getId'.(ªõÊ
+H
+java:S1602Ì",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+Z
+java:S1612Ë"DReplace this lambda with method reference 'OrderCreationLog::error'.(ş‚öc
+W
+java:S1854ñ";Remove this useless assignment to local variable "patient".(’»Èçüÿÿÿÿ
+N
+java:S1135ï"2Complete the task associated to this TODO comment.(çËµÊùÿÿÿÿ
+>
+java:S1125ó"'Remove the unnecessary boolean literal.(˜Â©
+U
+java:S1155¯">Use isEmpty() to check whether the collection is empty or not.(íË›ˆ
+H
+java:S1602¹",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+>
+java:S1125¼"'Remove the unnecessary boolean literal.(ãöƒ¿
+>
+java:S1125¼"'Remove the unnecessary boolean literal.(ãöƒ¿
+H
+java:S1602Á",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+i
+java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(òèÂÔ
+o
+java:S3776›"SRefactor this method to reduce its Cognitive Complexity from 151 to the 15 allowed.(ÌÃçíÿÿÿÿÿ
+a
+java:S1854¢"ERemove this useless assignment to local variable "demoItemsByBranch".(óÈ©´üÿÿÿÿ
+\
+java:S1854½"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854‡	"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854Ä	"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854ë	"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854”
+"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854¾
+"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854è
+"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+\
+java:S1854‘"ERemove this useless assignment to local variable "demoItemsByBranch".( „û 
+o
+java:S1602¨"SRemove useless curly braces around statement and then remove useless return keyword(ÒÌâ–øÿÿÿÿ
+B
+java:S1168×"+Return an empty collection instead of null.(¥¹ï
+H
+java:S1602î",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+N
+java:S1612í"7Replace this lambda with method reference 'demos::add'.(Œú¥Î
+B
+java:S1168ƒ"+Return an empty collection instead of null.(¥¹ï
+I
+java:S1611Å"2Remove the parentheses around the "test" parameter(¹°ß
+I
+java:S1611Å"2Remove the parentheses around the "test" parameter(¹°ß
+H
+java:S1602Ç",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+N
+java:S1611Ê"2Remove the parentheses around the "test" parameter(¯¿î«øÿÿÿÿ
+N
+java:S1611Ê"2Remove the parentheses around the "test" parameter(¯¿î«øÿÿÿÿ
+H
+java:S1602Ì",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(–¬Š
+n
+java:S3776š"RRefactor this method to reduce its Cognitive Complexity from 54 to the 15 allowed.(¦æ–Øÿÿÿÿÿ
+X
+java:S1854Ÿ"ARemove this useless assignment to local variable "testsToInsert".(½Ø³×
+H
+java:S1602·",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+N
+java:S1612¸"8Replace this lambda with method reference 'Test::getId'.(Åî˜\
+R	java:S125ï"<This block of commented-out lines of code should be removed.(öñĞŠ
+T
+java:S1612Æ"8Replace this lambda with method reference 'Test::getId'.(‡‹Šâÿÿÿÿÿ
+j
+java:S3776Ó"SRefactor this method to reduce its Cognitive Complexity from 257 to the 15 allowed.(ÜŒ—¹
+i
+java:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ÖïÈ 
+P
+java:S2130ÿ"9Use "Integer.parseInt" for this string-to-int conversion.( •Ø
+]
+java:S2147œ"FCombine this catch with the one at line 2201, which has the same body.(µää«
+O	java:S106³"9Replace this use of System.out or System.err by a logger.(Ÿ‰í¿
+8
+java:S2111Ê"!Use "BigDecimal.valueOf" instead.(¥ÆËõ
+y
+java:S1157Ş"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(”ùÜc
+z
+java:S1157æ"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(è¦Å
+z
+java:S1157î"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(àß½
+z
+java:S1157ö"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(šäÊê
+z
+java:S1157ş"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ÔÌ°â
+o
+java:S3776§"SRefactor this method to reduce its Cognitive Complexity from 106 to the 15 allowed.(Ê¥÷²ÿÿÿÿÿ
+=	java:S131°""Add a default case to this switch.(¤ÑĞªøÿÿÿÿ
+Z
+java:S1155ë">Use isEmpty() to check whether the collection is empty or not.(ôĞşüÿÿÿÿ
+Z
+java:S1155º">Use isEmpty() to check whether the collection is empty or not.(ôĞşüÿÿÿÿ
+n
+java:S3776ó"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(âúÙ«ÿÿÿÿÿ
+h
+java:S3776‚"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(˜û‹
+W	java:S125"<This block of commented-out lines of code should be removed.(‹¤Åóıÿÿÿÿ
+W	java:S125Ÿ"<This block of commented-out lines of code should be removed.(Áô§Úúÿÿÿÿ
+8
+java:S2111¤"!Use "BigDecimal.valueOf" instead.(”Ïƒç
+=
+java:S2111½"!Use "BigDecimal.valueOf" instead.(†‚§©ûÿÿÿÿ
+8
+java:S2111À"!Use "BigDecimal.valueOf" instead.(ååúÿ
+n
+java:S3776Ö"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(ÇÚàÃüÿÿÿÿ
+=	java:S131ß""Add a default case to this switch.(£æ‚üÿÿÿÿ
+n
+java:S3776á"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(€š¯Ãıÿÿÿÿ
+=	java:S131ê""Add a default case to this switch.(£æ‚üÿÿÿÿ
+R	java:S125ş"<This block of commented-out lines of code should be removed.(÷ºÓä
+W	java:S125›"<This block of commented-out lines of code should be removed.(ê¼ˆøÿÿÿÿ
+W	java:S125Á"<This block of commented-out lines of code should be removed.(ûÔ¦šüÿÿÿÿ
+W	java:S125Ö"<This block of commented-out lines of code should be removed.(ê¼ˆøÿÿÿÿ
+>
+java:S1125É"'Remove the unnecessary boolean literal.(£ïÁÅ
+>
+java:S1125É"'Remove the unnecessary boolean literal.(£ïÁÅ
+H
+java:S1602Í",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+y
+java:S1157£"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(”ùÜc
+z
+java:S1157«"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(è¦Å
+z
+java:S1157³"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(àß½
+z
+java:S1157»"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(šäÊê
+z
+java:S1157Ã"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ÔÌ°â
+8	java:S131˜""Add a default case to this switch.(­Ÿ­
+T
+java:S1612"8Replace this lambda with method reference 'User::getId'.(ˆÂ—Üÿÿÿÿÿ
+B
+java:S1168“"+Return an empty collection instead of null.(¥¹ï
+a
+java:S1854ª"ERemove this useless assignment to local variable "patientIdOrderExt".(ûéˆıÿÿÿÿ
+C
+java:S1125Í"'Remove the unnecessary boolean literal.(×À†ûÿÿÿÿ
+C
+java:S1125Í"'Remove the unnecessary boolean literal.(×À†ûÿÿÿÿ
+B
+java:S1168Ğ"+Return an empty collection instead of null.(¥¹ï
+U
+java:S1155á">Use isEmpty() to check whether the collection is empty or not.(œÙ“
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(º™ß«ÿÿÿÿÿ
+–
+java:S1130Ñ"Remove the declaration of thrown exception 'java.io.UnsupportedEncodingException' which is a subclass of 'java.lang.Exception'.( ¢ı·
+D	java:S108ğ")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+C
+java:S1125ı"'Remove the unnecessary boolean literal.(úä’øÿÿÿÿÿ
+U
+java:S1155‹">Use isEmpty() to check whether the collection is empty or not.(Õ·
+n
+java:S3776ª"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(”š›‰ûÿÿÿÿ
+>
+java:S1125ç"'Remove the unnecessary boolean literal.(®¸»²
+Z
+java:S1155é">Use isEmpty() to check whether the collection is empty or not.(»¾‡Õıÿÿÿÿ
+R	java:S125¢"<This block of commented-out lines of code should be removed.(„§ñ£
+X
+java:S1144"<Remove this unused private "getTestToInsertInResult" method.(º™ß«ÿÿÿÿÿ

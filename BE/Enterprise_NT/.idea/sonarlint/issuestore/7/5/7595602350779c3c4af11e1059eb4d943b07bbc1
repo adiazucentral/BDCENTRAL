@@ -1,0 +1,101 @@
+
+b
+java:S1192İ"FDefine a constant instead of duplicating this literal "Email" 3 times.(‹Ã¯ûÿÿÿÿ
+^
+java:S1192í"HDefine a constant instead of duplicating this literal "Address" 3 times.(ıÛP
+j
+java:S1192™"NDefine a constant instead of duplicating this literal "Document Type" 3 times.(õÙº¬ûÿÿÿÿ
+i
+java:S1192×"MDefine a constant instead of duplicating this literal "FormatoFecha" 3 times.(â¨ïÍúÿÿÿÿ
+e
+java:S1192Õ"IDefine a constant instead of duplicating this literal "Birthday" 3 times.(“Ã˜Âøÿÿÿÿ
+g
+java:S1192ô"KDefine a constant instead of duplicating this literal "ManejoPeso" 3 times.(‚–½Îıÿÿÿÿ
+j
+java:S1192"NDefine a constant instead of duplicating this literal "Patient Db Id" 3 times.(÷Ğ’¤ùÿÿÿÿ
+b
+java:S1192£"KDefine a constant instead of duplicating this literal "Patient Id" 3 times.(Ÿğ¡ú
+h
+java:S1192ş"LDefine a constant instead of duplicating this literal "ManejoTalla" 3 times.(Ù©Ñıÿÿÿÿ
+c
+java:S1192ø"GDefine a constant instead of duplicating this literal "Weigth" 3 times.(Ïùïûÿÿÿÿ
+f
+java:S1192«"JDefine a constant instead of duplicating this literal "Last Name" 3 times.(û±ŒÕùÿÿÿÿ
+o
+java:S1192«"SDefine a constant instead of duplicating this literal "ContrasenaPaciente" 4 times.(È„§‘şÿÿÿÿ
+j
+java:S1192|"TDefine a constant instead of duplicating this literal "ManejoTipoDocumento" 7 times.(åñŸ¡
+b
+java:S1192å"FDefine a constant instead of duplicating this literal "Phone" 3 times.(…²Àğÿÿÿÿÿ
+^
+java:S1192Ã"GDefine a constant instead of duplicating this literal "Name 2" 3 times.(ËÃÌÕ
+g
+java:S1192ˆ"KDefine a constant instead of duplicating this literal "ManejoRaza" 3 times.(Â‡äËúÿÿÿÿ
+d
+java:S1192³"HDefine a constant instead of duplicating this literal "Surname" 3 times.(µş¶üşÿÿÿÿ
+8
+java:S1643¾"Use a StringBuilder instead.(šœ ­øÿÿÿÿ
+8
+java:S1643‡"Use a StringBuilder instead.(šœ ­øÿÿÿÿ
+o
+java:S2229
+"S"create's" @Transactional requirement is incompatible with the one for this method.(¯ÍÅÃüÿÿÿÿ
+j
+java:S2229“
+"S"create's" @Transactional requirement is incompatible with the one for this method.(ı¡¬è
+j
+java:S2229­
+"S"create's" @Transactional requirement is incompatible with the one for this method.(èÃ²’
+o
+java:S2229²
+"S"update's" @Transactional requirement is incompatible with the one for this method.(›ïøøÿÿÿÿ
+o
+java:S2229¸
+"S"update's" @Transactional requirement is incompatible with the one for this method.(›ïøøÿÿÿÿ
+h
+java:S3776y"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(•ÔÛ¯
+C
+java:S1125«"'Remove the unnecessary boolean literal.(È„§‘şÿÿÿÿ
+>
+java:S1125Ñ"'Remove the unnecessary boolean literal.(˜¯ş
+A
+java:S1481ÿ"*Remove this unused "name2" local variable.(·³”§
+D
+java:S1481".Remove this unused "lastName2" local variable.(ãÃà
+R	java:S125’"<This block of commented-out lines of code should be removed.(Àµñ¿
+Q	java:S125¤"<This block of commented-out lines of code should be removed.(âµú,
+n
+java:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(›¤îÒûÿÿÿÿ
+C
+java:S1125ò"'Remove the unnecessary boolean literal.(È„§‘şÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(ø‚È±
+W	java:S125"<This block of commented-out lines of code should be removed.(ã¿Ï¹ıÿÿÿÿ
+U
+java:S1155¥">Use isEmpty() to check whether the collection is empty or not.(íË›ˆ
+n
+java:S3776¸"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(æğíñùÿÿÿÿ
+C
+java:S1125Ş"'Remove the unnecessary boolean literal.(Ø¯Ëˆıÿÿÿÿ
+n
+java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ğºß¢úÿÿÿÿ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Æ¾†½úÿÿÿÿ
+W	java:S125±"<This block of commented-out lines of code should be removed.(Ç™¯÷ÿÿÿÿÿ
+n
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Èéøâúÿÿÿÿ
+W	java:S125Ô"<This block of commented-out lines of code should be removed.(Ç™¯÷ÿÿÿÿÿ
+[
+java:S3358ì"DExtract this nested ternary operation into an independent statement.(…’¶
+C
+java:S1125å"'Remove the unnecessary boolean literal.(ÃÓÊœûÿÿÿÿ
+C
+java:S1125è"'Remove the unnecessary boolean literal.(™Û¿ƒıÿÿÿÿ
+W	java:S125â	"<This block of commented-out lines of code should be removed.(èµ™Íıÿÿÿÿ
+W	java:S125é	"<This block of commented-out lines of code should be removed.( ¿®†üÿÿÿÿ
+i
+java:S3776…
+"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(äÌ¥µ
+R	java:S125
+"<This block of commented-out lines of code should be removed.(Æ¸×è
+R	java:S125“
+"<This block of commented-out lines of code should be removed.(ı¡¬è

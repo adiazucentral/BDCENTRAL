@@ -1,0 +1,450 @@
+
+c	java:S112ı"FDefine and throw a dedicated exception instead of using a generic one.(ˆÎúÖ8Ã³µÇŠ0
+|
+java:S2293É"YReplace the type specification in this constructor call with the diamond operator ("<>").(»°œ‹øÿÿÿÿ8æ³µÇŠ0
+|
+java:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯×Öçøÿÿÿÿ8æ³µÇŠ0
+n
+java:S1192ı"KDefine a constant instead of duplicating this literal "Resistente" 6 times.(÷ëÇ¦ıÿÿÿÿ8ö³µÇŠ0
+r
+java:S1192œ"TDefine a constant instead of duplicating this literal "\\|\\|PATIENT\\|\\|" 4 times.(ˆˆÏ©8ö³µÇŠ0
+m
+java:S1192É"ODefine a constant instead of duplicating this literal "manejoEventos" 10 times.(é ŒÜ8ö³µÇŠ0
+v	java:S135æ"YReduce the total number of break and continue statements in this loop to use at most one.(¡ğÉÚ8Œ´µÇŠ0
+M
+java:S1066è"/Merge this if statement with the enclosing one.(çôä8˜´µÇŠ0
+R
+java:S1066…"/Merge this if statement with the enclosing one.(—ï¬Èûÿÿÿÿ8˜´µÇŠ0
+R
+java:S1066…"/Merge this if statement with the enclosing one.(€İëşÿÿÿÿ8˜´µÇŠ0
+X
+java:S1141¬"5Extract this nested try block into a separate method.(ç£êúÿÿÿÿ8¬´µÇŠ0
+X
+java:S1141®"5Extract this nested try block into a separate method.(ç£êúÿÿÿÿ8¬´µÇŠ0
+^	java:S107à"<Method has 8 parameters, which is greater than 7 authorized.(Êïğóÿÿÿÿÿ8¬´µÇŠ0
+
+java:S1488€"^Immediately return this expression instead of assigning it to the temporary variable "base64".(¼—Úçıÿÿÿÿ8¹´µÇŠ0
+„
+java:S1488š"aImmediately return this expression instead of assigning it to the temporary variable "testBasic".(òßìÿÿÿÿÿ8É´µÇŠ0
+y
+java:S1488¡"\Immediately return this expression instead of assigning it to the temporary variable "area".(‘”¿	8É´µÇŠ0
+{
+java:S1488¨"^Immediately return this expression instead of assigning it to the temporary variable "sample".(è·¶8É´µÇŠ0
+†
+java:S1488¯"cImmediately return this expression instead of assigning it to the temporary variable "perfilOrder".(º­¸ùÿÿÿÿ8É´µÇŠ0
+M
+java:S5411¢"*Use the primitive boolean expression here.(’×ı€úÿÿÿÿ8è´µÇŠ0
+M
+java:S5411½"*Use the primitive boolean expression here.(Üˆ—œùÿÿÿÿ8è´µÇŠ0
+M
+java:S5411ï"*Use the primitive boolean expression here.(ŞûÔ–úÿÿÿÿ8è´µÇŠ0
+M
+java:S5411å
+"*Use the primitive boolean expression here.(ÍïÛ¹ıÿÿÿÿ8âÍÒÔŠ0
+H
+java:S5411¯"*Use the primitive boolean expression here.(ŞÙşÌ8è´µÇŠ0
+M
+java:S5411¹"*Use the primitive boolean expression here.(Â‘àûÿÿÿÿ8è´µÇŠ0
+H
+java:S5411Ï"*Use the primitive boolean expression here.(ŞÙşÌ8è´µÇŠ0
+M
+java:S5411Ù"*Use the primitive boolean expression here.(Â‘àûÿÿÿÿ8è´µÇŠ0
+M
+java:S5411š"*Use the primitive boolean expression here.(Â‘àûÿÿÿÿ8è´µÇŠ0
+H
+java:S5411“"*Use the primitive boolean expression here.(ûàá›8è´µÇŠ0
+X
+java:S1191"5Use classes from the Java API instead of Sun classes.(Ó¨Ôÿÿÿÿÿ8‘µµÇŠ0
+P
+java:S1199›"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8¡µµÇŠ0
+g
+java:S2583ô"DChange this condition so that it does not always evaluate to "false"(êıóŠûÿÿÿÿ8âÍ¶ÇŠ0
+p
+java:S3776û"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(œ—¡Ÿ8²Î¶ÇŠ0
+a
+java:S1155ş">Use isEmpty() to check whether the collection is empty or not.(È®„üÿÿÿÿ8²Î¶ÇŠ0
+`
+java:S1612Š"=Replace this lambda with method reference 'TestBasic::getId'.(‰ûêãÿÿÿÿÿ8ÊÎ¶ÇŠ0
+m
+java:S1612"JReplace this lambda with method reference 'ResultFilterByResult::getTest'.(­ò×³úÿÿÿÿ8âÎ¶ÇŠ0
+U
+java:S1135©"2Complete the task associated to this TODO comment.(ÿğ¶£úÿÿÿÿ8âÎ¶ÇŠ0
+R
+java:S1611°"4Remove the parentheses around the "result" parameter(ïìŠÿ8úÎ¶ÇŠ0
+O
+java:S1602²",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8¢Ï¶ÇŠ0
+u
+java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 47 to the 15 allowed.(İË²¡ÿÿÿÿÿ8úÔ¶ÇŠ0
+^	java:S125›"<This block of commented-out lines of code should be removed.(šø§ıÿÿÿÿ8²Õ¶ÇŠ0
+J
+java:S1125¢"'Remove the unnecessary boolean literal.(’×ı€úÿÿÿÿ8òÕ¶ÇŠ0
+Y	java:S125­"<This block of commented-out lines of code should be removed.( Î£ô8²ÓÔŠ0
+^	java:S125Á"<This block of commented-out lines of code should be removed.(ä’ÿ¤úÿÿÿÿ8ÊÕ¶ÇŠ0
+X	java:S125Å"<This block of commented-out lines of code should be removed.(¨ÕîR8ÚÕ¶ÇŠ0
+E
+java:S1125É"'Remove the unnecessary boolean literal.(é ŒÜ8òÕ¶ÇŠ0
+E
+java:S1125É"'Remove the unnecessary boolean literal.(é ŒÜ8òÕ¶ÇŠ0
+O
+java:S1602Î",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8òÕ¶ÇŠ0
+E
+java:S1125Ñ"'Remove the unnecessary boolean literal.(‘ïƒš8úÕ¶ÇŠ0
+E
+java:S1125Ñ"'Remove the unnecessary boolean literal.(‘ïƒš8‚Ö¶ÇŠ0
+O
+java:S1602Ö",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8úÕ¶ÇŠ0
+E
+java:S1125Ù"'Remove the unnecessary boolean literal.(­‡¶×8‚Ö¶ÇŠ0
+E
+java:S1125Ù"'Remove the unnecessary boolean literal.(­‡¶×8²Ö¶ÇŠ0
+O
+java:S1602Ş",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8‚Ö¶ÇŠ0
+u
+java:S3776è"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(øÏÑìÿÿÿÿÿ8ŠÖ¶ÇŠ0
+^	java:S125†"<This block of commented-out lines of code should be removed.(ä’ÿ¤úÿÿÿÿ8¢Ö¶ÇŠ0
+^	java:S125£"<This block of commented-out lines of code should be removed.(ä’ÿ¤úÿÿÿÿ8²Ö¶ÇŠ0
+E
+java:S1125«"'Remove the unnecessary boolean literal.(é ŒÜ8²Ö¶ÇŠ0
+E
+java:S1125«"'Remove the unnecessary boolean literal.(é ŒÜ8ºÖ¶ÇŠ0
+O
+java:S1602°",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ºÖ¶ÇŠ0
+E
+java:S1125³"'Remove the unnecessary boolean literal.(‘ïƒš8ºÖ¶ÇŠ0
+E
+java:S1125³"'Remove the unnecessary boolean literal.(‘ïƒš8ÂÖ¶ÇŠ0
+O
+java:S1602¸",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ºÖ¶ÇŠ0
+E
+java:S1125»"'Remove the unnecessary boolean literal.(­‡¶×8ÂÖ¶ÇŠ0
+E
+java:S1125»"'Remove the unnecessary boolean literal.(­‡¶×8úÖ¶ÇŠ0
+O
+java:S1602À",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ÂÖ¶ÇŠ0
+Y	java:S125"<This block of commented-out lines of code should be removed.(‚ğŞì8êÖ¶ÇŠ0
+E
+java:S1125Ü"'Remove the unnecessary boolean literal.(¯¹Õó8‚×¶ÇŠ0
+E
+java:S1125Ü"'Remove the unnecessary boolean literal.(¯¹Õó8‚×¶ÇŠ0
+O
+java:S1602à",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8‚×¶ÇŠ0
+E
+java:S1125æ"'Remove the unnecessary boolean literal.(Ê…Ïì8‚×¶ÇŠ0
+E
+java:S1125æ"'Remove the unnecessary boolean literal.(Ê…Ïì8‹Ú¶ÇŠ0
+d
+java:S4034è"FReplace this "filter().findAny().isPresent()" chain with "anyMatch()".(çôä8‚×¶ÇŠ0
+M
+java:S1611è"/Remove the parentheses around the "t" parameter(çôä8‚×¶ÇŠ0
+O
+java:S1602ì",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8Š×¶ÇŠ0
+v
+java:S3776ÿ"SRefactor this method to reduce its Cognitive Complexity from 140 to the 15 allowed.(Éù˜ıøÿÿÿÿ8Š×¶ÇŠ0
+_
+java:S1854"ARemove this useless assignment to local variable "keyRecipients".(ŸË§Á8’×¶ÇŠ0
+b
+java:S1854œ"DRemove this useless assignment to local variable "keyRecipientsOne".(¹£¦È8’×¶ÇŠ0
+b
+java:S1854«"DRemove this useless assignment to local variable "keyRecipientsTwo".(¡Ó—³8’×¶ÇŠ0
+c
+java:S1854¸"ERemove this useless assignment to local variable "keyRecipientsTree".(÷ƒ´í8’×¶ÇŠ0
+^	java:S125ˆ"<This block of commented-out lines of code should be removed.(¶Òáÿÿÿÿÿ8š×¶ÇŠ0
+W
+java:S1611•"4Remove the parentheses around the "string" parameter(ó™ººıÿÿÿÿ8‚Ø¶ÇŠ0
+Y
+java:S1611•"6Remove the parentheses around the "idsTests" parameter(ó™ººıÿÿÿÿ8‚Ø¶ÇŠ0
+O
+java:S1602—",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8‚Ø¶ÇŠ0
+V
+java:S1612–"9Replace this lambda with method reference 'keyTest::add'.(ş‚öc8‚Ø¶ÇŠ0
+W
+java:S1611¤"4Remove the parentheses around the "string" parameter(Î¢±Ìûÿÿÿÿ8šØ¶ÇŠ0
+W
+java:S1611¤"4Remove the parentheses around the "string" parameter(Î¢±Ìûÿÿÿÿ8šØ¶ÇŠ0
+Y
+java:S1611¤"6Remove the parentheses around the "idsTests" parameter(Î¢±Ìûÿÿÿÿ8šØ¶ÇŠ0
+O
+java:S1602¦",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8¢Ø¶ÇŠ0
+Y
+java:S1612¥"<Replace this lambda with method reference 'keyTestOne::add'.(ş‚öc8¢Ø¶ÇŠ0
+R
+java:S1611³"4Remove the parentheses around the "string" parameter(Çë·8²Ø¶ÇŠ0
+R
+java:S1611³"4Remove the parentheses around the "string" parameter(Çë·8²Ø¶ÇŠ0
+T
+java:S1611³"6Remove the parentheses around the "idsTests" parameter(Çë·8²Ø¶ÇŠ0
+O
+java:S1602µ",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ºØ¶ÇŠ0
+Y
+java:S1612´"<Replace this lambda with method reference 'keyTestTwo::add'.(ş‚öc8ºØ¶ÇŠ0
+R
+java:S1611À"4Remove the parentheses around the "string" parameter(’îÆê8âØ¶ÇŠ0
+R
+java:S1611À"4Remove the parentheses around the "string" parameter(’îÆê8âØ¶ÇŠ0
+T
+java:S1611À"6Remove the parentheses around the "idSample" parameter(’îÆê8âØ¶ÇŠ0
+O
+java:S1602Â",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8âØ¶ÇŠ0
+Z
+java:S1612Á"=Replace this lambda with method reference 'keyTestTree::add'.(ş‚öc8âØ¶ÇŠ0
+^	java:S125È"<This block of commented-out lines of code should be removed.(ºùåúÿÿÿÿ8êØ¶ÇŠ0
+K	java:S108û")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8òØ¶ÇŠ0
+u
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(Ñ˜¢†ùÿÿÿÿ8òØ¶ÇŠ0
+f
+java:S5361–"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ºŒ‡¯8“Ù¶ÇŠ0
+f
+java:S5361œ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ˆˆÏ©8›Ù¶ÇŠ0
+f
+java:S5361Ÿ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Óæİª8›Ù¶ÇŠ0
+k
+java:S5361¢"HReplace this call to "replaceAll()" by a call to the "replace()" method.(‘ùÿÿÿÿ8›Ù¶ÇŠ0
+e
+java:S5361¥"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ÈÁÚE8›Ù¶ÇŠ0
+f
+java:S5361«"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Üƒÿä8›Ù¶ÇŠ0
+k
+java:S5361¯"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¨£ù¾ÿÿÿÿÿ8£Ù¶ÇŠ0
+f
+java:S5361µ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(æ´Æˆ8£Ù¶ÇŠ0
+k
+java:S5361¹"HReplace this call to "replaceAll()" by a call to the "replace()" method.(à†Àüÿÿÿÿ8«Ù¶ÇŠ0
+k
+java:S5361¿"HReplace this call to "replaceAll()" by a call to the "replace()" method.(á”î†úÿÿÿÿ8«Ù¶ÇŠ0
+k
+java:S5361Î"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ãİ«ñıÿÿÿÿ8³Ù¶ÇŠ0
+f
+java:S5361Ò"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ì¶—¦8³Ù¶ÇŠ0
+f
+java:S5361Ü"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Â³†Ï8»Ù¶ÇŠ0
+k
+java:S5361á"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ïÓ©œùÿÿÿÿ8»Ù¶ÇŠ0
+k
+java:S5361æ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(íÚ‹ıùÿÿÿÿ8»Ù¶ÇŠ0
+f
+java:S5361ë"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Ó¼À8ÃÙ¶ÇŠ0
+k
+java:S5361ğ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(„øÿşÿÿÿÿ8ÃÙ¶ÇŠ0
+f
+java:S5361õ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ÇŞı¦8ÃÙ¶ÇŠ0
+f
+java:S5361ù"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Ùò®‘8ËÙ¶ÇŠ0
+f
+java:S5361ş"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ï´ñ²8ËÙ¶ÇŠ0
+k
+java:S5361‚	"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ëÑÌºÿÿÿÿÿ8ÓÙ¶ÇŠ0
+k
+java:S5361¤	"HReplace this call to "replaceAll()" by a call to the "replace()" method.(©±ËÏüÿÿÿÿ8ÓÙ¶ÇŠ0
+k
+java:S5361¥	"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¼ˆÖÁüÿÿÿÿ8ÛÙ¶ÇŠ0
+V	java:S106°	"9Replace this use of System.out or System.err by a logger.(³õ¥Ğ8ÛÙ¶ÇŠ0
+u
+java:S3776ö	"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(÷…Çøÿÿÿÿ8óÙ¶ÇŠ0
+>	java:S131„
+""Add a default case to this switch.(İ¤a8ûÙ¶ÇŠ0
+J
+java:S1125À
+"'Remove the unnecessary boolean literal.(¼›ëúşÿÿÿÿ8‹Ú¶ÇŠ0
+J
+java:S1125À
+"'Remove the unnecessary boolean literal.(¼›ëúşÿÿÿÿ8ãÚ¶ÇŠ0
+O
+java:S1602Ä
+",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8“Ú¶ÇŠ0
+p
+java:S3776Ë
+"RRefactor this method to reduce its Cognitive Complexity from 72 to the 15 allowed.(ğÙÙ8“Ú¶ÇŠ0
+U
+java:S1135Í
+"2Complete the task associated to this TODO comment.(‚Éà¶ıÿÿÿÿ8›Ú¶ÇŠ0
+M
+java:S2200®"/Only the sign of the result should be examined.(åØÏ8»Ú¶ÇŠ0
+R
+java:S2200³"/Only the sign of the result should be examined.(¯éÏüÿÿÿÿ8ÃÚ¶ÇŠ0
+\
+java:S1854É"9Remove this useless assignment to local variable "tests".(»°œ‹øÿÿÿÿ8ËÚ¶ÇŠ0
+J
+java:S1125Ş"'Remove the unnecessary boolean literal.(ÏÊ„øÿÿÿÿ8›Û¶ÇŠ0
+J
+java:S1125‰"'Remove the unnecessary boolean literal.(ÿ‚ßøÿÿÿÿÿ8¼İ¶ÇŠ0
+a
+java:S1854™"CRemove this useless assignment to local variable "hasTraceability".(üî«ã8«Û¶ÇŠ0
+^	java:S125–"<This block of commented-out lines of code should be removed.(˜Ñ°Îûÿÿÿÿ8«Û¶ÇŠ0
+R
+java:S1481™"4Remove this unused "hasTraceability" local variable.(üî«ã8³Û¶ÇŠ0
+^	java:S125¶"<This block of commented-out lines of code should be removed.(§ì™ øÿÿÿÿ8»Û¶ÇŠ0
+Y
+java:S1611³"6Remove the parentheses around the "itemList" parameter(Ñ¯ìíşÿÿÿÿ8ËÛ¶ÇŠ0
+Y
+java:S1611³"6Remove the parentheses around the "itemList" parameter(Ñ¯ìíşÿÿÿÿ8ËÛ¶ÇŠ0
+O
+java:S1602µ",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ËÛ¶ÇŠ0
+u
+java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¿Ó­¢ùÿÿÿÿ8ÓÛ¶ÇŠ0
+U
+java:S1135ä"2Complete the task associated to this TODO comment.(ÄÅŠ´ıÿÿÿÿ8İÛ¶ÇŠ0
+M
+java:S2200æ"/Only the sign of the result should be examined.(éşÒ«8ŞÛ¶ÇŠ0
+M
+java:S2200æ"/Only the sign of the result should be examined.(éşÒ«8ßÛ¶ÇŠ0
+M
+java:S2200ê"/Only the sign of the result should be examined.(¯èş8âÛ¶ÇŠ0
+M
+java:S2200ì"/Only the sign of the result should be examined.(œ¯ëó8äÛ¶ÇŠ0
+M
+java:S2200î"/Only the sign of the result should be examined.(şõÄâ8åÛ¶ÇŠ0
+L
+java:S2200ğ"/Only the sign of the result should be examined.(µàÑ8çÛ¶ÇŠ0
+U
+java:S1135ú"2Complete the task associated to this TODO comment.(ÄÅŠ´ıÿÿÿÿ8ëÛ¶ÇŠ0
+u
+java:S3776²"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(å¸ûúÿÿÿÿ8óÛ¶ÇŠ0
+b
+java:S3358µ"DExtract this nested ternary operation into an independent statement.(ìÙÜª8óÛ¶ÇŠ0
+U
+java:S1135·"2Complete the task associated to this TODO comment.(©×ıÿÿÿÿ8óÛ¶ÇŠ0
+P
+java:S1135¸"2Complete the task associated to this TODO comment.(ÃßÃÁ8óÛ¶ÇŠ0
+e
+java:S4034í"HReplace this "filter().findFirst().isPresent()" chain with "anyMatch()".(íİàM8‹Ü¶ÇŠ0
+?
+java:S2111ˆ"!Use "BigDecimal.valueOf" instead.(ñõü8“Ü¶ÇŠ0
+K	java:S108Œ")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8“Ü¶ÇŠ0
+p
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(üÁ¹ü8›Ü¶ÇŠ0
+P
+java:S1135Ì"2Complete the task associated to this TODO comment.( ŞÒ¿8³Ü¶ÇŠ0
+Y	java:S125×"<This block of commented-out lines of code should be removed.(Ú°à¬8³Ü¶ÇŠ0
+U
+java:S1135û"2Complete the task associated to this TODO comment.(ñ”‡Ùÿÿÿÿÿ8³Ü¶ÇŠ0
+a
+java:S1155‡">Use isEmpty() to check whether the collection is empty or not.(·æòÅûÿÿÿÿ8³Ü¶ÇŠ0
+a
+java:S1155‡">Use isEmpty() to check whether the collection is empty or not.(·æòÅûÿÿÿÿ8»Ü¶ÇŠ0
+P
+java:S1135‰"2Complete the task associated to this TODO comment.(‡ø‹ 8»Ü¶ÇŠ0
+Y	java:S125—"<This block of commented-out lines of code should be removed.(ü¿àç8»Ü¶ÇŠ0
+O
+java:S1602­",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ÃÜ¶ÇŠ0
+e
+java:S1612®"BReplace this lambda with method reference 'ResultTest::getTestId'.(èñ±®ÿÿÿÿÿ8ÃÜ¶ÇŠ0
+p
+java:S3776º"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ŞÁƒı8ÃÜ¶ÇŠ0
+R
+java:S2200Ç"/Only the sign of the result should be examined.(Ïäì„şÿÿÿÿ8ËÜ¶ÇŠ0
+R
+java:S2200Ç"/Only the sign of the result should be examined.(Ïäì„şÿÿÿÿ8ËÜ¶ÇŠ0
+R
+java:S2200Í"/Only the sign of the result should be examined.(°šØøÿÿÿÿ8ËÜ¶ÇŠ0
+M
+java:S2200Ğ"/Only the sign of the result should be examined.(à®­²8ÓÜ¶ÇŠ0
+M
+java:S2200Ó"/Only the sign of the result should be examined.(Ç­ˆ8ÓÜ¶ÇŠ0
+R
+java:S2200Ö"/Only the sign of the result should be examined.(¿¢Ê ıÿÿÿÿ8ÓÜ¶ÇŠ0
+K	java:S108†")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8ÛÜ¶ÇŠ0
+M
+java:S2200 "/Only the sign of the result should be examined.(„ÎÚ“8ëÜ¶ÇŠ0
+M
+java:S2200 "/Only the sign of the result should be examined.(„ÎÚ“8óÜ¶ÇŠ0
+R
+java:S2200¦"/Only the sign of the result should be examined.(Èç“Òıÿÿÿÿ8ûÜ¶ÇŠ0
+R
+java:S2200©"/Only the sign of the result should be examined.(Şı¡ôÿÿÿÿÿ8ûÜ¶ÇŠ0
+R
+java:S2200¬"/Only the sign of the result should be examined.(ÍßûÜıÿÿÿÿ8ûÜ¶ÇŠ0
+M
+java:S2200¯"/Only the sign of the result should be examined.(Ä®Îú8ƒİ¶ÇŠ0
+p
+java:S3776Ö"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÃœÆÔ8ƒİ¶ÇŠ0
+M
+java:S2200ä"/Only the sign of the result should be examined.(„ÎÚ“8‹İ¶ÇŠ0
+M
+java:S2200ä"/Only the sign of the result should be examined.(„ÎÚ“8“İ¶ÇŠ0
+R
+java:S2200ê"/Only the sign of the result should be examined.(Èç“Òıÿÿÿÿ8“İ¶ÇŠ0
+R
+java:S2200í"/Only the sign of the result should be examined.(Şı¡ôÿÿÿÿÿ8“İ¶ÇŠ0
+R
+java:S2200ğ"/Only the sign of the result should be examined.(ÍßûÜıÿÿÿÿ8›İ¶ÇŠ0
+M
+java:S2200ó"/Only the sign of the result should be examined.(Ä®Îú8›İ¶ÇŠ0
+J
+java:S1125·"'Remove the unnecessary boolean literal.(¼›ëúşÿÿÿÿ8¼İ¶ÇŠ0
+J
+java:S1125·"'Remove the unnecessary boolean literal.(¼›ëúşÿÿÿÿ8¼ß¶ÇŠ0
+O
+java:S1602Û",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8Ëİ¶ÇŠ0
+O
+java:S1602ş",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8Ûİ¶ÇŠ0
+p
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Ï´ùë8ëİ¶ÇŠ0
+d
+java:S1612²"FReplace this lambda with method reference 'Microorganism::isSelected'.(ºÍáé8‰Ş¶ÇŠ0
+n
+java:S1612µ"KReplace this lambda with method reference 'ResultMicrobiology::isSelected'.(‡éİòıÿÿÿÿ8‹Ş¶ÇŠ0
+p
+java:S3776Ë"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(İê¥³8‹Ş¶ÇŠ0
+d
+java:S1612Ò"FReplace this lambda with method reference 'Microorganism::isSelected'.(ºÍáé8“Ş¶ÇŠ0
+n
+java:S1612Õ"KReplace this lambda with method reference 'ResultMicrobiology::isSelected'.(‡éİòıÿÿÿÿ8“Ş¶ÇŠ0
+Y	java:S125î"<This block of commented-out lines of code should be removed.(ÑÕËå8›Ş¶ÇŠ0
+^	java:S125ñ"<This block of commented-out lines of code should be removed.(ƒÊºÅÿÿÿÿÿ8›Ş¶ÇŠ0
+\
+java:S1612ı">Replace this lambda with method reference 'Question::isState'.(úÎÆ·8£Ş¶ÇŠ0
+Y
+java:S1611ş"6Remove the parentheses around the "question" parameter(ä”µœúÿÿÿÿ8£Ş¶ÇŠ0
+W
+java:S1611…"4Remove the parentheses around the "answer" parameter(±îÜœüÿÿÿÿ8£Ş¶ÇŠ0
+O
+java:S1602‡",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8£Ş¶ÇŠ0
+]
+java:S1611–":Remove the parentheses around the "listLiterale" parameter(Å‰Óéıÿÿÿÿ8£Ş¶ÇŠ0
+T
+java:S2692›"10 is a valid index, but is ignored by this check.(–õ‘ıÿÿÿÿ8£Ş¶ÇŠ0
+U
+java:S1135Ø"2Complete the task associated to this TODO comment.(öööÑÿÿÿÿÿ8«Ş¶ÇŠ0
+^	java:S125ä"<This block of commented-out lines of code should be removed.(àŠ“üÿÿÿÿ8³Ş¶ÇŠ0
+X	java:S125è"<This block of commented-out lines of code should be removed.(¤ø8³Ş¶ÇŠ0
+^	java:S125í"<This block of commented-out lines of code should be removed.(â‡¼¶úÿÿÿÿ8»Ş¶ÇŠ0
+u
+java:S3776õ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(»„‘ûÿÿÿÿ8ÃŞ¶ÇŠ0
+u
+java:S3776§"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(ÇÚàÃüÿÿÿÿ8ÛŞ¶ÇŠ0
+D	java:S131°""Add a default case to this switch.(£æ‚üÿÿÿÿ8ÛŞ¶ÇŠ0
+d
+java:S1126·"AReplace this if-then-else statement by a single return statement.(Û²´„ıÿÿÿÿ8óŞ¶ÇŠ0
+a
+java:S1155·">Use isEmpty() to check whether the collection is empty or not.(Û²´„ıÿÿÿÿ8óŞ¶ÇŠ0
+b
+java:S1854Æ"DRemove this useless assignment to local variable "profilesToUpdate".(çš¢Ğ8óŞ¶ÇŠ0
+[
+java:S1854Î"8Remove this useless assignment to local variable "list".(Û‡ØÃıÿÿÿÿ8óŞ¶ÇŠ0
+L
+java:S1481Î")Remove this unused "list" local variable.(Û‡ØÃıÿÿÿÿ8ûŞ¶ÇŠ0
+^	java:S125Ò"<This block of commented-out lines of code should be removed.(ÊÌ¯‚ıÿÿÿÿ8ûŞ¶ÇŠ0
+_
+java:S1126İ"AReplace this if-then-else statement by a single return statement.(’ÎÔ8ûŞ¶ÇŠ0
+\
+java:S1155İ">Use isEmpty() to check whether the collection is empty or not.(’ÎÔ8ûŞ¶ÇŠ0
+u
+java:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(©¾† ûÿÿÿÿ8ûŞ¶ÇŠ0
+a
+java:S1155˜">Use isEmpty() to check whether the collection is empty or not.(®¾Âşşÿÿÿÿ8ƒß¶ÇŠ0
+`
+java:S1612Â"BReplace this lambda with method reference 'Profile::getProfileId'.(šù¢Æ8‹ß¶ÇŠ0
+a
+java:S1854ƒ">Remove this useless assignment to local variable "resultTest".(¼¼Õšúÿÿÿÿ8“ß¶ÇŠ0
+i
+java:S1612˜"FReplace this lambda with method reference 'Microorganism::isSelected'.(û’óşÿÿÿÿ8œß¶ÇŠ0
+i
+java:S1612›"KReplace this lambda with method reference 'ResultMicrobiology::isSelected'.(™åÙä8œß¶ÇŠ0
+U	java:S106Á"9Replace this use of System.out or System.err by a logger.(ö»|8¶ß¶ÇŠ0
+[	java:S106Â"9Replace this use of System.out or System.err by a logger.(€ª´´şÿÿÿÿ8¶ß¶ÇŠ0
+u
+java:S3776Û"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(½Ò™„úÿÿÿÿ8¼ß¶ÇŠ0
+J
+java:S1125ö"'Remove the unnecessary boolean literal.(ÏÊ„øÿÿÿÿ8ø‡ÓÔŠ0
+\
+java:S1144Ù">Remove this unused private "filterTestForUpdateResult" method.(ıŸ8äß¶ÇŠ0

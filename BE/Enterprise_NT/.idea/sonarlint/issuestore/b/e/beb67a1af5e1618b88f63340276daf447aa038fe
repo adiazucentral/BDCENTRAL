@@ -1,0 +1,65 @@
+
+F
+java:S5411Í"*Use the primitive boolean expression here.(³§ãíøÿÿÿÿ
+A
+java:S5411Î"*Use the primitive boolean expression here.(²¢Ü¸
+g
+java:S1612È"KReplace this lambda with method reference 'StatisticOrder::getOrderNumber'.(¿‘ôÈøÿÿÿÿ
+g
+java:S1612È"KReplace this lambda with method reference 'StatisticOrder::getOrderNumber'.(¿‘ôÈøÿÿÿÿ
+J
+java:S1611É"3Remove the parentheses around the "order" parameter(Ä¼…§
+J
+java:S1611É"3Remove the parentheses around the "order" parameter(Ä¼…§
+g
+java:S1612Ö"KReplace this lambda with method reference 'StatisticOrder::getOrderNumber'.(ÑˆÕ¡øÿÿÿÿ
+i
+java:S3776î"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(¹þÒÀ
+R	java:S125†"<This block of commented-out lines of code should be removed.(‹—‡Ó
+R	java:S125“"<This block of commented-out lines of code should be removed.(‹—‡Ó
+n
+java:S3776Â"RRefactor this method to reduce its Cognitive Complexity from 51 to the 15 allowed.(Ÿ°Ô³ýÿÿÿÿ
+g
+java:S1612‡"KReplace this lambda with method reference 'StatisticOrder::getOrderNumber'.(¿‘ôÈøÿÿÿÿ
+g
+java:S1612‡"KReplace this lambda with method reference 'StatisticOrder::getOrderNumber'.(¿‘ôÈøÿÿÿÿ
+J
+java:S1611ˆ"3Remove the parentheses around the "order" parameter(Ä¼…§
+J
+java:S1611ˆ"3Remove the parentheses around the "order" parameter(Ä¼…§
+^
+java:S1612§"BReplace this lambda with method reference 'Order::getOrderNumber'.(èÅª•ùÿÿÿÿ
+^
+java:S1612®"BReplace this lambda with method reference 'Order::getOrderNumber'.(èÅª•ùÿÿÿÿ
+K
+java:S2200¨"/Only the sign of the result should be examined.(é‡ôÉøÿÿÿÿ
+K
+java:S2200¨"/Only the sign of the result should be examined.(é‡ôÉøÿÿÿÿ
+P
+java:S1611"4Remove the parentheses around the "result" parameter(ÊüÏîüÿÿÿÿ
+H
+java:S1602‚",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+K
+java:S2200È"/Only the sign of the result should be examined.(Ù€áåýÿÿÿÿ
+K
+java:S2200É"/Only the sign of the result should be examined.(ÓÿÖñþÿÿÿÿ
+Y
+java:S1612à"BReplace this lambda with method reference 'this::setElapsedTimes'.(‰Ò¼¡
+Y
+java:S1612ð"BReplace this lambda with method reference 'this::setElapsedTimes'.(‰Ò¼¡
+i
+java:S3776—"RRefactor this method to reduce its Cognitive Complexity from 60 to the 15 allowed.(‚ö÷î
+Y
+java:S1612·"=Replace this lambda with method reference 'Destination::new'.(¨ÄÒ©ùÿÿÿÿ
+n
+java:S3776ß"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Ó¿àéÿÿÿÿÿ
+H
+java:S1602ì",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+H
+java:S1602î",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
+`
+java:S3358ñ"DExtract this nested ternary operation into an independent statement.(Âô¼éùÿÿÿÿ
+V
+java:S6213ô":Rename this variable to not match a restricted identifier.(Ž«¯šýÿÿÿÿ
+F
+java:S1144Ô"/Remove this unused private "getCashBox" method.(ºåþÓ

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="INFO">
+    <Properties>
+        <Property name="filename_OrderCreation">OrderCreation.log</Property>
+        <Property name="filename_Scheduler">Scheduler.log</Property>
+        <Property name="filename_DashBoard">DashBoard.log</Property>
+        <Property name="filename_ExternalBilling">ExternalBilling.log</Property>
+        <Property name="filename_Middleware">Middleware.log</Property>
+        <Property name="filename_Siga">Siga.log</Property>
+        <Property name="filename_Patient">Patient.log</Property>
+        <Property name="filename_Results">Results.log</Property>
+        <Property name="filename_Stadistics">Stadistics.log</Property>
+        <Property name="filename_ChatWs">ChatWs.log</Property>
+        <Property name="filename_PrintWs">PrintWs.log</Property>
+        <Property name="filename_Events">Events.log</Property>
+        <Property name="filename_IntegrationHis">IntegrationHis.log</Property>
+        <Property name="filename_Security">Security.log</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        
+        <Routing name ="RoutingOrderCreation">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_OrderCreation" fileName="logs/${sys:ProyectName}/OrderCreation/${filename_OrderCreation}" filePattern="logs/${sys:ProyectName}/OrderCreation/$${date:yyyy-MM}/OrderCreation-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingScheduler">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Scheduler" fileName="logs/${sys:ProyectName}/Scheduler/${filename_Scheduler}" filePattern="logs/${sys:ProyectName}/Scheduler/$${date:yyyy-MM}/Scheduler-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingDashBoard">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_DashBoard" fileName="logs/${sys:ProyectName}/DashBoard/${filename_DashBoard}" filePattern="logs/${sys:ProyectName}/DashBoard/$${date:yyyy-MM}/DashBoard-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingExternalBilling">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_ExternalBilling" fileName="logs/${sys:ProyectName}/ExternalBilling/${filename_ExternalBilling}" filePattern="logs/${sys:ProyectName}/ExternalBilling/$${date:yyyy-MM}/ExternalBilling-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingMiddleware">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Middleware" fileName="logs/${sys:ProyectName}/Middleware/${filename_Middleware}" filePattern="logs/${sys:ProyectName}/Middleware/$${date:yyyy-MM}/Middleware-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingSiga">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Siga" fileName="logs/${sys:ProyectName}/Siga/${filename_Siga}" filePattern="logs/${sys:ProyectName}/Siga/$${date:yyyy-MM}/Siga-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingPatient">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Patient" fileName="logs/${sys:ProyectName}/Patient/${filename_Patient}" filePattern="logs/${sys:ProyectName}/Patient/$${date:yyyy-MM}/Patient-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingResults">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Results" fileName="logs/${sys:ProyectName}/Results/${filename_Results}" filePattern="logs/${sys:ProyectName}/Results/$${date:yyyy-MM}/Results-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingStadistics">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Stadistics" fileName="logs/${sys:ProyectName}/Stadistics/${filename_Stadistics}" filePattern="logs/${sys:ProyectName}/Stadistics/$${date:yyyy-MM}/Stadistics-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingPrintWs">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_PrintWs" fileName="logs/${sys:ProyectName}/PrintWs/${filename_PrintWs}" filePattern="logs/${sys:ProyectName}/PrintWs/$${date:yyyy-MM}/PrintWs-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingEvents">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Events" fileName="logs/${sys:ProyectName}/Events/${filename_Events}" filePattern="logs/${sys:ProyectName}/Events/$${date:yyyy-MM}/Events-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingIntegrationHis">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_IntegrationHis" fileName="logs/${sys:ProyectName}/IntegrationHis/${filename_IntegrationHis}" filePattern="logs/${sys:ProyectName}/IntegrationHis/$${date:yyyy-MM}/IntegrationHis-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <Routing name ="RoutingSecurity">
+            <Routes pattern="$${sys:ProyectName}">
+                <Route>
+                    <RollingFile name="File_Security" fileName="logs/${sys:ProyectName}/Security/${filename_Security}" filePattern="logs/${sys:ProyectName}/Security/$${date:yyyy-MM}/Security-%d{MM-dd-yyyy}-%i.log.gz">
+                        <PatternLayout>
+                            <pattern>[%-5p %d{dd MMM yyyy - HH:mm:ss}] %c{2} - %m%n</pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="100 MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="20"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+    </Appenders>
+    <Loggers>
+        <Logger name="OrderCreationfile" additivity="false">
+            <AppenderRef ref="RoutingOrderCreation"/>
+        </Logger>
+        <Logger name="Schedulerfile" additivity="false">
+            <AppenderRef ref="RoutingScheduler"/>
+        </Logger>
+        <Logger name="DashBoardfile" additivity="false">
+            <AppenderRef ref="RoutingDashBoard"/>
+        </Logger>
+        <Logger name="ExternalBillingfile" additivity="false">
+            <AppenderRef ref="RoutingExternalBilling"/>
+        </Logger>
+        <Logger name="Middlewarefile" additivity="false">
+            <AppenderRef ref="RoutingMiddleware"/>
+        </Logger>
+        <Logger name="Sigafile" additivity="false">
+            <AppenderRef ref="RoutingSiga"/>
+        </Logger>
+        <Logger name="Patientfile" additivity="false">
+            <AppenderRef ref="RoutingPatient"/>
+        </Logger>
+        <Logger name="Resultsfile" additivity="false">
+            <AppenderRef ref="RoutingResults"/>
+        </Logger>
+        <Logger name="Stadisticsfile" additivity="false">
+            <AppenderRef ref="RoutingStadistics"/>
+        </Logger>
+        <Logger name="ChatWsfile" additivity="false">
+            <AppenderRef ref="RoutingChatWs"/>
+        </Logger>
+        <Logger name="PrintWsfile" additivity="false">
+            <AppenderRef ref="RoutingPrintWs"/>
+        </Logger>
+        <Logger name="Eventsfile" additivity="false">
+            <AppenderRef ref="RoutingEvents"/>
+        </Logger>
+        <Logger name="IntegrationHisfile" additivity="false">
+            <AppenderRef ref="RoutingIntegrationHis"/>
+        </Logger>
+        <Logger name="Securityfile" additivity="false">
+            <AppenderRef ref="RoutingSecurity"/>
+        </Logger>
+        
+        <Root level="info">
+            <AppenderRef ref="Console" level="info"/>
+        </Root>
+    </Loggers>
+</Configuration>

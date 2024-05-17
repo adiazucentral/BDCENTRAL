@@ -1,0 +1,15 @@
+
+g
+java:S1192Æ"KDefine a constant instead of duplicating this literal "RangoFinal" 3 times.(øØ‘êøÿÿÿÿ
+i
+java:S1192Æ"MDefine a constant instead of duplicating this literal "RangoInicial" 3 times.(øØ‘êøÿÿÿÿ
+i
+java:S1192Ö"RDefine a constant instead of duplicating this literal "RangoInicialCitas" 3 times.(µı†²
+g
+java:S1192Ö"PDefine a constant instead of duplicating this literal "RangoFinalCitas" 3 times.(µı†²
+e
+java:S1192n"ODefine a constant instead of duplicating this literal "TrabajoPorSede" 4 times.(ËÌÍô
+F
+java:S5411ª"*Use the primitive boolean expression here.(°º«İøÿÿÿÿ
+£
+java:S1130º"‹Remove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonProcessingException', as it cannot be thrown from method's body.(µÀÎâ

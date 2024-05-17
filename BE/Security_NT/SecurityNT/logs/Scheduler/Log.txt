@@ -1,0 +1,1 @@
+[INFO  08 may 2023 - 22:05:47] jobs.SchedulerLog - Job: El Programador se cerró de manera exitosa - Desactivar usuarios.

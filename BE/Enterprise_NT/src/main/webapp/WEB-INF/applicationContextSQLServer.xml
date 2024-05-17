@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"              
+       xmlns:websocket="http://www.springframework.org/schema/websocket"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd              
+       http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket.xsd">
+
+    <!--Establece el acceso a la api fuera del dominio-->
+    <mvc:cors>
+        <mvc:mapping path="/api/**"
+                     allowed-origins="*"
+                     allowed-methods="GET, POST, PUT, DELETE, OPTIONS"
+                     allowed-headers="Content-Type, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Authorization, X-Requested-With, requestId, Correlation-Id"
+                     exposed-headers="Content-Type, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Authorization, X-Requested-With, requestId, Correlation-Id"
+                     allow-credentials="false"
+                     max-age="3600" />
+    </mvc:cors>
+    <!--Configura la instancia de web sockets-->
+    <bean id="socketHandler" class="net.cltech.enterprisent.websocket.PrintEventHandler"/>    
+    <websocket:handlers allowed-origins="*">
+        <websocket:mapping path="/printer" handler="socketHandler"/>
+        <websocket:handshake-interceptors>
+            <bean class="org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor"/>
+        </websocket:handshake-interceptors>
+    </websocket:handlers>
+    <!--Configura la instancia de web sockets-->
+    <bean id="chatHandler" class="net.cltech.enterprisent.websocket.ChatHandler"/>    
+    <websocket:handlers allowed-origins="*">
+        <websocket:mapping path="/chat" handler="chatHandler"/>
+        <websocket:handshake-interceptors>
+            <bean class="org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor"/>
+        </websocket:handshake-interceptors>
+    </websocket:handlers>
+    <bean id="printHandler" class="net.cltech.enterprisent.websocket.PrintHandler"/>    
+    <websocket:handlers allowed-origins="*">
+        <websocket:mapping path="/print" handler="printHandler"/>
+        <websocket:handshake-interceptors>
+            <bean class="org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor"/>
+        </websocket:handshake-interceptors>
+    </websocket:handlers>   
+    <!-- Activa el manejo de transacciones en la aplicacion -->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager" />
+    <!-- Crea el objeto de spring que manejara las transacciones de la aplicacion -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>    
+    <!--Define el paquete donde se encontraran los daos de la aplicacion para SQLServer-->
+    <context:component-scan base-package="net.cltech.enterprisent.dao.impl.sqlserver"/>
+    <!--Define el paquete donde se encontraran los servicios de la aplicacion-->
+    <context:component-scan base-package="net.cltech.enterprisent.service.impl.enterprisent"/>
+    <!--Define el paquete donde se encontraran los controladores-->
+    <context:component-scan base-package="net.cltech.enterprisent.controllers"/>
+    <!--Activa el uso de anotaciones en los controladores-->
+    <mvc:annotation-driven/>
+    <!--Establece los recursos de front-end como estaticos para no se tratados dentro del modelo mvc de spring-->
+    <mvc:resources mapping="/front-end/**" location="/front-end/"/>
+    <!--Define el recurso de acceso a base de datos-->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" p:location="/jdbc.properties" />
+    <!--Define el recurso de acceso a base de datos LIS -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value = "${jdbc.lis.driverClassName}"/>
+        <property name="url" value="${jdbc.lis.url}" />
+        <property name="username" value="${jdbc.lis.username}" />
+        <property name="password" value="${jdbc.lis.password}"/>
+        <property name="maxTotal" value = "${jdbc.lis.maxConnections}"/>
+        <property name="maxIdle" value="10" />
+    </bean>
+    <!--Define el recurso de acceso a base de datos documentos-->
+    <bean id="dataSourceDocs" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value = "${jdbc.docs.driverClassName}"/>
+        <property name="url" value="${jdbc.docs.url}" />
+        <property name="username" value="${jdbc.docs.username}" />
+        <property name="password" value="${jdbc.docs.password}"/>
+        <property name="maxTotal" value = "${jdbc.docs.maxConnections}"/>
+        <property name="maxIdle" value="10" />
+    </bean>
+    <!--Define el recurso de acceso a base de datos estadisticas-->
+    <bean id="dataSourceStat" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value = "${jdbc.stat.driverClassName}"/>
+        <property name="url" value="${jdbc.stat.url}" />
+        <property name="username" value="${jdbc.stat.username}" />
+        <property name="password" value="${jdbc.stat.password}"/>
+        <property name="maxTotal" value = "${jdbc.stat.maxConnections}"/>
+        <property name="maxIdle" value="10" />
+    </bean>
+    <!--Define el recurso de acceso a base de datos EnterpriseNTControl-->
+    <bean id="dataSourceCont" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value = "${jdbc.cont.driverClassName}"/>
+        <property name="url" value="${jdbc.cont.url}" />
+        <property name="username" value="${jdbc.cont.username}" />
+        <property name="password" value="${jdbc.cont.password}"/>
+        <property name="maxTotal" value = "${jdbc.cont.maxConnections}"/>
+        <property name="maxIdle" value="10" />
+    </bean>
+    <!--Define el recurso de acceso a base de datos reporte his-->
+    <bean id="dataSourceRep" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value = "${jdbc.rep.driverClassName}"/>
+        <property name="url" value="${jdbc.rep.url}" />
+        <property name="username" value="${jdbc.rep.username}" />
+        <property name="password" value="${jdbc.rep.password}"/>
+        <property name="maxTotal" value = "${jdbc.rep.maxConnections}"/>
+        <property name="maxIdle" value="10" />
+    </bean>
+    <!--Define el recurso de acceso a base de datos Patologia -->
+    <bean id="dataSourcePat" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value = "${jdbc.pat.driverClassName}"/>
+        <property name="url" value="${jdbc.pat.url}" />
+        <property name="username" value="${jdbc.pat.username}" />
+        <property name="password" value="${jdbc.pat.password}"/>
+        <property name="maxTotal" value = "${jdbc.pat.maxConnections}"/>
+        <property name="maxIdle" value="10" />
+    </bean>
+    <!--Define el recurso para ejecutar tareas automaticas-->
+    <bean id="jobTask" class="net.cltech.enterprisent.start.jobs.JobTask" />
+    <bean id="expiredSample" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="jobTask" />
+        <property name="targetMethod" value="expiredSample" />
+    </bean>    
+    <bean id="newYear" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="jobTask" />
+        <property name="targetMethod" value="newYear" />
+    </bean>
+    <bean id="maintenanceDBDaily" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="jobTask" />
+        <property name="targetMethod" value="maintenanceDBDaily" />
+    </bean>  
+    <!--
+        Se crea Job para el envio de resultados automaticos por medio de correo electronico
+    -->
+    <!--<bean id="sendEmailAutomaticResult" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="jobTask" />
+        <property name="targetMethod" value="sendEmailAutomaticResult" />
+    </bean>      -->
+    <bean id="expiredSampleTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="expiredSample" />
+        <property name="cronExpression" value="0 0/10 * * * ?" /> <!-- ejecutar cada 10m -->
+    </bean>
+    <bean id="newYearTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="newYear" />
+        <property name="cronExpression" value="0 0 0 1 1 ?" />  <!-- ejecutar el 1 de Enero -->
+    </bean>
+    <bean id="maintenanceDBDailyTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="maintenanceDBDaily" />
+        <property name="cronExpression" value="* 30 00 * * ?" />  <!-- ejecutar a la media noche -->
+    </bean>
+    <!--
+        Se crea Job para el envio de resultados automaticos por medio de correo electronico
+    -->
+    <!-- <bean id="sendEmailAutomaticResultTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="sendEmailAutomaticResult" />
+        <property name="cronExpression" value="0 0/15 * * * ?" />  ejecutar cada 15m 
+    </bean>-->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="autoStartup">
+            <value>true</value>
+        </property>
+        <property name="jobDetails">
+            <list>
+                <ref bean="expiredSample" />
+                <ref bean="newYear" />
+                <ref bean="maintenanceDBDaily" />
+                <!--  <ref bean="sendEmailAutomaticResult" />-->
+            </list>
+        </property>
+        <property name="triggers">
+            <list>
+                <ref bean="expiredSampleTrigger" />
+                <ref bean="newYearTrigger" />
+                <ref bean="maintenanceDBDailyTrigger" />
+                <!--  <ref bean="sendEmailAutomaticResultTrigger" /> Job para el envio de resultados automaticos por medio de correo-->
+            </list>
+        </property>
+    </bean>    
+    <!-- Se carga el bean de inicio de sesion -->
+    <bean id="start" class="net.cltech.enterprisent.start.StartApp"/>
+</beans>

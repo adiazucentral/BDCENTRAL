@@ -1,0 +1,28 @@
+
+K
+java:S3740î"/Provide the parametrized type for this generic.(äÂì¤üÿÿÿÿ
+F
+java:S3740°"/Provide the parametrized type for this generic.(Óë¹¹
+^
+java:S4488F"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(©Ã—
+c
+java:S4488^"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¥®¥çûÿÿÿÿ
+c
+java:S4488v"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(»¡¸ûúÿÿÿÿ
+_
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–å©±
+d
+java:S4488¥"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ÿâˆıùÿÿÿÿ
+d
+java:S4488¼"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ó¶…›üÿÿÿÿ
+_
+java:S4488Ó"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(®šá»
+f
+java:S4488í"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ñ«‘şÿÿÿÿ
+d
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¸Èóüÿÿÿÿ
+_
+java:S4488™"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ôüç
+d	java:S100°"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óë¹¹
+f
+java:S4488¯"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ş®¨Äúÿÿÿÿ

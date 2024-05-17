@@ -1,0 +1,10 @@
+controllers\security\LicenseTest.class
+controllers\exception\ExceptionTest.class
+controllers\masters\user\AuthenticationTest.class
+config\MongoTestAppContext.class
+controllers\masters\configuration\ConfigurationTest.class
+tools\TestTools.class
+controllers\security\AuthenticationSessionTest.class
+config\TestAppContext.class
+tools\TestScript.class
+tools\DateToolsTest.class

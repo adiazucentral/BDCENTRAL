@@ -1,0 +1,1255 @@
+[INFO  09 abr 2024 - 14:49:57] tools.Log - App Iniciada
+[ERROR 09 abr 2024 - 14:50:19] tools.Log - connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1316)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1291)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.post(RESTCommunication.java:80)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.generateConfig(NTPersistence.java:100)
+	at net.cltech.enterprisent.print_nt.App.configuration(App.java:270)
+	at net.cltech.enterprisent.print_nt.App.start(App.java:220)
+	at net.cltech.enterprisent.print_nt.App.main(App.java:414)
+[ERROR 09 abr 2024 - 14:50:33] tools.Log - Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1926)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1921)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1920)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1490)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:239)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.get(RESTCommunication.java:202)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.testRest(NTPersistence.java:78)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.test(NTPersistence.java:58)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.btnTestUrlServerActionPerformed(FrmConfiguration.java:266)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.access$000(FrmConfiguration.java:33)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration$1.actionPerformed(FrmConfiguration.java:85)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:237)
+	... 42 more
+[ERROR 09 abr 2024 - 14:50:38] tools.Log - Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1926)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1921)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1920)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1490)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:239)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.get(RESTCommunication.java:202)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.testRest(NTPersistence.java:78)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.test(NTPersistence.java:58)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.btnTestUrlServerActionPerformed(FrmConfiguration.java:266)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.access$000(FrmConfiguration.java:33)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration$1.actionPerformed(FrmConfiguration.java:85)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:237)
+	... 42 more
+[ERROR 09 abr 2024 - 14:51:22] tools.Log - Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1926)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1921)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1920)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1490)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:239)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.get(RESTCommunication.java:202)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.testRest(NTPersistence.java:78)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.test(NTPersistence.java:58)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.btnTestUrlServerActionPerformed(FrmConfiguration.java:266)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.access$000(FrmConfiguration.java:33)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration$1.actionPerformed(FrmConfiguration.java:85)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:237)
+	... 42 more
+[ERROR 09 abr 2024 - 14:52:34] tools.Log - Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1926)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1921)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1920)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1490)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:239)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.get(RESTCommunication.java:202)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.testRest(NTPersistence.java:78)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.test(NTPersistence.java:58)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.btnTestUrlServerActionPerformed(FrmConfiguration.java:266)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.access$000(FrmConfiguration.java:33)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration$1.actionPerformed(FrmConfiguration.java:85)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.io.IOException: Server returned HTTP response code: 505 for URL: https://laboratoriofernandez.net:8183/Enterprise_NTP /api/configuration/test
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:237)
+	... 42 more
+[INFO  09 abr 2024 - 14:53:30] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 14:53:37] tools.Log - conexion abierta
+[INFO  09 abr 2024 - 14:53:37] tools.Log - Se verifico la conexión correctamente
+[ERROR 09 abr 2024 - 14:54:45] tools.Log - connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1546)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.getResponse(RESTCommunication.java:238)
+	at net.cltech.enterprisent.print_nt.bussines.RESTCommunication.get(RESTCommunication.java:203)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.testRest(NTPersistence.java:78)
+	at net.cltech.enterprisent.print_nt.bussines.persistence.NTPersistence.test(NTPersistence.java:58)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.btnTestUrlServerActionPerformed(FrmConfiguration.java:266)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration.access$000(FrmConfiguration.java:33)
+	at net.cltech.enterprisent.print_nt.forms.FrmConfiguration$1.actionPerformed(FrmConfiguration.java:85)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[INFO  09 abr 2024 - 14:58:55] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 14:59:33] tools.Log - conexion abierta
+[INFO  09 abr 2024 - 14:59:40] tools.Log - Se verifico la conexión correctamente
+[INFO  09 abr 2024 - 15:01:01] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:01:02] tools.Log - conexion abierta
+[INFO  09 abr 2024 - 15:01:02] tools.Log - Se verifico la conexión correctamente
+[INFO  09 abr 2024 - 15:02:00] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:02:07] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:07] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:07] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:08] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:08] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:08] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:08] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:08] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:08] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:18] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:18] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:18] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:18] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:18] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:18] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:19] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:19] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:19] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:20] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:20] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:20] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:21] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:21] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:21] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:25] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:25] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:25] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:25] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:25] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:25] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:27] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:27] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:27] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:28] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:28] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:28] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:29] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:29] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:29] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:30] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:30] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:30] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:30] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:30] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:30] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:32] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:32] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:32] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:33] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:33] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:33] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:36] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:02:37] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:37] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:37] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:38] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:38] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:38] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:39] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:39] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:39] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:40] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:40] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:40] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:41] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:41] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:41] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:42] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:42] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:42] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:42] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:42] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:42] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:44] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:44] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:44] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:48] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:48] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:48] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:48] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:48] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:48] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:50] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:50] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:50] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:51] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:51] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:51] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:51] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:51] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:51] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:54] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:54] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:54] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:57] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:02:58] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:02:58] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:02:58] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:02] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:02] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:02] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:02] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:02] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:02] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:04] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:04] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:04] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:06] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:06] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:06] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:06] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:06] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:06] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:15] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:15] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:15] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:19] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:19] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:19] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:19] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:19] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:19] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:20] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:03:21] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:21] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:21] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:24] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:25] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:25] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:25] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:27] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:27] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:27] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:27] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:27] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:27] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:27] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:27] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:27] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:28] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:28] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:28] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:49] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:49] tools.Log - ### Reconnecting... (reconnect count: 0) Connection failed.
+[INFO  09 abr 2024 - 15:03:49] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Connection failed.
+[INFO  09 abr 2024 - 15:03:49] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:49] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:49] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:50] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:50] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:50] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:50] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:50] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:50] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:50] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:50] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:50] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:54] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:54] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:54] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:54] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:54] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:54] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:56] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:56] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:56] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:56] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:56] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:56] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:56] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:56] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:56] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:57] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:57] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:57] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:57] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:57] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:57] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:58] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:59] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:59] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:59] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:59] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:59] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:59] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:59] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:03:59] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:03:59] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:00] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:01] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:01] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:01] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:01] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:01] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:01] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:01] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:01] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:01] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:02] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:02] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:02] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:02] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:02] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:02] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:03] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:03] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:03] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:03] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:03] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:03] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:07] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:07] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:07] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:07] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:07] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:07] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:10] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:04:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:15] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:15] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:15] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:19] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:04:20] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:20] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:20] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:22] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:22] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:22] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:25] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:25] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:25] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:31] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:31] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:31] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:35] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:35] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:35] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:35] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:35] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:35] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:36] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:36] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:36] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:36] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:36] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:36] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:37] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:37] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:37] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:37] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:37] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:37] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:38] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:38] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:38] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:38] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:38] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:38] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:41] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:41] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:41] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:42] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:42] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:42] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:43] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:43] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:43] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:04:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:04:48] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:05:01] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:01] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:01] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:02] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:02] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:02] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:12] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:12] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:12] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:21] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:21] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:21] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:22] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:22] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:22] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:24] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:25] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:25] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:25] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:42] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:42] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:42] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:44] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:44] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:44] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:51] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:51] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:51] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:53] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:05:53] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:05:53] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:14] tools.Log - ### Reconnecting... (reconnect count: 0) Connection failed.
+[INFO  09 abr 2024 - 15:06:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Connection failed.
+[INFO  09 abr 2024 - 15:06:22] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:22] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:22] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:24] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:24] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:28] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:28] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:28] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:28] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:28] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:28] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:28] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:28] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:28] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:30] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:06:30] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:30] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:06:44] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:08:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:13] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:13] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:13] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:14] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:14] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:14] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:16] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:18] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:18] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:18] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:18] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:18] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:18] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:18] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:18] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:18] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:22] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:22] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:22] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:24] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:30] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:30] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:30] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:30] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:30] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:30] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:32] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:32] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:32] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:36] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:36] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:36] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:36] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:36] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:36] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:44] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:44] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:44] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:46] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:08:46] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:08:46] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:09:01] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:12:30] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:30] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:30] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:31] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:31] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:31] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:32] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:32] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:32] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:39] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:39] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:39] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:42] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:42] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:42] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:43] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:43] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:43] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:44] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:44] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:44] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:46] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:46] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:46] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:46] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:46] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:46] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:46] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:46] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:46] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:48] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:48] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:48] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:48] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:48] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:48] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:52] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:52] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:52] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:53] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:53] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:53] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:57] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:57] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:57] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:59] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:59] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:59] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:59] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:12:59] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:12:59] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:01] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:01] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:01] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:02] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:02] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:02] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:04] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:04] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:04] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:05] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:05] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:05] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:05] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:05] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:05] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:06] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:06] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:06] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:06] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:06] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:06] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:08] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:08] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:08] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:08] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:08] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:08] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:09] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:09] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:09] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:10] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:10] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:10] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:11] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:11] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:11] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:12] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:12] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:12] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:17] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:17] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:17] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:20] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:20] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:20] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:20] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:20] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:20] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:22] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:22] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:22] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:23] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:23] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:23] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:24] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:26] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:27] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:27] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:27] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:31] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:31] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:31] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:32] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:32] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:32] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:33] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:33] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:33] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:34] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:34] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:34] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:34] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:34] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:34] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:34] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:34] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:34] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:35] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:35] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:35] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:42] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:42] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:42] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:44] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:44] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:44] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:45] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:45] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:45] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:46] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:46] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:46] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:47] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:47] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:47] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:48] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:48] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:48] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:48] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:48] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:48] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:49] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:49] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:49] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:50] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:50] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:50] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:50] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:50] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:50] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:53] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:13:53] tools.Log - ### Reconnecting... (reconnect count: 0) SSL handshake has failed
+[INFO  09 abr 2024 - 15:13:53] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: SSL handshake has failed
+[INFO  09 abr 2024 - 15:14:23] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:26:45] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:27:43] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:27:43] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:27:43] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:28:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:28:16] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:28:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:28:46] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:28:46] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:28:46] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:29:16] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:29:16] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:29:16] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:29:49] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:29:49] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:29:49] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:30:20] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:30:20] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:30:20] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:30:51] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:30:51] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:30:51] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:31:22] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:31:22] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:31:22] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:32:07] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:32:07] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:32:07] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:32:37] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:32:37] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:32:37] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:33:07] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:33:07] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:33:07] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:33:37] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:33:37] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:33:37] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:34:24] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:34:24] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:34:24] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:34:54] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:34:54] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:34:54] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:35:25] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:35:25] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:35:25] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:35:56] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:35:56] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:35:56] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:36:26] tools.Log - onConnectFailure
+[INFO  09 abr 2024 - 15:36:26] tools.Log - ### Reconnecting... (reconnect count: 0) Handshake response not received.
+[INFO  09 abr 2024 - 15:36:26] tools.Log - ### Reconnecting... (reconnect count: EXCEPTION  javax.websocket.DeploymentException: Handshake response not received.
+[INFO  09 abr 2024 - 15:37:00] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:37:49] tools.Log - INGRESA A VERIFICAR 
+[INFO  09 abr 2024 - 15:38:04] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:38:49] tools.Log - conexion abierta
+[INFO  09 abr 2024 - 15:39:16] tools.Log - conexion abierta
+[INFO  09 abr 2024 - 15:39:24] tools.Log - Se verifico la conexión correctamente
+[INFO  09 abr 2024 - 15:39:51] tools.Log - App Iniciada
+[INFO  09 abr 2024 - 15:40:07] tools.Log - conexion abierta
+[INFO  09 abr 2024 - 15:40:08] tools.Log - Se verifico la conexión correctamente

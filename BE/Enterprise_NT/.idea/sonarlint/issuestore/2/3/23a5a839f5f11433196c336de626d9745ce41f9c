@@ -1,0 +1,40 @@
+
+a	java:S112º"FDefine and throw a dedicated exception instead of using a generic one.(·ÎÂÑüÿÿÿÿ
+^
+java:S4488="HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ú…ÊÊ
+^
+java:S4488U"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(É“ÈĞ
+P
+java:S6213Z":Rename this variable to not match a restricted identifier.(­‡³‘
+^
+java:S4488p"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(î¯Õ
+d
+java:S4488„"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(ãÈæåûÿÿÿÿ
+d
+java:S4488—"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¹‚û¾ûÿÿÿÿ
+_
+java:S4488§"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ü–àÇ
+ˆ
+java:S1130º"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(·ÎÂÑüÿÿÿÿ
+d
+java:S4488¹"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÒòÅæıÿÿÿÿ
+a
+java:S4488É"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¸¯Ç©
+_
+java:S4488Ú"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ä¯»É
+d
+java:S4488é"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‡¿ã®úÿÿÿÿ
+_
+java:S4488ù"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ª”£‡
+d
+java:S4488‰"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(«êŒêıÿÿÿÿ
+a
+java:S4488™"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(²¢¨‘
+f
+java:S4488ª"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Á†úšúÿÿÿÿ
+d
+java:S4488»"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(˜ï¨æùÿÿÿÿ
+d
+java:S4488Í"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¥µÏúÿÿÿÿ
+Q
+java:S6213Ğ":Rename this variable to not match a restricted identifier.(¡¥±»

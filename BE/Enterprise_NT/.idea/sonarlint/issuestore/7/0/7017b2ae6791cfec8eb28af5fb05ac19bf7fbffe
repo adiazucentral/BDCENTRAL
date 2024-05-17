@@ -1,0 +1,79 @@
+
+M
+java:S3740Ğ"/Provide the parametrized type for this generic.(½ñ¤Æ8Ø•µÇŠ0
+R
+java:S3740Ó"/Provide the parametrized type for this generic.(Úûñúøÿÿÿÿ8è•µÇŠ0
+R
+java:S3740æ"/Provide the parametrized type for this generic.(¯û®­üÿÿÿÿ8è•µÇŠ0
+j
+java:S4488S"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·¦»Ëûÿÿÿÿ8å–µÇŠ0
+n
+java:S4488m"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(»¥„‰ùÿÿÿÿ8å–µÇŠ0
+j
+java:S4488‡"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(¢’ê8ô–µÇŠ0
+h
+java:S4488¡"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Å¹Ãã8ô–µÇŠ0
+j
+java:S4488µ"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(ıº‹Õ8ô–µÇŠ0
+k
+java:S4488È"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(°¡ºÈşÿÿÿÿ8„—µÇŠ0
+f
+java:S4488İ"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¹Íµ‚8„—µÇŠ0
+k
+java:S4488ò"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ıÉ¥Ãùÿÿÿÿ8„—µÇŠ0
+o
+java:S4488Œ"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(¯­“şÿÿÿÿ8”—µÇŠ0
+f
+java:S4488Ÿ"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ö®Ôé8”—µÇŠ0
+o
+java:S4488º"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(¢ğÃ½ÿÿÿÿÿ8”—µÇŠ0
+f
+java:S4488Ô"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(ÃÔÅ8”—µÇŠ0
+k
+java:S4488è"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(Ä¤»æÿÿÿÿÿ8£—µÇŠ0
+j
+java:S4488ı"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(–ú¤8£—µÇŠ0
+o
+java:S4488‘"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(Û¡ïßüÿÿÿÿ8£—µÇŠ0
+o
+java:S4488¥"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(ğÿ½æøÿÿÿÿ8£—µÇŠ0
+o
+java:S4488¿"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(¿ğ™±ûÿÿÿÿ8³—µÇŠ0
+f
+java:S4488Û"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¢¢à½8³—µÇŠ0
+k
+java:S4488ö"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Š™½„şÿÿÿÿ8Â—µÇŠ0
+h
+java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(°¸Ú8Â—µÇŠ0
+e
+java:S4488§"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ĞÈ¼8Ñ—µÇŠ0
+j
+java:S4488Á"LReplace "@RequestMapping(method = RequestMethod.PATCH)" with "@PatchMapping"(ŒÂ‰ã8Ñ—µÇŠ0
+f
+java:S4488Ö"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(™¥§8Ø—µÇŠ0
+k
+java:S4488ê"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¤†ö¸ûÿÿÿÿ8õ—µÇŠ0
+f
+java:S4488ş"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Æ«Ïï8ı—µÇŠ0
+f
+java:S4488’"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¾Œº›8…˜µÇŠ0
+f
+java:S4488¥"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¾÷Ùÿ8˜µÇŠ0
+k
+java:S4488¿"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ûŒØœüÿÿÿÿ8•˜µÇŠ0
+k
+java:S4488Ó"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(‹œ¼¥ûÿÿÿÿ8˜µÇŠ0
+f
+java:S4488è"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(½‹´Ş8¥˜µÇŠ0
+g
+java:S4488ı"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¹’Ój8¥˜µÇŠ0
+k
+java:S4488—"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(‰ƒààüÿÿÿÿ8­˜µÇŠ0
+k
+java:S4488¬"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ŞØ¼Ùûÿÿÿÿ8µ˜µÇŠ0
+l
+java:S4488Æ"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(õôè÷8µ˜µÇŠ0
+f
+java:S4488á"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(í€ÁÒ8Å˜µÇŠ0
+f
+java:S4488ó"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‘·Ê8Å˜µÇŠ0
