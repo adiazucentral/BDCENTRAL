@@ -1,0 +1,1333 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <destinationSample Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>destinationSample</Alias>
+        <Key />
+        <Name>destinationSample</Name>
+        <PathData>resource://destinationSample</PathData>
+      </destinationSample>
+    </Databases>
+    <DataSources isList="true" count="3">
+      <data Ref="3" type="DataTableSource" isKey="true">
+        <Alias>data</Alias>
+        <Columns isList="true" count="11">
+          <value>sampleName,System.String</value>
+          <value>orderTypeName,System.String</value>
+          <value>branchName,System.String</value>
+          <value>total,System.Double</value>
+          <value>verify,System.Double</value>
+          <value>checkAmountdestination1,System.String</value>
+          <value>uncheckAmountdestination1,System.String</value>
+          <value>checkAmountdestination2,System.String</value>
+          <value>uncheckAmountdestination2,System.String</value>
+          <value>checkAmountdestination3,System.String</value>
+          <value>uncheckAmountdestination3,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data</Name>
+        <NameInSource>destinationSample.data</NameInSource>
+      </data>
+      <Variables Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Variables</Alias>
+        <Columns isList="true" count="10">
+          <value>entity,System.String</value>
+          <value>abbreviation,System.String</value>
+          <value>rangeInit,System.String</value>
+          <value>rangeEnd,System.String</value>
+          <value>username,System.String</value>
+          <value>date,System.String</value>
+          <value>startDate,System.Double</value>
+          <value>destination1,System.String</value>
+          <value>destination2,System.String</value>
+          <value>destination3,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Variables</Name>
+        <NameInSource>destinationSample.Variables</NameInSource>
+      </Variables>
+      <Labels Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Labels</Alias>
+        <Columns isList="true" count="572">
+          <value>_x0030_000,System.String</value>
+          <value>_x0030_001,System.String</value>
+          <value>_x0030_002,System.String</value>
+          <value>_x0030_003,System.String</value>
+          <value>_x0030_004,System.String</value>
+          <value>_x0030_005,System.String</value>
+          <value>_x0030_006,System.String</value>
+          <value>_x0030_007,System.String</value>
+          <value>_x0030_008,System.String</value>
+          <value>_x0030_009,System.String</value>
+          <value>_x0030_010,System.String</value>
+          <value>_x0030_011,System.String</value>
+          <value>_x0030_012,System.String</value>
+          <value>_x0030_013,System.String</value>
+          <value>_x0030_014,System.String</value>
+          <value>_x0030_015,System.String</value>
+          <value>_x0030_016,System.String</value>
+          <value>_x0030_017,System.String</value>
+          <value>_x0030_018,System.String</value>
+          <value>_x0030_019,System.String</value>
+          <value>_x0030_020,System.String</value>
+          <value>_x0030_021,System.String</value>
+          <value>_x0030_022,System.String</value>
+          <value>_x0030_023,System.String</value>
+          <value>_x0030_024,System.String</value>
+          <value>_x0030_025,System.String</value>
+          <value>_x0030_026,System.String</value>
+          <value>_x0030_027,System.String</value>
+          <value>_x0030_028,System.String</value>
+          <value>_x0030_029,System.String</value>
+          <value>_x0030_030,System.String</value>
+          <value>_x0030_031,System.String</value>
+          <value>_x0030_032,System.String</value>
+          <value>_x0030_033,System.String</value>
+          <value>_x0030_034,System.String</value>
+          <value>_x0030_035,System.String</value>
+          <value>_x0030_036,System.String</value>
+          <value>_x0030_037,System.String</value>
+          <value>_x0030_038,System.String</value>
+          <value>_x0030_039,System.String</value>
+          <value>_x0030_040,System.String</value>
+          <value>_x0030_041,System.String</value>
+          <value>_x0030_042,System.String</value>
+          <value>_x0030_043,System.String</value>
+          <value>_x0030_044,System.String</value>
+          <value>_x0030_045,System.String</value>
+          <value>_x0030_046,System.String</value>
+          <value>_x0030_047,System.String</value>
+          <value>_x0030_048,System.String</value>
+          <value>_x0030_049,System.String</value>
+          <value>_x0030_050,System.String</value>
+          <value>_x0030_051,System.String</value>
+          <value>_x0030_052,System.String</value>
+          <value>_x0030_053,System.String</value>
+          <value>_x0030_054,System.String</value>
+          <value>_x0030_055,System.String</value>
+          <value>_x0030_056,System.String</value>
+          <value>_x0030_057,System.String</value>
+          <value>_x0030_058,System.String</value>
+          <value>_x0030_059,System.String</value>
+          <value>_x0030_060,System.String</value>
+          <value>_x0030_061,System.String</value>
+          <value>_x0030_062,System.String</value>
+          <value>_x0030_063,System.String</value>
+          <value>_x0030_064,System.String</value>
+          <value>_x0030_065,System.String</value>
+          <value>_x0030_066,System.String</value>
+          <value>_x0030_067,System.String</value>
+          <value>_x0030_068,System.String</value>
+          <value>_x0030_069,System.String</value>
+          <value>_x0030_070,System.String</value>
+          <value>_x0030_071,System.String</value>
+          <value>_x0030_072,System.String</value>
+          <value>_x0030_073,System.String</value>
+          <value>_x0030_074,System.String</value>
+          <value>_x0030_075,System.String</value>
+          <value>_x0030_076,System.String</value>
+          <value>_x0030_077,System.String</value>
+          <value>_x0030_078,System.String</value>
+          <value>_x0030_079,System.String</value>
+          <value>_x0030_080,System.String</value>
+          <value>_x0030_081,System.String</value>
+          <value>_x0030_082,System.String</value>
+          <value>_x0030_083,System.String</value>
+          <value>_x0030_084,System.String</value>
+          <value>_x0030_085,System.String</value>
+          <value>_x0030_086,System.String</value>
+          <value>_x0030_087,System.String</value>
+          <value>_x0030_088,System.String</value>
+          <value>_x0030_089,System.String</value>
+          <value>_x0030_090,System.String</value>
+          <value>_x0030_091,System.String</value>
+          <value>_x0030_092,System.String</value>
+          <value>_x0030_093,System.String</value>
+          <value>_x0030_094,System.String</value>
+          <value>_x0030_095,System.String</value>
+          <value>_x0030_096,System.String</value>
+          <value>_x0030_097,System.String</value>
+          <value>_x0030_098,System.String</value>
+          <value>_x0030_099,System.String</value>
+          <value>_x0030_100,System.String</value>
+          <value>_x0030_101,System.String</value>
+          <value>_x0030_102,System.String</value>
+          <value>_x0030_103,System.String</value>
+          <value>_x0030_106,System.String</value>
+          <value>_x0030_107,System.String</value>
+          <value>_x0030_108,System.String</value>
+          <value>_x0030_109,System.String</value>
+          <value>_x0030_110,System.String</value>
+          <value>_x0030_111,System.String</value>
+          <value>_x0030_112,System.String</value>
+          <value>_x0030_113,System.String</value>
+          <value>_x0030_114,System.String</value>
+          <value>_x0030_115,System.String</value>
+          <value>_x0030_116,System.String</value>
+          <value>_x0030_117,System.String</value>
+          <value>_x0030_118,System.String</value>
+          <value>_x0030_119,System.String</value>
+          <value>_x0030_120,System.String</value>
+          <value>_x0030_121,System.String</value>
+          <value>_x0030_122,System.String</value>
+          <value>_x0030_123,System.String</value>
+          <value>_x0030_124,System.String</value>
+          <value>_x0030_125,System.String</value>
+          <value>_x0030_126,System.String</value>
+          <value>_x0030_127,System.String</value>
+          <value>_x0030_128,System.String</value>
+          <value>_x0030_129,System.String</value>
+          <value>_x0030_130,System.String</value>
+          <value>_x0030_131,System.String</value>
+          <value>_x0030_132,System.String</value>
+          <value>_x0030_133,System.String</value>
+          <value>_x0030_134,System.String</value>
+          <value>_x0030_135,System.String</value>
+          <value>_x0030_136,System.String</value>
+          <value>_x0030_137,System.String</value>
+          <value>_x0030_138,System.String</value>
+          <value>_x0030_139,System.String</value>
+          <value>_x0030_140,System.String</value>
+          <value>_x0030_141,System.String</value>
+          <value>_x0030_142,System.String</value>
+          <value>_x0030_143,System.String</value>
+          <value>_x0030_144,System.String</value>
+          <value>_x0030_145,System.String</value>
+          <value>_x0030_146,System.String</value>
+          <value>_x0030_147,System.String</value>
+          <value>_x0030_148,System.String</value>
+          <value>_x0030_149,System.String</value>
+          <value>_x0030_150,System.String</value>
+          <value>_x0030_151,System.String</value>
+          <value>_x0030_152,System.String</value>
+          <value>_x0030_153,System.String</value>
+          <value>_x0030_154,System.String</value>
+          <value>_x0030_155,System.String</value>
+          <value>_x0030_156,System.String</value>
+          <value>_x0030_157,System.String</value>
+          <value>_x0030_158,System.String</value>
+          <value>_x0030_159,System.String</value>
+          <value>_x0030_160,System.String</value>
+          <value>_x0030_161,System.String</value>
+          <value>_x0030_162,System.String</value>
+          <value>_x0030_163,System.String</value>
+          <value>_x0030_164,System.String</value>
+          <value>_x0030_165,System.String</value>
+          <value>_x0030_166,System.String</value>
+          <value>_x0030_167,System.String</value>
+          <value>_x0030_168,System.String</value>
+          <value>_x0030_169,System.String</value>
+          <value>_x0030_170,System.String</value>
+          <value>_x0030_171,System.String</value>
+          <value>_x0030_172,System.String</value>
+          <value>_x0030_173,System.String</value>
+          <value>_x0030_174,System.String</value>
+          <value>_x0030_175,System.String</value>
+          <value>_x0030_176,System.String</value>
+          <value>_x0030_177,System.String</value>
+          <value>_x0030_178,System.String</value>
+          <value>_x0030_179,System.String</value>
+          <value>_x0030_180,System.String</value>
+          <value>_x0030_181,System.String</value>
+          <value>_x0030_182,System.String</value>
+          <value>_x0030_183,System.String</value>
+          <value>_x0030_184,System.String</value>
+          <value>_x0030_185,System.String</value>
+          <value>_x0030_186,System.String</value>
+          <value>_x0030_187,System.String</value>
+          <value>_x0030_188,System.String</value>
+          <value>_x0030_189,System.String</value>
+          <value>_x0030_190,System.String</value>
+          <value>_x0030_191,System.String</value>
+          <value>_x0030_192,System.String</value>
+          <value>_x0030_193,System.String</value>
+          <value>_x0030_194,System.String</value>
+          <value>_x0030_195,System.String</value>
+          <value>_x0030_196,System.String</value>
+          <value>_x0030_197,System.String</value>
+          <value>_x0030_198,System.String</value>
+          <value>_x0030_199,System.String</value>
+          <value>_x0030_200,System.String</value>
+          <value>_x0030_201,System.String</value>
+          <value>_x0030_202,System.String</value>
+          <value>_x0030_203,System.String</value>
+          <value>_x0030_204,System.String</value>
+          <value>_x0030_205,System.String</value>
+          <value>_x0030_206,System.String</value>
+          <value>_x0030_207,System.String</value>
+          <value>_x0030_208,System.String</value>
+          <value>_x0030_209,System.String</value>
+          <value>_x0030_210,System.String</value>
+          <value>_x0030_211,System.String</value>
+          <value>_x0030_212,System.String</value>
+          <value>_x0030_213,System.String</value>
+          <value>_x0030_214,System.String</value>
+          <value>_x0030_215,System.String</value>
+          <value>_x0030_216,System.String</value>
+          <value>_x0030_217,System.String</value>
+          <value>_x0030_218,System.String</value>
+          <value>_x0030_219,System.String</value>
+          <value>_x0030_220,System.String</value>
+          <value>_x0030_221,System.String</value>
+          <value>_x0030_222,System.String</value>
+          <value>_x0030_223,System.String</value>
+          <value>_x0030_224,System.String</value>
+          <value>_x0030_225,System.String</value>
+          <value>_x0030_226,System.String</value>
+          <value>_x0030_227,System.String</value>
+          <value>_x0030_228,System.String</value>
+          <value>_x0030_229,System.String</value>
+          <value>_x0030_230,System.String</value>
+          <value>_x0030_231,System.String</value>
+          <value>_x0030_232,System.String</value>
+          <value>_x0030_233,System.String</value>
+          <value>_x0030_234,System.String</value>
+          <value>_x0030_235,System.String</value>
+          <value>_x0030_236,System.String</value>
+          <value>_x0030_237,System.String</value>
+          <value>_x0030_238,System.String</value>
+          <value>_x0030_239,System.String</value>
+          <value>_x0030_240,System.String</value>
+          <value>_x0030_241,System.String</value>
+          <value>_x0030_242,System.String</value>
+          <value>_x0030_243,System.String</value>
+          <value>_x0030_244,System.String</value>
+          <value>_x0030_245,System.String</value>
+          <value>_x0030_246,System.String</value>
+          <value>_x0030_247,System.String</value>
+          <value>_x0030_248,System.String</value>
+          <value>_x0030_249,System.String</value>
+          <value>_x0030_250,System.String</value>
+          <value>_x0030_251,System.String</value>
+          <value>_x0030_252,System.String</value>
+          <value>_x0030_253,System.String</value>
+          <value>_x0030_254,System.String</value>
+          <value>_x0030_255,System.String</value>
+          <value>_x0030_256,System.String</value>
+          <value>_x0030_257,System.String</value>
+          <value>_x0030_258,System.String</value>
+          <value>_x0030_259,System.String</value>
+          <value>_x0030_260,System.String</value>
+          <value>_x0030_261,System.String</value>
+          <value>_x0030_262,System.String</value>
+          <value>_x0030_263,System.String</value>
+          <value>_x0030_264,System.String</value>
+          <value>_x0030_265,System.String</value>
+          <value>_x0030_266,System.String</value>
+          <value>_x0030_267,System.String</value>
+          <value>_x0030_268,System.String</value>
+          <value>_x0030_269,System.String</value>
+          <value>_x0030_270,System.String</value>
+          <value>_x0030_271,System.String</value>
+          <value>_x0030_272,System.String</value>
+          <value>_x0030_273,System.String</value>
+          <value>_x0030_274,System.String</value>
+          <value>_x0030_275,System.String</value>
+          <value>_x0030_276,System.String</value>
+          <value>_x0030_277,System.String</value>
+          <value>_x0030_278,System.String</value>
+          <value>_x0030_279,System.String</value>
+          <value>_x0030_280,System.String</value>
+          <value>_x0030_281,System.String</value>
+          <value>_x0030_282,System.String</value>
+          <value>_x0030_283,System.String</value>
+          <value>_x0030_284,System.String</value>
+          <value>_x0030_285,System.String</value>
+          <value>_x0030_286,System.String</value>
+          <value>_x0030_287,System.String</value>
+          <value>_x0030_288,System.String</value>
+          <value>_x0030_289,System.String</value>
+          <value>_x0030_290,System.String</value>
+          <value>_x0030_291,System.String</value>
+          <value>_x0030_292,System.String</value>
+          <value>_x0030_293,System.String</value>
+          <value>_x0030_294,System.String</value>
+          <value>_x0030_295,System.String</value>
+          <value>_x0030_296,System.String</value>
+          <value>_x0030_297,System.String</value>
+          <value>_x0030_298,System.String</value>
+          <value>_x0030_299,System.String</value>
+          <value>_x0030_300,System.String</value>
+          <value>_x0030_301,System.String</value>
+          <value>_x0030_302,System.String</value>
+          <value>_x0030_303,System.String</value>
+          <value>_x0030_304,System.String</value>
+          <value>_x0030_305,System.String</value>
+          <value>_x0030_306,System.String</value>
+          <value>_x0030_307,System.String</value>
+          <value>_x0030_308,System.String</value>
+          <value>_x0030_309,System.String</value>
+          <value>_x0030_310,System.String</value>
+          <value>_x0030_311,System.String</value>
+          <value>_x0030_312,System.String</value>
+          <value>_x0030_313,System.String</value>
+          <value>_x0030_314,System.String</value>
+          <value>_x0030_315,System.String</value>
+          <value>_x0030_316,System.String</value>
+          <value>_x0030_317,System.String</value>
+          <value>_x0030_318,System.String</value>
+          <value>_x0030_319,System.String</value>
+          <value>_x0030_320,System.String</value>
+          <value>_x0030_321,System.String</value>
+          <value>_x0030_322,System.String</value>
+          <value>_x0030_323,System.String</value>
+          <value>_x0030_324,System.String</value>
+          <value>_x0030_325,System.String</value>
+          <value>_x0030_326,System.String</value>
+          <value>_x0030_327,System.String</value>
+          <value>_x0030_328,System.String</value>
+          <value>_x0030_329,System.String</value>
+          <value>_x0030_330,System.String</value>
+          <value>_x0030_331,System.String</value>
+          <value>_x0030_332,System.String</value>
+          <value>_x0030_333,System.String</value>
+          <value>_x0030_334,System.String</value>
+          <value>_x0030_335,System.String</value>
+          <value>_x0030_336,System.String</value>
+          <value>_x0030_337,System.String</value>
+          <value>_x0030_338,System.String</value>
+          <value>_x0030_339,System.String</value>
+          <value>_x0030_340,System.String</value>
+          <value>_x0030_341,System.String</value>
+          <value>_x0030_342,System.String</value>
+          <value>_x0030_343,System.String</value>
+          <value>_x0030_344,System.String</value>
+          <value>_x0030_345,System.String</value>
+          <value>_x0030_346,System.String</value>
+          <value>_x0030_347,System.String</value>
+          <value>_x0030_348,System.String</value>
+          <value>_x0030_349,System.String</value>
+          <value>_x0030_350,System.String</value>
+          <value>_x0030_351,System.String</value>
+          <value>_x0030_352,System.String</value>
+          <value>_x0030_353,System.String</value>
+          <value>_x0030_354,System.String</value>
+          <value>_x0030_355,System.String</value>
+          <value>_x0030_356,System.String</value>
+          <value>_x0030_357,System.String</value>
+          <value>_x0030_358,System.String</value>
+          <value>_x0030_359,System.String</value>
+          <value>_x0030_360,System.String</value>
+          <value>_x0030_361,System.String</value>
+          <value>_x0030_362,System.String</value>
+          <value>_x0030_363,System.String</value>
+          <value>_x0030_364,System.String</value>
+          <value>_x0030_365,System.String</value>
+          <value>_x0030_366,System.String</value>
+          <value>_x0030_367,System.String</value>
+          <value>_x0030_368,System.String</value>
+          <value>_x0030_369,System.String</value>
+          <value>_x0030_370,System.String</value>
+          <value>_x0030_371,System.String</value>
+          <value>_x0030_372,System.String</value>
+          <value>_x0030_373,System.String</value>
+          <value>_x0030_374,System.String</value>
+          <value>_x0030_375,System.String</value>
+          <value>_x0030_376,System.String</value>
+          <value>_x0030_377,System.String</value>
+          <value>_x0030_378,System.String</value>
+          <value>_x0030_379,System.String</value>
+          <value>_x0030_380,System.String</value>
+          <value>_x0030_381,System.String</value>
+          <value>_x0030_382,System.String</value>
+          <value>_x0030_383,System.String</value>
+          <value>_x0030_384,System.String</value>
+          <value>_x0030_385,System.String</value>
+          <value>_x0030_386,System.String</value>
+          <value>_x0030_387,System.String</value>
+          <value>_x0030_388,System.String</value>
+          <value>_x0030_389,System.String</value>
+          <value>_x0030_390,System.String</value>
+          <value>_x0030_391,System.String</value>
+          <value>_x0030_392,System.String</value>
+          <value>_x0030_393,System.String</value>
+          <value>_x0030_394,System.String</value>
+          <value>_x0030_395,System.String</value>
+          <value>_x0030_396,System.String</value>
+          <value>_x0030_397,System.String</value>
+          <value>_x0030_398,System.String</value>
+          <value>_x0030_399,System.String</value>
+          <value>_x0030_400,System.String</value>
+          <value>_x0030_401,System.String</value>
+          <value>_x0030_402,System.String</value>
+          <value>_x0030_403,System.String</value>
+          <value>_x0030_404,System.String</value>
+          <value>_x0030_405,System.String</value>
+          <value>_x0030_406,System.String</value>
+          <value>_x0030_407,System.String</value>
+          <value>_x0030_408,System.String</value>
+          <value>_x0030_409,System.String</value>
+          <value>_x0030_410,System.String</value>
+          <value>_x0030_411,System.String</value>
+          <value>_x0030_412,System.String</value>
+          <value>_x0030_413,System.String</value>
+          <value>_x0030_414,System.String</value>
+          <value>_x0030_415,System.String</value>
+          <value>_x0030_416,System.String</value>
+          <value>_x0030_417,System.String</value>
+          <value>_x0030_418,System.String</value>
+          <value>_x0030_419,System.String</value>
+          <value>_x0030_420,System.String</value>
+          <value>_x0030_421,System.String</value>
+          <value>_x0030_422,System.String</value>
+          <value>_x0030_423,System.String</value>
+          <value>_x0030_424,System.String</value>
+          <value>_x0030_425,System.String</value>
+          <value>_x0030_426,System.String</value>
+          <value>_x0030_427,System.String</value>
+          <value>_x0030_428,System.String</value>
+          <value>_x0030_429,System.String</value>
+          <value>_x0030_430,System.String</value>
+          <value>_x0030_431,System.String</value>
+          <value>_x0030_432,System.String</value>
+          <value>_x0030_433,System.String</value>
+          <value>_x0030_434,System.String</value>
+          <value>_x0030_435,System.String</value>
+          <value>_x0030_436,System.String</value>
+          <value>_x0030_437,System.String</value>
+          <value>_x0030_438,System.String</value>
+          <value>_x0030_439,System.String</value>
+          <value>_x0030_440,System.String</value>
+          <value>_x0030_441,System.String</value>
+          <value>_x0030_442,System.String</value>
+          <value>_x0030_443,System.String</value>
+          <value>_x0030_444,System.String</value>
+          <value>_x0030_445,System.String</value>
+          <value>_x0030_446,System.String</value>
+          <value>_x0030_447,System.String</value>
+          <value>_x0030_448,System.String</value>
+          <value>_x0030_449,System.String</value>
+          <value>_x0030_450,System.String</value>
+          <value>_x0030_451,System.String</value>
+          <value>_x0030_452,System.String</value>
+          <value>_x0030_453,System.String</value>
+          <value>_x0030_454,System.String</value>
+          <value>_x0030_455,System.String</value>
+          <value>_x0030_456,System.String</value>
+          <value>_x0030_457,System.String</value>
+          <value>_x0030_458,System.String</value>
+          <value>_x0030_459,System.String</value>
+          <value>_x0030_460,System.String</value>
+          <value>_x0030_461,System.String</value>
+          <value>_x0030_462,System.String</value>
+          <value>_x0030_463,System.String</value>
+          <value>_x0030_464,System.String</value>
+          <value>_x0030_465,System.String</value>
+          <value>_x0030_466,System.String</value>
+          <value>_x0030_467,System.String</value>
+          <value>_x0030_468,System.String</value>
+          <value>_x0030_469,System.String</value>
+          <value>_x0030_470,System.String</value>
+          <value>_x0030_471,System.String</value>
+          <value>_x0030_472,System.String</value>
+          <value>_x0030_473,System.String</value>
+          <value>_x0030_474,System.String</value>
+          <value>_x0030_475,System.String</value>
+          <value>_x0030_476,System.String</value>
+          <value>_x0030_477,System.String</value>
+          <value>_x0030_478,System.String</value>
+          <value>_x0030_479,System.String</value>
+          <value>_x0030_480,System.String</value>
+          <value>_x0030_481,System.String</value>
+          <value>_x0030_482,System.String</value>
+          <value>_x0030_483,System.String</value>
+          <value>_x0030_484,System.String</value>
+          <value>_x0030_485,System.String</value>
+          <value>_x0030_486,System.String</value>
+          <value>_x0030_487,System.String</value>
+          <value>_x0030_488,System.String</value>
+          <value>_x0030_489,System.String</value>
+          <value>_x0030_490,System.String</value>
+          <value>_x0030_491,System.String</value>
+          <value>_x0030_492,System.String</value>
+          <value>_x0030_493,System.String</value>
+          <value>_x0030_494,System.String</value>
+          <value>_x0030_495,System.String</value>
+          <value>_x0030_496,System.String</value>
+          <value>_x0030_497,System.String</value>
+          <value>_x0030_498,System.String</value>
+          <value>_x0030_499,System.String</value>
+          <value>_x0030_500,System.String</value>
+          <value>_x0030_501,System.String</value>
+          <value>_x0030_502,System.String</value>
+          <value>_x0030_503,System.String</value>
+          <value>_x0030_504,System.String</value>
+          <value>_x0030_505,System.String</value>
+          <value>_x0030_506,System.String</value>
+          <value>_x0030_507,System.String</value>
+          <value>_x0030_508,System.String</value>
+          <value>_x0030_509,System.String</value>
+          <value>_x0030_510,System.String</value>
+          <value>_x0030_511,System.String</value>
+          <value>_x0030_512,System.String</value>
+          <value>_x0030_513,System.String</value>
+          <value>_x0030_514,System.String</value>
+          <value>_x0030_515,System.String</value>
+          <value>_x0030_516,System.String</value>
+          <value>_x0030_517,System.String</value>
+          <value>_x0030_518,System.String</value>
+          <value>_x0030_519,System.String</value>
+          <value>_x0030_520,System.String</value>
+          <value>_x0030_521,System.String</value>
+          <value>_x0030_522,System.String</value>
+          <value>_x0030_523,System.String</value>
+          <value>_x0030_524,System.String</value>
+          <value>_x0030_525,System.String</value>
+          <value>_x0030_526,System.String</value>
+          <value>_x0030_527,System.String</value>
+          <value>_x0030_528,System.String</value>
+          <value>_x0030_529,System.String</value>
+          <value>_x0030_530,System.String</value>
+          <value>_x0030_531,System.String</value>
+          <value>_x0030_532,System.String</value>
+          <value>_x0030_533,System.String</value>
+          <value>_x0030_534,System.String</value>
+          <value>_x0030_535,System.String</value>
+          <value>_x0030_536,System.String</value>
+          <value>_x0030_537,System.String</value>
+          <value>_x0030_538,System.String</value>
+          <value>_x0030_539,System.String</value>
+          <value>_x0030_540,System.String</value>
+          <value>_x0030_541,System.String</value>
+          <value>_x0030_542,System.String</value>
+          <value>_x0030_543,System.String</value>
+          <value>_x0030_544,System.String</value>
+          <value>_x0030_545,System.String</value>
+          <value>_x0030_546,System.String</value>
+          <value>_x0030_547,System.String</value>
+          <value>_x0030_548,System.String</value>
+          <value>_x0030_549,System.String</value>
+          <value>_x0030_550,System.String</value>
+          <value>_x0030_551,System.String</value>
+          <value>_x0030_552,System.String</value>
+          <value>_x0030_553,System.String</value>
+          <value>_x0030_554,System.String</value>
+          <value>_x0030_555,System.String</value>
+          <value>_x0030_556,System.String</value>
+          <value>_x0030_557,System.String</value>
+          <value>_x0030_558,System.String</value>
+          <value>_x0030_559,System.String</value>
+          <value>_x0030_560,System.String</value>
+          <value>_x0030_561,System.String</value>
+          <value>_x0030_562,System.String</value>
+          <value>_x0030_563,System.String</value>
+          <value>_x0030_564,System.String</value>
+          <value>_x0030_565,System.String</value>
+          <value>_x0030_566,System.String</value>
+          <value>_x0030_567,System.String</value>
+          <value>_x0030_568,System.String</value>
+          <value>_x0030_569,System.String</value>
+          <value>_x0030_570,System.String</value>
+          <value>_x0030_571,System.String</value>
+          <value>_x0030_572,System.String</value>
+          <value>_x0030_573,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Labels</Name>
+        <NameInSource>destinationSample.Labels</NameInSource>
+      </Labels>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="1">
+      <value>Name=destinationSample, Alias=destinationSample, Type=Json, Content=ZGs4jA9L_x002F_Hvi6Gpc687kCpfteDK4GH0G5KI6Z9WCkkhyyKUS0Y0Xvo3YXatHyKXjMzOaiPaC67LQQLsjDwDyqoOJQWgwQPxYe_x002B_9Y90PvoF48mIlA_x002B_yEUyIzpxTaQ0bsxmG_x002F_z8CmOJYk7y9slSD8sVL4DhXnU3Hopn5E7KziFFTSnHAMsm4b2ykD3ngaHdhqXltkLXU4dbFdBHpOMveSIyiN03gY_x002B_IxmN2mcOHcqMGoPCRpG_x002B_TOqmkNU0EwgKHvAAOrknsFHciAEUgCV3NqQdgeouQBbJwHn7G6VAjTvEAFw6G4niHvYf_x002F_bcobQSn4OHOxy_x002B_HTHkCzTjvnJ2oj0zyw71jNGZsoy4gtiTtEOTCzHTPerF_x002F_S2G_x002F_bcDrP5J8CvobCn5taQ09zV3pCeDm0SIeMP0yvF_x002B_XnWTtIgxszYKdDiScCdoIh44Igdh36cG9_x002F_5IHHduW_x002B_6kLtzK8J_x002F_JRaInjGfPx6PO_x002B_qBpO4nq_x002F_GWKKiDGsHQCq6tTnC8vtH2J0pADgOSkfxEl4NTWiVivsaCbI7QBmfV4EpyvlzZdoAqH1_x002F_U8B_x002B_xuIWrMb5nkfGLvoY_x002F_lU00HsA8j_x002B_bs6uFkFup8LWsxmusgzMlHtd6_x002B_oXBiOqOpfU6t8FkDE4CQ9JJsPH6R8uyQAIsJP7kr3MsQozeCH871mOUtCfvWZ4XpDIiwUlyM7tZiNMCoOZMFTXGy4L9m2iufz0ZbWgDK7W7TB5nzBJXRcwaawsodRVtZ8ERn8vXjT6LaTNzQZIM3eOsEO3AaHARM64D6uRz7CWeoXDRq4VDq5rdnaknXLY8kQkZkBPCrebvmzr6iO_x002B_BCkRDdYDaaUtj_x002B_ccjEWSzp_x002F_cIWLUPbMuOxStYmkVbUoNAplZ3_x002F_NNwD6jACYjo0RCQ0jmARI_x002F_lZhbnAY4RCZMrqPSypsM_x002B_tM_x002B_35lEhlOodGPCiSlxfEHD_x002F_G5ivQMO_x002B_iSp0_x002F_CwAXij13NVmQ5hepLLTCJKkmBLO_x002F_nbq4dOw3JQBhu8wxm9rtgih3tD_x002B_QOiwjsaQfaTjUECNuMkjpwk6weBeOaAAXhARimvKV6Rdihz0G1_x002F_9o_x002B_B8of36aFajyLWFEc9Af75nfafR6AEsLy3K4mY_x002F_BCjfINFjskjIFLhUxeasXwk_x002B_IKbbQESjJ_x002B_uZ_x002B_N8XHKROn_x002F_26zju_x002B_dB7fp0AbAY0vM2Pe7KtmxxLxYYhyp45_x002F_C9FZYmFjaEltanso4Sl4Y5645eZjIK5lbz6GBZLYxLY4T59l77ymiKX4mHMEF3khs77tGsc9FZi_x002F_amTdfaiuZkbvcasQiUfQQClMOBrDBDlJo5hRzDrR1BXZ4ZDMhkBA7Oq9CJUqfEuQdfyPQULDLEufdTCylFgHzFZ3oJCa8y0jSC93tE7gcg7hO72CB7N11O6KMPaC3KVfUaSwv9bg_x002B_i9RwghnLvbUMs0udG7xfuVW586jM23mg9J_x002B_6FtNgwxfTH6zwrXrKN9JTyRlQRFbHcQP5MUtx0mI6XMhv0dBCL9Z0VD_x002B_kg7_x002B_cdOAMB_x002F_a5EQQTrqyujk_x002B_RCqc1COcnk7B0dUnZKyvjPi7CYOyNwIlbiQrCmR3HKVAWPI7FntGxrC56iqS88QLJgymwdKAMJX4LYmIaeI8t3RxJGIPwyv729U8_x002B_jkFasTWK9bnXhh6pstgmohAGwy_x002B_WHTXkR5FzQUE1bhn6JU2fZsyLUyPDC1DpEozuTtc_x002B_dLtkWIvJCk8iimmIGBnm774o5mxGdIsfN5kgJIWT16hWo6z3xID8MCZh_x002F_oKKRHMGHEp0tVW_x002F_sPiiCUdQTqZrPgcsc9gRWA5_x002F_LpgyI0FgsQfJgTwlFrgk4aaBUQgS_x002B_4UVfUAT85_x002F_9KSsPB32cWSI0ViA3EJklSzGTtv_x002F_1LB0Q1DgQWf7pUA3HNaPVEpbOkoKfGALcpvSLEr_x002B_nQ55iSBTnU_x002B_JRlQRtgBdxGRsFk3eWZNBRncBg8u4NWGEmLcLiNu5HXaRKp_x002F_44Lj2cJaetIqfmdYdI_x002B_SvKT7E5YSlSFtJIYs47WInm7OAcOwkY2zPEqOPD62E_x002F_y59lWGBcWXleRDrlG1jc8dqIgFrSl7yyiNZ0K58_x002F_uS3BPRstLIZzOAvzZLtEHUDzRdUSEIpz95pFGcCwE73DaTnAOSHcE4k00zsICdMAG1vbTY1iz8cu2jOTJa1FlckqP7Ewr2KBbqp2FRC9MKVpSQsCDmnUCah0sAeviYgqjDOgnUWDbhZlrhTTyp0GU_x002F_NMijWntK8rCIZev9FCdlwufV7ANkJprOa4ssZLM_x002B_I3ixZk01WUfbti_x002B_zQT8iaDkloq_x002F_63c5nVYxXVXqPM6SELsR1mJJ83pW6lhdJsF6eHnWU_x002F_6bqAtiRItR9sbMh2xJNRn5rht_x002B__x002B_VLrsg90dmhNWmYvap9_x002F_T5ZrfdPR0c0mSi_x002B_7fzF0rRAT1tWkNTIAc72YxhZtPiMCY4yKwsMlBOQwyyg_x002B_biY_x002B_GEUUQhgTgs2Rw6SaRxjQUtRvg9ZrsGdwp2M2fVQq_x002B_vTk_x002F_C5Ylmgj0Sd7AhEfuIRp4y1MMTde6DvmsNoWlDYn17sWcrGIJpoC0_x002F_cY7kxcLVZ7Rtm3cd0KoZYKNe9BT_x002F_P4t5ok5puZ9X2PfrGQfhT5iqsxDM0IpZtX9xd0WEhS4nPkydaDnQcrUCg5q0NKcgCput_x002B_S9rNJhAxWJu3tiSYRumc5PCNc6rrAtebFeasTEUgDp8Q7MopXFxBpPKm3xx4dmiIP_x002B_Fb8yULSERalFO_x002F_3xI93b0U4vvir6tlGZ_x002B__x002F_Fe98xO9QrZ7qkjUyBcHjyyPqxZWbiTlJ_x002B_8uG3SXa2pW1PPwe1eYdIDYvwpdGxs9zgyba2JQKKbslTKVqE5Yrp5paFomvdJyhSCMBlZqcgIlGiWpXy7iPolPMnQbBMFQF9BZZC_x002B_Zben0GWS1LvPhkhtd1_x002B_hGnxEg0ADpscYOQv00f_x002F_yGSogmUquYljvhytxkqsG5AT7YipGtBUB3qPch3AhE0W8913D1MnmObbmgHQ9vPifTQx9N4_x002F_olv5sTx9A9EA39PJFM6ssu_x002B_tR1tYVWd1azSem2K76FRl352DhQDN_x002B_irn7ea3sD2erGzYiGxl9MILxBC94wBT75Eif005GBC_x002F_gBBp4ayN6rvetG1TT6nOW9zshxgM_x002F_93GWB3NPkxgn0LpjY6vd8xKOUS_x002B_Thn1D6t0B1yym521X0YiNz6oxk_x002F_q9IHL4_x002F_w_x002F_OSr2jJb4kAj3hjO_x002F_paADO2Kp1dvZ_x002B_irFreHDG7ROyF82nQazPorHZkIZn77bwuoUm_x002F_CI1rBo9EqtMSFIAZQ2lZgVLCOM6BI5x_x002B_PQ7ol3zzq0aQzCI8PNyr_x002B_zErCbaNsmPd_x002F_KaBkuW0zxgGxqOYmpzeDgPjeiHEw0wTZe0P5k4IK_x002B_RqyKT_x002F_bNJBxvn_x002B_m6aG0ARC_x002F_muxK9tXC3z_x002F_bgZeXxPaYID0AVaJ6nCqGWZWBP1ABenv0GehCQRD0rhHtSY4sefOhGhATkBCsPyRMdnap1_x002B_ZQqaLqFm2M4oaL37u_x002F_wCd73vzgcultQVF7to1jj1x4R1I5xZIFToKalE5J59kxU14NisALs5iw7kgol0fWkHYztFa_x002B_u8DbZaN9BwBZZob9NUUms_x002B_WyDrS6X1KZA_x002F_DTMoYd7Ai5mWcJEfdZjzOHFyotz6CBWW57Qr9khm5j_x002F__x002F_0ee0XJeNo8_x002F_ho3aUr3l98XdrlVejKiyD9zABAr0RdMWYj7R_x002B_01UJJSJslKAW8w9cbr_x002F_5jzLilKv6FMbRf9lOiz_x002F_hN_x002B_xXUqnV9XTcQk_x002B_z4JNa2GZRAmRxk6zEmwcpTz6YCuq6b0VEZcmXU4bqsz3X2WWk8OrmTf_x002B_H5V_x002F_vBy6yMVfwrnlnrbjfPDsQXdr_x002F_wxzFOONSfqeDABytjXZdx2NubXQuAG0ZG4pmi53XqCroxDXyhRLKiMhSOC65_x002F_M_x002B_j2swwmJwnCdBbqQDIQsNdodIRM2Qd0rBebQggmgHLaHrNGVKAekPgLXujxmAoQiOOunyP59d2h8kPNeqpTzfxC1XGp0e94RAumdLyX6KswWmTfUbYHuc0JrvgdpZkVR_x002F_Qzl_x002B_KCKfmMVbZck_x002B_UIAnMqKs2cLStXKTK3X_x002B_rK_x002B_Jg11oLjTa2L1QIS5BqP79UxOZpuUHloTUcWcczQJAr9ETKadHGT6yJ4KvXtwlhWXs9xxHIpnuO_x002B__x002F_uqtj9GrmirczR_x002F_G9bpR8T6Jo_x002F_0Z3q7B_x002F_9qANWhl65c6AcE5w9nGLfZSLbQhC2iFDiJlLbpDPAwX_x002F_rFMnNI_x002B_AsdPo0SZrxhBLi0t19s3dZTv4kgz8l_x002F_arJT16sKq3AIHSDSDq_x002F_tSLIXFKA7s8KJjHM0z9vuTr1I8T2OXV2WmOhL3_x002B_mBKCj1Twtb4qaYSVSOE5U7SlLBjdT8gRtm7zryUl7QfGkA54XrM6e1Ky48dAlXF6xgSFakSae51qimVYjmkw6_x002F_is5PSfgudcX8IRjo_x002B_fE1mdE7DW9Fy41WSEN9W6JFTvpLaKK1zGdJDbq7boMzJuO6ScClt_x002F_ZFUgC_x002F_SS4SwE6Sslm7DFFf6fHGXqiWzLqsvBtCojN75Kw1dFA_x002B_N4uCQkwseyx954_x002F_WZD3VwKKIddO3S5KM77vt4IUTnSvcd5vzushJXfzBcJihZOhTrjLISv_x002B_GWLb5i6t5aMa7A4_x002F_5QSAxsr6hS5LKPAXkFryNi6ROc2tC4xl70lqMtyLwOAPuIKLoeiEnG8cPJS4nKrYTX5bwgLuanKEo5v8DZEqNb5FhaWNqeL7aTaF4MFlTA0gwzyXnwqcZVC1eOZtgT1Tagaz3Vt8YFjt4F2sCsfWvbltj6LT9sim_x002F_W_x002F_3Ca3TybR345W46GB4JOGEG7F_x002B_re0mBIwNOAGvuM3rPuW6AB6_x002B_PtLXjPR0ipmM5rSHDTq2o9jw5RxU81Wo8YVmmirOPIRTKhstZ1SQiW_x002B_JCJ0C_x002F_pvJ3GCP_x002F_9gy4ZlWD_x002F_zsArdkJzwMzlWua2Xrhv_x002B_YtQuJTKZHMtcOn5FFJS5xvw2UYTr_x002F_RMj_x002B_gQZVoF63G7TtovBOy2n6lnsqBuI5_x002B__x002F_gOBQ0CGmpHrHtyMLERap3OZ_x002F_M3uORhRmJgF8Fv6zkCPCruUMa8gBUsYWdokPJKP8j7IN1a9n1dFJ7NlglLRYjE8q4muQ4LuGsDaIlewk0zH7XqZvCpnIAvig_x002B_SbOUU1KvUsPb2SK33WJHSGGBcSwcBms7MO2f0x_x002F_tY8wYIGQJW_x002B_aCb9GWBnXb5RQmE7kHwc5Srwfpk72aPxnVAGCkaulreM1AU1mPOoDCuchlN1o8H0E1X6Z97n5ZYctC05HhlJ_x002B_MbjCpUHE9mh8gmFmCffrg6LjfyM_x002B_LMWS0_x002F_JZ3djc1jU0HAgzXOWmcO7eiXk6xoESktz0aqAqH1JeNlBt9HmEMrhycTw_x002F_CBvZKfSK9UZZAOmXEBUs17Vtn2IyLjRxo501COqDkA4G6z95L8pb_x002F_OzBc76SZCVEwmSdijtDSej8pGEg2EdRui2PLRXzOm9enetzx_x002F_368ik9pms2YmYk1dKkluR6nQQfFZYW9nb6cwIeiEuHs8hzMWvrrzLE0_x002B_c_x002F_Fm5oNiv4o_x002F_wfDn5PcUkKLoR8QMgnjf2jYSndIu4C1k2bX6_x002F_FrOMGnlGnHOj8l1Yv6eGF4OWTDIPbfdug7wuKmaiYnZ8VEVSQipH3fLVdB572KHsaSjPHagm3LirCwdFOe24r6c8otfc5rL7fnEvYnNauj5Iw6FdKY7HoRIQpXC6F6Z4SA9HEDeYU_x002F_XJyPkn3D9KmM517CG_x002F_ZhIC9qJjr0H5EyK_x002B_n3FQsgSM5JkrHf1QgEFxoocSQflZeDG5ycugRSw1OaFqCyOUX6kSAVZCQDiziBUuYSgx9xw8jFDeiQX0Fhaw2FK2_x002B_zVxuW9c7bCM9nQyTB7C3hLM3iRvYIRBpTmz7Fg_x002B_eBwSuL_x002F_786AEOGL72Q81eY5tQcoZtbsSK9D9j8fB5KNm6ykDgsnHtltMhQCkTaqLZlJMot0mLvL9beWZ_x002B_EBDZD6VKs4Z5JiFwefReuokFsOr0q1odacfdGZl6UccAIvQanZA228xrNj_x002F_oguxyY7fdlY_x002B_v0cQJT9iHZrURedKrgtu5BOOtl9PqIefM3gg6PQx7cEQf_x002B_qEeL_x002F_HZS21YXdA49554_x002B_OYyLarrdTxKNE4kfY_x002B_2E3xrtJP9APw5DokY91ZvvE7DBzgBbeI9sFA61Yvl4OoUkLS97RuMqMv59w655xgZJdX8_x002B_hmL91tHagAHCUUeTwn0XWUlv1qzIh3UpteVrVJb6lCglZ_x002B_Ptf8FI_x002F_4JXjgGsT7IfPjgRxyDcZWnTY8xXkFl64WP63llyZveFALKlmAszO3SrB6Dqk6nlZ9t0mGZmECOiuvyMc7pk0_x002B_xqWuyJd6oo6tHfMmiOQ7ytZgZ4wQy_x002F_YZMFuAxgOt_x002F_qEn1rVX7f_x002F_iNpi8_x002B_NaBmv5cu_x002B_ZDAtftegVsxW92o182a1NNSFFXXPPbGdJOI_x002B_zrQt1XuqSGkKU_x002F_OccVkferxNBM3RFZ_x002F_0O04vo3_x002B_O1JJPBwdG8BY0Xq23LddyH0_x002B_GfHHbKhkpoaWIWRSmCUaMbZR15WmU4OQF3UeVsTHigon3XQECsroXiPpG_x002B_sCkAOk3Imv5mJmFE3s9Z5JO_x002B_l6nL30qN_x002B_xea2RV6XsRN3OBTJW3SXSltDNAX_x002B_kvv9w7zxzZYwkcCmPIO6Ihz1H17T63tStwJNbGu2nnYV7DquQiCCRn6Z2XnKcnJZ8O7WJFH6TCzbZwbrjZ2X65yjqLM_x002B_tP_x002F_F2WPnhsODX5SRJ_x002F_CKmGd0wumHlHD6RVHQRHaRJWNlJcwkvWN0_x002B_UP6FqHONiMzFxxGKH922Qn5qXXNC9bmsuW2SfUiLtLE88QU3vsW30HCraZu2_x002F_ts0nzl53ms9EVmheXtOEFfrzgZ4ZGirzq8QjKWN7DEqTW6xJ_x002F_mfoD7f99TUJFyAcmscnzrVYa_x002F_eerfCi0HH7iVZTrfPznUFBARiWtK3oenXnuFRy8hesSKWBcOErg524d4hZIcT_x002B_WqMX1_x002F_37dPij_x002B_dvuaOcX76LWfYccUFRcKM2WmBaX_x002B_fiaBwmI79mbPCR99isPfO9GsLjWJRF4sJnOVTWRPMIgJeGqYOZSXEi_x002B_g5DK9hydQXFyjVPxUe6iUWEWmnPe_x002F_ysHuTcOOxGOOBB_x002F_DX6kZndluzgi7dI1tz9GzJ3VyTowz7VNsMLXR3vbQRMZ4mhdkU1mNml7Ij5lE_x002F_1YJJoJGB7LEcSPs83lP9xMVvtks2DM8ln_x002B_bxmfYhgipPczNJqS474CXmZ9NDGB0fAzcr3q4PvEpPTluRYJVsKNf7QU7vEC7jejWkQXCf7GNKsDlBzdVqChsoElW_x002B_dOP0P2oI0w2n0Ge0Owz603hzR_x002B_MgsFyFG8E7YeE_x002F_fAe2Xf0DIgRbinH1SDWFfetDy4LkBx3laXJ6MM80tgGiUJfCKMLiYM6YASX3Nmm7kVRwVoeVeebRMhpzOkme_x002F_9y8NxBDaWNZjghqCSva1aE2g5ahszQAC6lLrBNnibRfjhwAr4IIswffucGaVPgE_x002B_czOMuz_x002B_e8Rk3OoYSCnpyBln_x002B_1pvak_x002F_jMhPEfwiO2uef5hbQWACpdQAFNjA0uHbSVMJBQ7frlP1HCaOV_x002F_Ra0Xhrov4n8p7qty9xENSBaXxda0gt34Tc5_x002B_R4YITASuEo8MtRvUdcSd4PGbBbG5FX5Di_x002F_xlwQMteOcNeS8gPAyubtIrnCjxmpSyUDrhIJzcp7e1iMluvcujFmBnyktjzVIcNs4f2iWNoKRjUmC5HOB9WzVp0C2vgy0Imw1LjlqaSO0ZUsj0XTq9wmQPWa36oGTzd56W1s2ax5dGH1FirGJFMkzKE_x002F_oDHJKUcT6FNp_x002F_oKnnAjj6aQAT9VI7ggsJibGdWk_x002F_KH196v9kXddaIYmxoec1e0eZMXGMUbwi1esq_x002B_MD5ioPuxxXy40of_x002F_0EHx6fPDu1vOTMy9Z5_x002B_iN3STyjhfjzDdzF7dLWzmucHOTWLLXcsUcOZ8UB_x002F_jJEFQ561ZX33I3X0uHO_x002B_qumYugMKYBJd9kxtvv2ZErG58PdZk7yJ5TgbcVdxWpz74Or5xC81FHvgUzQSZT_x002F_0aoNOmWIS29K0mk3uJMw_x003D__x003D_</value>
+    </Resources>
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="6" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="7" type="PageHeaderBand" isKey="true">
+          <Border>None;[208:206:206];1;Solid;False;4;[0:0:0]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,1</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text4 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Variables.entity} ({Variables.abbreviation})</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text34 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.3,2.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Labels.n0041}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text34>
+            <Text7 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Labels.n0075}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text12 Ref="11" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0.6,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Variables.rangeInit}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text12>
+            <Text8 Ref="12" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.4,0.6,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Labels.n0076}:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text13 Ref="13" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.3,0.6,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>006146dcfb6d498f96697b39c9b1e4a0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Variables.rangeEnd}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text13>
+            <HorizontalLinePrimitive1 Ref="14" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.9,7.7,0.01</ClientRectangle>
+              <Color>191, 191, 191</Color>
+              <EndCap Ref="15" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <StartCap Ref="16" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="17" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,9.92,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text31 Ref="18" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.2,0.08,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="6" />
+              <Parent isRef="17" />
+              <Text>{Labels.n0262} {PageNumber} {Labels.n0263} {TotalPageCount}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text31>
+            <Text30 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.08,4.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="6" />
+              <Parent isRef="17" />
+              <Text>{Labels.n0261}: {Variables.username}, {Variables.date}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text30>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </PageFooterBand1>
+        <GroupHeaderBand1 Ref="20" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,1.6,7.72,0.5</ClientRectangle>
+          <Components isList="true" count="14">
+            <Text2 Ref="21" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.9,0.3,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>3b54310d44ee4f39916a55a778500f39</Guid>
+              <Margins>5,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0088}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text1 Ref="22" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,0.3,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>5,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0111}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="23" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>1.8,0.3,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>10f817bd39314e37a89c979ec6445ffe</Guid>
+              <Margins>5,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0003}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text10 Ref="24" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>4.1,0.1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Variables.destination1}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text5 Ref="25" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>2.7,0.3,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ada5eff03786464899dafaa4fccd8405</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0573}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="26" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>3.4,0.3,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>69a17be1aa7f4bdcbfd04746d3530318</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0572}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text11 Ref="27" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>4.1,0.3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>af0b43dc7a674741b5dddfea671b93d8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0317}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text14 Ref="28" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>4.7,0.3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>8bc571322d3c4deb95b038594368d17b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0572}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="29" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>5.3,0.1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination2,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,True,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>b6d85ad8a3be43ae9f8275fbe516a334</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Variables.destination2}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="30" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>6.5,0.1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination3,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,True,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>cd5ea8f887374b6a89772536bb57b926</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Variables.destination3}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="31" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>5.3,0.3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination2,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>72c1b1793112461e9a293906021357e5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Variables.destination2 == null ? "" :  Labels.n0317}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="32" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>5.9,0.3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination2,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,True,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>147946496e3241559cec48293bac24f3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Variables.destination2 == "" ? "" :  Labels.n0572}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="33" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>6.5,0.3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination3,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>677460d0851c404a9f40e580ca6c3300</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0317}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="34" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>7.1,0.3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination3,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Guid>8070f0be69444ec2aecb24b78567d629</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="6" />
+              <Parent isRef="20" />
+              <Text>{Labels.n0572}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </GroupHeaderBand1>
+        <Datadata Ref="35" type="DataBand" isKey="true">
+          <Border>None;[231:230:230];1;Solid;False;4;[0:0:0]</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.5,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="11">
+            <Datadata_sampleName Ref="36" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>5,0,0,0</Margins>
+              <Name>Datadata_sampleName</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.sampleName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_sampleName>
+            <Datadata_orderTypeName Ref="37" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.9,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>5,0,0,0</Margins>
+              <Name>Datadata_orderTypeName</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.orderTypeName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_orderTypeName>
+            <Datadata_branchName Ref="38" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.8,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>5,0,0,0</Margins>
+              <Name>Datadata_branchName</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.branchName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_branchName>
+            <Datadata_total Ref="39" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.7,0,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_total</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.total}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_total>
+            <Datadata_verify Ref="40" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.4,0,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_verify</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.verify}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_verify>
+            <Datadata_checkAmountdestination1 Ref="41" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.1,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_checkAmountdestination1</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.uncheckAmountdestination1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_checkAmountdestination1>
+            <Datadata_uncheckAmountdestination1 Ref="42" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.7,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_uncheckAmountdestination1</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.checkAmountdestination1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_uncheckAmountdestination1>
+            <Datadata_checkAmountdestination2 Ref="43" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.3,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination2,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_checkAmountdestination2</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{Variables.destination2 == "" ? "" : data.uncheckAmountdestination2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_checkAmountdestination2>
+            <Datadata_uncheckAmountdestination2 Ref="44" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.9,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination2,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,True,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_uncheckAmountdestination2</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{Variables.destination2 == ""? "" : data.checkAmountdestination2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_uncheckAmountdestination2>
+            <Datadata_checkAmountdestination3 Ref="45" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.5,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination3,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_checkAmountdestination3</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.uncheckAmountdestination3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_checkAmountdestination3>
+            <Datadata_uncheckAmountdestination3 Ref="46" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.1,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>Variables.destination3,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Datadata_uncheckAmountdestination3</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{data.checkAmountdestination3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Datadata_uncheckAmountdestination3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>data</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Datadata</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </Datadata>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>a008cdc03fc1426e93db917ca41a3c79</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="47" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="48" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/24/2017 3:40:17 PM</ReportChanged>
+  <ReportCreated>11/24/2017 3:40:17 PM</ReportCreated>
+  <ReportGuid>45e5f0111e8f42c894af24d20406692e</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2018.2.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="49" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Style1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>

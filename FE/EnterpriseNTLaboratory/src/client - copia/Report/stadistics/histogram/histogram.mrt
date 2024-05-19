@@ -1,0 +1,5892 @@
+{
+  "ReportVersion": "2019.1.1",
+  "ReportGuid": "5b67b62ff9b0c386ec4c0e809f19d715",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportFile": "histogram.mrt",
+  "ReportCreated": "/Date(36000000-0500)/",
+  "ReportChanged": "/Date(36000000-0500)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Inches",
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Name": "Style1",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:0,0,0"
+    }
+  },
+  "Dictionary": {
+    "Resources": {
+      "0": {
+        "Name": "histogram",
+        "Alias": "histogram",
+        "Type": "Json",
+        "Image": "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"
+      }
+    },
+    "Variables": {
+      "0": {
+        "Value": "0",
+        "Name": "Variable",
+        "DialogInfo": {
+          "DateTimeType": "DateAndTime"
+        },
+        "Alias": "Variable",
+        "Type": "System.String"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "Variables",
+        "Alias": "Variables",
+        "Columns": {
+          "0": {
+            "Name": "entity",
+            "Index": -1,
+            "NameInSource": "entity",
+            "Alias": "entity",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "abbreviation",
+            "Index": -1,
+            "NameInSource": "abbreviation",
+            "Alias": "abbreviation",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "rangeInit",
+            "Index": -1,
+            "NameInSource": "rangeInit",
+            "Alias": "rangeInit",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "rangeEnd",
+            "Index": -1,
+            "NameInSource": "rangeEnd",
+            "Alias": "rangeEnd",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "rangeType",
+            "Index": -1,
+            "NameInSource": "rangeType",
+            "Alias": "rangeType",
+            "Type": "System.Double"
+          },
+          "5": {
+            "Name": "typeFilter",
+            "Index": -1,
+            "NameInSource": "typeFilter",
+            "Alias": "typeFilter",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "username",
+            "Index": -1,
+            "NameInSource": "username",
+            "Alias": "username",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "date",
+            "Index": -1,
+            "NameInSource": "date",
+            "Alias": "date",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "startDate",
+            "Index": -1,
+            "NameInSource": "startDate",
+            "Alias": "startDate",
+            "Type": "System.Double"
+          }
+        },
+        "NameInSource": "histogram.Variables"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "data",
+        "Alias": "data",
+        "Columns": {
+          "0": {
+            "Name": "mean",
+            "Index": -1,
+            "NameInSource": "mean",
+            "Alias": "mean",
+            "Type": "System.DateTime"
+          },
+          "1": {
+            "Name": "median",
+            "Index": -1,
+            "NameInSource": "median",
+            "Alias": "median",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "standardDeviation",
+            "Index": -1,
+            "NameInSource": "standardDeviation",
+            "Alias": "standardDeviation",
+            "Type": "System.DateTime"
+          },
+          "3": {
+            "Name": "percentile25",
+            "Index": -1,
+            "NameInSource": "percentile25",
+            "Alias": "percentile25",
+            "Type": "System.DateTime"
+          },
+          "4": {
+            "Name": "percentile75",
+            "Index": -1,
+            "NameInSource": "percentile75",
+            "Alias": "percentile75",
+            "Type": "System.DateTime"
+          },
+          "5": {
+            "Name": "binds",
+            "Index": -1,
+            "NameInSource": "binds",
+            "Alias": "binds",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "detail",
+            "Index": -1,
+            "NameInSource": "detail",
+            "Alias": "detail",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "average",
+            "Index": -1,
+            "NameInSource": "average",
+            "Alias": "average",
+            "Type": "System.DateTime"
+          }
+        },
+        "NameInSource": "histogram.data"
+      },
+      "2": {
+        "Ident": "StiDataTableSource",
+        "Name": "Labels",
+        "Alias": "Labels",
+        "Columns": {
+          "0": {
+            "Name": "0000",
+            "Index": -1,
+            "NameInSource": "0000",
+            "Alias": "0000",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "0001",
+            "Index": -1,
+            "NameInSource": "0001",
+            "Alias": "0001",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "0002",
+            "Index": -1,
+            "NameInSource": "0002",
+            "Alias": "0002",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "0003",
+            "Index": -1,
+            "NameInSource": "0003",
+            "Alias": "0003",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "0004",
+            "Index": -1,
+            "NameInSource": "0004",
+            "Alias": "0004",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "0005",
+            "Index": -1,
+            "NameInSource": "0005",
+            "Alias": "0005",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "0006",
+            "Index": -1,
+            "NameInSource": "0006",
+            "Alias": "0006",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "0007",
+            "Index": -1,
+            "NameInSource": "0007",
+            "Alias": "0007",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "0008",
+            "Index": -1,
+            "NameInSource": "0008",
+            "Alias": "0008",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "0009",
+            "Index": -1,
+            "NameInSource": "0009",
+            "Alias": "0009",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "0010",
+            "Index": -1,
+            "NameInSource": "0010",
+            "Alias": "0010",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "0011",
+            "Index": -1,
+            "NameInSource": "0011",
+            "Alias": "0011",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "0012",
+            "Index": -1,
+            "NameInSource": "0012",
+            "Alias": "0012",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "0013",
+            "Index": -1,
+            "NameInSource": "0013",
+            "Alias": "0013",
+            "Type": "System.String"
+          },
+          "14": {
+            "Name": "0014",
+            "Index": -1,
+            "NameInSource": "0014",
+            "Alias": "0014",
+            "Type": "System.String"
+          },
+          "15": {
+            "Name": "0015",
+            "Index": -1,
+            "NameInSource": "0015",
+            "Alias": "0015",
+            "Type": "System.String"
+          },
+          "16": {
+            "Name": "0016",
+            "Index": -1,
+            "NameInSource": "0016",
+            "Alias": "0016",
+            "Type": "System.String"
+          },
+          "17": {
+            "Name": "0017",
+            "Index": -1,
+            "NameInSource": "0017",
+            "Alias": "0017",
+            "Type": "System.String"
+          },
+          "18": {
+            "Name": "0018",
+            "Index": -1,
+            "NameInSource": "0018",
+            "Alias": "0018",
+            "Type": "System.String"
+          },
+          "19": {
+            "Name": "0019",
+            "Index": -1,
+            "NameInSource": "0019",
+            "Alias": "0019",
+            "Type": "System.String"
+          },
+          "20": {
+            "Name": "0020",
+            "Index": -1,
+            "NameInSource": "0020",
+            "Alias": "0020",
+            "Type": "System.String"
+          },
+          "21": {
+            "Name": "0021",
+            "Index": -1,
+            "NameInSource": "0021",
+            "Alias": "0021",
+            "Type": "System.String"
+          },
+          "22": {
+            "Name": "0022",
+            "Index": -1,
+            "NameInSource": "0022",
+            "Alias": "0022",
+            "Type": "System.String"
+          },
+          "23": {
+            "Name": "0023",
+            "Index": -1,
+            "NameInSource": "0023",
+            "Alias": "0023",
+            "Type": "System.String"
+          },
+          "24": {
+            "Name": "0024",
+            "Index": -1,
+            "NameInSource": "0024",
+            "Alias": "0024",
+            "Type": "System.String"
+          },
+          "25": {
+            "Name": "0025",
+            "Index": -1,
+            "NameInSource": "0025",
+            "Alias": "0025",
+            "Type": "System.String"
+          },
+          "26": {
+            "Name": "0026",
+            "Index": -1,
+            "NameInSource": "0026",
+            "Alias": "0026",
+            "Type": "System.String"
+          },
+          "27": {
+            "Name": "0027",
+            "Index": -1,
+            "NameInSource": "0027",
+            "Alias": "0027",
+            "Type": "System.String"
+          },
+          "28": {
+            "Name": "0028",
+            "Index": -1,
+            "NameInSource": "0028",
+            "Alias": "0028",
+            "Type": "System.String"
+          },
+          "29": {
+            "Name": "0029",
+            "Index": -1,
+            "NameInSource": "0029",
+            "Alias": "0029",
+            "Type": "System.String"
+          },
+          "30": {
+            "Name": "0030",
+            "Index": -1,
+            "NameInSource": "0030",
+            "Alias": "0030",
+            "Type": "System.String"
+          },
+          "31": {
+            "Name": "0031",
+            "Index": -1,
+            "NameInSource": "0031",
+            "Alias": "0031",
+            "Type": "System.String"
+          },
+          "32": {
+            "Name": "0032",
+            "Index": -1,
+            "NameInSource": "0032",
+            "Alias": "0032",
+            "Type": "System.String"
+          },
+          "33": {
+            "Name": "0033",
+            "Index": -1,
+            "NameInSource": "0033",
+            "Alias": "0033",
+            "Type": "System.String"
+          },
+          "34": {
+            "Name": "0034",
+            "Index": -1,
+            "NameInSource": "0034",
+            "Alias": "0034",
+            "Type": "System.String"
+          },
+          "35": {
+            "Name": "0035",
+            "Index": -1,
+            "NameInSource": "0035",
+            "Alias": "0035",
+            "Type": "System.String"
+          },
+          "36": {
+            "Name": "0036",
+            "Index": -1,
+            "NameInSource": "0036",
+            "Alias": "0036",
+            "Type": "System.String"
+          },
+          "37": {
+            "Name": "0037",
+            "Index": -1,
+            "NameInSource": "0037",
+            "Alias": "0037",
+            "Type": "System.String"
+          },
+          "38": {
+            "Name": "0038",
+            "Index": -1,
+            "NameInSource": "0038",
+            "Alias": "0038",
+            "Type": "System.String"
+          },
+          "39": {
+            "Name": "0039",
+            "Index": -1,
+            "NameInSource": "0039",
+            "Alias": "0039",
+            "Type": "System.String"
+          },
+          "40": {
+            "Name": "0040",
+            "Index": -1,
+            "NameInSource": "0040",
+            "Alias": "0040",
+            "Type": "System.String"
+          },
+          "41": {
+            "Name": "0041",
+            "Index": -1,
+            "NameInSource": "0041",
+            "Alias": "0041",
+            "Type": "System.String"
+          },
+          "42": {
+            "Name": "0042",
+            "Index": -1,
+            "NameInSource": "0042",
+            "Alias": "0042",
+            "Type": "System.String"
+          },
+          "43": {
+            "Name": "0043",
+            "Index": -1,
+            "NameInSource": "0043",
+            "Alias": "0043",
+            "Type": "System.String"
+          },
+          "44": {
+            "Name": "0044",
+            "Index": -1,
+            "NameInSource": "0044",
+            "Alias": "0044",
+            "Type": "System.String"
+          },
+          "45": {
+            "Name": "0045",
+            "Index": -1,
+            "NameInSource": "0045",
+            "Alias": "0045",
+            "Type": "System.String"
+          },
+          "46": {
+            "Name": "0046",
+            "Index": -1,
+            "NameInSource": "0046",
+            "Alias": "0046",
+            "Type": "System.String"
+          },
+          "47": {
+            "Name": "0047",
+            "Index": -1,
+            "NameInSource": "0047",
+            "Alias": "0047",
+            "Type": "System.String"
+          },
+          "48": {
+            "Name": "0048",
+            "Index": -1,
+            "NameInSource": "0048",
+            "Alias": "0048",
+            "Type": "System.String"
+          },
+          "49": {
+            "Name": "0049",
+            "Index": -1,
+            "NameInSource": "0049",
+            "Alias": "0049",
+            "Type": "System.String"
+          },
+          "50": {
+            "Name": "0050",
+            "Index": -1,
+            "NameInSource": "0050",
+            "Alias": "0050",
+            "Type": "System.String"
+          },
+          "51": {
+            "Name": "0051",
+            "Index": -1,
+            "NameInSource": "0051",
+            "Alias": "0051",
+            "Type": "System.String"
+          },
+          "52": {
+            "Name": "0052",
+            "Index": -1,
+            "NameInSource": "0052",
+            "Alias": "0052",
+            "Type": "System.String"
+          },
+          "53": {
+            "Name": "0053",
+            "Index": -1,
+            "NameInSource": "0053",
+            "Alias": "0053",
+            "Type": "System.String"
+          },
+          "54": {
+            "Name": "0054",
+            "Index": -1,
+            "NameInSource": "0054",
+            "Alias": "0054",
+            "Type": "System.String"
+          },
+          "55": {
+            "Name": "0055",
+            "Index": -1,
+            "NameInSource": "0055",
+            "Alias": "0055",
+            "Type": "System.String"
+          },
+          "56": {
+            "Name": "0056",
+            "Index": -1,
+            "NameInSource": "0056",
+            "Alias": "0056",
+            "Type": "System.String"
+          },
+          "57": {
+            "Name": "0057",
+            "Index": -1,
+            "NameInSource": "0057",
+            "Alias": "0057",
+            "Type": "System.String"
+          },
+          "58": {
+            "Name": "0058",
+            "Index": -1,
+            "NameInSource": "0058",
+            "Alias": "0058",
+            "Type": "System.String"
+          },
+          "59": {
+            "Name": "0059",
+            "Index": -1,
+            "NameInSource": "0059",
+            "Alias": "0059",
+            "Type": "System.String"
+          },
+          "60": {
+            "Name": "0060",
+            "Index": -1,
+            "NameInSource": "0060",
+            "Alias": "0060",
+            "Type": "System.String"
+          },
+          "61": {
+            "Name": "0061",
+            "Index": -1,
+            "NameInSource": "0061",
+            "Alias": "0061",
+            "Type": "System.String"
+          },
+          "62": {
+            "Name": "0062",
+            "Index": -1,
+            "NameInSource": "0062",
+            "Alias": "0062",
+            "Type": "System.String"
+          },
+          "63": {
+            "Name": "0063",
+            "Index": -1,
+            "NameInSource": "0063",
+            "Alias": "0063",
+            "Type": "System.String"
+          },
+          "64": {
+            "Name": "0064",
+            "Index": -1,
+            "NameInSource": "0064",
+            "Alias": "0064",
+            "Type": "System.String"
+          },
+          "65": {
+            "Name": "0065",
+            "Index": -1,
+            "NameInSource": "0065",
+            "Alias": "0065",
+            "Type": "System.String"
+          },
+          "66": {
+            "Name": "0066",
+            "Index": -1,
+            "NameInSource": "0066",
+            "Alias": "0066",
+            "Type": "System.String"
+          },
+          "67": {
+            "Name": "0067",
+            "Index": -1,
+            "NameInSource": "0067",
+            "Alias": "0067",
+            "Type": "System.String"
+          },
+          "68": {
+            "Name": "0068",
+            "Index": -1,
+            "NameInSource": "0068",
+            "Alias": "0068",
+            "Type": "System.String"
+          },
+          "69": {
+            "Name": "0069",
+            "Index": -1,
+            "NameInSource": "0069",
+            "Alias": "0069",
+            "Type": "System.String"
+          },
+          "70": {
+            "Name": "0070",
+            "Index": -1,
+            "NameInSource": "0070",
+            "Alias": "0070",
+            "Type": "System.String"
+          },
+          "71": {
+            "Name": "0071",
+            "Index": -1,
+            "NameInSource": "0071",
+            "Alias": "0071",
+            "Type": "System.String"
+          },
+          "72": {
+            "Name": "0072",
+            "Index": -1,
+            "NameInSource": "0072",
+            "Alias": "0072",
+            "Type": "System.String"
+          },
+          "73": {
+            "Name": "0073",
+            "Index": -1,
+            "NameInSource": "0073",
+            "Alias": "0073",
+            "Type": "System.String"
+          },
+          "74": {
+            "Name": "0074",
+            "Index": -1,
+            "NameInSource": "0074",
+            "Alias": "0074",
+            "Type": "System.String"
+          },
+          "75": {
+            "Name": "0075",
+            "Index": -1,
+            "NameInSource": "0075",
+            "Alias": "0075",
+            "Type": "System.String"
+          },
+          "76": {
+            "Name": "0076",
+            "Index": -1,
+            "NameInSource": "0076",
+            "Alias": "0076",
+            "Type": "System.String"
+          },
+          "77": {
+            "Name": "0077",
+            "Index": -1,
+            "NameInSource": "0077",
+            "Alias": "0077",
+            "Type": "System.String"
+          },
+          "78": {
+            "Name": "0078",
+            "Index": -1,
+            "NameInSource": "0078",
+            "Alias": "0078",
+            "Type": "System.String"
+          },
+          "79": {
+            "Name": "0079",
+            "Index": -1,
+            "NameInSource": "0079",
+            "Alias": "0079",
+            "Type": "System.String"
+          },
+          "80": {
+            "Name": "0080",
+            "Index": -1,
+            "NameInSource": "0080",
+            "Alias": "0080",
+            "Type": "System.String"
+          },
+          "81": {
+            "Name": "0081",
+            "Index": -1,
+            "NameInSource": "0081",
+            "Alias": "0081",
+            "Type": "System.String"
+          },
+          "82": {
+            "Name": "0082",
+            "Index": -1,
+            "NameInSource": "0082",
+            "Alias": "0082",
+            "Type": "System.String"
+          },
+          "83": {
+            "Name": "0083",
+            "Index": -1,
+            "NameInSource": "0083",
+            "Alias": "0083",
+            "Type": "System.String"
+          },
+          "84": {
+            "Name": "0084",
+            "Index": -1,
+            "NameInSource": "0084",
+            "Alias": "0084",
+            "Type": "System.String"
+          },
+          "85": {
+            "Name": "0085",
+            "Index": -1,
+            "NameInSource": "0085",
+            "Alias": "0085",
+            "Type": "System.String"
+          },
+          "86": {
+            "Name": "0086",
+            "Index": -1,
+            "NameInSource": "0086",
+            "Alias": "0086",
+            "Type": "System.String"
+          },
+          "87": {
+            "Name": "0087",
+            "Index": -1,
+            "NameInSource": "0087",
+            "Alias": "0087",
+            "Type": "System.String"
+          },
+          "88": {
+            "Name": "0088",
+            "Index": -1,
+            "NameInSource": "0088",
+            "Alias": "0088",
+            "Type": "System.String"
+          },
+          "89": {
+            "Name": "0089",
+            "Index": -1,
+            "NameInSource": "0089",
+            "Alias": "0089",
+            "Type": "System.String"
+          },
+          "90": {
+            "Name": "0090",
+            "Index": -1,
+            "NameInSource": "0090",
+            "Alias": "0090",
+            "Type": "System.String"
+          },
+          "91": {
+            "Name": "0091",
+            "Index": -1,
+            "NameInSource": "0091",
+            "Alias": "0091",
+            "Type": "System.String"
+          },
+          "92": {
+            "Name": "0092",
+            "Index": -1,
+            "NameInSource": "0092",
+            "Alias": "0092",
+            "Type": "System.String"
+          },
+          "93": {
+            "Name": "0093",
+            "Index": -1,
+            "NameInSource": "0093",
+            "Alias": "0093",
+            "Type": "System.String"
+          },
+          "94": {
+            "Name": "0094",
+            "Index": -1,
+            "NameInSource": "0094",
+            "Alias": "0094",
+            "Type": "System.String"
+          },
+          "95": {
+            "Name": "0095",
+            "Index": -1,
+            "NameInSource": "0095",
+            "Alias": "0095",
+            "Type": "System.String"
+          },
+          "96": {
+            "Name": "0096",
+            "Index": -1,
+            "NameInSource": "0096",
+            "Alias": "0096",
+            "Type": "System.String"
+          },
+          "97": {
+            "Name": "0097",
+            "Index": -1,
+            "NameInSource": "0097",
+            "Alias": "0097",
+            "Type": "System.String"
+          },
+          "98": {
+            "Name": "0098",
+            "Index": -1,
+            "NameInSource": "0098",
+            "Alias": "0098",
+            "Type": "System.String"
+          },
+          "99": {
+            "Name": "0099",
+            "Index": -1,
+            "NameInSource": "0099",
+            "Alias": "0099",
+            "Type": "System.String"
+          },
+          "100": {
+            "Name": "0100",
+            "Index": -1,
+            "NameInSource": "0100",
+            "Alias": "0100",
+            "Type": "System.String"
+          },
+          "101": {
+            "Name": "0101",
+            "Index": -1,
+            "NameInSource": "0101",
+            "Alias": "0101",
+            "Type": "System.String"
+          },
+          "102": {
+            "Name": "0102",
+            "Index": -1,
+            "NameInSource": "0102",
+            "Alias": "0102",
+            "Type": "System.String"
+          },
+          "103": {
+            "Name": "0103",
+            "Index": -1,
+            "NameInSource": "0103",
+            "Alias": "0103",
+            "Type": "System.String"
+          },
+          "104": {
+            "Name": "0106",
+            "Index": -1,
+            "NameInSource": "0106",
+            "Alias": "0106",
+            "Type": "System.String"
+          },
+          "105": {
+            "Name": "0107",
+            "Index": -1,
+            "NameInSource": "0107",
+            "Alias": "0107",
+            "Type": "System.String"
+          },
+          "106": {
+            "Name": "0108",
+            "Index": -1,
+            "NameInSource": "0108",
+            "Alias": "0108",
+            "Type": "System.String"
+          },
+          "107": {
+            "Name": "0109",
+            "Index": -1,
+            "NameInSource": "0109",
+            "Alias": "0109",
+            "Type": "System.String"
+          },
+          "108": {
+            "Name": "0110",
+            "Index": -1,
+            "NameInSource": "0110",
+            "Alias": "0110",
+            "Type": "System.String"
+          },
+          "109": {
+            "Name": "0111",
+            "Index": -1,
+            "NameInSource": "0111",
+            "Alias": "0111",
+            "Type": "System.String"
+          },
+          "110": {
+            "Name": "0112",
+            "Index": -1,
+            "NameInSource": "0112",
+            "Alias": "0112",
+            "Type": "System.String"
+          },
+          "111": {
+            "Name": "0113",
+            "Index": -1,
+            "NameInSource": "0113",
+            "Alias": "0113",
+            "Type": "System.String"
+          },
+          "112": {
+            "Name": "0114",
+            "Index": -1,
+            "NameInSource": "0114",
+            "Alias": "0114",
+            "Type": "System.String"
+          },
+          "113": {
+            "Name": "0115",
+            "Index": -1,
+            "NameInSource": "0115",
+            "Alias": "0115",
+            "Type": "System.String"
+          },
+          "114": {
+            "Name": "0116",
+            "Index": -1,
+            "NameInSource": "0116",
+            "Alias": "0116",
+            "Type": "System.String"
+          },
+          "115": {
+            "Name": "0117",
+            "Index": -1,
+            "NameInSource": "0117",
+            "Alias": "0117",
+            "Type": "System.String"
+          },
+          "116": {
+            "Name": "0118",
+            "Index": -1,
+            "NameInSource": "0118",
+            "Alias": "0118",
+            "Type": "System.String"
+          },
+          "117": {
+            "Name": "0119",
+            "Index": -1,
+            "NameInSource": "0119",
+            "Alias": "0119",
+            "Type": "System.String"
+          },
+          "118": {
+            "Name": "0120",
+            "Index": -1,
+            "NameInSource": "0120",
+            "Alias": "0120",
+            "Type": "System.String"
+          },
+          "119": {
+            "Name": "0121",
+            "Index": -1,
+            "NameInSource": "0121",
+            "Alias": "0121",
+            "Type": "System.String"
+          },
+          "120": {
+            "Name": "0122",
+            "Index": -1,
+            "NameInSource": "0122",
+            "Alias": "0122",
+            "Type": "System.String"
+          },
+          "121": {
+            "Name": "0123",
+            "Index": -1,
+            "NameInSource": "0123",
+            "Alias": "0123",
+            "Type": "System.String"
+          },
+          "122": {
+            "Name": "0124",
+            "Index": -1,
+            "NameInSource": "0124",
+            "Alias": "0124",
+            "Type": "System.String"
+          },
+          "123": {
+            "Name": "0125",
+            "Index": -1,
+            "NameInSource": "0125",
+            "Alias": "0125",
+            "Type": "System.String"
+          },
+          "124": {
+            "Name": "0126",
+            "Index": -1,
+            "NameInSource": "0126",
+            "Alias": "0126",
+            "Type": "System.String"
+          },
+          "125": {
+            "Name": "0127",
+            "Index": -1,
+            "NameInSource": "0127",
+            "Alias": "0127",
+            "Type": "System.String"
+          },
+          "126": {
+            "Name": "0128",
+            "Index": -1,
+            "NameInSource": "0128",
+            "Alias": "0128",
+            "Type": "System.String"
+          },
+          "127": {
+            "Name": "0129",
+            "Index": -1,
+            "NameInSource": "0129",
+            "Alias": "0129",
+            "Type": "System.String"
+          },
+          "128": {
+            "Name": "0130",
+            "Index": -1,
+            "NameInSource": "0130",
+            "Alias": "0130",
+            "Type": "System.String"
+          },
+          "129": {
+            "Name": "0131",
+            "Index": -1,
+            "NameInSource": "0131",
+            "Alias": "0131",
+            "Type": "System.String"
+          },
+          "130": {
+            "Name": "0132",
+            "Index": -1,
+            "NameInSource": "0132",
+            "Alias": "0132",
+            "Type": "System.String"
+          },
+          "131": {
+            "Name": "0133",
+            "Index": -1,
+            "NameInSource": "0133",
+            "Alias": "0133",
+            "Type": "System.String"
+          },
+          "132": {
+            "Name": "0134",
+            "Index": -1,
+            "NameInSource": "0134",
+            "Alias": "0134",
+            "Type": "System.String"
+          },
+          "133": {
+            "Name": "0135",
+            "Index": -1,
+            "NameInSource": "0135",
+            "Alias": "0135",
+            "Type": "System.String"
+          },
+          "134": {
+            "Name": "0136",
+            "Index": -1,
+            "NameInSource": "0136",
+            "Alias": "0136",
+            "Type": "System.String"
+          },
+          "135": {
+            "Name": "0137",
+            "Index": -1,
+            "NameInSource": "0137",
+            "Alias": "0137",
+            "Type": "System.String"
+          },
+          "136": {
+            "Name": "0138",
+            "Index": -1,
+            "NameInSource": "0138",
+            "Alias": "0138",
+            "Type": "System.String"
+          },
+          "137": {
+            "Name": "0139",
+            "Index": -1,
+            "NameInSource": "0139",
+            "Alias": "0139",
+            "Type": "System.String"
+          },
+          "138": {
+            "Name": "0140",
+            "Index": -1,
+            "NameInSource": "0140",
+            "Alias": "0140",
+            "Type": "System.String"
+          },
+          "139": {
+            "Name": "0141",
+            "Index": -1,
+            "NameInSource": "0141",
+            "Alias": "0141",
+            "Type": "System.String"
+          },
+          "140": {
+            "Name": "0142",
+            "Index": -1,
+            "NameInSource": "0142",
+            "Alias": "0142",
+            "Type": "System.String"
+          },
+          "141": {
+            "Name": "0143",
+            "Index": -1,
+            "NameInSource": "0143",
+            "Alias": "0143",
+            "Type": "System.String"
+          },
+          "142": {
+            "Name": "0144",
+            "Index": -1,
+            "NameInSource": "0144",
+            "Alias": "0144",
+            "Type": "System.String"
+          },
+          "143": {
+            "Name": "0145",
+            "Index": -1,
+            "NameInSource": "0145",
+            "Alias": "0145",
+            "Type": "System.String"
+          },
+          "144": {
+            "Name": "0146",
+            "Index": -1,
+            "NameInSource": "0146",
+            "Alias": "0146",
+            "Type": "System.String"
+          },
+          "145": {
+            "Name": "0147",
+            "Index": -1,
+            "NameInSource": "0147",
+            "Alias": "0147",
+            "Type": "System.String"
+          },
+          "146": {
+            "Name": "0148",
+            "Index": -1,
+            "NameInSource": "0148",
+            "Alias": "0148",
+            "Type": "System.String"
+          },
+          "147": {
+            "Name": "0149",
+            "Index": -1,
+            "NameInSource": "0149",
+            "Alias": "0149",
+            "Type": "System.String"
+          },
+          "148": {
+            "Name": "0150",
+            "Index": -1,
+            "NameInSource": "0150",
+            "Alias": "0150",
+            "Type": "System.String"
+          },
+          "149": {
+            "Name": "0151",
+            "Index": -1,
+            "NameInSource": "0151",
+            "Alias": "0151",
+            "Type": "System.String"
+          },
+          "150": {
+            "Name": "0152",
+            "Index": -1,
+            "NameInSource": "0152",
+            "Alias": "0152",
+            "Type": "System.String"
+          },
+          "151": {
+            "Name": "0153",
+            "Index": -1,
+            "NameInSource": "0153",
+            "Alias": "0153",
+            "Type": "System.String"
+          },
+          "152": {
+            "Name": "0154",
+            "Index": -1,
+            "NameInSource": "0154",
+            "Alias": "0154",
+            "Type": "System.String"
+          },
+          "153": {
+            "Name": "0155",
+            "Index": -1,
+            "NameInSource": "0155",
+            "Alias": "0155",
+            "Type": "System.String"
+          },
+          "154": {
+            "Name": "0156",
+            "Index": -1,
+            "NameInSource": "0156",
+            "Alias": "0156",
+            "Type": "System.String"
+          },
+          "155": {
+            "Name": "0157",
+            "Index": -1,
+            "NameInSource": "0157",
+            "Alias": "0157",
+            "Type": "System.String"
+          },
+          "156": {
+            "Name": "0158",
+            "Index": -1,
+            "NameInSource": "0158",
+            "Alias": "0158",
+            "Type": "System.String"
+          },
+          "157": {
+            "Name": "0159",
+            "Index": -1,
+            "NameInSource": "0159",
+            "Alias": "0159",
+            "Type": "System.String"
+          },
+          "158": {
+            "Name": "0160",
+            "Index": -1,
+            "NameInSource": "0160",
+            "Alias": "0160",
+            "Type": "System.String"
+          },
+          "159": {
+            "Name": "0161",
+            "Index": -1,
+            "NameInSource": "0161",
+            "Alias": "0161",
+            "Type": "System.String"
+          },
+          "160": {
+            "Name": "0162",
+            "Index": -1,
+            "NameInSource": "0162",
+            "Alias": "0162",
+            "Type": "System.String"
+          },
+          "161": {
+            "Name": "0163",
+            "Index": -1,
+            "NameInSource": "0163",
+            "Alias": "0163",
+            "Type": "System.String"
+          },
+          "162": {
+            "Name": "0164",
+            "Index": -1,
+            "NameInSource": "0164",
+            "Alias": "0164",
+            "Type": "System.String"
+          },
+          "163": {
+            "Name": "0165",
+            "Index": -1,
+            "NameInSource": "0165",
+            "Alias": "0165",
+            "Type": "System.String"
+          },
+          "164": {
+            "Name": "0166",
+            "Index": -1,
+            "NameInSource": "0166",
+            "Alias": "0166",
+            "Type": "System.String"
+          },
+          "165": {
+            "Name": "0167",
+            "Index": -1,
+            "NameInSource": "0167",
+            "Alias": "0167",
+            "Type": "System.String"
+          },
+          "166": {
+            "Name": "0168",
+            "Index": -1,
+            "NameInSource": "0168",
+            "Alias": "0168",
+            "Type": "System.String"
+          },
+          "167": {
+            "Name": "0169",
+            "Index": -1,
+            "NameInSource": "0169",
+            "Alias": "0169",
+            "Type": "System.String"
+          },
+          "168": {
+            "Name": "0170",
+            "Index": -1,
+            "NameInSource": "0170",
+            "Alias": "0170",
+            "Type": "System.String"
+          },
+          "169": {
+            "Name": "0171",
+            "Index": -1,
+            "NameInSource": "0171",
+            "Alias": "0171",
+            "Type": "System.String"
+          },
+          "170": {
+            "Name": "0172",
+            "Index": -1,
+            "NameInSource": "0172",
+            "Alias": "0172",
+            "Type": "System.String"
+          },
+          "171": {
+            "Name": "0173",
+            "Index": -1,
+            "NameInSource": "0173",
+            "Alias": "0173",
+            "Type": "System.String"
+          },
+          "172": {
+            "Name": "0174",
+            "Index": -1,
+            "NameInSource": "0174",
+            "Alias": "0174",
+            "Type": "System.String"
+          },
+          "173": {
+            "Name": "0175",
+            "Index": -1,
+            "NameInSource": "0175",
+            "Alias": "0175",
+            "Type": "System.String"
+          },
+          "174": {
+            "Name": "0176",
+            "Index": -1,
+            "NameInSource": "0176",
+            "Alias": "0176",
+            "Type": "System.String"
+          },
+          "175": {
+            "Name": "0177",
+            "Index": -1,
+            "NameInSource": "0177",
+            "Alias": "0177",
+            "Type": "System.String"
+          },
+          "176": {
+            "Name": "0178",
+            "Index": -1,
+            "NameInSource": "0178",
+            "Alias": "0178",
+            "Type": "System.String"
+          },
+          "177": {
+            "Name": "0179",
+            "Index": -1,
+            "NameInSource": "0179",
+            "Alias": "0179",
+            "Type": "System.String"
+          },
+          "178": {
+            "Name": "0180",
+            "Index": -1,
+            "NameInSource": "0180",
+            "Alias": "0180",
+            "Type": "System.String"
+          },
+          "179": {
+            "Name": "0181",
+            "Index": -1,
+            "NameInSource": "0181",
+            "Alias": "0181",
+            "Type": "System.String"
+          },
+          "180": {
+            "Name": "0182",
+            "Index": -1,
+            "NameInSource": "0182",
+            "Alias": "0182",
+            "Type": "System.String"
+          },
+          "181": {
+            "Name": "0183",
+            "Index": -1,
+            "NameInSource": "0183",
+            "Alias": "0183",
+            "Type": "System.String"
+          },
+          "182": {
+            "Name": "0184",
+            "Index": -1,
+            "NameInSource": "0184",
+            "Alias": "0184",
+            "Type": "System.String"
+          },
+          "183": {
+            "Name": "0185",
+            "Index": -1,
+            "NameInSource": "0185",
+            "Alias": "0185",
+            "Type": "System.String"
+          },
+          "184": {
+            "Name": "0186",
+            "Index": -1,
+            "NameInSource": "0186",
+            "Alias": "0186",
+            "Type": "System.String"
+          },
+          "185": {
+            "Name": "0187",
+            "Index": -1,
+            "NameInSource": "0187",
+            "Alias": "0187",
+            "Type": "System.String"
+          },
+          "186": {
+            "Name": "0188",
+            "Index": -1,
+            "NameInSource": "0188",
+            "Alias": "0188",
+            "Type": "System.String"
+          },
+          "187": {
+            "Name": "0189",
+            "Index": -1,
+            "NameInSource": "0189",
+            "Alias": "0189",
+            "Type": "System.String"
+          },
+          "188": {
+            "Name": "0190",
+            "Index": -1,
+            "NameInSource": "0190",
+            "Alias": "0190",
+            "Type": "System.String"
+          },
+          "189": {
+            "Name": "0191",
+            "Index": -1,
+            "NameInSource": "0191",
+            "Alias": "0191",
+            "Type": "System.String"
+          },
+          "190": {
+            "Name": "0192",
+            "Index": -1,
+            "NameInSource": "0192",
+            "Alias": "0192",
+            "Type": "System.String"
+          },
+          "191": {
+            "Name": "0193",
+            "Index": -1,
+            "NameInSource": "0193",
+            "Alias": "0193",
+            "Type": "System.String"
+          },
+          "192": {
+            "Name": "0194",
+            "Index": -1,
+            "NameInSource": "0194",
+            "Alias": "0194",
+            "Type": "System.String"
+          },
+          "193": {
+            "Name": "0195",
+            "Index": -1,
+            "NameInSource": "0195",
+            "Alias": "0195",
+            "Type": "System.String"
+          },
+          "194": {
+            "Name": "0196",
+            "Index": -1,
+            "NameInSource": "0196",
+            "Alias": "0196",
+            "Type": "System.String"
+          },
+          "195": {
+            "Name": "0197",
+            "Index": -1,
+            "NameInSource": "0197",
+            "Alias": "0197",
+            "Type": "System.String"
+          },
+          "196": {
+            "Name": "0198",
+            "Index": -1,
+            "NameInSource": "0198",
+            "Alias": "0198",
+            "Type": "System.String"
+          },
+          "197": {
+            "Name": "0199",
+            "Index": -1,
+            "NameInSource": "0199",
+            "Alias": "0199",
+            "Type": "System.String"
+          },
+          "198": {
+            "Name": "0200",
+            "Index": -1,
+            "NameInSource": "0200",
+            "Alias": "0200",
+            "Type": "System.String"
+          },
+          "199": {
+            "Name": "0201",
+            "Index": -1,
+            "NameInSource": "0201",
+            "Alias": "0201",
+            "Type": "System.String"
+          },
+          "200": {
+            "Name": "0202",
+            "Index": -1,
+            "NameInSource": "0202",
+            "Alias": "0202",
+            "Type": "System.String"
+          },
+          "201": {
+            "Name": "0203",
+            "Index": -1,
+            "NameInSource": "0203",
+            "Alias": "0203",
+            "Type": "System.String"
+          },
+          "202": {
+            "Name": "0204",
+            "Index": -1,
+            "NameInSource": "0204",
+            "Alias": "0204",
+            "Type": "System.String"
+          },
+          "203": {
+            "Name": "0205",
+            "Index": -1,
+            "NameInSource": "0205",
+            "Alias": "0205",
+            "Type": "System.String"
+          },
+          "204": {
+            "Name": "0206",
+            "Index": -1,
+            "NameInSource": "0206",
+            "Alias": "0206",
+            "Type": "System.String"
+          },
+          "205": {
+            "Name": "0207",
+            "Index": -1,
+            "NameInSource": "0207",
+            "Alias": "0207",
+            "Type": "System.String"
+          },
+          "206": {
+            "Name": "0208",
+            "Index": -1,
+            "NameInSource": "0208",
+            "Alias": "0208",
+            "Type": "System.String"
+          },
+          "207": {
+            "Name": "0209",
+            "Index": -1,
+            "NameInSource": "0209",
+            "Alias": "0209",
+            "Type": "System.String"
+          },
+          "208": {
+            "Name": "0210",
+            "Index": -1,
+            "NameInSource": "0210",
+            "Alias": "0210",
+            "Type": "System.String"
+          },
+          "209": {
+            "Name": "0211",
+            "Index": -1,
+            "NameInSource": "0211",
+            "Alias": "0211",
+            "Type": "System.String"
+          },
+          "210": {
+            "Name": "0212",
+            "Index": -1,
+            "NameInSource": "0212",
+            "Alias": "0212",
+            "Type": "System.String"
+          },
+          "211": {
+            "Name": "0213",
+            "Index": -1,
+            "NameInSource": "0213",
+            "Alias": "0213",
+            "Type": "System.String"
+          },
+          "212": {
+            "Name": "0214",
+            "Index": -1,
+            "NameInSource": "0214",
+            "Alias": "0214",
+            "Type": "System.String"
+          },
+          "213": {
+            "Name": "0215",
+            "Index": -1,
+            "NameInSource": "0215",
+            "Alias": "0215",
+            "Type": "System.String"
+          },
+          "214": {
+            "Name": "0216",
+            "Index": -1,
+            "NameInSource": "0216",
+            "Alias": "0216",
+            "Type": "System.String"
+          },
+          "215": {
+            "Name": "0217",
+            "Index": -1,
+            "NameInSource": "0217",
+            "Alias": "0217",
+            "Type": "System.String"
+          },
+          "216": {
+            "Name": "0218",
+            "Index": -1,
+            "NameInSource": "0218",
+            "Alias": "0218",
+            "Type": "System.String"
+          },
+          "217": {
+            "Name": "0219",
+            "Index": -1,
+            "NameInSource": "0219",
+            "Alias": "0219",
+            "Type": "System.String"
+          },
+          "218": {
+            "Name": "0220",
+            "Index": -1,
+            "NameInSource": "0220",
+            "Alias": "0220",
+            "Type": "System.String"
+          },
+          "219": {
+            "Name": "0221",
+            "Index": -1,
+            "NameInSource": "0221",
+            "Alias": "0221",
+            "Type": "System.String"
+          },
+          "220": {
+            "Name": "0222",
+            "Index": -1,
+            "NameInSource": "0222",
+            "Alias": "0222",
+            "Type": "System.String"
+          },
+          "221": {
+            "Name": "0223",
+            "Index": -1,
+            "NameInSource": "0223",
+            "Alias": "0223",
+            "Type": "System.String"
+          },
+          "222": {
+            "Name": "0224",
+            "Index": -1,
+            "NameInSource": "0224",
+            "Alias": "0224",
+            "Type": "System.String"
+          },
+          "223": {
+            "Name": "0225",
+            "Index": -1,
+            "NameInSource": "0225",
+            "Alias": "0225",
+            "Type": "System.String"
+          },
+          "224": {
+            "Name": "0226",
+            "Index": -1,
+            "NameInSource": "0226",
+            "Alias": "0226",
+            "Type": "System.String"
+          },
+          "225": {
+            "Name": "0227",
+            "Index": -1,
+            "NameInSource": "0227",
+            "Alias": "0227",
+            "Type": "System.String"
+          },
+          "226": {
+            "Name": "0228",
+            "Index": -1,
+            "NameInSource": "0228",
+            "Alias": "0228",
+            "Type": "System.String"
+          },
+          "227": {
+            "Name": "0229",
+            "Index": -1,
+            "NameInSource": "0229",
+            "Alias": "0229",
+            "Type": "System.String"
+          },
+          "228": {
+            "Name": "0230",
+            "Index": -1,
+            "NameInSource": "0230",
+            "Alias": "0230",
+            "Type": "System.String"
+          },
+          "229": {
+            "Name": "0231",
+            "Index": -1,
+            "NameInSource": "0231",
+            "Alias": "0231",
+            "Type": "System.String"
+          },
+          "230": {
+            "Name": "0232",
+            "Index": -1,
+            "NameInSource": "0232",
+            "Alias": "0232",
+            "Type": "System.String"
+          },
+          "231": {
+            "Name": "0233",
+            "Index": -1,
+            "NameInSource": "0233",
+            "Alias": "0233",
+            "Type": "System.String"
+          },
+          "232": {
+            "Name": "0234",
+            "Index": -1,
+            "NameInSource": "0234",
+            "Alias": "0234",
+            "Type": "System.String"
+          },
+          "233": {
+            "Name": "0235",
+            "Index": -1,
+            "NameInSource": "0235",
+            "Alias": "0235",
+            "Type": "System.String"
+          },
+          "234": {
+            "Name": "0236",
+            "Index": -1,
+            "NameInSource": "0236",
+            "Alias": "0236",
+            "Type": "System.String"
+          },
+          "235": {
+            "Name": "0237",
+            "Index": -1,
+            "NameInSource": "0237",
+            "Alias": "0237",
+            "Type": "System.String"
+          },
+          "236": {
+            "Name": "0238",
+            "Index": -1,
+            "NameInSource": "0238",
+            "Alias": "0238",
+            "Type": "System.String"
+          },
+          "237": {
+            "Name": "0239",
+            "Index": -1,
+            "NameInSource": "0239",
+            "Alias": "0239",
+            "Type": "System.String"
+          },
+          "238": {
+            "Name": "0240",
+            "Index": -1,
+            "NameInSource": "0240",
+            "Alias": "0240",
+            "Type": "System.String"
+          },
+          "239": {
+            "Name": "0241",
+            "Index": -1,
+            "NameInSource": "0241",
+            "Alias": "0241",
+            "Type": "System.String"
+          },
+          "240": {
+            "Name": "0242",
+            "Index": -1,
+            "NameInSource": "0242",
+            "Alias": "0242",
+            "Type": "System.String"
+          },
+          "241": {
+            "Name": "0243",
+            "Index": -1,
+            "NameInSource": "0243",
+            "Alias": "0243",
+            "Type": "System.String"
+          },
+          "242": {
+            "Name": "0244",
+            "Index": -1,
+            "NameInSource": "0244",
+            "Alias": "0244",
+            "Type": "System.String"
+          },
+          "243": {
+            "Name": "0245",
+            "Index": -1,
+            "NameInSource": "0245",
+            "Alias": "0245",
+            "Type": "System.String"
+          },
+          "244": {
+            "Name": "0246",
+            "Index": -1,
+            "NameInSource": "0246",
+            "Alias": "0246",
+            "Type": "System.String"
+          },
+          "245": {
+            "Name": "0247",
+            "Index": -1,
+            "NameInSource": "0247",
+            "Alias": "0247",
+            "Type": "System.String"
+          },
+          "246": {
+            "Name": "0248",
+            "Index": -1,
+            "NameInSource": "0248",
+            "Alias": "0248",
+            "Type": "System.String"
+          },
+          "247": {
+            "Name": "0249",
+            "Index": -1,
+            "NameInSource": "0249",
+            "Alias": "0249",
+            "Type": "System.String"
+          },
+          "248": {
+            "Name": "0250",
+            "Index": -1,
+            "NameInSource": "0250",
+            "Alias": "0250",
+            "Type": "System.String"
+          },
+          "249": {
+            "Name": "0251",
+            "Index": -1,
+            "NameInSource": "0251",
+            "Alias": "0251",
+            "Type": "System.String"
+          },
+          "250": {
+            "Name": "0252",
+            "Index": -1,
+            "NameInSource": "0252",
+            "Alias": "0252",
+            "Type": "System.String"
+          },
+          "251": {
+            "Name": "0253",
+            "Index": -1,
+            "NameInSource": "0253",
+            "Alias": "0253",
+            "Type": "System.String"
+          },
+          "252": {
+            "Name": "0254",
+            "Index": -1,
+            "NameInSource": "0254",
+            "Alias": "0254",
+            "Type": "System.String"
+          },
+          "253": {
+            "Name": "0255",
+            "Index": -1,
+            "NameInSource": "0255",
+            "Alias": "0255",
+            "Type": "System.String"
+          },
+          "254": {
+            "Name": "0256",
+            "Index": -1,
+            "NameInSource": "0256",
+            "Alias": "0256",
+            "Type": "System.String"
+          },
+          "255": {
+            "Name": "0257",
+            "Index": -1,
+            "NameInSource": "0257",
+            "Alias": "0257",
+            "Type": "System.String"
+          },
+          "256": {
+            "Name": "0258",
+            "Index": -1,
+            "NameInSource": "0258",
+            "Alias": "0258",
+            "Type": "System.String"
+          },
+          "257": {
+            "Name": "0259",
+            "Index": -1,
+            "NameInSource": "0259",
+            "Alias": "0259",
+            "Type": "System.String"
+          },
+          "258": {
+            "Name": "0260",
+            "Index": -1,
+            "NameInSource": "0260",
+            "Alias": "0260",
+            "Type": "System.String"
+          },
+          "259": {
+            "Name": "0261",
+            "Index": -1,
+            "NameInSource": "0261",
+            "Alias": "0261",
+            "Type": "System.String"
+          },
+          "260": {
+            "Name": "0262",
+            "Index": -1,
+            "NameInSource": "0262",
+            "Alias": "0262",
+            "Type": "System.String"
+          },
+          "261": {
+            "Name": "0263",
+            "Index": -1,
+            "NameInSource": "0263",
+            "Alias": "0263",
+            "Type": "System.String"
+          },
+          "262": {
+            "Name": "0264",
+            "Index": -1,
+            "NameInSource": "0264",
+            "Alias": "0264",
+            "Type": "System.String"
+          },
+          "263": {
+            "Name": "0265",
+            "Index": -1,
+            "NameInSource": "0265",
+            "Alias": "0265",
+            "Type": "System.String"
+          },
+          "264": {
+            "Name": "0266",
+            "Index": -1,
+            "NameInSource": "0266",
+            "Alias": "0266",
+            "Type": "System.String"
+          },
+          "265": {
+            "Name": "0267",
+            "Index": -1,
+            "NameInSource": "0267",
+            "Alias": "0267",
+            "Type": "System.String"
+          },
+          "266": {
+            "Name": "0268",
+            "Index": -1,
+            "NameInSource": "0268",
+            "Alias": "0268",
+            "Type": "System.String"
+          },
+          "267": {
+            "Name": "0269",
+            "Index": -1,
+            "NameInSource": "0269",
+            "Alias": "0269",
+            "Type": "System.String"
+          },
+          "268": {
+            "Name": "0270",
+            "Index": -1,
+            "NameInSource": "0270",
+            "Alias": "0270",
+            "Type": "System.String"
+          },
+          "269": {
+            "Name": "0271",
+            "Index": -1,
+            "NameInSource": "0271",
+            "Alias": "0271",
+            "Type": "System.String"
+          },
+          "270": {
+            "Name": "0272",
+            "Index": -1,
+            "NameInSource": "0272",
+            "Alias": "0272",
+            "Type": "System.String"
+          },
+          "271": {
+            "Name": "0273",
+            "Index": -1,
+            "NameInSource": "0273",
+            "Alias": "0273",
+            "Type": "System.String"
+          },
+          "272": {
+            "Name": "0274",
+            "Index": -1,
+            "NameInSource": "0274",
+            "Alias": "0274",
+            "Type": "System.String"
+          },
+          "273": {
+            "Name": "0275",
+            "Index": -1,
+            "NameInSource": "0275",
+            "Alias": "0275",
+            "Type": "System.String"
+          },
+          "274": {
+            "Name": "0276",
+            "Index": -1,
+            "NameInSource": "0276",
+            "Alias": "0276",
+            "Type": "System.String"
+          },
+          "275": {
+            "Name": "0277",
+            "Index": -1,
+            "NameInSource": "0277",
+            "Alias": "0277",
+            "Type": "System.String"
+          },
+          "276": {
+            "Name": "0278",
+            "Index": -1,
+            "NameInSource": "0278",
+            "Alias": "0278",
+            "Type": "System.String"
+          },
+          "277": {
+            "Name": "0279",
+            "Index": -1,
+            "NameInSource": "0279",
+            "Alias": "0279",
+            "Type": "System.String"
+          },
+          "278": {
+            "Name": "0280",
+            "Index": -1,
+            "NameInSource": "0280",
+            "Alias": "0280",
+            "Type": "System.String"
+          },
+          "279": {
+            "Name": "0281",
+            "Index": -1,
+            "NameInSource": "0281",
+            "Alias": "0281",
+            "Type": "System.String"
+          },
+          "280": {
+            "Name": "0282",
+            "Index": -1,
+            "NameInSource": "0282",
+            "Alias": "0282",
+            "Type": "System.String"
+          },
+          "281": {
+            "Name": "0283",
+            "Index": -1,
+            "NameInSource": "0283",
+            "Alias": "0283",
+            "Type": "System.String"
+          },
+          "282": {
+            "Name": "0284",
+            "Index": -1,
+            "NameInSource": "0284",
+            "Alias": "0284",
+            "Type": "System.String"
+          },
+          "283": {
+            "Name": "0285",
+            "Index": -1,
+            "NameInSource": "0285",
+            "Alias": "0285",
+            "Type": "System.String"
+          },
+          "284": {
+            "Name": "0286",
+            "Index": -1,
+            "NameInSource": "0286",
+            "Alias": "0286",
+            "Type": "System.String"
+          },
+          "285": {
+            "Name": "0287",
+            "Index": -1,
+            "NameInSource": "0287",
+            "Alias": "0287",
+            "Type": "System.String"
+          },
+          "286": {
+            "Name": "0288",
+            "Index": -1,
+            "NameInSource": "0288",
+            "Alias": "0288",
+            "Type": "System.String"
+          },
+          "287": {
+            "Name": "0289",
+            "Index": -1,
+            "NameInSource": "0289",
+            "Alias": "0289",
+            "Type": "System.String"
+          },
+          "288": {
+            "Name": "0290",
+            "Index": -1,
+            "NameInSource": "0290",
+            "Alias": "0290",
+            "Type": "System.String"
+          },
+          "289": {
+            "Name": "0291",
+            "Index": -1,
+            "NameInSource": "0291",
+            "Alias": "0291",
+            "Type": "System.String"
+          },
+          "290": {
+            "Name": "0292",
+            "Index": -1,
+            "NameInSource": "0292",
+            "Alias": "0292",
+            "Type": "System.String"
+          },
+          "291": {
+            "Name": "0293",
+            "Index": -1,
+            "NameInSource": "0293",
+            "Alias": "0293",
+            "Type": "System.String"
+          },
+          "292": {
+            "Name": "0294",
+            "Index": -1,
+            "NameInSource": "0294",
+            "Alias": "0294",
+            "Type": "System.String"
+          },
+          "293": {
+            "Name": "0295",
+            "Index": -1,
+            "NameInSource": "0295",
+            "Alias": "0295",
+            "Type": "System.String"
+          },
+          "294": {
+            "Name": "0296",
+            "Index": -1,
+            "NameInSource": "0296",
+            "Alias": "0296",
+            "Type": "System.String"
+          },
+          "295": {
+            "Name": "0297",
+            "Index": -1,
+            "NameInSource": "0297",
+            "Alias": "0297",
+            "Type": "System.String"
+          },
+          "296": {
+            "Name": "0298",
+            "Index": -1,
+            "NameInSource": "0298",
+            "Alias": "0298",
+            "Type": "System.String"
+          },
+          "297": {
+            "Name": "0299",
+            "Index": -1,
+            "NameInSource": "0299",
+            "Alias": "0299",
+            "Type": "System.String"
+          },
+          "298": {
+            "Name": "0300",
+            "Index": -1,
+            "NameInSource": "0300",
+            "Alias": "0300",
+            "Type": "System.String"
+          },
+          "299": {
+            "Name": "0301",
+            "Index": -1,
+            "NameInSource": "0301",
+            "Alias": "0301",
+            "Type": "System.String"
+          },
+          "300": {
+            "Name": "0302",
+            "Index": -1,
+            "NameInSource": "0302",
+            "Alias": "0302",
+            "Type": "System.String"
+          },
+          "301": {
+            "Name": "0303",
+            "Index": -1,
+            "NameInSource": "0303",
+            "Alias": "0303",
+            "Type": "System.String"
+          },
+          "302": {
+            "Name": "0304",
+            "Index": -1,
+            "NameInSource": "0304",
+            "Alias": "0304",
+            "Type": "System.String"
+          },
+          "303": {
+            "Name": "0305",
+            "Index": -1,
+            "NameInSource": "0305",
+            "Alias": "0305",
+            "Type": "System.String"
+          },
+          "304": {
+            "Name": "0306",
+            "Index": -1,
+            "NameInSource": "0306",
+            "Alias": "0306",
+            "Type": "System.String"
+          },
+          "305": {
+            "Name": "0307",
+            "Index": -1,
+            "NameInSource": "0307",
+            "Alias": "0307",
+            "Type": "System.String"
+          },
+          "306": {
+            "Name": "0308",
+            "Index": -1,
+            "NameInSource": "0308",
+            "Alias": "0308",
+            "Type": "System.String"
+          },
+          "307": {
+            "Name": "0309",
+            "Index": -1,
+            "NameInSource": "0309",
+            "Alias": "0309",
+            "Type": "System.String"
+          },
+          "308": {
+            "Name": "0310",
+            "Index": -1,
+            "NameInSource": "0310",
+            "Alias": "0310",
+            "Type": "System.String"
+          },
+          "309": {
+            "Name": "0311",
+            "Index": -1,
+            "NameInSource": "0311",
+            "Alias": "0311",
+            "Type": "System.String"
+          },
+          "310": {
+            "Name": "0312",
+            "Index": -1,
+            "NameInSource": "0312",
+            "Alias": "0312",
+            "Type": "System.String"
+          },
+          "311": {
+            "Name": "0313",
+            "Index": -1,
+            "NameInSource": "0313",
+            "Alias": "0313",
+            "Type": "System.String"
+          },
+          "312": {
+            "Name": "0314",
+            "Index": -1,
+            "NameInSource": "0314",
+            "Alias": "0314",
+            "Type": "System.String"
+          },
+          "313": {
+            "Name": "0315",
+            "Index": -1,
+            "NameInSource": "0315",
+            "Alias": "0315",
+            "Type": "System.String"
+          },
+          "314": {
+            "Name": "0316",
+            "Index": -1,
+            "NameInSource": "0316",
+            "Alias": "0316",
+            "Type": "System.String"
+          },
+          "315": {
+            "Name": "0317",
+            "Index": -1,
+            "NameInSource": "0317",
+            "Alias": "0317",
+            "Type": "System.String"
+          },
+          "316": {
+            "Name": "0318",
+            "Index": -1,
+            "NameInSource": "0318",
+            "Alias": "0318",
+            "Type": "System.String"
+          },
+          "317": {
+            "Name": "0319",
+            "Index": -1,
+            "NameInSource": "0319",
+            "Alias": "0319",
+            "Type": "System.String"
+          },
+          "318": {
+            "Name": "0320",
+            "Index": -1,
+            "NameInSource": "0320",
+            "Alias": "0320",
+            "Type": "System.String"
+          },
+          "319": {
+            "Name": "0321",
+            "Index": -1,
+            "NameInSource": "0321",
+            "Alias": "0321",
+            "Type": "System.String"
+          },
+          "320": {
+            "Name": "0322",
+            "Index": -1,
+            "NameInSource": "0322",
+            "Alias": "0322",
+            "Type": "System.String"
+          },
+          "321": {
+            "Name": "0323",
+            "Index": -1,
+            "NameInSource": "0323",
+            "Alias": "0323",
+            "Type": "System.String"
+          },
+          "322": {
+            "Name": "0324",
+            "Index": -1,
+            "NameInSource": "0324",
+            "Alias": "0324",
+            "Type": "System.String"
+          },
+          "323": {
+            "Name": "0325",
+            "Index": -1,
+            "NameInSource": "0325",
+            "Alias": "0325",
+            "Type": "System.String"
+          },
+          "324": {
+            "Name": "0326",
+            "Index": -1,
+            "NameInSource": "0326",
+            "Alias": "0326",
+            "Type": "System.String"
+          },
+          "325": {
+            "Name": "0327",
+            "Index": -1,
+            "NameInSource": "0327",
+            "Alias": "0327",
+            "Type": "System.String"
+          },
+          "326": {
+            "Name": "0328",
+            "Index": -1,
+            "NameInSource": "0328",
+            "Alias": "0328",
+            "Type": "System.String"
+          },
+          "327": {
+            "Name": "0329",
+            "Index": -1,
+            "NameInSource": "0329",
+            "Alias": "0329",
+            "Type": "System.String"
+          },
+          "328": {
+            "Name": "0330",
+            "Index": -1,
+            "NameInSource": "0330",
+            "Alias": "0330",
+            "Type": "System.String"
+          },
+          "329": {
+            "Name": "0331",
+            "Index": -1,
+            "NameInSource": "0331",
+            "Alias": "0331",
+            "Type": "System.String"
+          },
+          "330": {
+            "Name": "0332",
+            "Index": -1,
+            "NameInSource": "0332",
+            "Alias": "0332",
+            "Type": "System.String"
+          },
+          "331": {
+            "Name": "0333",
+            "Index": -1,
+            "NameInSource": "0333",
+            "Alias": "0333",
+            "Type": "System.String"
+          },
+          "332": {
+            "Name": "0334",
+            "Index": -1,
+            "NameInSource": "0334",
+            "Alias": "0334",
+            "Type": "System.String"
+          },
+          "333": {
+            "Name": "0335",
+            "Index": -1,
+            "NameInSource": "0335",
+            "Alias": "0335",
+            "Type": "System.String"
+          },
+          "334": {
+            "Name": "0336",
+            "Index": -1,
+            "NameInSource": "0336",
+            "Alias": "0336",
+            "Type": "System.String"
+          },
+          "335": {
+            "Name": "0337",
+            "Index": -1,
+            "NameInSource": "0337",
+            "Alias": "0337",
+            "Type": "System.String"
+          },
+          "336": {
+            "Name": "0338",
+            "Index": -1,
+            "NameInSource": "0338",
+            "Alias": "0338",
+            "Type": "System.String"
+          },
+          "337": {
+            "Name": "0339",
+            "Index": -1,
+            "NameInSource": "0339",
+            "Alias": "0339",
+            "Type": "System.String"
+          },
+          "338": {
+            "Name": "0340",
+            "Index": -1,
+            "NameInSource": "0340",
+            "Alias": "0340",
+            "Type": "System.String"
+          },
+          "339": {
+            "Name": "0341",
+            "Index": -1,
+            "NameInSource": "0341",
+            "Alias": "0341",
+            "Type": "System.String"
+          },
+          "340": {
+            "Name": "0342",
+            "Index": -1,
+            "NameInSource": "0342",
+            "Alias": "0342",
+            "Type": "System.String"
+          },
+          "341": {
+            "Name": "0343",
+            "Index": -1,
+            "NameInSource": "0343",
+            "Alias": "0343",
+            "Type": "System.String"
+          },
+          "342": {
+            "Name": "0344",
+            "Index": -1,
+            "NameInSource": "0344",
+            "Alias": "0344",
+            "Type": "System.String"
+          },
+          "343": {
+            "Name": "0345",
+            "Index": -1,
+            "NameInSource": "0345",
+            "Alias": "0345",
+            "Type": "System.String"
+          },
+          "344": {
+            "Name": "0346",
+            "Index": -1,
+            "NameInSource": "0346",
+            "Alias": "0346",
+            "Type": "System.String"
+          },
+          "345": {
+            "Name": "0347",
+            "Index": -1,
+            "NameInSource": "0347",
+            "Alias": "0347",
+            "Type": "System.String"
+          },
+          "346": {
+            "Name": "0348",
+            "Index": -1,
+            "NameInSource": "0348",
+            "Alias": "0348",
+            "Type": "System.String"
+          },
+          "347": {
+            "Name": "0349",
+            "Index": -1,
+            "NameInSource": "0349",
+            "Alias": "0349",
+            "Type": "System.String"
+          },
+          "348": {
+            "Name": "0350",
+            "Index": -1,
+            "NameInSource": "0350",
+            "Alias": "0350",
+            "Type": "System.String"
+          },
+          "349": {
+            "Name": "0351",
+            "Index": -1,
+            "NameInSource": "0351",
+            "Alias": "0351",
+            "Type": "System.String"
+          },
+          "350": {
+            "Name": "0352",
+            "Index": -1,
+            "NameInSource": "0352",
+            "Alias": "0352",
+            "Type": "System.String"
+          },
+          "351": {
+            "Name": "0353",
+            "Index": -1,
+            "NameInSource": "0353",
+            "Alias": "0353",
+            "Type": "System.String"
+          },
+          "352": {
+            "Name": "0354",
+            "Index": -1,
+            "NameInSource": "0354",
+            "Alias": "0354",
+            "Type": "System.String"
+          },
+          "353": {
+            "Name": "0355",
+            "Index": -1,
+            "NameInSource": "0355",
+            "Alias": "0355",
+            "Type": "System.String"
+          },
+          "354": {
+            "Name": "0356",
+            "Index": -1,
+            "NameInSource": "0356",
+            "Alias": "0356",
+            "Type": "System.String"
+          },
+          "355": {
+            "Name": "0357",
+            "Index": -1,
+            "NameInSource": "0357",
+            "Alias": "0357",
+            "Type": "System.String"
+          },
+          "356": {
+            "Name": "0358",
+            "Index": -1,
+            "NameInSource": "0358",
+            "Alias": "0358",
+            "Type": "System.String"
+          },
+          "357": {
+            "Name": "0359",
+            "Index": -1,
+            "NameInSource": "0359",
+            "Alias": "0359",
+            "Type": "System.String"
+          },
+          "358": {
+            "Name": "0360",
+            "Index": -1,
+            "NameInSource": "0360",
+            "Alias": "0360",
+            "Type": "System.String"
+          },
+          "359": {
+            "Name": "0361",
+            "Index": -1,
+            "NameInSource": "0361",
+            "Alias": "0361",
+            "Type": "System.String"
+          },
+          "360": {
+            "Name": "0362",
+            "Index": -1,
+            "NameInSource": "0362",
+            "Alias": "0362",
+            "Type": "System.String"
+          },
+          "361": {
+            "Name": "0363",
+            "Index": -1,
+            "NameInSource": "0363",
+            "Alias": "0363",
+            "Type": "System.String"
+          },
+          "362": {
+            "Name": "0364",
+            "Index": -1,
+            "NameInSource": "0364",
+            "Alias": "0364",
+            "Type": "System.String"
+          },
+          "363": {
+            "Name": "0365",
+            "Index": -1,
+            "NameInSource": "0365",
+            "Alias": "0365",
+            "Type": "System.String"
+          },
+          "364": {
+            "Name": "0366",
+            "Index": -1,
+            "NameInSource": "0366",
+            "Alias": "0366",
+            "Type": "System.String"
+          },
+          "365": {
+            "Name": "0367",
+            "Index": -1,
+            "NameInSource": "0367",
+            "Alias": "0367",
+            "Type": "System.String"
+          },
+          "366": {
+            "Name": "0368",
+            "Index": -1,
+            "NameInSource": "0368",
+            "Alias": "0368",
+            "Type": "System.String"
+          },
+          "367": {
+            "Name": "0369",
+            "Index": -1,
+            "NameInSource": "0369",
+            "Alias": "0369",
+            "Type": "System.String"
+          },
+          "368": {
+            "Name": "0370",
+            "Index": -1,
+            "NameInSource": "0370",
+            "Alias": "0370",
+            "Type": "System.String"
+          },
+          "369": {
+            "Name": "0371",
+            "Index": -1,
+            "NameInSource": "0371",
+            "Alias": "0371",
+            "Type": "System.String"
+          },
+          "370": {
+            "Name": "0372",
+            "Index": -1,
+            "NameInSource": "0372",
+            "Alias": "0372",
+            "Type": "System.String"
+          },
+          "371": {
+            "Name": "0373",
+            "Index": -1,
+            "NameInSource": "0373",
+            "Alias": "0373",
+            "Type": "System.String"
+          },
+          "372": {
+            "Name": "0374",
+            "Index": -1,
+            "NameInSource": "0374",
+            "Alias": "0374",
+            "Type": "System.String"
+          },
+          "373": {
+            "Name": "0375",
+            "Index": -1,
+            "NameInSource": "0375",
+            "Alias": "0375",
+            "Type": "System.String"
+          },
+          "374": {
+            "Name": "0376",
+            "Index": -1,
+            "NameInSource": "0376",
+            "Alias": "0376",
+            "Type": "System.String"
+          },
+          "375": {
+            "Name": "0377",
+            "Index": -1,
+            "NameInSource": "0377",
+            "Alias": "0377",
+            "Type": "System.String"
+          },
+          "376": {
+            "Name": "0378",
+            "Index": -1,
+            "NameInSource": "0378",
+            "Alias": "0378",
+            "Type": "System.String"
+          },
+          "377": {
+            "Name": "0379",
+            "Index": -1,
+            "NameInSource": "0379",
+            "Alias": "0379",
+            "Type": "System.String"
+          },
+          "378": {
+            "Name": "0380",
+            "Index": -1,
+            "NameInSource": "0380",
+            "Alias": "0380",
+            "Type": "System.String"
+          },
+          "379": {
+            "Name": "0381",
+            "Index": -1,
+            "NameInSource": "0381",
+            "Alias": "0381",
+            "Type": "System.String"
+          },
+          "380": {
+            "Name": "0382",
+            "Index": -1,
+            "NameInSource": "0382",
+            "Alias": "0382",
+            "Type": "System.String"
+          },
+          "381": {
+            "Name": "0383",
+            "Index": -1,
+            "NameInSource": "0383",
+            "Alias": "0383",
+            "Type": "System.String"
+          },
+          "382": {
+            "Name": "0384",
+            "Index": -1,
+            "NameInSource": "0384",
+            "Alias": "0384",
+            "Type": "System.String"
+          },
+          "383": {
+            "Name": "0385",
+            "Index": -1,
+            "NameInSource": "0385",
+            "Alias": "0385",
+            "Type": "System.String"
+          },
+          "384": {
+            "Name": "0386",
+            "Index": -1,
+            "NameInSource": "0386",
+            "Alias": "0386",
+            "Type": "System.String"
+          },
+          "385": {
+            "Name": "0387",
+            "Index": -1,
+            "NameInSource": "0387",
+            "Alias": "0387",
+            "Type": "System.String"
+          },
+          "386": {
+            "Name": "0388",
+            "Index": -1,
+            "NameInSource": "0388",
+            "Alias": "0388",
+            "Type": "System.String"
+          },
+          "387": {
+            "Name": "0389",
+            "Index": -1,
+            "NameInSource": "0389",
+            "Alias": "0389",
+            "Type": "System.String"
+          },
+          "388": {
+            "Name": "0390",
+            "Index": -1,
+            "NameInSource": "0390",
+            "Alias": "0390",
+            "Type": "System.String"
+          },
+          "389": {
+            "Name": "0391",
+            "Index": -1,
+            "NameInSource": "0391",
+            "Alias": "0391",
+            "Type": "System.String"
+          },
+          "390": {
+            "Name": "0392",
+            "Index": -1,
+            "NameInSource": "0392",
+            "Alias": "0392",
+            "Type": "System.String"
+          },
+          "391": {
+            "Name": "0393",
+            "Index": -1,
+            "NameInSource": "0393",
+            "Alias": "0393",
+            "Type": "System.String"
+          },
+          "392": {
+            "Name": "0394",
+            "Index": -1,
+            "NameInSource": "0394",
+            "Alias": "0394",
+            "Type": "System.String"
+          },
+          "393": {
+            "Name": "0395",
+            "Index": -1,
+            "NameInSource": "0395",
+            "Alias": "0395",
+            "Type": "System.String"
+          },
+          "394": {
+            "Name": "0396",
+            "Index": -1,
+            "NameInSource": "0396",
+            "Alias": "0396",
+            "Type": "System.String"
+          },
+          "395": {
+            "Name": "0397",
+            "Index": -1,
+            "NameInSource": "0397",
+            "Alias": "0397",
+            "Type": "System.String"
+          },
+          "396": {
+            "Name": "0398",
+            "Index": -1,
+            "NameInSource": "0398",
+            "Alias": "0398",
+            "Type": "System.String"
+          },
+          "397": {
+            "Name": "0399",
+            "Index": -1,
+            "NameInSource": "0399",
+            "Alias": "0399",
+            "Type": "System.String"
+          },
+          "398": {
+            "Name": "0400",
+            "Index": -1,
+            "NameInSource": "0400",
+            "Alias": "0400",
+            "Type": "System.String"
+          },
+          "399": {
+            "Name": "0401",
+            "Index": -1,
+            "NameInSource": "0401",
+            "Alias": "0401",
+            "Type": "System.String"
+          },
+          "400": {
+            "Name": "0402",
+            "Index": -1,
+            "NameInSource": "0402",
+            "Alias": "0402",
+            "Type": "System.String"
+          },
+          "401": {
+            "Name": "0403",
+            "Index": -1,
+            "NameInSource": "0403",
+            "Alias": "0403",
+            "Type": "System.String"
+          },
+          "402": {
+            "Name": "0404",
+            "Index": -1,
+            "NameInSource": "0404",
+            "Alias": "0404",
+            "Type": "System.String"
+          },
+          "403": {
+            "Name": "0405",
+            "Index": -1,
+            "NameInSource": "0405",
+            "Alias": "0405",
+            "Type": "System.String"
+          },
+          "404": {
+            "Name": "0406",
+            "Index": -1,
+            "NameInSource": "0406",
+            "Alias": "0406",
+            "Type": "System.String"
+          },
+          "405": {
+            "Name": "0407",
+            "Index": -1,
+            "NameInSource": "0407",
+            "Alias": "0407",
+            "Type": "System.String"
+          },
+          "406": {
+            "Name": "0408",
+            "Index": -1,
+            "NameInSource": "0408",
+            "Alias": "0408",
+            "Type": "System.String"
+          },
+          "407": {
+            "Name": "0409",
+            "Index": -1,
+            "NameInSource": "0409",
+            "Alias": "0409",
+            "Type": "System.String"
+          },
+          "408": {
+            "Name": "0410",
+            "Index": -1,
+            "NameInSource": "0410",
+            "Alias": "0410",
+            "Type": "System.String"
+          },
+          "409": {
+            "Name": "0411",
+            "Index": -1,
+            "NameInSource": "0411",
+            "Alias": "0411",
+            "Type": "System.String"
+          },
+          "410": {
+            "Name": "0412",
+            "Index": -1,
+            "NameInSource": "0412",
+            "Alias": "0412",
+            "Type": "System.String"
+          },
+          "411": {
+            "Name": "0413",
+            "Index": -1,
+            "NameInSource": "0413",
+            "Alias": "0413",
+            "Type": "System.String"
+          },
+          "412": {
+            "Name": "0414",
+            "Index": -1,
+            "NameInSource": "0414",
+            "Alias": "0414",
+            "Type": "System.String"
+          },
+          "413": {
+            "Name": "0415",
+            "Index": -1,
+            "NameInSource": "0415",
+            "Alias": "0415",
+            "Type": "System.String"
+          },
+          "414": {
+            "Name": "0416",
+            "Index": -1,
+            "NameInSource": "0416",
+            "Alias": "0416",
+            "Type": "System.String"
+          },
+          "415": {
+            "Name": "0417",
+            "Index": -1,
+            "NameInSource": "0417",
+            "Alias": "0417",
+            "Type": "System.String"
+          },
+          "416": {
+            "Name": "0418",
+            "Index": -1,
+            "NameInSource": "0418",
+            "Alias": "0418",
+            "Type": "System.String"
+          },
+          "417": {
+            "Name": "0419",
+            "Index": -1,
+            "NameInSource": "0419",
+            "Alias": "0419",
+            "Type": "System.String"
+          },
+          "418": {
+            "Name": "0420",
+            "Index": -1,
+            "NameInSource": "0420",
+            "Alias": "0420",
+            "Type": "System.String"
+          },
+          "419": {
+            "Name": "0421",
+            "Index": -1,
+            "NameInSource": "0421",
+            "Alias": "0421",
+            "Type": "System.String"
+          },
+          "420": {
+            "Name": "0422",
+            "Index": -1,
+            "NameInSource": "0422",
+            "Alias": "0422",
+            "Type": "System.String"
+          },
+          "421": {
+            "Name": "0423",
+            "Index": -1,
+            "NameInSource": "0423",
+            "Alias": "0423",
+            "Type": "System.String"
+          },
+          "422": {
+            "Name": "0424",
+            "Index": -1,
+            "NameInSource": "0424",
+            "Alias": "0424",
+            "Type": "System.String"
+          },
+          "423": {
+            "Name": "0425",
+            "Index": -1,
+            "NameInSource": "0425",
+            "Alias": "0425",
+            "Type": "System.String"
+          },
+          "424": {
+            "Name": "0426",
+            "Index": -1,
+            "NameInSource": "0426",
+            "Alias": "0426",
+            "Type": "System.String"
+          },
+          "425": {
+            "Name": "0427",
+            "Index": -1,
+            "NameInSource": "0427",
+            "Alias": "0427",
+            "Type": "System.String"
+          },
+          "426": {
+            "Name": "0428",
+            "Index": -1,
+            "NameInSource": "0428",
+            "Alias": "0428",
+            "Type": "System.String"
+          },
+          "427": {
+            "Name": "0429",
+            "Index": -1,
+            "NameInSource": "0429",
+            "Alias": "0429",
+            "Type": "System.String"
+          },
+          "428": {
+            "Name": "0430",
+            "Index": -1,
+            "NameInSource": "0430",
+            "Alias": "0430",
+            "Type": "System.String"
+          },
+          "429": {
+            "Name": "0431",
+            "Index": -1,
+            "NameInSource": "0431",
+            "Alias": "0431",
+            "Type": "System.String"
+          },
+          "430": {
+            "Name": "0432",
+            "Index": -1,
+            "NameInSource": "0432",
+            "Alias": "0432",
+            "Type": "System.String"
+          },
+          "431": {
+            "Name": "0433",
+            "Index": -1,
+            "NameInSource": "0433",
+            "Alias": "0433",
+            "Type": "System.String"
+          },
+          "432": {
+            "Name": "0434",
+            "Index": -1,
+            "NameInSource": "0434",
+            "Alias": "0434",
+            "Type": "System.String"
+          },
+          "433": {
+            "Name": "0435",
+            "Index": -1,
+            "NameInSource": "0435",
+            "Alias": "0435",
+            "Type": "System.String"
+          },
+          "434": {
+            "Name": "0436",
+            "Index": -1,
+            "NameInSource": "0436",
+            "Alias": "0436",
+            "Type": "System.String"
+          },
+          "435": {
+            "Name": "0437",
+            "Index": -1,
+            "NameInSource": "0437",
+            "Alias": "0437",
+            "Type": "System.String"
+          },
+          "436": {
+            "Name": "0438",
+            "Index": -1,
+            "NameInSource": "0438",
+            "Alias": "0438",
+            "Type": "System.String"
+          },
+          "437": {
+            "Name": "0439",
+            "Index": -1,
+            "NameInSource": "0439",
+            "Alias": "0439",
+            "Type": "System.String"
+          },
+          "438": {
+            "Name": "0440",
+            "Index": -1,
+            "NameInSource": "0440",
+            "Alias": "0440",
+            "Type": "System.String"
+          },
+          "439": {
+            "Name": "0441",
+            "Index": -1,
+            "NameInSource": "0441",
+            "Alias": "0441",
+            "Type": "System.String"
+          },
+          "440": {
+            "Name": "0442",
+            "Index": -1,
+            "NameInSource": "0442",
+            "Alias": "0442",
+            "Type": "System.String"
+          },
+          "441": {
+            "Name": "0444",
+            "Index": -1,
+            "NameInSource": "0444",
+            "Alias": "0444",
+            "Type": "System.String"
+          },
+          "442": {
+            "Name": "0445",
+            "Index": -1,
+            "NameInSource": "0445",
+            "Alias": "0445",
+            "Type": "System.String"
+          },
+          "443": {
+            "Name": "0446",
+            "Index": -1,
+            "NameInSource": "0446",
+            "Alias": "0446",
+            "Type": "System.String"
+          },
+          "444": {
+            "Name": "0447",
+            "Index": -1,
+            "NameInSource": "0447",
+            "Alias": "0447",
+            "Type": "System.String"
+          },
+          "445": {
+            "Name": "0448",
+            "Index": -1,
+            "NameInSource": "0448",
+            "Alias": "0448",
+            "Type": "System.String"
+          },
+          "446": {
+            "Name": "0449",
+            "Index": -1,
+            "NameInSource": "0449",
+            "Alias": "0449",
+            "Type": "System.String"
+          },
+          "447": {
+            "Name": "0450",
+            "Index": -1,
+            "NameInSource": "0450",
+            "Alias": "0450",
+            "Type": "System.String"
+          },
+          "448": {
+            "Name": "0451",
+            "Index": -1,
+            "NameInSource": "0451",
+            "Alias": "0451",
+            "Type": "System.String"
+          },
+          "449": {
+            "Name": "0452",
+            "Index": -1,
+            "NameInSource": "0452",
+            "Alias": "0452",
+            "Type": "System.String"
+          },
+          "450": {
+            "Name": "0453",
+            "Index": -1,
+            "NameInSource": "0453",
+            "Alias": "0453",
+            "Type": "System.String"
+          },
+          "451": {
+            "Name": "0454",
+            "Index": -1,
+            "NameInSource": "0454",
+            "Alias": "0454",
+            "Type": "System.String"
+          },
+          "452": {
+            "Name": "0455",
+            "Index": -1,
+            "NameInSource": "0455",
+            "Alias": "0455",
+            "Type": "System.String"
+          },
+          "453": {
+            "Name": "0456",
+            "Index": -1,
+            "NameInSource": "0456",
+            "Alias": "0456",
+            "Type": "System.String"
+          },
+          "454": {
+            "Name": "0457",
+            "Index": -1,
+            "NameInSource": "0457",
+            "Alias": "0457",
+            "Type": "System.String"
+          },
+          "455": {
+            "Name": "0458",
+            "Index": -1,
+            "NameInSource": "0458",
+            "Alias": "0458",
+            "Type": "System.String"
+          },
+          "456": {
+            "Name": "0459",
+            "Index": -1,
+            "NameInSource": "0459",
+            "Alias": "0459",
+            "Type": "System.String"
+          },
+          "457": {
+            "Name": "0460",
+            "Index": -1,
+            "NameInSource": "0460",
+            "Alias": "0460",
+            "Type": "System.String"
+          },
+          "458": {
+            "Name": "0461",
+            "Index": -1,
+            "NameInSource": "0461",
+            "Alias": "0461",
+            "Type": "System.String"
+          },
+          "459": {
+            "Name": "0462",
+            "Index": -1,
+            "NameInSource": "0462",
+            "Alias": "0462",
+            "Type": "System.String"
+          },
+          "460": {
+            "Name": "0463",
+            "Index": -1,
+            "NameInSource": "0463",
+            "Alias": "0463",
+            "Type": "System.String"
+          },
+          "461": {
+            "Name": "0464",
+            "Index": -1,
+            "NameInSource": "0464",
+            "Alias": "0464",
+            "Type": "System.String"
+          },
+          "462": {
+            "Name": "0465",
+            "Index": -1,
+            "NameInSource": "0465",
+            "Alias": "0465",
+            "Type": "System.String"
+          },
+          "463": {
+            "Name": "0466",
+            "Index": -1,
+            "NameInSource": "0466",
+            "Alias": "0466",
+            "Type": "System.String"
+          },
+          "464": {
+            "Name": "0467",
+            "Index": -1,
+            "NameInSource": "0467",
+            "Alias": "0467",
+            "Type": "System.String"
+          },
+          "465": {
+            "Name": "0468",
+            "Index": -1,
+            "NameInSource": "0468",
+            "Alias": "0468",
+            "Type": "System.String"
+          },
+          "466": {
+            "Name": "0469",
+            "Index": -1,
+            "NameInSource": "0469",
+            "Alias": "0469",
+            "Type": "System.String"
+          },
+          "467": {
+            "Name": "0470",
+            "Index": -1,
+            "NameInSource": "0470",
+            "Alias": "0470",
+            "Type": "System.String"
+          },
+          "468": {
+            "Name": "0471",
+            "Index": -1,
+            "NameInSource": "0471",
+            "Alias": "0471",
+            "Type": "System.String"
+          },
+          "469": {
+            "Name": "0472",
+            "Index": -1,
+            "NameInSource": "0472",
+            "Alias": "0472",
+            "Type": "System.String"
+          },
+          "470": {
+            "Name": "0473",
+            "Index": -1,
+            "NameInSource": "0473",
+            "Alias": "0473",
+            "Type": "System.String"
+          },
+          "471": {
+            "Name": "0474",
+            "Index": -1,
+            "NameInSource": "0474",
+            "Alias": "0474",
+            "Type": "System.String"
+          },
+          "472": {
+            "Name": "0475",
+            "Index": -1,
+            "NameInSource": "0475",
+            "Alias": "0475",
+            "Type": "System.String"
+          },
+          "473": {
+            "Name": "0476",
+            "Index": -1,
+            "NameInSource": "0476",
+            "Alias": "0476",
+            "Type": "System.String"
+          },
+          "474": {
+            "Name": "0477",
+            "Index": -1,
+            "NameInSource": "0477",
+            "Alias": "0477",
+            "Type": "System.String"
+          },
+          "475": {
+            "Name": "0478",
+            "Index": -1,
+            "NameInSource": "0478",
+            "Alias": "0478",
+            "Type": "System.String"
+          },
+          "476": {
+            "Name": "0479",
+            "Index": -1,
+            "NameInSource": "0479",
+            "Alias": "0479",
+            "Type": "System.String"
+          },
+          "477": {
+            "Name": "0480",
+            "Index": -1,
+            "NameInSource": "0480",
+            "Alias": "0480",
+            "Type": "System.String"
+          },
+          "478": {
+            "Name": "0481",
+            "Index": -1,
+            "NameInSource": "0481",
+            "Alias": "0481",
+            "Type": "System.String"
+          },
+          "479": {
+            "Name": "0482",
+            "Index": -1,
+            "NameInSource": "0482",
+            "Alias": "0482",
+            "Type": "System.String"
+          },
+          "480": {
+            "Name": "0483",
+            "Index": -1,
+            "NameInSource": "0483",
+            "Alias": "0483",
+            "Type": "System.String"
+          },
+          "481": {
+            "Name": "0484",
+            "Index": -1,
+            "NameInSource": "0484",
+            "Alias": "0484",
+            "Type": "System.String"
+          },
+          "482": {
+            "Name": "0485",
+            "Index": -1,
+            "NameInSource": "0485",
+            "Alias": "0485",
+            "Type": "System.String"
+          },
+          "483": {
+            "Name": "0486",
+            "Index": -1,
+            "NameInSource": "0486",
+            "Alias": "0486",
+            "Type": "System.String"
+          },
+          "484": {
+            "Name": "0487",
+            "Index": -1,
+            "NameInSource": "0487",
+            "Alias": "0487",
+            "Type": "System.String"
+          },
+          "485": {
+            "Name": "0488",
+            "Index": -1,
+            "NameInSource": "0488",
+            "Alias": "0488",
+            "Type": "System.String"
+          },
+          "486": {
+            "Name": "0489",
+            "Index": -1,
+            "NameInSource": "0489",
+            "Alias": "0489",
+            "Type": "System.String"
+          },
+          "487": {
+            "Name": "0490",
+            "Index": -1,
+            "NameInSource": "0490",
+            "Alias": "0490",
+            "Type": "System.String"
+          },
+          "488": {
+            "Name": "0491",
+            "Index": -1,
+            "NameInSource": "0491",
+            "Alias": "0491",
+            "Type": "System.String"
+          },
+          "489": {
+            "Name": "0492",
+            "Index": -1,
+            "NameInSource": "0492",
+            "Alias": "0492",
+            "Type": "System.String"
+          },
+          "490": {
+            "Name": "0493",
+            "Index": -1,
+            "NameInSource": "0493",
+            "Alias": "0493",
+            "Type": "System.String"
+          },
+          "491": {
+            "Name": "0494",
+            "Index": -1,
+            "NameInSource": "0494",
+            "Alias": "0494",
+            "Type": "System.String"
+          },
+          "492": {
+            "Name": "0495",
+            "Index": -1,
+            "NameInSource": "0495",
+            "Alias": "0495",
+            "Type": "System.String"
+          },
+          "493": {
+            "Name": "0496",
+            "Index": -1,
+            "NameInSource": "0496",
+            "Alias": "0496",
+            "Type": "System.String"
+          },
+          "494": {
+            "Name": "0497",
+            "Index": -1,
+            "NameInSource": "0497",
+            "Alias": "0497",
+            "Type": "System.String"
+          },
+          "495": {
+            "Name": "0498",
+            "Index": -1,
+            "NameInSource": "0498",
+            "Alias": "0498",
+            "Type": "System.String"
+          },
+          "496": {
+            "Name": "0499",
+            "Index": -1,
+            "NameInSource": "0499",
+            "Alias": "0499",
+            "Type": "System.String"
+          },
+          "497": {
+            "Name": "0500",
+            "Index": -1,
+            "NameInSource": "0500",
+            "Alias": "0500",
+            "Type": "System.String"
+          },
+          "498": {
+            "Name": "0501",
+            "Index": -1,
+            "NameInSource": "0501",
+            "Alias": "0501",
+            "Type": "System.String"
+          },
+          "499": {
+            "Name": "0502",
+            "Index": -1,
+            "NameInSource": "0502",
+            "Alias": "0502",
+            "Type": "System.String"
+          },
+          "500": {
+            "Name": "0503",
+            "Index": -1,
+            "NameInSource": "0503",
+            "Alias": "0503",
+            "Type": "System.String"
+          },
+          "501": {
+            "Name": "0504",
+            "Index": -1,
+            "NameInSource": "0504",
+            "Alias": "0504",
+            "Type": "System.String"
+          },
+          "502": {
+            "Name": "0505",
+            "Index": -1,
+            "NameInSource": "0505",
+            "Alias": "0505",
+            "Type": "System.String"
+          },
+          "503": {
+            "Name": "0506",
+            "Index": -1,
+            "NameInSource": "0506",
+            "Alias": "0506",
+            "Type": "System.String"
+          },
+          "504": {
+            "Name": "0507",
+            "Index": -1,
+            "NameInSource": "0507",
+            "Alias": "0507",
+            "Type": "System.String"
+          },
+          "505": {
+            "Name": "0508",
+            "Index": -1,
+            "NameInSource": "0508",
+            "Alias": "0508",
+            "Type": "System.String"
+          },
+          "506": {
+            "Name": "0509",
+            "Index": -1,
+            "NameInSource": "0509",
+            "Alias": "0509",
+            "Type": "System.String"
+          },
+          "507": {
+            "Name": "0510",
+            "Index": -1,
+            "NameInSource": "0510",
+            "Alias": "0510",
+            "Type": "System.String"
+          },
+          "508": {
+            "Name": "0511",
+            "Index": -1,
+            "NameInSource": "0511",
+            "Alias": "0511",
+            "Type": "System.String"
+          },
+          "509": {
+            "Name": "0512",
+            "Index": -1,
+            "NameInSource": "0512",
+            "Alias": "0512",
+            "Type": "System.String"
+          },
+          "510": {
+            "Name": "0513",
+            "Index": -1,
+            "NameInSource": "0513",
+            "Alias": "0513",
+            "Type": "System.String"
+          },
+          "511": {
+            "Name": "0514",
+            "Index": -1,
+            "NameInSource": "0514",
+            "Alias": "0514",
+            "Type": "System.String"
+          },
+          "512": {
+            "Name": "0515",
+            "Index": -1,
+            "NameInSource": "0515",
+            "Alias": "0515",
+            "Type": "System.String"
+          },
+          "513": {
+            "Name": "0516",
+            "Index": -1,
+            "NameInSource": "0516",
+            "Alias": "0516",
+            "Type": "System.String"
+          },
+          "514": {
+            "Name": "0517",
+            "Index": -1,
+            "NameInSource": "0517",
+            "Alias": "0517",
+            "Type": "System.String"
+          },
+          "515": {
+            "Name": "0518",
+            "Index": -1,
+            "NameInSource": "0518",
+            "Alias": "0518",
+            "Type": "System.String"
+          },
+          "516": {
+            "Name": "0519",
+            "Index": -1,
+            "NameInSource": "0519",
+            "Alias": "0519",
+            "Type": "System.String"
+          },
+          "517": {
+            "Name": "0520",
+            "Index": -1,
+            "NameInSource": "0520",
+            "Alias": "0520",
+            "Type": "System.String"
+          },
+          "518": {
+            "Name": "0521",
+            "Index": -1,
+            "NameInSource": "0521",
+            "Alias": "0521",
+            "Type": "System.String"
+          },
+          "519": {
+            "Name": "0522",
+            "Index": -1,
+            "NameInSource": "0522",
+            "Alias": "0522",
+            "Type": "System.String"
+          },
+          "520": {
+            "Name": "0523",
+            "Index": -1,
+            "NameInSource": "0523",
+            "Alias": "0523",
+            "Type": "System.String"
+          },
+          "521": {
+            "Name": "0524",
+            "Index": -1,
+            "NameInSource": "0524",
+            "Alias": "0524",
+            "Type": "System.String"
+          },
+          "522": {
+            "Name": "0525",
+            "Index": -1,
+            "NameInSource": "0525",
+            "Alias": "0525",
+            "Type": "System.String"
+          },
+          "523": {
+            "Name": "0526",
+            "Index": -1,
+            "NameInSource": "0526",
+            "Alias": "0526",
+            "Type": "System.String"
+          },
+          "524": {
+            "Name": "0527",
+            "Index": -1,
+            "NameInSource": "0527",
+            "Alias": "0527",
+            "Type": "System.String"
+          },
+          "525": {
+            "Name": "0528",
+            "Index": -1,
+            "NameInSource": "0528",
+            "Alias": "0528",
+            "Type": "System.String"
+          },
+          "526": {
+            "Name": "0529",
+            "Index": -1,
+            "NameInSource": "0529",
+            "Alias": "0529",
+            "Type": "System.String"
+          },
+          "527": {
+            "Name": "0530",
+            "Index": -1,
+            "NameInSource": "0530",
+            "Alias": "0530",
+            "Type": "System.String"
+          },
+          "528": {
+            "Name": "0531",
+            "Index": -1,
+            "NameInSource": "0531",
+            "Alias": "0531",
+            "Type": "System.String"
+          },
+          "529": {
+            "Name": "0532",
+            "Index": -1,
+            "NameInSource": "0532",
+            "Alias": "0532",
+            "Type": "System.String"
+          },
+          "530": {
+            "Name": "0533",
+            "Index": -1,
+            "NameInSource": "0533",
+            "Alias": "0533",
+            "Type": "System.String"
+          },
+          "531": {
+            "Name": "0534",
+            "Index": -1,
+            "NameInSource": "0534",
+            "Alias": "0534",
+            "Type": "System.String"
+          },
+          "532": {
+            "Name": "0535",
+            "Index": -1,
+            "NameInSource": "0535",
+            "Alias": "0535",
+            "Type": "System.String"
+          },
+          "533": {
+            "Name": "0536",
+            "Index": -1,
+            "NameInSource": "0536",
+            "Alias": "0536",
+            "Type": "System.String"
+          },
+          "534": {
+            "Name": "0537",
+            "Index": -1,
+            "NameInSource": "0537",
+            "Alias": "0537",
+            "Type": "System.String"
+          },
+          "535": {
+            "Name": "0538",
+            "Index": -1,
+            "NameInSource": "0538",
+            "Alias": "0538",
+            "Type": "System.String"
+          },
+          "536": {
+            "Name": "0539",
+            "Index": -1,
+            "NameInSource": "0539",
+            "Alias": "0539",
+            "Type": "System.String"
+          },
+          "537": {
+            "Name": "0540",
+            "Index": -1,
+            "NameInSource": "0540",
+            "Alias": "0540",
+            "Type": "System.String"
+          },
+          "538": {
+            "Name": "0541",
+            "Index": -1,
+            "NameInSource": "0541",
+            "Alias": "0541",
+            "Type": "System.String"
+          },
+          "539": {
+            "Name": "0542",
+            "Index": -1,
+            "NameInSource": "0542",
+            "Alias": "0542",
+            "Type": "System.String"
+          },
+          "540": {
+            "Name": "0543",
+            "Index": -1,
+            "NameInSource": "0543",
+            "Alias": "0543",
+            "Type": "System.String"
+          },
+          "541": {
+            "Name": "0544",
+            "Index": -1,
+            "NameInSource": "0544",
+            "Alias": "0544",
+            "Type": "System.String"
+          },
+          "542": {
+            "Name": "0545",
+            "Index": -1,
+            "NameInSource": "0545",
+            "Alias": "0545",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "histogram.Labels"
+      },
+      "3": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_binds_user",
+        "Alias": "data_binds_user",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Double"
+          },
+          "1": {
+            "Name": "userName",
+            "Index": -1,
+            "NameInSource": "userName",
+            "Alias": "userName",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "lastName",
+            "Index": -1,
+            "NameInSource": "lastName",
+            "Alias": "lastName",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "confidential",
+            "Index": -1,
+            "NameInSource": "confidential",
+            "Alias": "confidential",
+            "Type": "System.Boolean"
+          },
+          "5": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "histogram.data_binds_user"
+      },
+      "4": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_detail_bind",
+        "Alias": "data_detail_bind",
+        "Columns": {
+          "0": {
+            "Name": "lastTransaction",
+            "Index": -1,
+            "NameInSource": "lastTransaction",
+            "Alias": "lastTransaction",
+            "Type": "System.Double"
+          },
+          "1": {
+            "Name": "user",
+            "Index": -1,
+            "NameInSource": "user",
+            "Alias": "user",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Double"
+          },
+          "3": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "minimum",
+            "Index": -1,
+            "NameInSource": "minimum",
+            "Alias": "minimum",
+            "Type": "System.Double"
+          },
+          "5": {
+            "Name": "maximum",
+            "Index": -1,
+            "NameInSource": "maximum",
+            "Alias": "maximum",
+            "Type": "System.Double"
+          },
+          "6": {
+            "Name": "state",
+            "Index": -1,
+            "NameInSource": "state",
+            "Alias": "state",
+            "Type": "System.Boolean"
+          },
+          "7": {
+            "Name": "frecuency",
+            "Index": -1,
+            "NameInSource": "frecuency",
+            "Alias": "frecuency",
+            "Type": "System.Double"
+          },
+          "8": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "histogram.data_detail_bind"
+      },
+      "5": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_binds",
+        "Alias": "data_binds",
+        "Columns": {
+          "0": {
+            "Name": "lastTransaction",
+            "Index": -1,
+            "NameInSource": "lastTransaction",
+            "Alias": "lastTransaction",
+            "Type": "System.Double"
+          },
+          "1": {
+            "Name": "user",
+            "Index": -1,
+            "NameInSource": "user",
+            "Alias": "user",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Double"
+          },
+          "3": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "minimum",
+            "Index": -1,
+            "NameInSource": "minimum",
+            "Alias": "minimum",
+            "Type": "System.Double"
+          },
+          "5": {
+            "Name": "maximum",
+            "Index": -1,
+            "NameInSource": "maximum",
+            "Alias": "maximum",
+            "Type": "System.Double"
+          },
+          "6": {
+            "Name": "state",
+            "Index": -1,
+            "NameInSource": "state",
+            "Alias": "state",
+            "Type": "System.Boolean"
+          },
+          "7": {
+            "Name": "frecuency",
+            "Index": -1,
+            "NameInSource": "frecuency",
+            "Alias": "frecuency",
+            "Type": "System.Double"
+          },
+          "8": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "histogram.data_binds"
+      },
+      "6": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_detail_bind_user",
+        "Alias": "data_detail_bind_user",
+        "Columns": {
+          "0": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Double"
+          },
+          "1": {
+            "Name": "userName",
+            "Index": -1,
+            "NameInSource": "userName",
+            "Alias": "userName",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "lastName",
+            "Index": -1,
+            "NameInSource": "lastName",
+            "Alias": "lastName",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "confidential",
+            "Index": -1,
+            "NameInSource": "confidential",
+            "Alias": "confidential",
+            "Type": "System.Boolean"
+          },
+          "5": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "histogram.data_detail_bind_user"
+      },
+      "7": {
+        "Ident": "StiDataTableSource",
+        "Name": "data_detail",
+        "Alias": "data_detail",
+        "Columns": {
+          "0": {
+            "Name": "orderNumber",
+            "Index": -1,
+            "NameInSource": "orderNumber",
+            "Alias": "orderNumber",
+            "Type": "System.Double"
+          },
+          "1": {
+            "Name": "id",
+            "Index": -1,
+            "NameInSource": "id",
+            "Alias": "id",
+            "Type": "System.Double"
+          },
+          "2": {
+            "Name": "code",
+            "Index": -1,
+            "NameInSource": "code",
+            "Alias": "code",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "verifyDate",
+            "Index": -1,
+            "NameInSource": "verifyDate",
+            "Alias": "verifyDate",
+            "Type": "System.DateTime"
+          },
+          "5": {
+            "Name": "verifyUser",
+            "Index": -1,
+            "NameInSource": "verifyUser",
+            "Alias": "verifyUser",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "validDate",
+            "Index": -1,
+            "NameInSource": "validDate",
+            "Alias": "validDate",
+            "Type": "System.DateTime"
+          },
+          "7": {
+            "Name": "validUser",
+            "Index": -1,
+            "NameInSource": "validUser",
+            "Alias": "validUser",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "totalTime",
+            "Index": -1,
+            "NameInSource": "totalTime",
+            "Alias": "totalTime",
+            "Type": "System.DateTime"
+          },
+          "9": {
+            "Name": "codeService",
+            "Index": -1,
+            "NameInSource": "codeService",
+            "Alias": "codeService",
+            "Type": "System.Double"
+          },
+          "10": {
+            "Name": "nameService",
+            "Index": -1,
+            "NameInSource": "nameService",
+            "Alias": "nameService",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "bind",
+            "Index": -1,
+            "NameInSource": "bind",
+            "Alias": "bind",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "relationId",
+            "Index": -1,
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "histogram.data_detail"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "a008cdc03fc1426e93db917ca41a3c79",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:Transparent",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeaderBand1",
+          "ClientRectangle": "0,0.2,7.72,1",
+          "ComponentPlacement": "ph.Page1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";208,206,206;;;;;;solid:0,0,0",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "Guid": "863f7d30f7b87d8d899266c9a411cb97",
+              "ClientRectangle": "0,0,7.7,0.2",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.entity} ({Variables.abbreviation})"
+              },
+              "Font": ";14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text34",
+              "Guid": "f5d03e15f89280be36f15b6c70a46332",
+              "ClientRectangle": "0,0.3,2.1,0.2",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0038}"
+              },
+              "Font": ";11;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "DataColumn"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text7",
+              "Guid": "53f81ade5ab07d995b2abf4879326a8b",
+              "ClientRectangle": "0,0.6,1,0.2",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0073}:"
+              },
+              "Font": ";10;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "Guid": "3c6da80b22fdfc64d65bb6e8f950ace9",
+              "ClientRectangle": "1,0.6,1.1,0.2",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.rangeInit}"
+              },
+              "Font": ";10;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "Guid": "48a015592932616243801fd69f36ffa2",
+              "ClientRectangle": "2.4,0.6,0.9,0.2",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0074}:"
+              },
+              "Font": ";10;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text13",
+              "Guid": "006146dcfb6d498f96697b39c9b1e4a0",
+              "ClientRectangle": "3.3,0.6,1.3,0.2",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.rangeEnd}"
+              },
+              "Font": ";10;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive1",
+              "ClientRectangle": "0,0.9,7.7,0.01",
+              "ComponentPlacement": "ph.PageHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Color": "191,191,191",
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "ClientRectangle": "0,11.96,7.72,0.3",
+          "ComponentPlacement": "pf.Page1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text30",
+              "Guid": "14c6bb9c9eefb4146d5f2326b0567145",
+              "ClientRectangle": "0,0.04,4.3,0.2",
+              "ComponentPlacement": "pf.PageFooterBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0261}: {Variables.username}, {Variables.date}"
+              },
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text31",
+              "Guid": "191bb76a714c650e0b28ff6d1a158508",
+              "ClientRectangle": "6.2,0.04,1.5,0.2",
+              "ComponentPlacement": "pf.PageFooterBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0262} {PageNumber} {Labels.n0263} {TotalPageCount}"
+              },
+              "HorAlignment": "Right",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiReportTitleBand",
+          "Name": "ReportTitleBand1",
+          "ClientRectangle": "0,1.6,7.72,3.2",
+          "ComponentPlacement": "rt.Page1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiChart",
+              "Name": "Chart1",
+              "ClientRectangle": "0.6,0.2,6.6,2.8",
+              "ComponentPlacement": "rt.ReportTitleBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:255,255,255",
+              "Series": {
+                "0": {
+                  "Ident": "StiClusteredColumnSeries",
+                  "SeriesLabels": {
+                    "Ident": "StiInsideBaseAxisLabels",
+                    "Conditions": {
+                      "0": {
+                        "Ident": "StiChartCondition"
+                      }
+                    },
+                    "MarkerSize": {
+                      "Width": 8,
+                      "Height": 6
+                    },
+                    "ValueTypeSeparator": "-",
+                    "LabelColor": "90,90,90",
+                    "BorderColor": "140,140,140",
+                    "Brush": "solid:255,255,255"
+                  },
+                  "TrendLine": {
+                    "Ident": "StiTrendLineNone",
+                    "ShowShadow": true
+                  },
+                  "ValueDataColumn": "data_binds.frecuency",
+                  "ArgumentDataColumn": "data_binds.name",
+                  "Title": {
+                    "Value": "{Labels.n0541}"
+                  },
+                  "BorderColor": "255,255,255",
+                  "Brush": "solid:91,155,213",
+                  "BrushNegative": "solid:Firebrick"
+                }
+              },
+              "Area": {
+                "Ident": "StiClusteredColumnArea",
+                "BorderColor": "171,172,173",
+                "Brush": "solid:255,255,255",
+                "InterlacingHor": {
+                  "InterlacedBrush": "solid:10,155,155,155",
+                  "Area": true
+                },
+                "InterlacingVert": {
+                  "InterlacedBrush": "solid:10,155,155,155",
+                  "Area": true
+                },
+                "GridLinesHor": {
+                  "Color": "100,105,105,105",
+                  "MinorColor": "100,105,105,105",
+                  "Area": true
+                },
+                "GridLinesHorRight": {
+                  "Visible": false,
+                  "Area": true
+                },
+                "GridLinesVert": {
+                  "Color": "100,105,105,105",
+                  "MinorColor": "100,105,105,105",
+                  "Area": true
+                },
+                "YAxis": {
+                  "Ident": "StiYLeftAxis",
+                  "Labels": {
+                    "Color": "140,140,140"
+                  },
+                  "LineColor": "140,140,140",
+                  "Title": {
+                    "Color": "140,140,140",
+                    "Direction": "BottomToTop"
+                  }
+                },
+                "YRightAxis": {
+                  "Ident": "StiYRightAxis",
+                  "Labels": {
+                    "Color": "140,140,140",
+                    "TextAlignment": "Left"
+                  },
+                  "LineColor": "140,140,140",
+                  "Title": {
+                    "Color": "140,140,140",
+                    "Direction": "TopToBottom"
+                  }
+                },
+                "XAxis": {
+                  "Ident": "StiXBottomAxis",
+                  "Labels": {
+                    "Color": "140,140,140"
+                  },
+                  "LineColor": "140,140,140",
+                  "Title": {
+                    "Color": "140,140,140"
+                  }
+                },
+                "XTopAxis": {
+                  "Ident": "StiXTopAxis",
+                  "Labels": {
+                    "Color": "140,140,140"
+                  },
+                  "LineColor": "140,140,140",
+                  "Title": {
+                    "Color": "140,140,140"
+                  }
+                }
+              },
+              "Table": {
+                "GridLineColor": "105,105,105",
+                "Header": {
+                  "Brush": "solid:White"
+                },
+                "DataCells": {
+                  "TextColor": "140,140,140"
+                }
+              },
+              "SeriesLabels": {
+                "Ident": "StiOutsideBaseAxisLabels",
+                "Conditions": {
+                  "0": {
+                    "Ident": "StiChartCondition"
+                  }
+                },
+                "MarkerSize": {
+                  "Width": 8,
+                  "Height": 6
+                },
+                "ValueTypeSeparator": "-",
+                "LabelColor": "90,90,90",
+                "BorderColor": "140,140,140",
+                "Brush": "solid:255,255,255"
+              },
+              "Legend": {
+                "AllowApplyStyle": false,
+                "BorderColor": "DimGray",
+                "Brush": "solid:255,255,255",
+                "TitleColor": "DimGray",
+                "LabelsColor": "140,140,140",
+                "VertAlignment": "TopOutside",
+                "MarkerSize": {
+                  "Width": 30,
+                  "Height": 10
+                },
+                "Columns": 0,
+                "Size": "0,0"
+              },
+              "Title": {
+                "Brush": "solid:140,140,140"
+              },
+              "Style": {
+                "Ident": "StiStyle22"
+              },
+              "SeriesLabelsConditions": {
+                "0": {
+                  "Ident": "StiChartCondition"
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "Ident": "StiTable",
+          "Name": "Table1",
+          "ClientRectangle": "0,5.2,7.72,0.5",
+          "ComponentPlacement": "d.Page1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:0,0,0",
+          "Brush": "solid:68,84,106",
+          "Components": {
+            "0": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell1",
+              "ClientRectangle": "0,0,1.1,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Font": ";9;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "ID": 0
+            },
+            "1": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell2",
+              "Guid": "476df969fb126c1a37047858ace74f45",
+              "ClientRectangle": "1.1,0,1.1,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0533}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression",
+              "ID": 1
+            },
+            "2": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell3",
+              "Guid": "233c72c5fdf01b6d6819357e8d21e7b4",
+              "ClientRectangle": "2.2,0,1.1,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0534}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "DataColumn",
+              "ID": 2
+            },
+            "3": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell4",
+              "Guid": "4394762786c766b318c8688edd4adb1a",
+              "ClientRectangle": "3.3,0,1.1,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0535}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn",
+              "ID": 3
+            },
+            "4": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell5",
+              "Guid": "3231ab28fbe5ab7367657ee66c869dd3",
+              "ClientRectangle": "4.4,0,1.1,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0536}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "DataColumn",
+              "ID": 4
+            },
+            "5": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell6",
+              "Guid": "4117497d690de9fffe3055f05ca9347d",
+              "ClientRectangle": "5.5,0,1.1,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0537} 25"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression",
+              "ID": 25
+            },
+            "6": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell7",
+              "Guid": "6c821460b9c54e2690f4eed791fd4568",
+              "ClientRectangle": "6.6,0,1.12,0.2",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0537} 75"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression",
+              "ID": 26
+            },
+            "7": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell8",
+              "ClientRectangle": "0,0,1.1,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Font": ";9;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "ID": 5
+            },
+            "8": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell9",
+              "Guid": "81575b7b88f60ca3276f07efebaf0a14",
+              "ClientRectangle": "1.1,0,1.1,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.average}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              },
+              "Type": "DataColumn",
+              "ID": 6
+            },
+            "9": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell10",
+              "Guid": "2ab8dd64bb6c7744e1e84adcfbb08598",
+              "ClientRectangle": "2.2,0,1.1,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.standardDeviation}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              },
+              "Type": "DataColumn",
+              "ID": 7
+            },
+            "10": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell11",
+              "Guid": "289046e32222270ba8d701b921547025",
+              "ClientRectangle": "3.3,0,1.1,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.mean}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              },
+              "Type": "Expression",
+              "ID": 8
+            },
+            "11": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell12",
+              "Guid": "67d593a5beb587f6402a9c61daf292ce",
+              "ClientRectangle": "4.4,0,1.1,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.median}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              },
+              "Type": "DataColumn",
+              "ID": 9
+            },
+            "12": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell13",
+              "Guid": "d2d9a7d43f70f66fe6a863325e54bf04",
+              "ClientRectangle": "5.5,0,1.1,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.percentile25}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              },
+              "Type": "DataColumn",
+              "ID": 27
+            },
+            "13": {
+              "Ident": "StiTableCell",
+              "Name": "Table1_Cell14",
+              "Guid": "1b69cd8652283b14d7da07e9e4c450f3",
+              "ClientRectangle": "6.6,0,1.12,0.3",
+              "Restrictions": "AllowMove, AllowSelect, AllowChange",
+              "ComponentPlacement": "d.Table1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data.percentile75}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:White",
+              "TextBrush": "solid:Black",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "H:mm"
+              },
+              "Type": "DataColumn",
+              "ID": 28
+            }
+          },
+          "MinHeight": 0.2,
+          "DataSourceName": "data",
+          "RowCount": 2,
+          "ColumnCount": 7,
+          "HeaderRowsCount": 1,
+          "FooterPrintAtBottom": true,
+          "NumberID": 29
+        },
+        "4": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "ClientRectangle": "0,6.1,7.72,0.5",
+          "ComponentPlacement": "gh.Page1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "Guid": "986af88e067ae1e06741bff21b0a9867",
+              "ClientRectangle": "0,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0538}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "Guid": "74d10a8ecd2445e98e993a9c81ad29bf",
+              "ClientRectangle": "1.1,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0539}(>=)"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "Guid": "3550eff09f224ab7ba9449de25cab622",
+              "ClientRectangle": "2.2,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0540}(<)"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text14",
+              "Guid": "ea9bd19507fe4f059483fbffd7eaae92",
+              "ClientRectangle": "3.3,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0541}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text15",
+              "Guid": "a14e0b0b80224a929adc6a9d863540d6",
+              "ClientRectangle": "4.4,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "% {Labels.n0541}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text16",
+              "Guid": "c5d8f57a336a4389b096654fb613e1f8",
+              "ClientRectangle": "5.5,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0542}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "Guid": "70fbe567a0c74f049c43118b512c9882",
+              "ClientRectangle": "6.6,0.3,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "% {Labels.n0542}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";9;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          }
+        },
+        "5": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,7,7.72,0.2",
+          "ComponentPlacement": "d.Page1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "Guid": "38b1161cbe1cb3703e897fc33a9868c6",
+              "ClientRectangle": "0,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_binds.name}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:0,255,255,255",
+              "TextBrush": "solid:0,0,0"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "Guid": "3c6c0fb96a104490820a8e182deb8ba1",
+              "ClientRectangle": "1.1,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_binds.minimum}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text19",
+              "Guid": "ffa722432ef547a88d7b38a1c6eda473",
+              "ClientRectangle": "2.2,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_binds.maximum}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "Guid": "c40a61f04d07428ba95e05eddc75d3bc",
+              "ClientRectangle": "3.3,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_binds.frecuency}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "DataColumn"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text21",
+              "Guid": "149a07613489447d8b39e8d600a1e507",
+              "ClientRectangle": "4.4,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Div(data_binds.frecuency * 100,Sum(DataBand1,data_binds.frecuency))}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "DecimalSeparator": ",",
+                "GroupSeparator": ","
+              },
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text22",
+              "Guid": "dd6a4057abd441679253e1e2171130fb",
+              "ClientRectangle": "5.5,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variable = Variable + data_binds.frecuency}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "5f167ecd0d83468684aac2bb8f150569",
+              "ClientRectangle": "6.6,0,1.1,0.2",
+              "ComponentPlacement": "d.DataBand1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Div(Variable * 100, Sum(DataBand1,data_binds.frecuency))}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": ";9;;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "DecimalSeparator": ",",
+                "GroupSeparator": ","
+              },
+              "Type": "Expression"
+            }
+          },
+          "DataSourceName": "data_binds",
+          "Sort": {
+            "0": "ASC",
+            "1": "minimum"
+          }
+        },
+        "6": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand2",
+          "ClientRectangle": "0,7.6,7.72,0.7",
+          "ComponentPlacement": "gh.Page1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text24",
+              "Guid": "88086e968308b2b143603620b11f6e56",
+              "ClientRectangle": "0,0.5,1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0090}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text25",
+              "Guid": "6c4c4c181fe34db5a7a55d1d62554fc6",
+              "ClientRectangle": "1,0.5,1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0110}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text26",
+              "Guid": "a845e8c9f77c43379201fd16d4480c21",
+              "ClientRectangle": "2,0.5,1.4,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0459}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text27",
+              "Guid": "c05b3f0d307f4ca0ac7f45f1e433f8fb",
+              "ClientRectangle": "3.4,0.5,0.8,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.startDate == 2 ? Labels.n0207 : Labels.n0208}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text28",
+              "Guid": "885470b4e0d047a7a974219bbf2697bb",
+              "ClientRectangle": "4.2,0.5,0.8,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0312}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text29",
+              "Guid": "2954591d738a47938e15852af4c3a0b3",
+              "ClientRectangle": "5,0.5,0.6,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Total"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text32",
+              "Guid": "547f05dec66e4128a34e997b05600f4b",
+              "ClientRectangle": "5.6,0.5,1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Variables.startDate == 2 ? Labels.n0543 : Labels.n0545}\r\n"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text33",
+              "Guid": "4e551259d24e4cedb07890d411c494c3",
+              "ClientRectangle": "6.6,0.5,1.1,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Labels.n0544}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:189,215,238",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text35",
+              "Guid": "fa94961547b1bf24e5587dbaca193488",
+              "ClientRectangle": "0,0.2,7.7,0.2",
+              "ComponentPlacement": "gh.GroupHeaderBand2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Detalle:"
+              },
+              "VertAlignment": "Center",
+              "Font": ";11;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:0,255,255,255",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          }
+        },
+        "7": {
+          "Ident": "StiDataBand",
+          "Name": "Datadata_detail",
+          "ClientRectangle": "0,8.7,7.72,0.3",
+          "ComponentPlacement": "d.Page1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_nameService",
+              "Guid": "a78fd7b1d53ae1940f8f9f07f7485e24",
+              "CanGrow": true,
+              "ClientRectangle": "0,0,1,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.nameService}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              }
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_orderNumber",
+              "Guid": "70f23db879404a547c8f3e84fe02538f",
+              "CanGrow": true,
+              "ClientRectangle": "1,0,1,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.orderNumber}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              }
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_code",
+              "Guid": "0a0b2823672082d9fee1a67ac00b66c2",
+              "CanGrow": true,
+              "ClientRectangle": "2,0,1.4,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.code}.  {data_detail.name}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_verifyDate",
+              "Guid": "bd6cb898b9b84ac568e6fe90ec8fd0b0",
+              "CanGrow": true,
+              "ClientRectangle": "3.4,0,0.8,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.verifyDate}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              },
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_validDate",
+              "Guid": "f129f644266655893d956abd61ac9ca5",
+              "CanGrow": true,
+              "ClientRectangle": "4.2,0,0.8,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.validDate}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              }
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_totalTime",
+              "Guid": "491930b066f196b7a19bcfaf71a3ebd9",
+              "CanGrow": true,
+              "ClientRectangle": "5,0,0.6,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.totalTime}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              },
+              "TextFormat": {
+                "Ident": "StiTimeFormatService",
+                "StringFormat": "HH:mm"
+              }
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_verifyUser",
+              "Guid": "945eb58ce7dea95f45af787c668bf463",
+              "CanGrow": true,
+              "ClientRectangle": "5.6,0,1,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.verifyUser}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              }
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Datadata_detail_validUser",
+              "Guid": "fe41aa10672a3f0528f191fbf432edb0",
+              "CanGrow": true,
+              "ClientRectangle": "6.6,0,1.1,0.3",
+              "ComponentPlacement": "d.Datadata_detail",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{data_detail.validUser}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Border": "All;;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Margins": {
+                "Left": 0,
+                "Right": 5,
+                "Top": 0,
+                "Bottom": 0
+              }
+            }
+          },
+          "DataSourceName": "data_detail"
+        }
+      },
+      "PaperSize": "Letter",
+      "PageWidth": 8.5,
+      "PageHeight": 11,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 0.39,
+        "Right": 0.39,
+        "Top": 0.39,
+        "Bottom": 0.39
+      }
+    }
+  }
+}

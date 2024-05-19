@@ -1,0 +1,62 @@
+{
+   "Variables":[
+      {
+         "entity":"CLTECH",
+         "abbreviation":"CLT",
+         "username":"adiaz",
+         "date":"2017/10/20a",         
+		 "orderNumber": "201802260001",
+		 "patientId": "1018408447",
+		 "lastName": "CORTES",
+		 "surName": "PLAZAS",
+		 "name1": "DIEGO",
+		 "name2": "FERNANDO",
+		 "birthday": "19/01/1987",
+		 "sex": "Masculino",
+		 "age": "30.00.00",
+		 "ageString": "30 Años",
+		 "email": "dcortes@cltech.net"	
+      }
+   ],
+   "data":[{
+         "id":"1",
+         "code":"1001",
+         "abbr":"GLU_AYUNAS",
+         "name":"GLUCOSA EN AYUNAS",
+         "delivery": 4
+      }, {
+         "id":"2",
+         "code":"1002",
+         "abbr":"GLU_1_HORA",
+         "name":"GLUCOSA 1 HORAS",
+         "delivery": 3
+      }, {
+         "id":"2",
+         "code":"1003",
+         "abbr":"GLU_2_HORA",
+         "name":"GLUCOSA 2 HORAS",
+         "delivery": 1
+      }
+   ],
+   "Labels":[
+      {
+         "0260":"listado Activación de ordenes",
+         "ACCOUNT":"CLTECH (Clinical Laboratory Technology)",
+         "0001":"Usuario",
+		 "0110":"Orden",
+         "0117":"Historia",
+         "0234":"Primer apellido",
+	     "0235":"Segundo apellido",
+		 "0236":"Primer nombre",
+		 "0237":"Segundo nombre",
+		 "0120":"Fecha nacimiento",
+		 "0102":"Edad",
+		 "0135":"Correo",
+		 "0325":"Fecha",
+		 "0098":"Código",
+		 "0459":"Prueba",
+		 "0393":"Entregar",	
+		 "0476":"Días"		 
+      }
+   ]
+}

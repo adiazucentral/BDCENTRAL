@@ -1,0 +1,116 @@
+{
+	"data": [
+				  {
+				    "lastTransaction": "09/03/2018 01:26:01 pm",
+				    "userId": 4,
+				    "userName": "jdiaz",
+				    "lastName": "Diaz",
+				    "firshName": "Jennifer",
+				    "id": 85,
+				    "order": 201803162173,
+				    "test": 2,
+				    "idRecord": 8,
+				    "nameRecord": "AGAR BLANDO(ABLA)",
+				    "comment": "7868JHMMJHG",
+				    "type": 1,
+				    "nameType":"Medios de cultivo",			      	
+			        "tasksId": 10,
+			        "tasksDescription": "ATB FUNGUS 3",
+			        "tasksState": true,
+				    "reported": false,
+				    "userRegisterId": 4,
+				    "userRegisterName": "lbueno",
+			      	"lastNameR": "Bueno",
+			      	"firshNameR": "Lenin"		        
+				  },
+
+				  {
+				    "lastTransaction": "10/03/2018 03:14:58 pm",
+				    "userId": 4,
+				    "userName": "lbueno",
+				    "lastName": "Bueno",
+				    "firshName": "Lenin",
+				    "id": 85,
+				    "order": 201803162173,
+				    "test": 2,
+				    "idRecord": 8,
+				    "nameRecord": "AGAR BLANDO(ABLA)",
+				    "comment": "7868JHMMJHG",
+				    "type": 1,
+				    "nameType":"Medios de cultivo",			      	
+			        "tasksId": 12,
+			        "tasksDescription": "ANTIBIOGRAMA MANUAL",
+			        "tasksState": true,
+				    "reported": false,
+				    "userRegisterId": 4,
+				    "userRegisterName": "jdiaz",
+			      	"lastNameR": "Diaz",
+			      	"firshNameR": "Jennifer"		        
+				  },
+				  {
+				    "lastTransaction": "13/03/2018 10:35:12 am",
+				    "userId": 4,
+				    "userName": "jdiaz",
+				    "lastName": "Diaz",
+				    "firshName": "Jennifer",
+				    "id": 85,
+				    "order": 201803162173,
+				    "test": 2,
+				    "idRecord": 8,
+				    "nameRecord": "COLORACION DE ZIEHL NEELSEN(CZN)",
+				    "comment": "Comentario de prueba",
+				    "type": 2,
+				    "nameType":"Procedimientos",			      	
+			        "tasksId": 8,
+			        "tasksDescription": "COLORACION DE AURAMINA O",
+			        "tasksState": true,
+				    "reported": false,
+				    "userRegisterId": 4,
+				    "userRegisterName": "jdiaz",
+			      	"lastNameR": "Diaz",
+			      	"firshNameR": "Jennifer"		        
+				  },
+				  
+				  {
+				    "lastTransaction": "16/03/2018 04:49:32 pm",
+				    "userId": 4,
+				    "userName": "jdiaz",
+				    "lastName": "Diaz",
+				    "firshName": "Jennifer",
+				    "id": 85,
+				    "order": 201803162173,
+				    "test": 2,
+				    "idRecord": 8,
+				    "nameRecord": "COLORACION DE ZIEHL NEELSEN(CZN)",
+				    "comment": "Comentario de prueba",
+				    "type": 2,
+				    "nameType":"Procedimientos",			      	
+			        "tasksId": 12,
+			        "tasksDescription": "ANTIBIOGRAMA MANUAL",
+			        "tasksState": true,
+				    "reported": false,
+				    "userRegisterId": 4,
+				    "userRegisterName": "jdiaz",
+			      	"lastNameR": "Diaz",
+			      	"firshNameR": "Jennifer"		        
+				  }					  			      
+			],
+
+
+   "Labels": [{
+   			  "0046":"Trazabilidad",
+		      "0110":"Orden",
+		      "0119":"Fecha de verificación",
+		      "0396":"Fecha y hora de ingreso",
+		      "0397":"Fecha de impresión",
+		      "0262":"Página",
+		      "0263":"de",
+		      "0325":"Fecha"
+    		}],
+
+    "Variables": [{
+			       "customer": "CLTECH",
+			       "username": "lbueno",
+			       "now": "2017/12/20 02:25:12 am."
+			     }]
+}

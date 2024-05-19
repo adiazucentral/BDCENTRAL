@@ -1,0 +1,167 @@
+<style>
+    .validateresult-padding-search {
+        padding-top: 5px;
+    }
+
+    .validateresult-uppercase {
+        text-transform: uppercase;
+    }
+
+    .validateresult-table-row {
+        margin-top: 10px !important;
+    }
+
+    .validateresult-table-container {
+        margin-top: 0px;
+        height: calc(100% - -43px);
+        width: 100% !important;
+    }
+
+    .validateresult-filter-margin {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .validateresult-filter-padding {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+</style>
+
+<div id="validateresult" class="uk-modal uk-modal-card-fullscreen" aria-hidden="true">
+    <div class="uk-modal-dialog uk-modal-dialog-blank">
+        <loadpage view="validateresult.loading"></loadpage>
+        <div class="md-card uk-height-viewport">
+            <div class="md-card-toolbar md-bg-light-blue-600">
+                <span class="margin-icon-modal">
+                    <i class="material-icons md-color-light-blue-50 md-33">format_indent_decrease</i>
+                </span>
+                <h3 class="md-card-toolbar-heading-text md-color-blue-50">
+                    {{ '0834' | translate }}
+                </h3>
+            </div>
+            <div class="md-card-content" style="padding: 16px 16px 0px 16px;">
+                <div class="uk-grid" style="height: 100%;">
+                    <div class="uk-width-1-1" style="margin-top: 10px;height: calc(100% - 106px)">
+                        <div class="md-card md-card-hover" style="height: 100%;">
+                            <div class="md-card-content" style="height: 100%;padding: 0px;">
+                                <table class="uk-table  uk-table-small uk-table-middle tablescrollable"
+                                    style="height: calc(100% - 14px);border-bottom-color: #fafafa;">
+                                    <thead style=" display: inline-block;width: 100%;height: 39px;">
+                                        <tr class="uk-grid" style="margin-left: 0px;background-color: #eee;">
+                                            <th class="uk-width-1-10">
+                                                {{'0098' | translate }}
+                                            </th>
+                                            <th class="uk-width-1-10">
+                                                {{'0198' | translate }}
+                                            </th>
+                                            <th class="uk-width-2-10">
+                                                {{'0013' | translate }}
+                                            </th>
+                                            <th class="uk-width-4-10">
+                                                {{'3266' | translate }} 2
+                                            </th>
+                                            <th class="uk-width-2-10">
+                                                {{'0027' | translate }}
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbodyscrollable validateresult-table-container contentscroll"
+                                        style="margin-top: 0px;height: calc(100% - 25px);width: 100% !important;">
+                                        <tr ng-repeat="itemsresult in validateresult.listresult" class="uk-grid"
+                                            style="margin-left: 0px;margin-top: 0px;">
+                                            <td class="uk-width-1-10">{{itemsresult.testCode}}</td>
+                                            <td class="uk-width-1-10">{{itemsresult.abbreviation}}</td>
+                                            <td class="uk-width-2-10 uk-text-middle">{{itemsresult.testName}}</td>
+                                            <td class="uk-width-4-10 uk-text-middle uk-grid uk-grid-small">
+                                                <div class="uk-width-3-5" style="height: 50px"
+                                                    ng-if="validateresult.ListComment.length!==0">
+                                                    <div angucomplete-alt id="{{'comment_'+itemsresult.testId}}"
+                                                        placeholder="{{'0290' | translate}}" maxlength="50" pause="100"
+                                                        selected-object="validateresult.changeComment"
+                                                        local-data="validateresult.ListComment" search-fields="code"
+                                                        title-field="message" minlength="1" clear-selected="true"
+                                                        override-suggestions="true"
+                                                        focus-in="validateresult.commentselect=itemsresult"
+                                                        disable-input="validateresult.ListComment.length===0"
+                                                        input-class="md-input" match-class="highlight"
+                                                        focus-first="true"></div>
+                                                </div>
+                                                <div class="uk-width-2-5" style="margin-top: 15px; height: 35px"
+                                                    ng-if="validateresult.ListComment.length!==0">
+                                                    <input type="checkbox" icheck
+                                                        ng-model="itemsresult.insertcomment" />
+                                                    <label for="checkbox_demo_2" style="font-size: 11px;"
+                                                        class="inline-label"> {{'3265' | translate }}</label>
+                                                </div>
+                                                <div class="contentscroll uk-width-1-1"
+                                                    style="height:20px;width: 100%;overflow-y: auto"
+                                                    ui-tinymce="validateresult.customMenu"
+                                                    ng-model="itemsresult.commentResult">
+                                                </div>
+                                            </td>
+                                            <td class="uk-width-2-10" style="padding: 0px 16px 0px 0px;">
+                                                <div class="uk-input-group">
+                                                    <span style="padding-top: 10px" class="uk-input-group-addon">
+                                                        <img ng-if="itemsresult.resultType === 2"
+                                                            ng-src="images/analytical/recordresultbyrank/typeresulttext.png"
+                                                            alt="" />
+                                                        <img ng-if="itemsresult.resultType === 1"
+                                                            ng-src="images/analytical/recordresultbyrank/typeresultnumber.png"
+                                                            alt="" />
+                                                        <img ng-if="itemsresult.resultType === 3"
+                                                            ng-src="images/analytical/recordresultbyrank/typeresultlist.png"
+                                                            alt="" />
+                                                    </span>
+                                                    <div class="md-input-wrapper">
+                                                        <div ng-if="itemsresult.resultType === 2 && itemsresult.literalResultsLiteral.length === 0"
+                                                            class="uk-width-1-1">
+                                                            <input class="md-input  label-fixed orderentrytab"
+                                                                type="text" data-ng-model="itemsresult.result"
+                                                                maxlength="16"/>
+                                                        </div>
+                                                        <div ng-if="itemsresult.resultType === 2 && itemsresult.literalResultsLiteral.length !== 0"
+                                                            class="uk-width-1-1">
+                                                            <select class="md-input  label-fixed orderentrytab"
+                                                                ng-options="obj as obj.name for obj in itemsresult.literalResultsLiteral track by obj.id"
+                                                                data-ng-model="itemsresult.result"></select>
+                                                        </div>
+                                                        <div ng-if="itemsresult.resultType === 1" class="uk-width-1-1">
+                                                            <input id="{{itemsresult.testId}}" kendo-numeric-text-box
+                                                                k-min="0" k-format="itemsresult.format"
+                                                                k-decimals="itemsresult.decimaltest"
+                                                                k-step="itemsresult.decimaltest"
+                                                                k-ng-model="itemsresult.result"
+                                                                ng-model="itemsresult.result" 
+                                                                maxlength="16" style="width: 100%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="md-card  md-card-hover">
+                            <div class="md-card-content" style="padding: 10px">
+                                <div class="uk-flex uk-flex-right uk-flex-middle">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-4">
+                                            <button type="button" class="md-fab md-fab-small md-fab-primary"
+                                                ng-click="validateresult.save()">
+                                                <i class="uk-icon-save  md-color-grey-50" data-uk-tooltip="{pos:'top'}"
+                                                    title="{{'0007' | translate }}"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

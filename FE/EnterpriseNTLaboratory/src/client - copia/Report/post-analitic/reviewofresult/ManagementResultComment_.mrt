@@ -1,0 +1,1909 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <reviewofresult Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>reviewofresult</Alias>
+        <Key />
+        <Name>reviewofresult</Name>
+        <PathData>resource://reviewofresult</PathData>
+      </reviewofresult>
+    </Databases>
+    <DataSources isList="true" count="39">
+      <data_patient_race_user Ref="3" type="DataTableSource" isKey="true">
+        <Alias>data_patient_race_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient_race_user</Name>
+        <NameInSource>reviewofresult.data_patient_race_user</NameInSource>
+      </data_patient_race_user>
+      <data_patient Ref="4" type="DataTableSource" isKey="true">
+        <Alias>data_patient</Alias>
+        <Columns isList="true" count="17">
+          <value>id,System.Double</value>
+          <value>patientId,System.Double</value>
+          <value>name1,System.String</value>
+          <value>name2,System.String</value>
+          <value>lastName,System.String</value>
+          <value>surName,System.String</value>
+          <value>sexid,System.Double</value>
+          <value>sex,System.String</value>
+          <value>birthday,System.String</value>
+          <value>email,System.String</value>
+          <value>size,System.Double</value>
+          <value>weight,System.Double</value>
+          <value>race,System.String</value>
+          <value>documentType,System.String</value>
+          <value>demographics,System.String</value>
+          <value>orderNumber,System.Double</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient</Name>
+        <NameInSource>reviewofresult.data_patient</NameInSource>
+      </data_patient>
+      <data_type Ref="5" type="DataTableSource" isKey="true">
+        <Alias>data_type</Alias>
+        <Columns isList="true" count="6">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>code,System.Char</value>
+          <value>name,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_type</Name>
+        <NameInSource>reviewofresult.data_type</NameInSource>
+      </data_type>
+      <data_patient_sex Ref="6" type="DataTableSource" isKey="true">
+        <Alias>data_patient_sex</Alias>
+        <Columns isList="true" count="6">
+          <value>id,System.Double</value>
+          <value>idParent,System.Double</value>
+          <value>code,System.Double</value>
+          <value>esCo,System.String</value>
+          <value>enUsa,System.String</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient_sex</Name>
+        <NameInSource>reviewofresult.data_patient_sex</NameInSource>
+      </data_patient_sex>
+      <data_account Ref="7" type="DataTableSource" isKey="true">
+        <Alias>data_account</Alias>
+        <Columns isList="true" count="11">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>institutional,System.Boolean</value>
+          <value>faxSend,System.Boolean</value>
+          <value>print,System.Boolean</value>
+          <value>connectivityEMR,System.Boolean</value>
+          <value>automaticEmail,System.Boolean</value>
+          <value>selfPay,System.Boolean</value>
+          <value>state,System.Boolean</value>
+          <value>sendEnd,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_account</Name>
+        <NameInSource>reviewofresult.data_account</NameInSource>
+      </data_account>
+      <data_service Ref="8" type="DataTableSource" isKey="true">
+        <Alias>data_service</Alias>
+        <Columns isList="true" count="7">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>code,System.Double</value>
+          <value>name,System.String</value>
+          <value>external,System.Boolean</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_service</Name>
+        <NameInSource>reviewofresult.data_service</NameInSource>
+      </data_service>
+      <data_branch_user Ref="9" type="DataTableSource" isKey="true">
+        <Alias>data_branch_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_branch_user</Name>
+        <NameInSource>reviewofresult.data_branch_user</NameInSource>
+      </data_branch_user>
+      <Variables Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Variables</Alias>
+        <Columns isList="true" count="8">
+          <value>entity,System.String</value>
+          <value>abbreviation,System.String</value>
+          <value>rangeInit,System.String</value>
+          <value>rangeEnd,System.String</value>
+          <value>rangeType,System.Double</value>
+          <value>typeFilter,System.String</value>
+          <value>username,System.String</value>
+          <value>date,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Variables</Name>
+        <NameInSource>reviewofresult.Variables</NameInSource>
+      </Variables>
+      <data_resultTest Ref="11" type="DataTableSource" isKey="true">
+        <Alias>data_resultTest</Alias>
+        <Columns isList="true" count="47">
+          <value>order,System.Double</value>
+          <value>areaId,System.Double</value>
+          <value>testId,System.Double</value>
+          <value>testCode,System.Double</value>
+          <value>result,System.String</value>
+          <value>resultDate,System.String</value>
+          <value>state,System.Double</value>
+          <value>newState,System.Double</value>
+          <value>userId,System.Double</value>
+          <value>resultType,System.Double</value>
+          <value>pathology,System.Double</value>
+          <value>refMin,System.Double</value>
+          <value>refMax,System.Double</value>
+          <value>refInterval,System.String</value>
+          <value>panicMin,System.Double</value>
+          <value>panicMax,System.Double</value>
+          <value>panicInterval,System.String</value>
+          <value>reportedMin,System.Double</value>
+          <value>reportedMax,System.Double</value>
+          <value>reportedInterval,System.String</value>
+          <value>critic,System.Double</value>
+          <value>refLiteral,System.String</value>
+          <value>panicLiteral,System.String</value>
+          <value>unit,System.String</value>
+          <value>abbreviation,System.String</value>
+          <value>digits,System.Double</value>
+          <value>resultComment,System.String</value>
+          <value>hasComment,System.Boolean</value>
+          <value>resultChanged,System.Boolean</value>
+          <value>sampleState,System.Double</value>
+          <value>confidential,System.Boolean</value>
+          <value>repeatAmmount,System.String</value>
+          <value>modificationAmmount,System.String</value>
+          <value>testName,System.String</value>
+          <value>orderPathology,System.Double</value>
+          <value>deltaMin,System.Double</value>
+          <value>deltaMax,System.Double</value>
+          <value>deltaInterval,System.String</value>
+          <value>lastResult,System.String</value>
+          <value>lastResultDate,System.String</value>
+          <value>secondLastResult,System.String</value>
+          <value>secondLastResultDate,System.String</value>
+          <value>currentState,System.Double</value>
+          <value>optionsTemplate,System.String</value>
+          <value>relationId,System.String</value>
+          <value>hasTemplate,System.Nullable`1[System.Boolean]</value>
+          <value>hasObservationResult,System.Nullable`1[System.Boolean]</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_resultTest</Name>
+        <NameInSource>reviewofresult.data_resultTest</NameInSource>
+      </data_resultTest>
+      <data_reason_motive_user Ref="12" type="DataTableSource" isKey="true">
+        <Alias>data_reason_motive_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_reason_motive_user</Name>
+        <NameInSource>reviewofresult.data_reason_motive_user</NameInSource>
+      </data_reason_motive_user>
+      <data_lastUpdateUser Ref="13" type="DataTableSource" isKey="true">
+        <Alias>data_lastUpdateUser</Alias>
+        <Columns isList="true" count="20">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>name,System.String</value>
+          <value>lastName,System.String</value>
+          <value>userName,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>type,System.String</value>
+          <value>confidential,System.Boolean</value>
+          <value>printInReports,System.Boolean</value>
+          <value>addExams,System.Boolean</value>
+          <value>secondValidation,System.Boolean</value>
+          <value>editPatients,System.Boolean</value>
+          <value>quitValidation,System.Boolean</value>
+          <value>creatingItems,System.Boolean</value>
+          <value>printResults,System.Boolean</value>
+          <value>areas,System.Double</value>
+          <value>branches,System.Double</value>
+          <value>roles,System.Double</value>
+          <value>orderType,System.String</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_lastUpdateUser</Name>
+        <NameInSource>reviewofresult.data_lastUpdateUser</NameInSource>
+      </data_lastUpdateUser>
+      <data_physician_specialty_user Ref="14" type="DataTableSource" isKey="true">
+        <Alias>data_physician_specialty_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_physician_specialty_user</Name>
+        <NameInSource>reviewofresult.data_physician_specialty_user</NameInSource>
+      </data_physician_specialty_user>
+      <data Ref="15" type="DataTableSource" isKey="true">
+        <Alias>data</Alias>
+        <Columns isList="true" count="23">
+          <value>orderNumber,System.Double</value>
+          <value>createdDateShort,System.Double</value>
+          <value>type,System.String</value>
+          <value>comment,System.String</value>
+          <value>createdDate,System.String</value>
+          <value>patient,System.String</value>
+          <value>homebound,System.Boolean</value>
+          <value>miles,System.Double</value>
+          <value>lastUpdateUser,System.String</value>
+          <value>active,System.Boolean</value>
+          <value>externalId,System.Double</value>
+          <value>branch,System.String</value>
+          <value>service,System.String</value>
+          <value>physician,System.String</value>
+          <value>account,System.String</value>
+          <value>rate,System.String</value>
+          <value>demographics,System.String</value>
+          <value>tests,System.Double</value>
+          <value>reason,System.String</value>
+          <value>state,System.Double</value>
+          <value>previousState,System.Double</value>
+          <value>resultTest,System.String</value>
+          <value>allDemographics,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data</Name>
+        <NameInSource>reviewofresult.data</NameInSource>
+      </data>
+      <data_reason Ref="16" type="DataTableSource" isKey="true">
+        <Alias>data_reason</Alias>
+        <Columns isList="true" count="9">
+          <value>deleteType,System.String</value>
+          <value>init,System.String</value>
+          <value>end,System.String</value>
+          <value>motive,System.String</value>
+          <value>comment,System.String</value>
+          <value>tests,System.Double</value>
+          <value>deleteDate,System.String</value>
+          <value>user,System.String</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_reason</Name>
+        <NameInSource>reviewofresult.data_reason</NameInSource>
+      </data_reason>
+      <data_patient_demographics Ref="17" type="DataTableSource" isKey="true">
+        <Alias>data_patient_demographics</Alias>
+        <Columns isList="true" count="4">
+          <value>idDemographic,System.Double</value>
+          <value>demographic,System.String</value>
+          <value>encoded,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient_demographics</Name>
+        <NameInSource>reviewofresult.data_patient_demographics</NameInSource>
+      </data_patient_demographics>
+      <data_type_user Ref="18" type="DataTableSource" isKey="true">
+        <Alias>data_type_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_type_user</Name>
+        <NameInSource>reviewofresult.data_type_user</NameInSource>
+      </data_type_user>
+      <data_lastUpdateUser_type Ref="19" type="DataTableSource" isKey="true">
+        <Alias>data_lastUpdateUser_type</Alias>
+        <Columns isList="true" count="1">
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_lastUpdateUser_type</Name>
+        <NameInSource>reviewofresult.data_lastUpdateUser_type</NameInSource>
+      </data_lastUpdateUser_type>
+      <data_lastUpdateUser_user Ref="20" type="DataTableSource" isKey="true">
+        <Alias>data_lastUpdateUser_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_lastUpdateUser_user</Name>
+        <NameInSource>reviewofresult.data_lastUpdateUser_user</NameInSource>
+      </data_lastUpdateUser_user>
+      <data_service_user Ref="21" type="DataTableSource" isKey="true">
+        <Alias>data_service_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_service_user</Name>
+        <NameInSource>reviewofresult.data_service_user</NameInSource>
+      </data_service_user>
+      <Labels Ref="22" type="DataTableSource" isKey="true">
+        <Alias>Labels</Alias>
+        <Columns isList="true" count="376">
+          <value>_x0030_000,System.String</value>
+          <value>_x0030_001,System.String</value>
+          <value>_x0030_002,System.String</value>
+          <value>_x0030_003,System.String</value>
+          <value>_x0030_004,System.String</value>
+          <value>_x0030_005,System.String</value>
+          <value>_x0030_006,System.String</value>
+          <value>_x0030_007,System.String</value>
+          <value>_x0030_008,System.String</value>
+          <value>_x0030_009,System.String</value>
+          <value>_x0030_010,System.String</value>
+          <value>_x0030_011,System.String</value>
+          <value>_x0030_012,System.String</value>
+          <value>_x0030_013,System.String</value>
+          <value>_x0030_014,System.String</value>
+          <value>_x0030_015,System.String</value>
+          <value>_x0030_016,System.String</value>
+          <value>_x0030_017,System.String</value>
+          <value>_x0030_018,System.String</value>
+          <value>_x0030_019,System.String</value>
+          <value>_x0030_020,System.String</value>
+          <value>_x0030_021,System.String</value>
+          <value>_x0030_022,System.String</value>
+          <value>_x0030_023,System.String</value>
+          <value>_x0030_024,System.String</value>
+          <value>_x0030_025,System.String</value>
+          <value>_x0030_026,System.String</value>
+          <value>_x0030_027,System.String</value>
+          <value>_x0030_028,System.String</value>
+          <value>_x0030_029,System.String</value>
+          <value>_x0030_030,System.String</value>
+          <value>_x0030_031,System.String</value>
+          <value>_x0030_032,System.String</value>
+          <value>_x0030_033,System.String</value>
+          <value>_x0030_034,System.String</value>
+          <value>_x0030_035,System.String</value>
+          <value>_x0030_036,System.String</value>
+          <value>_x0030_037,System.String</value>
+          <value>_x0030_038,System.String</value>
+          <value>_x0030_039,System.String</value>
+          <value>_x0030_040,System.String</value>
+          <value>_x0030_041,System.String</value>
+          <value>_x0030_042,System.String</value>
+          <value>_x0030_043,System.String</value>
+          <value>_x0030_044,System.String</value>
+          <value>_x0030_045,System.String</value>
+          <value>_x0030_046,System.String</value>
+          <value>_x0030_047,System.String</value>
+          <value>_x0030_048,System.String</value>
+          <value>_x0030_049,System.String</value>
+          <value>_x0030_050,System.String</value>
+          <value>_x0030_051,System.String</value>
+          <value>_x0030_052,System.String</value>
+          <value>_x0030_053,System.String</value>
+          <value>_x0030_054,System.String</value>
+          <value>_x0030_055,System.String</value>
+          <value>_x0030_056,System.String</value>
+          <value>_x0030_057,System.String</value>
+          <value>_x0030_058,System.String</value>
+          <value>_x0030_059,System.String</value>
+          <value>_x0030_060,System.String</value>
+          <value>_x0030_061,System.String</value>
+          <value>_x0030_062,System.String</value>
+          <value>_x0030_063,System.String</value>
+          <value>_x0030_064,System.String</value>
+          <value>_x0030_065,System.String</value>
+          <value>_x0030_066,System.String</value>
+          <value>_x0030_067,System.String</value>
+          <value>_x0030_068,System.String</value>
+          <value>_x0030_069,System.String</value>
+          <value>_x0030_070,System.String</value>
+          <value>_x0030_071,System.String</value>
+          <value>_x0030_072,System.String</value>
+          <value>_x0030_073,System.String</value>
+          <value>_x0030_074,System.String</value>
+          <value>_x0030_075,System.String</value>
+          <value>_x0030_076,System.String</value>
+          <value>_x0030_077,System.String</value>
+          <value>_x0030_078,System.String</value>
+          <value>_x0030_079,System.String</value>
+          <value>_x0030_080,System.String</value>
+          <value>_x0030_081,System.String</value>
+          <value>_x0030_082,System.String</value>
+          <value>_x0030_083,System.String</value>
+          <value>_x0030_084,System.String</value>
+          <value>_x0030_085,System.String</value>
+          <value>_x0030_086,System.String</value>
+          <value>_x0030_087,System.String</value>
+          <value>_x0030_088,System.String</value>
+          <value>_x0030_089,System.String</value>
+          <value>_x0030_090,System.String</value>
+          <value>_x0030_091,System.String</value>
+          <value>_x0030_092,System.String</value>
+          <value>_x0030_093,System.String</value>
+          <value>_x0030_094,System.String</value>
+          <value>_x0030_095,System.String</value>
+          <value>_x0030_096,System.String</value>
+          <value>_x0030_097,System.String</value>
+          <value>_x0030_098,System.String</value>
+          <value>_x0030_099,System.String</value>
+          <value>_x0030_100,System.String</value>
+          <value>_x0030_101,System.String</value>
+          <value>_x0030_102,System.String</value>
+          <value>_x0030_103,System.String</value>
+          <value>_x0030_106,System.String</value>
+          <value>_x0030_107,System.String</value>
+          <value>_x0030_108,System.String</value>
+          <value>_x0030_109,System.String</value>
+          <value>_x0030_110,System.String</value>
+          <value>_x0030_111,System.String</value>
+          <value>_x0030_112,System.String</value>
+          <value>_x0030_113,System.String</value>
+          <value>_x0030_114,System.String</value>
+          <value>_x0030_115,System.String</value>
+          <value>_x0030_116,System.String</value>
+          <value>_x0030_117,System.String</value>
+          <value>_x0030_118,System.String</value>
+          <value>_x0030_119,System.String</value>
+          <value>_x0030_120,System.String</value>
+          <value>_x0030_121,System.String</value>
+          <value>_x0030_122,System.String</value>
+          <value>_x0030_123,System.String</value>
+          <value>_x0030_124,System.String</value>
+          <value>_x0030_125,System.String</value>
+          <value>_x0030_126,System.String</value>
+          <value>_x0030_127,System.String</value>
+          <value>_x0030_128,System.String</value>
+          <value>_x0030_129,System.String</value>
+          <value>_x0030_130,System.String</value>
+          <value>_x0030_131,System.String</value>
+          <value>_x0030_132,System.String</value>
+          <value>_x0030_133,System.String</value>
+          <value>_x0030_134,System.String</value>
+          <value>_x0030_135,System.String</value>
+          <value>_x0030_136,System.String</value>
+          <value>_x0030_137,System.String</value>
+          <value>_x0030_138,System.String</value>
+          <value>_x0030_139,System.String</value>
+          <value>_x0030_140,System.String</value>
+          <value>_x0030_141,System.String</value>
+          <value>_x0030_142,System.String</value>
+          <value>_x0030_143,System.String</value>
+          <value>_x0030_144,System.String</value>
+          <value>_x0030_145,System.String</value>
+          <value>_x0030_146,System.String</value>
+          <value>_x0030_147,System.String</value>
+          <value>_x0030_148,System.String</value>
+          <value>_x0030_149,System.String</value>
+          <value>_x0030_150,System.String</value>
+          <value>_x0030_151,System.String</value>
+          <value>_x0030_152,System.String</value>
+          <value>_x0030_153,System.String</value>
+          <value>_x0030_154,System.String</value>
+          <value>_x0030_155,System.String</value>
+          <value>_x0030_156,System.String</value>
+          <value>_x0030_157,System.String</value>
+          <value>_x0030_158,System.String</value>
+          <value>_x0030_159,System.String</value>
+          <value>_x0030_160,System.String</value>
+          <value>_x0030_161,System.String</value>
+          <value>_x0030_162,System.String</value>
+          <value>_x0030_163,System.String</value>
+          <value>_x0030_164,System.String</value>
+          <value>_x0030_165,System.String</value>
+          <value>_x0030_166,System.String</value>
+          <value>_x0030_167,System.String</value>
+          <value>_x0030_168,System.String</value>
+          <value>_x0030_169,System.String</value>
+          <value>_x0030_170,System.String</value>
+          <value>_x0030_171,System.String</value>
+          <value>_x0030_172,System.String</value>
+          <value>_x0030_173,System.String</value>
+          <value>_x0030_174,System.String</value>
+          <value>_x0030_175,System.String</value>
+          <value>_x0030_176,System.String</value>
+          <value>_x0030_177,System.String</value>
+          <value>_x0030_178,System.String</value>
+          <value>_x0030_179,System.String</value>
+          <value>_x0030_180,System.String</value>
+          <value>_x0030_181,System.String</value>
+          <value>_x0030_182,System.String</value>
+          <value>_x0030_183,System.String</value>
+          <value>_x0030_184,System.String</value>
+          <value>_x0030_185,System.String</value>
+          <value>_x0030_186,System.String</value>
+          <value>_x0030_187,System.String</value>
+          <value>_x0030_188,System.String</value>
+          <value>_x0030_189,System.String</value>
+          <value>_x0030_190,System.String</value>
+          <value>_x0030_191,System.String</value>
+          <value>_x0030_192,System.String</value>
+          <value>_x0030_193,System.String</value>
+          <value>_x0030_194,System.String</value>
+          <value>_x0030_195,System.String</value>
+          <value>_x0030_196,System.String</value>
+          <value>_x0030_197,System.String</value>
+          <value>_x0030_198,System.String</value>
+          <value>_x0030_199,System.String</value>
+          <value>_x0030_200,System.String</value>
+          <value>_x0030_201,System.String</value>
+          <value>_x0030_202,System.String</value>
+          <value>_x0030_203,System.String</value>
+          <value>_x0030_204,System.String</value>
+          <value>_x0030_205,System.String</value>
+          <value>_x0030_206,System.String</value>
+          <value>_x0030_207,System.String</value>
+          <value>_x0030_208,System.String</value>
+          <value>_x0030_209,System.String</value>
+          <value>_x0030_210,System.String</value>
+          <value>_x0030_211,System.String</value>
+          <value>_x0030_212,System.String</value>
+          <value>_x0030_213,System.String</value>
+          <value>_x0030_214,System.String</value>
+          <value>_x0030_215,System.String</value>
+          <value>_x0030_216,System.String</value>
+          <value>_x0030_217,System.String</value>
+          <value>_x0030_218,System.String</value>
+          <value>_x0030_219,System.String</value>
+          <value>_x0030_220,System.String</value>
+          <value>_x0030_221,System.String</value>
+          <value>_x0030_222,System.String</value>
+          <value>_x0030_223,System.String</value>
+          <value>_x0030_224,System.String</value>
+          <value>_x0030_225,System.String</value>
+          <value>_x0030_226,System.String</value>
+          <value>_x0030_227,System.String</value>
+          <value>_x0030_228,System.String</value>
+          <value>_x0030_229,System.String</value>
+          <value>_x0030_230,System.String</value>
+          <value>_x0030_231,System.String</value>
+          <value>_x0030_232,System.String</value>
+          <value>_x0030_233,System.String</value>
+          <value>_x0030_234,System.String</value>
+          <value>_x0030_235,System.String</value>
+          <value>_x0030_236,System.String</value>
+          <value>_x0030_237,System.String</value>
+          <value>_x0030_238,System.String</value>
+          <value>_x0030_239,System.String</value>
+          <value>_x0030_240,System.String</value>
+          <value>_x0030_241,System.String</value>
+          <value>_x0030_242,System.String</value>
+          <value>_x0030_243,System.String</value>
+          <value>_x0030_244,System.String</value>
+          <value>_x0030_245,System.String</value>
+          <value>_x0030_246,System.String</value>
+          <value>_x0030_247,System.String</value>
+          <value>_x0030_248,System.String</value>
+          <value>_x0030_249,System.String</value>
+          <value>_x0030_250,System.String</value>
+          <value>_x0030_251,System.String</value>
+          <value>_x0030_252,System.String</value>
+          <value>_x0030_253,System.String</value>
+          <value>_x0030_254,System.String</value>
+          <value>_x0030_255,System.String</value>
+          <value>_x0030_256,System.String</value>
+          <value>_x0030_257,System.String</value>
+          <value>_x0030_258,System.String</value>
+          <value>_x0030_259,System.String</value>
+          <value>_x0030_260,System.String</value>
+          <value>_x0030_261,System.String</value>
+          <value>_x0030_262,System.String</value>
+          <value>_x0030_263,System.String</value>
+          <value>_x0030_264,System.String</value>
+          <value>_x0030_265,System.String</value>
+          <value>_x0030_266,System.String</value>
+          <value>_x0030_267,System.String</value>
+          <value>_x0030_268,System.String</value>
+          <value>_x0030_269,System.String</value>
+          <value>_x0030_270,System.String</value>
+          <value>_x0030_271,System.String</value>
+          <value>_x0030_272,System.String</value>
+          <value>_x0030_273,System.String</value>
+          <value>_x0030_274,System.String</value>
+          <value>_x0030_275,System.String</value>
+          <value>_x0030_276,System.String</value>
+          <value>_x0030_277,System.String</value>
+          <value>_x0030_278,System.String</value>
+          <value>_x0030_279,System.String</value>
+          <value>_x0030_280,System.String</value>
+          <value>_x0030_281,System.String</value>
+          <value>_x0030_282,System.String</value>
+          <value>_x0030_283,System.String</value>
+          <value>_x0030_284,System.String</value>
+          <value>_x0030_285,System.String</value>
+          <value>_x0030_286,System.String</value>
+          <value>_x0030_287,System.String</value>
+          <value>_x0030_288,System.String</value>
+          <value>_x0030_289,System.String</value>
+          <value>_x0030_290,System.String</value>
+          <value>_x0030_291,System.String</value>
+          <value>_x0030_292,System.String</value>
+          <value>_x0030_293,System.String</value>
+          <value>_x0030_294,System.String</value>
+          <value>_x0030_295,System.String</value>
+          <value>_x0030_296,System.String</value>
+          <value>_x0030_297,System.String</value>
+          <value>_x0030_298,System.String</value>
+          <value>_x0030_299,System.String</value>
+          <value>_x0030_300,System.String</value>
+          <value>_x0030_301,System.String</value>
+          <value>_x0030_302,System.String</value>
+          <value>_x0030_303,System.String</value>
+          <value>_x0030_304,System.String</value>
+          <value>_x0030_305,System.String</value>
+          <value>_x0030_306,System.String</value>
+          <value>_x0030_307,System.String</value>
+          <value>_x0030_308,System.String</value>
+          <value>_x0030_309,System.String</value>
+          <value>_x0030_310,System.String</value>
+          <value>_x0030_311,System.String</value>
+          <value>_x0030_312,System.String</value>
+          <value>_x0030_313,System.String</value>
+          <value>_x0030_314,System.String</value>
+          <value>_x0030_315,System.String</value>
+          <value>_x0030_316,System.String</value>
+          <value>_x0030_317,System.String</value>
+          <value>_x0030_318,System.String</value>
+          <value>_x0030_319,System.String</value>
+          <value>_x0030_320,System.String</value>
+          <value>_x0030_321,System.String</value>
+          <value>_x0030_322,System.String</value>
+          <value>_x0030_323,System.String</value>
+          <value>_x0030_324,System.String</value>
+          <value>_x0030_325,System.String</value>
+          <value>_x0030_326,System.String</value>
+          <value>_x0030_327,System.String</value>
+          <value>_x0030_328,System.String</value>
+          <value>_x0030_329,System.String</value>
+          <value>_x0030_330,System.String</value>
+          <value>_x0030_331,System.String</value>
+          <value>_x0030_332,System.String</value>
+          <value>_x0030_333,System.String</value>
+          <value>_x0030_334,System.String</value>
+          <value>_x0030_335,System.String</value>
+          <value>_x0030_336,System.String</value>
+          <value>_x0030_337,System.String</value>
+          <value>_x0030_338,System.String</value>
+          <value>_x0030_339,System.String</value>
+          <value>_x0030_340,System.String</value>
+          <value>_x0030_341,System.String</value>
+          <value>_x0030_342,System.String</value>
+          <value>_x0030_343,System.String</value>
+          <value>_x0030_344,System.String</value>
+          <value>_x0030_345,System.String</value>
+          <value>_x0030_346,System.String</value>
+          <value>_x0030_347,System.String</value>
+          <value>_x0030_348,System.String</value>
+          <value>_x0030_349,System.String</value>
+          <value>_x0030_350,System.String</value>
+          <value>_x0030_351,System.String</value>
+          <value>_x0030_352,System.String</value>
+          <value>_x0030_353,System.String</value>
+          <value>_x0030_354,System.String</value>
+          <value>_x0030_355,System.String</value>
+          <value>_x0030_356,System.String</value>
+          <value>_x0030_357,System.String</value>
+          <value>_x0030_358,System.String</value>
+          <value>_x0030_359,System.String</value>
+          <value>_x0030_360,System.String</value>
+          <value>_x0030_361,System.String</value>
+          <value>_x0030_362,System.String</value>
+          <value>_x0030_363,System.String</value>
+          <value>_x0030_364,System.String</value>
+          <value>_x0030_365,System.String</value>
+          <value>_x0030_366,System.String</value>
+          <value>_x0030_367,System.String</value>
+          <value>_x0030_368,System.String</value>
+          <value>_x0030_369,System.String</value>
+          <value>_x0030_370,System.String</value>
+          <value>_x0030_371,System.String</value>
+          <value>_x0030_372,System.String</value>
+          <value>_x0030_373,System.String</value>
+          <value>_x0030_374,System.String</value>
+          <value>_x0030_599,System.String</value>
+          <value>_x0030_465,System.String</value>
+          <value>_x0030_739,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Labels</Name>
+        <NameInSource>reviewofresult.Labels</NameInSource>
+      </Labels>
+      <data_reason_motive Ref="23" type="DataTableSource" isKey="true">
+        <Alias>data_reason_motive</Alias>
+        <Columns isList="true" count="4">
+          <value>user,System.String</value>
+          <value>type,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_reason_motive</Name>
+        <NameInSource>reviewofresult.data_reason_motive</NameInSource>
+      </data_reason_motive>
+      <data_patient_race Ref="24" type="DataTableSource" isKey="true">
+        <Alias>data_patient_race</Alias>
+        <Columns isList="true" count="6">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>name,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>value,System.Double</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient_race</Name>
+        <NameInSource>reviewofresult.data_patient_race</NameInSource>
+      </data_patient_race>
+      <data_branch Ref="25" type="DataTableSource" isKey="true">
+        <Alias>data_branch</Alias>
+        <Columns isList="true" count="6">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>code,System.Double</value>
+          <value>name,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_branch</Name>
+        <NameInSource>reviewofresult.data_branch</NameInSource>
+      </data_branch>
+      <data_account_user Ref="26" type="DataTableSource" isKey="true">
+        <Alias>data_account_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_account_user</Name>
+        <NameInSource>reviewofresult.data_account_user</NameInSource>
+      </data_account_user>
+      <data_lastUpdateUser_orderType_user Ref="27" type="DataTableSource" isKey="true">
+        <Alias>data_lastUpdateUser_orderType_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_lastUpdateUser_orderType_user</Name>
+        <NameInSource>reviewofresult.data_lastUpdateUser_orderType_user</NameInSource>
+      </data_lastUpdateUser_orderType_user>
+      <data_patient_documentType_user Ref="28" type="DataTableSource" isKey="true">
+        <Alias>data_patient_documentType_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient_documentType_user</Name>
+        <NameInSource>reviewofresult.data_patient_documentType_user</NameInSource>
+      </data_patient_documentType_user>
+      <data_lastUpdateUser_orderType Ref="29" type="DataTableSource" isKey="true">
+        <Alias>data_lastUpdateUser_orderType</Alias>
+        <Columns isList="true" count="3">
+          <value>user,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_lastUpdateUser_orderType</Name>
+        <NameInSource>reviewofresult.data_lastUpdateUser_orderType</NameInSource>
+      </data_lastUpdateUser_orderType>
+      <data_reason_motive_type Ref="30" type="DataTableSource" isKey="true">
+        <Alias>data_reason_motive_type</Alias>
+        <Columns isList="true" count="1">
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_reason_motive_type</Name>
+        <NameInSource>reviewofresult.data_reason_motive_type</NameInSource>
+      </data_reason_motive_type>
+      <data_physician_specialty Ref="31" type="DataTableSource" isKey="true">
+        <Alias>data_physician_specialty</Alias>
+        <Columns isList="true" count="3">
+          <value>user,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_physician_specialty</Name>
+        <NameInSource>reviewofresult.data_physician_specialty</NameInSource>
+      </data_physician_specialty>
+      <data_rate_user Ref="32" type="DataTableSource" isKey="true">
+        <Alias>data_rate_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_rate_user</Name>
+        <NameInSource>reviewofresult.data_rate_user</NameInSource>
+      </data_rate_user>
+      <data_physician Ref="33" type="DataTableSource" isKey="true">
+        <Alias>data_physician</Alias>
+        <Columns isList="true" count="9">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>name,System.String</value>
+          <value>lastName,System.String</value>
+          <value>institutional,System.Boolean</value>
+          <value>additionalReport,System.Boolean</value>
+          <value>specialty,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_physician</Name>
+        <NameInSource>reviewofresult.data_physician</NameInSource>
+      </data_physician>
+      <data_rate Ref="34" type="DataTableSource" isKey="true">
+        <Alias>data_rate</Alias>
+        <Columns isList="true" count="19">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>code,System.Double</value>
+          <value>name,System.String</value>
+          <value>showPriceInEntry,System.Boolean</value>
+          <value>checkPaid,System.Boolean</value>
+          <value>assingAllAccounts,System.Boolean</value>
+          <value>applyDiagnostics,System.Boolean</value>
+          <value>checkCPTRelation,System.Boolean</value>
+          <value>homebound,System.Boolean</value>
+          <value>venipunture,System.Boolean</value>
+          <value>applyTypePayer,System.Boolean</value>
+          <value>eligibility,System.Boolean</value>
+          <value>supplierSignature,System.Boolean</value>
+          <value>assingBenefits,System.Boolean</value>
+          <value>electronicClaim,System.Boolean</value>
+          <value>defaultItem,System.Boolean</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_rate</Name>
+        <NameInSource>reviewofresult.data_rate</NameInSource>
+      </data_rate>
+      <data_demographics Ref="35" type="DataTableSource" isKey="true">
+        <Alias>data_demographics</Alias>
+        <Columns isList="true" count="4">
+          <value>idDemographic,System.Double</value>
+          <value>demographic,System.String</value>
+          <value>encoded,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_demographics</Name>
+        <NameInSource>reviewofresult.data_demographics</NameInSource>
+      </data_demographics>
+      <data_resultTest_resultComment Ref="36" type="DataTableSource" isKey="true">
+        <Alias>data_resultTest_resultComment</Alias>
+        <Columns isList="true" count="8">
+          <value>order,System.Double</value>
+          <value>testId,System.Double</value>
+          <value>comment,System.String</value>
+          <value>commentDate,System.String</value>
+          <value>pathology,System.Double</value>
+          <value>userId,System.Double</value>
+          <value>commentChanged,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_resultTest_resultComment</Name>
+        <NameInSource>reviewofresult.data_resultTest_resultComment</NameInSource>
+      </data_resultTest_resultComment>
+      <data_physician_user Ref="37" type="DataTableSource" isKey="true">
+        <Alias>data_physician_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_physician_user</Name>
+        <NameInSource>reviewofresult.data_physician_user</NameInSource>
+      </data_physician_user>
+      <data_allDemographics Ref="38" type="DataTableSource" isKey="true">
+        <Alias>data_allDemographics</Alias>
+        <Columns isList="true" count="4">
+          <value>idDemographic,System.Double</value>
+          <value>demographic,System.String</value>
+          <value>encoded,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_allDemographics</Name>
+        <NameInSource>reviewofresult.data_allDemographics</NameInSource>
+      </data_allDemographics>
+      <data_patient_documentType Ref="39" type="DataTableSource" isKey="true">
+        <Alias>data_patient_documentType</Alias>
+        <Columns isList="true" count="6">
+          <value>user,System.String</value>
+          <value>id,System.Double</value>
+          <value>abbr,System.String</value>
+          <value>name,System.String</value>
+          <value>state,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_patient_documentType</Name>
+        <NameInSource>reviewofresult.data_patient_documentType</NameInSource>
+      </data_patient_documentType>
+      <data_reason_user Ref="40" type="DataTableSource" isKey="true">
+        <Alias>data_reason_user</Alias>
+        <Columns isList="true" count="2">
+          <value>confidential,System.Boolean</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_reason_user</Name>
+        <NameInSource>reviewofresult.data_reason_user</NameInSource>
+      </data_reason_user>
+      <data_resultTest_optionsTemplate Ref="41" type="DataTableSource" isKey="true">
+        <Alias>data_resultTest_optionsTemplate</Alias>
+        <Columns isList="true" count="6">
+          <value>option,System.String</value>
+          <value>result,System.String</value>
+          <value>idTest,System.Double</value>
+          <value>order,System.Double</value>
+          <value>relationId,System.String</value>
+          <value>normalResult,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data_resultTest_optionsTemplate</Name>
+        <NameInSource>reviewofresult.data_resultTest_optionsTemplate</NameInSource>
+      </data_resultTest_optionsTemplate>
+    </DataSources>
+    <Relations isList="true" count="3">
+      <Relation Ref="42" type="DataRelation" isKey="true">
+        <Alias>Relation</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>order</value>
+        </ChildColumns>
+        <ChildSource isRef="11" />
+        <Dictionary isRef="1" />
+        <Name>Relation</Name>
+        <NameInSource>Relation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>orderNumber</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </Relation>
+      <Relation2 Ref="43" type="DataRelation" isKey="true">
+        <Alias>Relation2</Alias>
+        <ChildColumns isList="true" count="2">
+          <value>order</value>
+          <value>testId</value>
+        </ChildColumns>
+        <ChildSource isRef="11" />
+        <Dictionary isRef="1" />
+        <Name>Relation2</Name>
+        <NameInSource>Relation2</NameInSource>
+        <ParentColumns isList="true" count="2">
+          <value>order</value>
+          <value>testId</value>
+        </ParentColumns>
+        <ParentSource isRef="36" />
+      </Relation2>
+      <Relation3 Ref="44" type="DataRelation" isKey="true">
+        <Alias>Relation3</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>order</value>
+        </ChildColumns>
+        <ChildSource isRef="11" />
+        <Dictionary isRef="1" />
+        <Name>Relation3</Name>
+        <NameInSource>Relation3</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>orderNumber</value>
+        </ParentColumns>
+        <ParentSource isRef="15" />
+      </Relation3>
+    </Relations>
+    <Report isRef="0" />
+    <Resources isList="true" count="1">
+      <value>Name=reviewofresult, Alias=reviewofresult, Type=Json, Content=oWAKAR4OElnSMOYZVfw94xlx1IdeyuVxyhmnfSd4W3RGQKFLocXoZ91P_x002B_oCRMy4Yljm_x002F_OZd2oGDc1UzC3PMBoxHmGmVhm7IETcYBGbwqcqdDIUYoZ8zUzCaC5KKB_x002F_cJ_x002F_JdfHbanT3gKbRKc334o4jI1PVslzxMJ7BX8fzeBSK2ZfZ5hzXbuG9VQrTzE91ZYS3gVh3odXMR8cX5xXj5mrQxox05c5r5Yv44tTjnAVOGe79DGgE2RMHUhdOemCdJOkeiYl0XpxqJStut5MKQNtAgh5Iu1zuak5UTzn_x002F_fqk6IX_x002F_j8VhNZEE7mKjwd7HRmFjicD1wAqWvEp14bBi57G39vDjTRBsrJO4Q0zZroUmo14W5TwAIPBPwOUxxhwZocHquk_x002B_Dq3uP66ZgtHqVHEnuGEmR6Qz2m2dZt7ocya2sg88UDF_x002F_FhdRDKbv_x002F_b1wnNXsjQsfxGg_x002B_X83s2eQciFpfZdTO_x002B_vpbxYwlARVekUNAPd4DutPoQIh79z9RdHn6_x002B_aJXyo81RxM0CKLJVbVYHg5IC6R9Fcljq_x002B_TCPh7_x002B_tkbIcHTNyBE63Li6w5E7_x002F_KcwX2wN1uZR7GNN7S_x002F_5RlIn_x002F_3l0p_x002B_RxAfadU2v4VXXSwZVv2vDgzLEqGac5SO9tV8w04b_x002F_xEP_x002F_TWj8BHgZd_x002B_Mdh3BNtAZdy43pWOrbHOXdSJyWx11LJSlxdM84M6BQCuQNVJUmTq25osHHItKCmpFoeODvYgVhuv0dXS1OoxchBshH_x002F_ZoPuSl30yBhiL_x002B_yzZPysOOFruVpsfaVRzYN_x002F_W7rC8lzpMYcK9Hniy6A_x002B_EbsV8nfhUmQ9cf02RxKun06_x002B_1ymV625mdcZwcLaxC0zn_x002F_BPOajOsXW9XQ4bHrLmZ6MeTL0PWn_x002B_OaLoNjWCk0zLpcmk9ZX4WgfLjf2n0tCMK9_x002F_D2AZ0ZLdxhBycGCyMPPcemQ_x002B_jmI8eaLg2yA66kVkKfVnsdxGsFRVbq7RymrpKejvXglPbXbG1Jx7kJZrjP7WeiL6YhaRT5eqbPjNuCBpdmMPw7saOcP3JOgTQgtM3gtHGBu_x002F_UYY6Ep4F7ev5zpztATMEymylM5EhFSd3hJX4i8YJril_x002F_uIoAVvhaQKF1FOcAHetIlQ_x002F_FIS_x002F_5Jnis6CUup_x002B_oZijUgMZ3dNCnVnu7dv83zx0EBfxENI2W45s9_x002B_BGQk1y9e1DrEJUbhFi7LDv_x002B_GYenCgd7yzqSznPNo4qbE7co4pmQQ5Gow1_x002B_S1ci_x002B_9tO6UvYTTNckmkr6iqVMr6PDDyuP7HiBVcBWJxls6aeew9K7kidmig_x002B_TyCzeOIegyuuwrDM4732PCl0XKiKn2_x002F_5BM6P6m4sX_x002F_I_x002B_anDAcroOyf_x002F_9YiEqqOm32nEa317Fm_x002F__x002F_hYcnA2iRg2TA0dQ7RPjYLjDEUqd4jnRSc4hW4LOQ5bM3DDUadmxCFxtKsHbjKQI3wIRbHzcLjURDmuB885JmBeGiKXegKzG4ITZjuJvh413fJq_x002F_MZn1AT2hzSOdYaB3Tvft6BEBISHwM03ygRd8ayy_x002F_a02YKTo7CjRvDFxCLd9A8zZ6oUrthRtkIFeTBoxvVs1t50B89HIVBKfO1YOxOR5CEpORPCa32LM1dEsCFUVG2ZR1suVvWABr6QZ2u8wbn_x002F_mGiy3ayJ6jgmTHKQ5p0CfNtUbgW_x002B_tuK1PKMZXegOr4oSEbNQiICDcRubEnLNmnl_x002B_yqRSTH1XgMGRh07_x002B_eQKQsIP7LzWk7pll_x002F_DGZj_x002B_Rz9AxlZjNzbnwdalHZQF_x002F_BIrUMbQYZf_x002F_Gk_x002B_sCdNsKwNoSp8qNhn_x002B_DZdZKItxb_x002F_GskjQcke7GItiCx020UMvT0Pl42olRW_x002B_jH1kP02PQJCg_x002F_GhBJW0rEJx8heRyKNI22vXP9ZeT3hA_x002B_qAc3aX3OwBAsxt82hhXTbqAzLD809sep2mRAtfdVYNLyXU2xvD2xVnQU86SXj1xtCfxugPdwfRM1_x002B_TBwpaBfBRaCrKQ9YR4idj09LDlf5qnRQ9oQ_x002B_qxRwrFY_x002F_uaDLo8Bo7sswdvd9X8Rximy_x002B_HyltyZHpmldgamvn9NrbiDpTUYuasUXcdpBDcgeMQj2EBwUgYuypwgrMspUVf14LIjspdnoX0lLeP_x002F_9iuSNfvIZFB0HII4nvzk0xuUNnKGrlMk2lmhpXqhOlC_x002B_H8FlwnqR3fSEeQ7K3uDqwnXO9ov2esWWxMM8LsNoOw5chYbnL07FGvFYCxKqBnaeKjfsPn_x002B_adZboDaohjc0CNo1IlpyTdx7FpO2uS2N22G8HramKsK3BsrxxsX0pFQiQt4dW4QJWt2YBO0RdjIBkbPSOm7hevBFTGH0XthGpLaqseZLtj3SSXFRcSEFptcloLU2D5rshNRh9UoQ3_x002F_mUpGPjrZ3Limfx7g3GZe5CAAz69T3eHIjk8lQgDKSFel3ojk9WdUN24g0jLJ0J5FCHpY2JyFn7_x002B_jT05WEZ1K8ciI9felgX55Z9NnJE_x002B_EWneYdp1FSEE7jQVPeBRmF4n352hokvcspxjTju7iIslonvEGpWVQPeAY4Jv7NAgNhm3921vidmuXeQEjk_x002F_axBziJPPXnen1UDGNmznx90m_x002B_1lZmmTdeEpLc_x002F_Pry2QMqx0ubecGTKjmKbF1puY8FTCK_x002B_VQO3uBKaMYPunENe8j26AY_x002B__x002F_mwt1WVZ4Z2qM1qwzwE3oehdLfIYkDlSKt5jPqK5mERyhyc3HGt9VTVv5kVSrg_x002B_z5Hn7n5dwX8DcTqoTviaG_x002F_h8ZmabuE9tq0_x002F_ksYdJuSHB0jWVTU0y_x002B_KPS3_x002B_zrcFTT_x002B_JZOTqjr4Rz6i31xwcgzp4Gq8HN_x002F_1cAjX0_x002F_qKEvMQMvynDG3nRrJlWlvlAevSkmWBtDJBmlXhDy1MjXSB3WQNZD5R15RllDuuqWtoHq0i1gjh_x002F_uGNk_x002F_X8HKYl1N0NEsVgCPWary_x002F_X_x002B_IJn2YLA0cSJSBMMjN9XPdF_x002B_nBaurkGfke7V_x002B_KQ_x002F_Vovv6bSzKeFIxFovh8YaYJMDP_x002F_HU3RkTP_x002B_z1bPKt26ksUwfNIluORWXFlRqZftiZx_x002F_fUUtP0CLiu7TCwMpSJCjJxdnlKNSdZU7kte2OuLK2vIZCaPbKfFvPWgZcd_x002F_H6QlULoxwGJ_x002B_SoVTFXL2cuU5D8V1AG8w3Gjeg_x002B_pQKaOak5qzzpQ4_x002F_OLEDrjw6JOP_x002B_KGD829e9Nd3J6QKSh7q6OCHmPz1JgGOc5nQ_x002F_eX1ud6hvPAUhGRPGUXXEluSy6_x002B_As17mLBdC46vqg8W0oWdC0kXiWd879ZIKXKgsZQBuPlQRyTeOlntfmlCyKdBAMqB5Y7VRU0xoUKuD8dpGYgHaTJrJiKRouhYLE3gnGlBhh30zRxNqDvj01T1GPLZWjQEiEO9pEdihlh9GYrkyOSoO0YR8Ckqijb0EhjvqiKElCmlCYaXm0tR1Aw2veEDjg4NW_x002F_QqARlWqBoGC2infyKFVL6Cvrupxl7Hr4Df6n2oHmtaD9AWZcj2nOcbDfBCAIRjmcMZK1NbRnEnnFMFjc_x002F_gNh6uA9NPu1OhdZMg_x002F_GLO3QKIKmSjrD3YCEwWnaM3UgEyKVS3akOvr1caxMzLh6jELib9_x002B_R1dvol0ZVASar3846OF_x002B_Gagdkm6xgwB_x002F_OZzkAlKIz1JaEemgjM_x002F__x002F_eQ5wo76b0VRE8Ii4peSPxC1yc_x002F_qKKKk9YjodvifRqZjmYMY6BC1R2H8Llnltng_x002F_iSb3z_x002B_s6HZAW8H4px7hfUFLlOe9_x002F_553IkF3sCZPyohEjMz_x002B_l6D_x002B_eGSnRfa0VDcyLwMfp0vq6IRqEmq8ILYZUirEboBKqnEn7j5O_x002F_bcBCR7TeYrDEH9ou2Z3aq9dgA9za4svVPwOzeScAd90PH7hjXwIH2TWXQoNYBGJ7utWRZf2NGZkaCip4_x002F_t_x002B_mJasJlL_x002F_K4IbuSAg9GRD3b00bEqVfmI5cu8biZA4mn88mHxrHI6aNzhy_x002B_H5kik4gXmS620K1nQRWz_x002B_uobJ4veLaDFm_x002B_7cGXtQRV_x002B_x7pjeYIWhzQR6j7t1ToJuwiUh5g_x002F_ejwe7XhZ2pTkouYPzZgNgrn9E6EM4jI10fE7_x002F_5hfzjrvpO5gSZmP0SVitz5w_x002B_XIAv7KnJALUo0RSbLkQDfxh8JuUPtq6iw_x002B_J4R_x002B_cqUlxbX5avlb5b_x002B_HpROImB07Ez5IeecGSS7sDRUTUguomjltWhQD6I_x002F_brylcMUbJ2TAyk_x002B_VnmFhUclEamIuPxs5wJX082HIcYno_x002B_rlGl8rGMHsEVGl7nnIBci4iU3LVBr9hbtTsBObmjG8Gg0MYB6zCIyJUW3_x002F__x002F_XPDZlKA8JJzqF6z5MQfHlxvWky_x002B_JYTVOm_x002F_pcTAIUalJdLVnG1FKTSaqC_x002F_36rN10q5kuAJjplGrkHbo3SRht0cfu8tgbzaSUsoQpIj6r5h1CpR7ZuYHL7YWKlljpFl1ilVUog0RRdgSvjgoq06qYQH4jiL0TCLJLXWTx81rW0nHGXkOLeRWPAHh2QMryUCePHypetB6SOxxI15llf0YGUCSaqaS4gaR_x002F_ij27LwS7diPQ2LJAGmug1cOQVsVa2crpxWyAkP5u8_x002B_xsdRXDvpQzt_x002B_drb6k_x002B_lANj6rWfhzMTj51OzaWvIhQ5w7BfsXTyGhKVJSdpm7gLy4f1gZs2985lrvHMOURlf9hvCIYIel0Il9t6vlBb5U_x002F_Os3xz6q1VkOQOCwMY0mC09hWAPhRLU3bFb174P2X9cvxmuiJ2u8B3cKOsZUwVuKR2bTavoV2BPxs5fl2m_x002B_H4FD83b4yN_x002B_CskoSkgPfqNTvUHg5NBz2Czn_x002B_AkFE4S2kDDzBy1Th8KcQjT0gp8IMqNp27wBLYax3SSIxsupW_x002F_JR9cyC2IYhYp7vtMM27mumnuF0rpnx_x002F_It4L18pp40EFfRw0oI735HZVu4HYL6266kkHJXQxYR2j6c_x002F_elS0lbQwsAb4hvBWcraWt0utwjrYXJcZMhhzc6I5Go_x002B_RuEt_x002B_0byQOBSv74ABWWH2hEh92hfTTog0B1adJMpmVRDpxAM58CE_x002F_O2pwWRstfT9llOE_x002B_TLA8tszmhO67RP7e7W9btjOREHsS76ARamwJQU0CDzdINkECWa5FbO4N1eoOYI9_x002B_edDaEYtj51MGWUMA0YYxTD7qDAFZkfIHkghVDcvvKNluoE4ZhDUVc_x002B_cNwKDODqT_x002B_zcd56Jp4qnHqxd5qHEAYsjcIVXLkRrws4e3wWcfJo7Jte4vGmC7IGRlLZmO6x41pTl8OlDV48_x002F_VrZkFxVw8CmIDv5vOGJG3Bs4pWyeP_x002B_DgKHkjQ08T7ZuOXiD0BYN727GaGFn7peSh1SEdswX2oWfgAJSc_x002F_qz3ar4iia4cKMpH29sH_x002F_sMpEgXoL75_x002B_tbAJmX8GG68TaeeMkHVNxlw7F52He5SP9nNB7tmy0U0FemEOknTLtuVJdFsnmfTQez6QnE4KLflysHJg2QKdZXpP4gpRV1fVbZLH1RfbMHBrJXQnk8cPWb8JS6UddobKpCr2Un6CsaCiwHpxKeZc1qnCuYgI65tCshWJlFF1qbpZEWSbFEElAJpgcQ8RUE38CWSpqhmzTkbKSTYyEweyrvzBw7joEw77glvw27mELBzZRWJprjb81tL6inZY7AVdQ2tAL73LdZQQXrQ5a2TQtmNU23lFFBkh_x002F_VMNx4asifb33qKt5ceYcgmWqujSdHpy92KzVGfzoyw_x002B_s0roB_x002F_dRPxqk8rMzvjqJ0vTdGmbZzs_x002F_pjW6IuyErS_x002F_vAStIWZDaKCexG7tfm41fABa7ppm7FVW9SuF7LG4x5xwn3RplA0X9oc9byAC8lWTwF4PzT5AKiEnM3DXtOg5e3TH4FdYOTVoXTMxrqfyv_x002F_azXAOAyoZlisOOYMEWPdosDDA10k_x002F_y_x002B_k2_x002B_mOF81WvkTvJv2UzDB_x002B_jKg_x002F_lJxg_x002F_IWKDZrx1NHJriqMHAVZncCuVDbuzfT0pwzj_x002F_YuHx1wo_x002F_MXLNv1HVLPWuSfef9Wezpb0pID2Tb4wiOMOfk_x002B_szjXITrdpqXpRXO_x002F_mq7eEv_x002B_ul5GIr_x002B_1fJYuqgQF94W6B9EDposDm1WP79LdpDtbFUoZ6hs6ZNtj3TNZAF3NmLjyG7iyV5fd4dIc29Wb4IHap0ePib_x002F_vjNiSH0XDPVq3vJg2kfMEPW7vMfGYjuusyNf8gwxH8TF5Z0_x002F_8nRXjWExt4_x002B_JCjh2kfEAZsIGYdmBICof8GBv9MgWVjR0wbEcmaKT_x002B_IK_x002B_e_x002F_d8xqs89iagj9kEvElcnODEWGaV2EamvkImtNwOEXZlTdtD2VkylZNdAdx47lKoXNJNtxB9Xc6D0dU7tUh2tnqXVTebgmSuukaHmf5yKSPGqhc2SooKGkxC0tYTiUoed_x002F_RHd16wGLtILBjtIXUpxuRMKTKisGu9lXk7G0FzKCRSQ_x002F_h6dlUIdHyo6Is4pE7mXnNqPbgrWAMgxtq2T8xu3F1tfZQJNuMZARXP9ogXtYWb1sr4D5igdaumgbbeBjYMFZ_x002F_eE3JI302_x002B_P_x002B_vJtQ32Kd_x002B_OIfsIBQ2OE_x002F_MIl5WxYW32mCzDr6fUgrtAReKcssLogpp_x002B_D6fJaEz7FydNLxkw_x002F_4HxsP06F5_x002B_WvLaR100oIbqZjiuAVqt7J8P7sBoIj73t9O0V_x002B_1MkzvJRK1q7EE4uoJH4l0VRKPACQjBXRkb_x002F_fa_x002B_qsjBrTpLNDqPP4PLBV9m6C3QWoMUE9nOZ8AlmluB4SvR48_x002F_Ord_x002F_IaGte4tDEjvJdXeiIxX9ucniSOpw_x002B_XBWMRTrN2dBVqKNWrI_x002B_j4xavZzSiYzR_x002B_3Rj042oS5PGHACez18NTIULlq_x002B_n_x002B_PdHoE796QQJpovTTX8AwIJgWelPxfdg3_x002B_Xpnnm3GCtwz_x002B_WrtUbJ9DVTbbvTyUCUquxAf6ZHYxN9dqeLQLXTKQqh1w2WXEw_x002B_u4Vm54tN_x002F_iCnPMkXs7ks3gU52j3p7eJJTMwVLE6FCV_x002B_OAIHfZRTe2JfLKrgMxsM4Miu_x002B_YTpDIglxtZNM_x002F_Bt1dz1MeQYB_x002F_7eJd6E5pxxa167F78Zk6Xr3LauJkJDLGzUpwWh_x002F_Ik43_x002F_OsdvLVaGTtYGRp1Prr3D_x002F_Jnzvb2FpJxnBnEv3J9w_x002B_FsbXGUudyPtuABG86_x002B_eodxE7RDFcwGm9C_x002B_dKPD9aZMeCcUQmzhCXwv9kyLCt90bjMiHClgzs4bqlQ8bRLCkEXVCvqM4nk0LF0wTgnUXnYJKmp78V7OzLkz9825_x002F_pPM_x002F_al5NcWvpStwYvuIdiez4WUTAyh11jxV9C19sNbiEJ304Y13IFhSVXxsN_x002F_rc5Cpi_x002B_F5Rt1_x002F_UHCYJvMSPtFNomoBMQYCxJWhhHzsqK0WyyZKKX5oNZaiqJznLwu3098QhkwO6PPA2upWtJa5ngu0DCXZV2IuTcbOVrpm6eil3mMiogd15mHnnGhfKhGLqbUH19VAHa7a7wuOq4aIm7_x002B_RRbuwClhXjWMFnFl51RqbJZGJAlFWBpbn_x002B_bCx2gW4gssFKVgyFtNjno7i2MUC7OH22nL2RJLPsd9N37TjWDIrIrZlcCNjdBqvkdDmDENOa5yJylS3aCp_x002F_DC9Jhx8jKUF_x002F_JTuK04Ajkqv7ogrxy9Kv_x002B_g1JAv8BW6QXEuQzdxLt1s_x002B_NAsEph3Mm4wWxZ1VMO_x002F_i6SsSPTYs6F9hdCrEDVerXvRtPLAVzKkNBaosaPfWqMSat1lud8PC0kfSRugCwwIEtiGFNYR23_x002B_sj_x002F_zUq9m9tBB8Zlo2eELPLQy5dTlKBwP0regBsey0OfH3znVTg1L5FYNec3qxEGgMKvQmpdMHVQdQp2yKzZXvB0k50kF_x002F_A_x002F_rGQmlmXYqguvRHwHXAwN57ZCBnX02UQ2c238Zn2mrmeKFyDpTCdAAZgsSlBN7bu0IVuFzCirMucOArO7tvpuiKC5F2FUWpceSn6CQ1dyeVFNK8eIgMvFdlBFwAVBQgoUXPU9HjYAIGf3luffW134BznfPXEL5oWq6XArxDpimYrkdp3ST0fni4I0jnlYTpN6moMj_x002F_OzzXp_x002F_OSSy4_x002B_U4bDi4ZQCnR80jhRUZReVhZClD7cnCTfVXoKW7_x002F_aeofDb5ELnw9FqCRjRG9RA22HWw_x002F_eflwXdoT9sfoW7CBRx5yHlI185y6BUA_x002B_v0fk28xcQ8pUJcWntQzL1GWZqeThmrBX6Pn8jE6PxHShz4qC0V_x002B_J0_x002B_cua8dXBKaXPa_x002F__x002B_VPxTZrgLqV2XkGJxx_x002F_KtTnU3Pvqd39SaKNMy82m4NzVUoYgfSA3um1Q5LTWksw4PwFYFtcJ8cuPmWLNVFJmALSAVwayPK5HxgWfW5SeNcUv_x002F_UZ_x002B_zyHUmkdvnttgktbwhktRT2fUF2ADR9tq5T8JAeVSBbewW_x002B_s71eOiNU9WpW2LAt_x002F_qkrfGdDZ2UCiLxdtidy_x002B_L0NtQSlVYMIMegZshd5qjWz_x002F_fQ3WY6VBFgUDmuZ1_x002B_aE7we3zIKf05DzARM1WUjJJxgz7mNMmjMx_x002F_e2JiM22AUp_x002F_ty_x002F_zt7bszi2bPSKzr825X_x002B_igspE2kBUtvCSfxAN2TxXbIr_x002F_wdmrLi6n9TNQGJML52bra7P_x002F_DbpxAGpupnBXDrd26_x002F_UAcFulNBq34i_x002B_8J1EN8iy0vXd5JtPr2kk2CwFxXr6RlKbNAVWBaKkl8VtXB4iao2vTgg1eGysSMJ1ov7oGKq9fhnJZaXkDMlBATul37OZ5qOMjRJxX4dpA8t2yuPZP3N_x002B_YpeqkLs9v7HHzbnFGPgAHBLxCxGGf81eQ2mBc3FlHz5V_x002B_tDd7wRONK615ux62boXbNOxe1mDv</value>
+    </Resources>
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="45" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="11">
+        <Text30 Ref="46" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10,4.3,0.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+          <Text>{Labels.n0261}: {Variables.username}, {Variables.date}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text30>
+        <Text31 Ref="47" type="Text" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,10,1.5,0.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+          <Text>{Labels.n0262} {PageNumber} {Labels.n0263} {TotalPageCount}</Text>
+          <TextBrush>[0:0:0]</TextBrush>
+          <Type>Expression</Type>
+        </Text31>
+        <ReportTitleBand1 Ref="48" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,1.7</ClientRectangle>
+          <Components isList="true" count="13">
+            <Text4 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,3.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Variables.entity} ({Variables.abbreviation})</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="50" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,1,0.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Count(Datadata_resultTest)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+            </Text5>
+            <Text6 Ref="51" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,1.3,0.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>75122629764e4726a83066322265fd6b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Count(Datadata)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+            </Text6>
+            <Text7 Ref="52" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.1,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{IIF(Variables.rangetype== 1,Labels.n0073, Labels.n0075)}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="53" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.3,1.1,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{IIF(Variables.rangetype== 1,Labels.n0074, Labels.n0076)}:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text9 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.2,1,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Labels.n0101}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="55" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.2,1.3,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>68fc9985973e4360bd06106ac093c07b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Labels.n0100}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="56" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,7.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>4de91939ca7349c78fe71c98b2bc27c7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{ToUpperCase(Labels.n0023)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="57" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,1.1,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Variables.rangeInit}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="58" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,1.1,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>006146dcfb6d498f96697b39c9b1e4a0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Variables.rangeEnd}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text13>
+            <Text14 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>6ce0f6b2ea8447faa06e0d5d7dfa05ba</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Labels.n0364}: </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text14>
+            <Text29 Ref="60" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,1.4,3.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>65143113330b4dff96a3ae05d81e116e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Variables.typeFilter}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+            </Text29>
+            <Text36 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,2.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="45" />
+              <Parent isRef="48" />
+              <Text>{Labels.n0374}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text36>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+        </ReportTitleBand1>
+        <GroupHeaderBand1 Ref="62" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.3,7.72,0.8</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text3 Ref="63" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,7.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="45" />
+              <Parent isRef="62" />
+              <Text>{Switch(data_resultTest.currentState == 1,Labels.n0165, 
+data_resultTest.currentState == 2, Labels.n0365,
+data_resultTest.currentState == 3,Labels.n0366,
+data_resultTest.currentState == 4,Labels.n0359,
+data_resultTest.currentState == 5,Labels.n0358)}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text15 Ref="64" type="Text" isKey="true">
+              <Border>Top, Bottom;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="45" />
+              <Parent isRef="62" />
+              <Text>{Labels.n0110}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+            </Text15>
+            <Text16 Ref="65" type="Text" isKey="true">
+              <Border>Top, Bottom;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0.6,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="45" />
+              <Parent isRef="62" />
+              <Text>{Labels.n0117}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+            </Text16>
+            <Text17 Ref="66" type="Text" isKey="true">
+              <Border>Top, Bottom;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,0.6,2.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="45" />
+              <Parent isRef="62" />
+              <Text>{Labels.n0118}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+            </Text17>
+            <Text18 Ref="67" type="Text" isKey="true">
+              <Border>Top, Bottom;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.1,0.6,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="45" />
+              <Parent isRef="62" />
+              <Text>{Labels.n0124}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+            </Text18>
+            <Text19 Ref="68" type="Text" isKey="true">
+              <Border>Top, Bottom;[0:176:240];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.4,0.6,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="45" />
+              <Parent isRef="62" />
+              <Text>{Labels.n0102}</Text>
+              <TextBrush>[0:176:240]</TextBrush>
+            </Text19>
+          </Components>
+          <Condition>{data_resultTest.currentState}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+        </GroupHeaderBand1>
+        <GroupHeaderBand2 Ref="69" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.5,7.72,0.5</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text1 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>0,0,5,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{data_resultTest.order}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text20 Ref="71" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0.3,3.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <Margins>0,0,0,2</Margins>
+              <Name>Text20</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{Labels.n0013}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="72" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{Labels.n0289}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text22 Ref="73" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.1,0.3,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{Labels.n0125}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text25 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,0,2.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{data_resultTest.Relation.name1} {data_resultTest.Relation.name2} {data_resultTest.Relation.lastName} {data_resultTest.Relation.surName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text25>
+            <Text26 Ref="75" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{data_resultTest.Relation.patientId}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+            </Text26>
+            <Text27 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.1,0,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{data_resultTest.Relation.sex}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text27>
+            <Text28 Ref="77" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.4,0,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{data_resultTest.Relation.birthday}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+            </Text28>
+            <Text37 Ref="78" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,0.3,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <Guid>8bbeb396bb7b436ebe3242fa3a5b8817</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <Text>{Labels.n0323}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <HorizontalLinePrimitive1 Ref="79" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.2,7.7,0.01</ClientRectangle>
+              <Color>0, 176, 240</Color>
+              <EndCap Ref="80" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <StartCap Ref="81" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="82" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>1.1,0.5,6.6,0.01</ClientRectangle>
+              <Color>208, 206, 206</Color>
+              <EndCap Ref="83" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="45" />
+              <Parent isRef="69" />
+              <StartCap Ref="84" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Condition>{data_resultTest.order}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+        </GroupHeaderBand2>
+        <Datadata_resultTest Ref="85" type="DataBand" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CalcInvisible>True</CalcInvisible>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,4.4,7.72,0.2</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text2 Ref="86" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0,3.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,5</Margins>
+              <Name>Text2</Name>
+              <Page isRef="45" />
+              <Parent isRef="85" />
+              <Text>{data_resultTest.testCode. data_resultTest.testName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text23 Ref="87" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,5</Margins>
+              <Name>Text23</Name>
+              <Page isRef="45" />
+              <Parent isRef="85" />
+              <Text>{data_resultTest.result}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="88" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.1,0,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,5,5</Margins>
+              <Name>Text24</Name>
+              <Page isRef="45" />
+              <Parent isRef="85" />
+              <Text>{data_resultTest.unit}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Image1 Ref="89" type="Image" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,0,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>_x007B_data_resultTest.pathology_x0020__x003D__x003D__x0020_0_x007D_,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <HorAlignment>Center</HorAlignment>
+              <ImageBytes>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAjVBMVEUAAAD/ABD/AAz/AA3/
+AAv/AA3/AAz/ABL/AAD/AAz/AAv/AAv/AAz/AAr/AAr/AAz/AAz/AAz/AAz/AA3/AA3/AAz/AAz/
+ABT/AAz/AAD/AAz/AAv/AAz/AA3/AAz/AAv/AAn/AAz/AAz/AAz/AAz/AA3/AA//AA7/AA3/AAr/
+AA3/AA3/AAz/AA0AAACyS3EMAAAALnRSTlMAEJeinD3mDgTSW3HBNBntLKumjaNB5Q2bBdZZkna/
+FxzvKmdriyIkzEooUdHg8XfpLgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAH
+dElNRQfiBwUPCDoXLyiMAAAAiklEQVQY022PxxKCQBBEm5zzkjOIguD//567KLiW9uHNvD5M1QD/
+I4ii8FVIsizxrqiapiof1w0TMA39LCwbjgPbOtz1fAQBfM99F2EEEAJE4cvjJAWyDEiTmHlelJRV
+RVEWOWXdsLptGZsa6PqBreOFceg7kGk/dL3tYyKYlzuXZca6Pbhs68/fT0TTCxHuc6kdAAAAJXRF
+WHRkYXRlOmNyZWF0ZQAyMDE4LTA3LTA1VDE1OjA4OjU4KzAyOjAwsay1iwAAACV0RVh0ZGF0ZTpt
+b2RpZnkAMjAxOC0wNy0wNVQxNTowODo1OCswMjowMMDxDTcAAAAZdEVYdFNvZnR3YXJlAHd3dy5p
+bmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image1</Name>
+              <Page isRef="45" />
+              <Parent isRef="85" />
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>data_resultTest</DataSourceName>
+          <Filters isList="true" count="0" />
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetails>KeepDetailsTogether</KeepDetails>
+          <KeepGroupTogether>True</KeepGroupTogether>
+          <Name>Datadata_resultTest</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+          <Sort isList="true" count="0" />
+        </Datadata_resultTest>
+        <ChildBand1 Ref="90" type="ChildBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,5,7.72,0.2</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text38 Ref="91" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>1.2,0,6.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest.hasObservationResult,EqualTo,false,,Boolean,[255:255:255],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8,Bold</Font>
+              <Guid>3af9e0cdfb4d49d0bbedabd18a79443b</Guid>
+              <LineSpacing>0.2</LineSpacing>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="45" />
+              <Parent isRef="90" />
+              <Text>{Labels.n0739}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+            <Text32 Ref="92" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,0.2,2.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest.hasTemplate,EqualTo,false,,Boolean,[255:255:255],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8,Bold</Font>
+              <Guid>312935d8c23a4324b626dffea815b6a6</Guid>
+              <Margins>0,0,2,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="45" />
+              <Parent isRef="90" />
+              <Text>{Labels.n0289}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text35 Ref="93" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.3,0.2,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest.hasTemplate,EqualTo,false,,Boolean,[255:255:255],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8,Bold</Font>
+              <Guid>648ed0065fa84c13b76954354a87180e</Guid>
+              <Margins>0,0,2,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="45" />
+              <Parent isRef="90" />
+              <Text>Resultado normal</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ChildBand1</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+        </ChildBand1>
+        <GroupFooterBand1 Ref="94" type="GroupFooterBand" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+          <Brush>Transparent</Brush>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,5.6,7.72,0.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text40 Ref="95" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,7.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="45" />
+              <Parent isRef="94" />
+              <Text>{data_resultTest.Relation3.comment}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text40>
+            <Text34 Ref="96" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest.Relation3.comment,EqualTo,,,String,[255:0:0],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8,Bold| Italic</Font>
+              <Guid>56c7d7295c32496387b3e6f0b21c71f4</Guid>
+              <Margins>0,0,0,2</Margins>
+              <Name>Text34</Name>
+              <Page isRef="45" />
+              <Parent isRef="94" />
+              <Text>{Labels.n0465}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+        </GroupFooterBand1>
+        <Datadata_resultTest2 Ref="97" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,6.4,7.72,0.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text33 Ref="98" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>1.7,0,6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,10</Margins>
+              <Name>Text33</Name>
+              <Page isRef="45" />
+              <Parent isRef="97" />
+              <ShrinkFontToFit>True</ShrinkFontToFit>
+              <Text>{data_resultTest_resultComment.comment}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>data_resultTest_resultComment</DataSourceName>
+          <Filters isList="true" count="2">
+            <value>order,EqualTo,data_resultTest.order,,Expression</value>
+            <value>testId,EqualTo,data_resultTest.testId,,Expression</value>
+          </Filters>
+          <MasterComponent isRef="85" />
+          <Name>Datadata_resultTest2</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+          <Sort isList="true" count="0" />
+        </Datadata_resultTest2>
+        <Datadata_resultTest_optionsTemplate Ref="99" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,7,7.72,0.2</ClientRectangle>
+          <Components isList="true" count="3">
+            <Datadata_resultTest_optionsTemplate_option Ref="100" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.7,0,2.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest_optionsTemplate.option,IsNull,false,,Expression,[255:255:255],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>10,0,2,0</Margins>
+              <Name>Datadata_resultTest_optionsTemplate_option</Name>
+              <Page isRef="45" />
+              <Parent isRef="99" />
+              <Text>{data_resultTest_optionsTemplate.option}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Datadata_resultTest_optionsTemplate_option>
+            <Datadata_resultTest_optionsTemplate_result Ref="101" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.9,0,2.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest_optionsTemplate.option,IsNull,,,Expression,[255:255:255],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <Margins>10,0,2,0</Margins>
+              <Name>Datadata_resultTest_optionsTemplate_result</Name>
+              <Page isRef="45" />
+              <Parent isRef="99" />
+              <Text>{data_resultTest_optionsTemplate.result}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Datadata_resultTest_optionsTemplate_result>
+            <Text39 Ref="102" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.3,0,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>data_resultTest_optionsTemplate.option,IsNull,,,Expression,[255:255:255],Transparent,Arial_x002C_8,False,False,,,None</value>
+              </Conditions>
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>d7cf9f5df8854c4ab0f670796e6f27b5</Guid>
+              <Margins>10,0,2,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="45" />
+              <Parent isRef="99" />
+              <Text>{data_resultTest_optionsTemplate.normalResult}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+            </Text39>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>data_resultTest_optionsTemplate</DataSourceName>
+          <Filters isList="true" count="2">
+            <value>order,EqualTo,data_resultTest.order,,Expression</value>
+            <value>idTest,EqualTo,data_resultTest.testId,,Expression</value>
+          </Filters>
+          <MasterComponent isRef="85" />
+          <Name>Datadata_resultTest_optionsTemplate</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+          <Sort isList="true" count="0" />
+        </Datadata_resultTest_optionsTemplate>
+        <Datadata Ref="103" type="DataBand" isKey="true">
+          <Border>None;Black;2;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CalcInvisible>True</CalcInvisible>
+          <CanBreak>True</CanBreak>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,7.6,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataSourceName>data</DataSourceName>
+          <Filters isList="true" count="0" />
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetails>KeepDetailsTogether</KeepDetails>
+          <KeepGroupTogether>True</KeepGroupTogether>
+          <Name>Datadata</Name>
+          <Page isRef="45" />
+          <Parent isRef="45" />
+          <PrintAtBottom>True</PrintAtBottom>
+          <PrintIfDetailEmpty>True</PrintIfDetailEmpty>
+          <PrintOnAllPages>True</PrintOnAllPages>
+          <ResetPageNumber>True</ResetPageNumber>
+          <Sort isList="true" count="0" />
+          <UseParentStyles>True</UseParentStyles>
+        </Datadata>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>a008cdc03fc1426e93db917ca41a3c79</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="104" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="105" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/24/2017 3:40:17 PM</ReportChanged>
+  <ReportCreated>11/24/2017 3:40:17 PM</ReportCreated>
+  <ReportGuid>9c464de478a044c6a412dc34718f1a18</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2018.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="106" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Style1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>

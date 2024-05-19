@@ -1,0 +1,44 @@
+{
+   "Variables":[
+      {
+         "entity":"CLTECH",
+         "abbreviation":"CLT",
+         "username":"adiaz",
+         "date":"2017/10/20a",         
+		 "patient": "DIEGO FERNANDO CORTES PLAZAS"
+      }
+   ],
+   "data":[{
+         "id":"1",         
+         "requirement":"DEBE VENIR EL PACIENTE EN AYUNAS"         
+      }, {
+         "id":"2",         
+         "requirement":"PRIMERA MUESTRA DE ORINA"
+      }, {
+         "id":"3",         
+         "requirement":"SIN RELACIONES SEXUALES POR UNA SEMANA"         
+      }
+   ],
+   "Labels":[
+      {
+         "0260":"listado Activación de ordenes",
+         "ACCOUNT":"CLTECH (Clinical Laboratory Technology)",
+         "0001":"Usuario",
+		 "0110":"Orden",
+         "0117":"Historia",
+         "0234":"Primer apellido",
+	     "0235":"Segundo apellido",
+		 "0236":"Primer nombre",
+		 "0237":"Segundo nombre",
+		 "0120":"Fecha nacimiento",
+		 "0102":"Edad",
+		 "0135":"Correo",
+		 "0325":"Fecha",
+		 "0098":"Código",
+		 "0459":"Prueba",
+		 "0393":"Entregar",	
+		 "0476":"Días",
+		 "0398":"Paciente"
+      }
+   ]
+}

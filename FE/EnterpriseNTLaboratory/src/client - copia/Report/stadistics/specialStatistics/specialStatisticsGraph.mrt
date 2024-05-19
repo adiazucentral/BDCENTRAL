@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <specialStatisticsGraph Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>specialStatisticsGraph</Alias>
+        <Key />
+        <Name>specialStatisticsGraph</Name>
+        <PathData>resource://specialStatisticsGraph</PathData>
+      </specialStatisticsGraph>
+    </Databases>
+    <DataSources isList="true" count="3">
+      <data Ref="3" type="DataTableSource" isKey="true">
+        <Alias>data</Alias>
+        <Columns isList="true" count="5">
+          <value>min,System.Double</value>
+          <value>max,System.Double</value>
+          <value>serie,System.String</value>
+          <value>cantwomen,System.Double</value>
+          <value>cantmen,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>data</Name>
+        <NameInSource>specialStatisticsGraph.data</NameInSource>
+      </data>
+      <Variables Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Variables</Alias>
+        <Columns isList="true" count="9">
+          <value>entity,System.String</value>
+          <value>abbreviation,System.String</value>
+          <value>rangeInit,System.String</value>
+          <value>rangeEnd,System.String</value>
+          <value>rangeType,System.Double</value>
+          <value>typeFilter,System.String</value>
+          <value>username,System.String</value>
+          <value>date,System.String</value>
+          <value>test,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Variables</Name>
+        <NameInSource>specialStatisticsGraph.Variables</NameInSource>
+      </Variables>
+      <Labels Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Labels</Alias>
+        <Columns isList="true" count="481">
+          <value>_x0030_000,System.String</value>
+          <value>_x0030_001,System.String</value>
+          <value>_x0030_002,System.String</value>
+          <value>_x0030_003,System.String</value>
+          <value>_x0030_004,System.String</value>
+          <value>_x0030_005,System.String</value>
+          <value>_x0030_006,System.String</value>
+          <value>_x0030_007,System.String</value>
+          <value>_x0030_008,System.String</value>
+          <value>_x0030_009,System.String</value>
+          <value>_x0030_010,System.String</value>
+          <value>_x0030_011,System.String</value>
+          <value>_x0030_012,System.String</value>
+          <value>_x0030_013,System.String</value>
+          <value>_x0030_014,System.String</value>
+          <value>_x0030_015,System.String</value>
+          <value>_x0030_016,System.String</value>
+          <value>_x0030_017,System.String</value>
+          <value>_x0030_018,System.String</value>
+          <value>_x0030_019,System.String</value>
+          <value>_x0030_020,System.String</value>
+          <value>_x0030_021,System.String</value>
+          <value>_x0030_022,System.String</value>
+          <value>_x0030_023,System.String</value>
+          <value>_x0030_024,System.String</value>
+          <value>_x0030_025,System.String</value>
+          <value>_x0030_026,System.String</value>
+          <value>_x0030_027,System.String</value>
+          <value>_x0030_028,System.String</value>
+          <value>_x0030_029,System.String</value>
+          <value>_x0030_030,System.String</value>
+          <value>_x0030_031,System.String</value>
+          <value>_x0030_032,System.String</value>
+          <value>_x0030_033,System.String</value>
+          <value>_x0030_034,System.String</value>
+          <value>_x0030_035,System.String</value>
+          <value>_x0030_036,System.String</value>
+          <value>_x0030_037,System.String</value>
+          <value>_x0030_038,System.String</value>
+          <value>_x0030_039,System.String</value>
+          <value>_x0030_040,System.String</value>
+          <value>_x0030_041,System.String</value>
+          <value>_x0030_042,System.String</value>
+          <value>_x0030_043,System.String</value>
+          <value>_x0030_044,System.String</value>
+          <value>_x0030_045,System.String</value>
+          <value>_x0030_046,System.String</value>
+          <value>_x0030_047,System.String</value>
+          <value>_x0030_048,System.String</value>
+          <value>_x0030_049,System.String</value>
+          <value>_x0030_050,System.String</value>
+          <value>_x0030_051,System.String</value>
+          <value>_x0030_052,System.String</value>
+          <value>_x0030_053,System.String</value>
+          <value>_x0030_054,System.String</value>
+          <value>_x0030_055,System.String</value>
+          <value>_x0030_056,System.String</value>
+          <value>_x0030_057,System.String</value>
+          <value>_x0030_058,System.String</value>
+          <value>_x0030_059,System.String</value>
+          <value>_x0030_060,System.String</value>
+          <value>_x0030_061,System.String</value>
+          <value>_x0030_062,System.String</value>
+          <value>_x0030_063,System.String</value>
+          <value>_x0030_064,System.String</value>
+          <value>_x0030_065,System.String</value>
+          <value>_x0030_066,System.String</value>
+          <value>_x0030_067,System.String</value>
+          <value>_x0030_068,System.String</value>
+          <value>_x0030_069,System.String</value>
+          <value>_x0030_070,System.String</value>
+          <value>_x0030_071,System.String</value>
+          <value>_x0030_072,System.String</value>
+          <value>_x0030_073,System.String</value>
+          <value>_x0030_074,System.String</value>
+          <value>_x0030_075,System.String</value>
+          <value>_x0030_076,System.String</value>
+          <value>_x0030_077,System.String</value>
+          <value>_x0030_078,System.String</value>
+          <value>_x0030_079,System.String</value>
+          <value>_x0030_080,System.String</value>
+          <value>_x0030_081,System.String</value>
+          <value>_x0030_082,System.String</value>
+          <value>_x0030_083,System.String</value>
+          <value>_x0030_084,System.String</value>
+          <value>_x0030_085,System.String</value>
+          <value>_x0030_086,System.String</value>
+          <value>_x0030_087,System.String</value>
+          <value>_x0030_088,System.String</value>
+          <value>_x0030_089,System.String</value>
+          <value>_x0030_090,System.String</value>
+          <value>_x0030_091,System.String</value>
+          <value>_x0030_092,System.String</value>
+          <value>_x0030_093,System.String</value>
+          <value>_x0030_094,System.String</value>
+          <value>_x0030_095,System.String</value>
+          <value>_x0030_096,System.String</value>
+          <value>_x0030_097,System.String</value>
+          <value>_x0030_098,System.String</value>
+          <value>_x0030_099,System.String</value>
+          <value>_x0030_100,System.String</value>
+          <value>_x0030_101,System.String</value>
+          <value>_x0030_102,System.String</value>
+          <value>_x0030_103,System.String</value>
+          <value>_x0030_106,System.String</value>
+          <value>_x0030_107,System.String</value>
+          <value>_x0030_108,System.String</value>
+          <value>_x0030_109,System.String</value>
+          <value>_x0030_110,System.String</value>
+          <value>_x0030_111,System.String</value>
+          <value>_x0030_112,System.String</value>
+          <value>_x0030_113,System.String</value>
+          <value>_x0030_114,System.String</value>
+          <value>_x0030_115,System.String</value>
+          <value>_x0030_116,System.String</value>
+          <value>_x0030_117,System.String</value>
+          <value>_x0030_118,System.String</value>
+          <value>_x0030_119,System.String</value>
+          <value>_x0030_120,System.String</value>
+          <value>_x0030_121,System.String</value>
+          <value>_x0030_122,System.String</value>
+          <value>_x0030_123,System.String</value>
+          <value>_x0030_124,System.String</value>
+          <value>_x0030_125,System.String</value>
+          <value>_x0030_126,System.String</value>
+          <value>_x0030_127,System.String</value>
+          <value>_x0030_128,System.String</value>
+          <value>_x0030_129,System.String</value>
+          <value>_x0030_130,System.String</value>
+          <value>_x0030_131,System.String</value>
+          <value>_x0030_132,System.String</value>
+          <value>_x0030_133,System.String</value>
+          <value>_x0030_134,System.String</value>
+          <value>_x0030_135,System.String</value>
+          <value>_x0030_136,System.String</value>
+          <value>_x0030_137,System.String</value>
+          <value>_x0030_138,System.String</value>
+          <value>_x0030_139,System.String</value>
+          <value>_x0030_140,System.String</value>
+          <value>_x0030_141,System.String</value>
+          <value>_x0030_142,System.String</value>
+          <value>_x0030_143,System.String</value>
+          <value>_x0030_144,System.String</value>
+          <value>_x0030_145,System.String</value>
+          <value>_x0030_146,System.String</value>
+          <value>_x0030_147,System.String</value>
+          <value>_x0030_148,System.String</value>
+          <value>_x0030_149,System.String</value>
+          <value>_x0030_150,System.String</value>
+          <value>_x0030_151,System.String</value>
+          <value>_x0030_152,System.String</value>
+          <value>_x0030_153,System.String</value>
+          <value>_x0030_154,System.String</value>
+          <value>_x0030_155,System.String</value>
+          <value>_x0030_156,System.String</value>
+          <value>_x0030_157,System.String</value>
+          <value>_x0030_158,System.String</value>
+          <value>_x0030_159,System.String</value>
+          <value>_x0030_160,System.String</value>
+          <value>_x0030_161,System.String</value>
+          <value>_x0030_162,System.String</value>
+          <value>_x0030_163,System.String</value>
+          <value>_x0030_164,System.String</value>
+          <value>_x0030_165,System.String</value>
+          <value>_x0030_166,System.String</value>
+          <value>_x0030_167,System.String</value>
+          <value>_x0030_168,System.String</value>
+          <value>_x0030_169,System.String</value>
+          <value>_x0030_170,System.String</value>
+          <value>_x0030_171,System.String</value>
+          <value>_x0030_172,System.String</value>
+          <value>_x0030_173,System.String</value>
+          <value>_x0030_174,System.String</value>
+          <value>_x0030_175,System.String</value>
+          <value>_x0030_176,System.String</value>
+          <value>_x0030_177,System.String</value>
+          <value>_x0030_178,System.String</value>
+          <value>_x0030_179,System.String</value>
+          <value>_x0030_180,System.String</value>
+          <value>_x0030_181,System.String</value>
+          <value>_x0030_182,System.String</value>
+          <value>_x0030_183,System.String</value>
+          <value>_x0030_184,System.String</value>
+          <value>_x0030_185,System.String</value>
+          <value>_x0030_186,System.String</value>
+          <value>_x0030_187,System.String</value>
+          <value>_x0030_188,System.String</value>
+          <value>_x0030_189,System.String</value>
+          <value>_x0030_190,System.String</value>
+          <value>_x0030_191,System.String</value>
+          <value>_x0030_192,System.String</value>
+          <value>_x0030_193,System.String</value>
+          <value>_x0030_194,System.String</value>
+          <value>_x0030_195,System.String</value>
+          <value>_x0030_196,System.String</value>
+          <value>_x0030_197,System.String</value>
+          <value>_x0030_198,System.String</value>
+          <value>_x0030_199,System.String</value>
+          <value>_x0030_200,System.String</value>
+          <value>_x0030_201,System.String</value>
+          <value>_x0030_202,System.String</value>
+          <value>_x0030_203,System.String</value>
+          <value>_x0030_204,System.String</value>
+          <value>_x0030_205,System.String</value>
+          <value>_x0030_206,System.String</value>
+          <value>_x0030_207,System.String</value>
+          <value>_x0030_208,System.String</value>
+          <value>_x0030_209,System.String</value>
+          <value>_x0030_210,System.String</value>
+          <value>_x0030_211,System.String</value>
+          <value>_x0030_212,System.String</value>
+          <value>_x0030_213,System.String</value>
+          <value>_x0030_214,System.String</value>
+          <value>_x0030_215,System.String</value>
+          <value>_x0030_216,System.String</value>
+          <value>_x0030_217,System.String</value>
+          <value>_x0030_218,System.String</value>
+          <value>_x0030_219,System.String</value>
+          <value>_x0030_220,System.String</value>
+          <value>_x0030_221,System.String</value>
+          <value>_x0030_222,System.String</value>
+          <value>_x0030_223,System.String</value>
+          <value>_x0030_224,System.String</value>
+          <value>_x0030_225,System.String</value>
+          <value>_x0030_226,System.String</value>
+          <value>_x0030_227,System.String</value>
+          <value>_x0030_228,System.String</value>
+          <value>_x0030_229,System.String</value>
+          <value>_x0030_230,System.String</value>
+          <value>_x0030_231,System.String</value>
+          <value>_x0030_232,System.String</value>
+          <value>_x0030_233,System.String</value>
+          <value>_x0030_234,System.String</value>
+          <value>_x0030_235,System.String</value>
+          <value>_x0030_236,System.String</value>
+          <value>_x0030_237,System.String</value>
+          <value>_x0030_238,System.String</value>
+          <value>_x0030_239,System.String</value>
+          <value>_x0030_240,System.String</value>
+          <value>_x0030_241,System.String</value>
+          <value>_x0030_242,System.String</value>
+          <value>_x0030_243,System.String</value>
+          <value>_x0030_244,System.String</value>
+          <value>_x0030_245,System.String</value>
+          <value>_x0030_246,System.String</value>
+          <value>_x0030_247,System.String</value>
+          <value>_x0030_248,System.String</value>
+          <value>_x0030_249,System.String</value>
+          <value>_x0030_250,System.String</value>
+          <value>_x0030_251,System.String</value>
+          <value>_x0030_252,System.String</value>
+          <value>_x0030_253,System.String</value>
+          <value>_x0030_254,System.String</value>
+          <value>_x0030_255,System.String</value>
+          <value>_x0030_256,System.String</value>
+          <value>_x0030_257,System.String</value>
+          <value>_x0030_258,System.String</value>
+          <value>_x0030_259,System.String</value>
+          <value>_x0030_260,System.String</value>
+          <value>_x0030_261,System.String</value>
+          <value>_x0030_262,System.String</value>
+          <value>_x0030_263,System.String</value>
+          <value>_x0030_264,System.String</value>
+          <value>_x0030_265,System.String</value>
+          <value>_x0030_266,System.String</value>
+          <value>_x0030_267,System.String</value>
+          <value>_x0030_268,System.String</value>
+          <value>_x0030_269,System.String</value>
+          <value>_x0030_270,System.String</value>
+          <value>_x0030_271,System.String</value>
+          <value>_x0030_272,System.String</value>
+          <value>_x0030_273,System.String</value>
+          <value>_x0030_274,System.String</value>
+          <value>_x0030_275,System.String</value>
+          <value>_x0030_276,System.String</value>
+          <value>_x0030_277,System.String</value>
+          <value>_x0030_278,System.String</value>
+          <value>_x0030_279,System.String</value>
+          <value>_x0030_280,System.String</value>
+          <value>_x0030_281,System.String</value>
+          <value>_x0030_282,System.String</value>
+          <value>_x0030_283,System.String</value>
+          <value>_x0030_284,System.String</value>
+          <value>_x0030_285,System.String</value>
+          <value>_x0030_286,System.String</value>
+          <value>_x0030_287,System.String</value>
+          <value>_x0030_288,System.String</value>
+          <value>_x0030_289,System.String</value>
+          <value>_x0030_290,System.String</value>
+          <value>_x0030_291,System.String</value>
+          <value>_x0030_292,System.String</value>
+          <value>_x0030_293,System.String</value>
+          <value>_x0030_294,System.String</value>
+          <value>_x0030_295,System.String</value>
+          <value>_x0030_296,System.String</value>
+          <value>_x0030_297,System.String</value>
+          <value>_x0030_298,System.String</value>
+          <value>_x0030_299,System.String</value>
+          <value>_x0030_300,System.String</value>
+          <value>_x0030_301,System.String</value>
+          <value>_x0030_302,System.String</value>
+          <value>_x0030_303,System.String</value>
+          <value>_x0030_304,System.String</value>
+          <value>_x0030_305,System.String</value>
+          <value>_x0030_306,System.String</value>
+          <value>_x0030_307,System.String</value>
+          <value>_x0030_308,System.String</value>
+          <value>_x0030_309,System.String</value>
+          <value>_x0030_310,System.String</value>
+          <value>_x0030_311,System.String</value>
+          <value>_x0030_312,System.String</value>
+          <value>_x0030_313,System.String</value>
+          <value>_x0030_314,System.String</value>
+          <value>_x0030_315,System.String</value>
+          <value>_x0030_316,System.String</value>
+          <value>_x0030_317,System.String</value>
+          <value>_x0030_318,System.String</value>
+          <value>_x0030_319,System.String</value>
+          <value>_x0030_320,System.String</value>
+          <value>_x0030_321,System.String</value>
+          <value>_x0030_322,System.String</value>
+          <value>_x0030_323,System.String</value>
+          <value>_x0030_324,System.String</value>
+          <value>_x0030_325,System.String</value>
+          <value>_x0030_326,System.String</value>
+          <value>_x0030_327,System.String</value>
+          <value>_x0030_328,System.String</value>
+          <value>_x0030_329,System.String</value>
+          <value>_x0030_330,System.String</value>
+          <value>_x0030_331,System.String</value>
+          <value>_x0030_332,System.String</value>
+          <value>_x0030_333,System.String</value>
+          <value>_x0030_334,System.String</value>
+          <value>_x0030_335,System.String</value>
+          <value>_x0030_336,System.String</value>
+          <value>_x0030_337,System.String</value>
+          <value>_x0030_338,System.String</value>
+          <value>_x0030_339,System.String</value>
+          <value>_x0030_340,System.String</value>
+          <value>_x0030_341,System.String</value>
+          <value>_x0030_342,System.String</value>
+          <value>_x0030_343,System.String</value>
+          <value>_x0030_344,System.String</value>
+          <value>_x0030_345,System.String</value>
+          <value>_x0030_346,System.String</value>
+          <value>_x0030_347,System.String</value>
+          <value>_x0030_348,System.String</value>
+          <value>_x0030_349,System.String</value>
+          <value>_x0030_350,System.String</value>
+          <value>_x0030_351,System.String</value>
+          <value>_x0030_352,System.String</value>
+          <value>_x0030_353,System.String</value>
+          <value>_x0030_354,System.String</value>
+          <value>_x0030_355,System.String</value>
+          <value>_x0030_356,System.String</value>
+          <value>_x0030_357,System.String</value>
+          <value>_x0030_358,System.String</value>
+          <value>_x0030_359,System.String</value>
+          <value>_x0030_360,System.String</value>
+          <value>_x0030_361,System.String</value>
+          <value>_x0030_362,System.String</value>
+          <value>_x0030_363,System.String</value>
+          <value>_x0030_364,System.String</value>
+          <value>_x0030_365,System.String</value>
+          <value>_x0030_366,System.String</value>
+          <value>_x0030_367,System.String</value>
+          <value>_x0030_368,System.String</value>
+          <value>_x0030_369,System.String</value>
+          <value>_x0030_370,System.String</value>
+          <value>_x0030_371,System.String</value>
+          <value>_x0030_372,System.String</value>
+          <value>_x0030_373,System.String</value>
+          <value>_x0030_374,System.String</value>
+          <value>_x0030_375,System.String</value>
+          <value>_x0030_376,System.String</value>
+          <value>_x0030_377,System.String</value>
+          <value>_x0030_378,System.String</value>
+          <value>_x0030_379,System.String</value>
+          <value>_x0030_380,System.String</value>
+          <value>_x0030_381,System.String</value>
+          <value>_x0030_382,System.String</value>
+          <value>_x0030_383,System.String</value>
+          <value>_x0030_384,System.String</value>
+          <value>_x0030_385,System.String</value>
+          <value>_x0030_386,System.String</value>
+          <value>_x0030_387,System.String</value>
+          <value>_x0030_388,System.String</value>
+          <value>_x0030_389,System.String</value>
+          <value>_x0030_390,System.String</value>
+          <value>_x0030_391,System.String</value>
+          <value>_x0030_392,System.String</value>
+          <value>_x0030_393,System.String</value>
+          <value>_x0030_394,System.String</value>
+          <value>_x0030_395,System.String</value>
+          <value>_x0030_396,System.String</value>
+          <value>_x0030_397,System.String</value>
+          <value>_x0030_398,System.String</value>
+          <value>_x0030_399,System.String</value>
+          <value>_x0030_400,System.String</value>
+          <value>_x0030_401,System.String</value>
+          <value>_x0030_402,System.String</value>
+          <value>_x0030_403,System.String</value>
+          <value>_x0030_404,System.String</value>
+          <value>_x0030_405,System.String</value>
+          <value>_x0030_406,System.String</value>
+          <value>_x0030_407,System.String</value>
+          <value>_x0030_408,System.String</value>
+          <value>_x0030_409,System.String</value>
+          <value>_x0030_410,System.String</value>
+          <value>_x0030_411,System.String</value>
+          <value>_x0030_412,System.String</value>
+          <value>_x0030_413,System.String</value>
+          <value>_x0030_414,System.String</value>
+          <value>_x0030_415,System.String</value>
+          <value>_x0030_416,System.String</value>
+          <value>_x0030_417,System.String</value>
+          <value>_x0030_418,System.String</value>
+          <value>_x0030_419,System.String</value>
+          <value>_x0030_420,System.String</value>
+          <value>_x0030_421,System.String</value>
+          <value>_x0030_422,System.String</value>
+          <value>_x0030_423,System.String</value>
+          <value>_x0030_424,System.String</value>
+          <value>_x0030_425,System.String</value>
+          <value>_x0030_426,System.String</value>
+          <value>_x0030_427,System.String</value>
+          <value>_x0030_428,System.String</value>
+          <value>_x0030_429,System.String</value>
+          <value>_x0030_430,System.String</value>
+          <value>_x0030_431,System.String</value>
+          <value>_x0030_432,System.String</value>
+          <value>_x0030_433,System.String</value>
+          <value>_x0030_434,System.String</value>
+          <value>_x0030_435,System.String</value>
+          <value>_x0030_436,System.String</value>
+          <value>_x0030_437,System.String</value>
+          <value>_x0030_438,System.String</value>
+          <value>_x0030_439,System.String</value>
+          <value>_x0030_440,System.String</value>
+          <value>_x0030_441,System.String</value>
+          <value>_x0030_442,System.String</value>
+          <value>_x0030_443,System.String</value>
+          <value>_x0030_444,System.String</value>
+          <value>_x0030_445,System.String</value>
+          <value>_x0030_446,System.String</value>
+          <value>_x0030_447,System.String</value>
+          <value>_x0030_448,System.String</value>
+          <value>_x0030_449,System.String</value>
+          <value>_x0030_450,System.String</value>
+          <value>_x0030_451,System.String</value>
+          <value>_x0030_452,System.String</value>
+          <value>_x0030_453,System.String</value>
+          <value>_x0030_454,System.String</value>
+          <value>_x0030_455,System.String</value>
+          <value>_x0030_456,System.String</value>
+          <value>_x0030_457,System.String</value>
+          <value>_x0030_458,System.String</value>
+          <value>_x0030_459,System.String</value>
+          <value>_x0030_460,System.String</value>
+          <value>_x0030_461,System.String</value>
+          <value>_x0030_462,System.String</value>
+          <value>_x0030_463,System.String</value>
+          <value>_x0030_464,System.String</value>
+          <value>_x0030_465,System.String</value>
+          <value>_x0030_466,System.String</value>
+          <value>_x0030_467,System.String</value>
+          <value>_x0030_468,System.String</value>
+          <value>_x0030_469,System.String</value>
+          <value>_x0030_470,System.String</value>
+          <value>_x0030_471,System.String</value>
+          <value>_x0030_472,System.String</value>
+          <value>_x0030_473,System.String</value>
+          <value>_x0030_474,System.String</value>
+          <value>_x0030_475,System.String</value>
+          <value>_x0030_476,System.String</value>
+          <value>_x0030_477,System.String</value>
+          <value>_x0030_478,System.String</value>
+          <value>_x0030_479,System.String</value>
+          <value>_x0030_480,System.String</value>
+          <value>_x0030_481,System.String</value>
+          <value>_x0030_482,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Labels</Name>
+        <NameInSource>specialStatisticsGraph.Labels</NameInSource>
+      </Labels>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="1">
+      <value>Name=specialStatisticsGraph, Alias=specialStatisticsGraph, Type=Json, Content=YQVpP182FUySvN_x002B__x002B__x002F_kJT2C_x002F_Q5YsjynfC4mQ9lF5tMD54cTgCj0L6N7_x002B_cODcKQNyhpVelG6Us9dM4H9015q7dC_x002B_FMMc3QOvJGiTZQDl041eO1RJ1nWx8m1VimhOHvKmJwf7EoRlCBeuvLhHNQSTKZpA48JxrpeezURg4sNqHODm6QG7fk4BwRk1eKdtWTjrPrLX3sAA9Dqzb7OB5sdfogTWraBfqSToXuZ_x002B_m7dqiTLFdtGFim7lsyeR3Uiv08BK2lb3clZciSJr_x002B_0kCQnyBvBzeYxPo5g72VpiT8agrRUWHCCPKrpt5fFnpdSWMxqjP27_x002F_6iEP04pChVMOwU8uHV9yrnmyYK1AcqCrNyDaqRmDw_x002F_coZ_x002B_FPl4dl4kAE_x002B_nIgIZ4042MqMVm618fDO0H53DZUmMJARCHw8EgeaMCedvg8NRI104D2s_x002B_deEAcOi4BsrTk4DAL56eK141adp_x002F_IEURLKELhVAJBo5WFcHKFPz3e4M5AUXEETql16EwuEPyrRmmlXgEXXhqRZBm2P_x002B_EmXD_x002B_0buNKTD2KYc_x002F_DtQT0jgYgWse0QePDLNV0RsI7uhEC735uk_x002B_rAc1GgTvDQplkDQzhEmnEv2WTWrO4spoS_x002B_lsxyb0S_x002B_1YNA0M1ynjNWN_x002F__x002B_9r9y09SOQeHxan_x002F_A8OP82EWlnoWETXColyxfOMeGqEo8dhAWW0pt7qYMn0eNdIZgHnhQ4y6A8flQ_x002F_aKYKsP0BgfnV3h2Ml24BuSV2JlORKednkTlm9ajQJj_x002B_xoW3yUQij6oJrfGzhrk9yJCSOFSS8eRuNbgS_x002B_Z0nXa_x002B_knqgP_x002B_x8pwyUd9UGnetKbE4Vw2RSWkl3Bwozr53aIsBjVQvAdTHuZxi1BlPYFWm5qhJOnLMk0C_x002F_QLwQntUxI_x002B_uB0Y4_x002B_wP5jWGDQL7RmIeRocgiddlchyiq_x002F_qwNeUqmtsjuTaKaj4BffwMAoxHfvSssb_x002F__x002F_5tPstEext5wIyd0QEy3bU9cyV5X2Xg53AFxY1Z1Ijs9Vi1Em1D_x002F_ZHO_x002B_OjLIU0wxli6SQmRIQBKILSXuiPMBwaFu8pjXs_x002F_SbYLwwpaWDyE4Cr4Cr4tvYTArKURQvTLv5LlJB_x002F_bPq4uVH3PgCo2B_x002F_HnfmMoMDT3rBMiQP1ieq4TR6lT7kw_x002F_Q1KJoeMnqDHRh3hT6BjJ1bpavPrxTxPVDFhfSMD48UMbCATFqNrIYOlerDHILDqK5Vv_x002F_0S4wwwJgw6z6VFpeqpOUAyp6pUtGo7vXHocUnKVm1QlnOGkBU_x002F_0vxhID1s3k2pBzjYua6VY6N_x002F_Z8LNj_x002B_o1Uqd2yAVkXU0JAW_x002B_s2VUyO82M0jPflQnVCxtnXYIo89J5sn4ZGstYivFsz8JdemsmsdBtAfmDBGNPGz5J3V2XfIf0ee5y4s2zQYO1pED_x002B_zKThjoYtdeDNojs8VPt_x002F_1e78vCZP5NzxwN6QXPf_x002F_YSx76C_x002F_VfdJIpReGjQHKlUMjNF0Ie5VoN7ZZ7EQVa0ngz8g8gqm1P8CHhu0oOXwsAEojMJDjwxDMUv2mzpHXtFKiLickeLw7mkB1Lxi6sVdtPJQx9_x002F_fviNOjy_x002F_P8XzKCDlDaFWZ8Z_x002F_7IV4jmEAb7NzKBcy8Kvjq2rmwMDG5uD_x002F_c2K4Xb1lD3StH3iGbXT7GA95zRLtKm5vkaaGmt1Hupm98AEarWSRz6L2ri3J96puma48dvmLjq26ME9lHlEQZYH6G0xKSQ_x002B_a9sZufHj_x002B_0s4LI0CjqMpaw1S067qc0asHAlMVycv7kVRBFwWS_x002B_cfiETKikGhB_x002B_PwPDrBcEshkifo2zrBbd582snVg_x002B_d4GavlEkvJOZ8lSqw_x002B_qjuZJTOfuchfiUCyh0n5VL25kAUZLyhA5Xfwau7Wi_x002B_ax0kAIwSDKGkgVnnf7FO8LY0CTydGsIwKT1JuiYhCZWpKB4vffMxcyz_x002B_yAP7bMnqO4jQ5Lw06zCd6dV8Ndfh4Hd2neyTrA_x002B_s4GfvWivZXvTk8g96OuowsjmdAOlUSOtAc_x002F_b_x002B_gYEgl85beBJNDkYBfIt1yFP9FY0ONfgLq_x002F_BnNbHvnpS_x002B_cITSvrDFOFQT_x002B_TPuTaocsfOgATw3Rg5o8QkQv0WlqkNn5iuDHrngiItp54B8OhFXR1lb_x002F_pfL5H5pQ6JsuGHZzgOoyJn3PcgyGBjh9w_x002B_m7VqKcxuBDsAMWvUJuYvijUZJ_x002F_RXjQIyuyHK4JyHCv68JN1xw2Gei5SPKd0NWC2LxgIVv1HonEzfX0hne7DR3Co9Lm2NeDPJFKQbKf7u78_x002F_zL5f9W21tHhVXdWhDuQBRAU23LjA_x002F_6Ol2I75UyBV_x002B_8HgJEFUS_x002B_TD_x002B_0C6DDH_x002B_gzrz5pHjH3TEAyX4lXbsYGSEe2ncmLor8v3IkPAIyR9ImA5CHJvh_x002F_QAMkRvZlsRkjexLMqPyuc2hX6klBOGxej2BMB7iXV3MpEibZS_x002B__x002F_7yhOJ5DoTCCjoOS1zb_x002B_2XgW2q6olXhtxHBiBa8UuiMFcVizg3o48TuiBiYX1K4JOre6vEOl4Q4NmxpT8DgnRSwYuV9a_x002F_yOHcQuMGIl_x002F_vIig7Dpvk5fLJ8OpfB_x002F_DIHFC1ji9M3n6VgAnixYISJGRpSjgeB7O2B4hCqzUzb338qwz14vY9k56Ypvfk3QBjcpkwR0_x002F_JcCSuDSdkCbDkMyFA2ilv8AaWKsRVoVcFihH_x002F_iLO62ePwTRHAB55xud3usKL2frnBhHTatlCvTaJjcbKU9awP5nVQPfjPeIlOWxpx1otzDHs4Dg6oWssXhyfcW5B_x002F_g1wvYdPEEbEb8ltIz1_x002B_iUI0mGMcZFqhiEaFXhjAaZoisJtKc6z7yoootOkq4clC6vnUWyipLZBgsUIJLoxASQ2zSV87cHRinQ9pKDJZ1iQgIbJmj9Gj_x002F_Fp7K6ozGgZzvgLgzTQEldjiE3UWH6zGFNIQyuXlMSbiH8lcUriSo5eTtPbaB_x002F_VpIQRGZXtXUqSGnMZPtkofhEkPVHk_x002B_oD9SRONwDXlgbvUcPBMENOZfnEL1BHnWOrW7tUnJ_x002B_U1i1C93JSLyaW0ZF8LrE0JX6Gkwxu2awouqlzrduimb1FAb5FMLkYXGrCSD7geAvL_x002F_BnPJpT4oCm8zXei1z3_x002B_ErPS09RfOokkvisxYiN3GMLlxwPHsvxmEoRVTZlHg_x002B_1qTXLRveXbXn8BN2z_x002F_Mek1Bo0L9M4Jzw_x002B_lVspr_x002F_pSagGML4UGpV0ZeteFoNd1NytzYisNwda_x002B_0Kl_x002B_icWFXIDppG3_x002B_5WlgIXQECFsmNW6M_x002B_90Kd3RqZxNLd9ew2lKFcp_x002B_sT_x002B_z8e8QOXdyn1Vyu829VXqHLJBvRGdSW3_x002F_yPCjb2F8o_x002F_rDAZyW_x002B_zlG_x002B_C0ExL53IZqMxwTIcNxwyLP1rhdJwlyH32Nm8ZReC53LullIEZSeQviEtkQLISEIsJbFfW7DGAocOi1bK63dHhTGVNOB8FLrR5k9NaE64ttnYnad3dJk3zHt5_x002F_wxgdUmKmM4QTGCWvGOhO9G2pdj_x002F_x6coimKlLIGkaVgq2zeba5E_x002F_R8Eyu1OoooZOBDMj5OkOlzNsNoVaGGX3Q7Humvtzq8J1MMuEH_x002F_dZcDRJ6CR690Qhcatthod2PdzzbnciWvRqekPmHmFQDiVNYwbsyUVHuTzWR1RwA3dOIwuWQbWzY9YH1zEOwnPxFPygzIVanUD4f4X8DeWbHvpbwuzRQA7coqc7VrplbA2mrxLHKZ_x002F_aAPLUOsiMQTe7C8LVS01Xxji3SNNnM2Uzss_x002B_SbY32ygXgYesa_x002B_vgPVAkAvMwuv17ozM9k5aPWfQWjz9wnCHfHq7KHphHZKJj89EnmN354BMaP1iPQSKJ0jLsSnNV2vvZcdU6OB9NMStHa4TrZlNrMNPNFcgGVkkCAZUasRYcAz7B2Mmv6n6qkZlRyamCU8UNx00MFtn_x002B__x002F_xuHdDQm5UCp6jYHMJxvo6T0nIve00x14GOL_x002B_L8iN751iwAzubclAfEw2oZkouAD8j8vYCUEFoInQVOZs_x002B_m_x002B_OSjeaHvR6Q0eCCT51st7slXNcFQqc3xOFuSt5m7qXnDaRpXuc6XdFGKHQ7g5o_x002B_5S_x002B_bHJt3ET0Jfj8wdCDI9wlsE5PJkjQnodIV2vS9eWK_x002B_hNJBAUyvtskh8GXnYyjX53tApCy5VK5rPyaSXUOPn48VPawSLVR_x002B_fgslfehox_x002B_7n_x002B_JNLpD9j0ii8fzDxhhI1yHQ4rV_x002B_XnxHgUqvYTH6Sj7KT4XBKHOA76hsBm6rGJeaaeP1bUQvBOhr_x002F_DsmIJJfh4_x002F_O8nYhJwymOFSIM9xnr_x002B_sClUZAu9inAknQSfgTFtbFetV1rqkx69QZHZFktCxiCKAlVvn8xIzmkYUpARqRRWoxEeFyLHVSgwzbijxTf_x002B_WhZFiEYEuFSJ2dzliG1D14w6E3ce_x002B_5ZklF2H4ygIzXeYOPzAnyaZBem8PCYMksgspzmuxR_x002B_PthyVbOFjxCWhHuDHV9dNwuXHX_x002F_Sgl83IlDt_x002F_RhrPqxuhHaC5_x002F_ibMDK7WD16ZaxNvZ_x002F_vGdkHWZaz4B4ZHwOX_x002B_8_x002F_Yv2_x002B_cjMFfIxJVzw6UkCwwDv8yPSXb1HWUVTkLl7ES_x002B_unktCBwU0VqqaYYbfmX5VE7hPgJw_x002B_L0s9Epz4zo8H83EukWHUnlRD_x002B_lli7Au_x002B_9Z3Ff_x002B_csUZI9jpUjyFuB_x002F_sogXHGwdLBCEyfGYxCUNhmkhZu_x002F_3YsKT5tGBLZ3YuFUBFt6wGsgR_x002B_CddtHRXs1luq7PCfsu6r0uT8rw3a3ZJvaxAgUvk8Mu1E5nEbglQV8EYJ7Qfh8tsiFTRw8EbxAbW_x002F_hlAChUnbZ740VkaWATWkqCQdUod1mBndXRD0PufMhXmDhtqADuWLEscsCxl6cHyHXJ6X4dbiZ7Luv5_x002F_wQvTrgMd9c7aW0S28bOIMS5CC7AZG_x002B_LtJDb308_x002F__x002F_DZSIXtYDd5ZLFhRYhTRmk_x002F_6skNhN9iYWvNNaiPxWMj6Nr9NtgaZU03dqjMfY34Z1Yg7JtbtnST9G92fKI6BYgdXNRCMz5MtvEzq1nXUuAWASVjh0bVA3Y5Ea17L02gDV1VhQXR_x002B_g_x002F_yo9W3PaGwQNyDurgBzz4w1fd0WiIgiL4xmx2t_x002B_uyMovy_x002F_GxL57joI03gl_x002B_S39AQc_x002F_4Fkli8LzSqzOH2ufrOFZDyztrk5XlMnVJLR_x002F_NgakWzcuXRguCQBLY1a3bCAHmui1f_x002B_6Qq1FNMSwJCSEQeu9D4hsgb9upsKTsNLzMepsYyxEqrJWQPHh8H_x002B_pdm0Xj_x002B_UNsgPrXgWsUlpEsyj_x002F_yiQdnty9XN_x002B_4LiqC_x002B_Vmxy7cZeTlr5whx9GXIl6EnYebeix2l6FxW2Klx0VnrZVcfBbNA4uVyLGR8NwxnL7v_x002B_7YP0YLfGXeBscl59GHlF5_x002F_Sm_x002B_J6Uix9G8qC2RVx0VqyUoq7JueWOCgJ9Ijmc4FRMe1LLkY7otLIKZd_x002F_qo1_x002B_fLW3Chf_x002B_czne33CtMvY5wIj4WfFP1nY6LpaT5tD711Y2Ncjp22ooE18fl_x002B_rVAYVf0SxSC8mkRlJ8hE3OBPd9QGvCF9182CjKg2vsEw52Vcfiyw_x002F_NEa5KbKZT2gambTRolgWN1JpwpuzcH9Vbr6VN0s6zEvKCIqlExZsuC4N87fiQlHDJrcYk0BF0WdlADeVtoKq9znPcFLaTXySuFY38Lt4IQNq4b_x002F_ukegL9II_x002F_IBtEV_x002F_RyzPELmRHZ3_x002B_dzUnGm8Kou_x002F_77cjO9zNhUJvLmF5_x002B_VGUS3Yvb0tIMb6NdyPEebKeDgwpU_x002B_QUXvcl6GpiCiEYHviLpihKLoNLD4imWwHOifMU3Nrzg6PCUmncUmFfJbhOmNqp2qDbJw_x002F_auYM3uaiVzVJihADLMFk_x002F_lEFOJ2Yjmylwb9RHZIZCgC2i3GQndsu9MPxLWYQl9K_x002F_m_x002F_hWdf3rh_x002F_wi2SkTBHoqHB3K9KKg2g5y5GL4zrXRMGG_x002F_LKyy6_x002B_3hyJUfX5a5R6W525SU9JT5rnQY4fr9ujAPZSwaE0fnHNur9F0usavgmEvCUeO8XSSdJQbzVGs3DcJVSPdIrHYLkt_x002B_8YlQoqu_x002B_lgkHTCxxLs3k1XhZ7zFBlqDb2qgHNkQCxqPrvTt8YFtM151sHKzNfQsHMqGepmuEVkKtatt5rNKceIRgFpPi9idbkeSaYFD3_x002B_ugThsnzyh_x002B_tlCaEJgxHaRkSRjvhUJLZDQvAPNJA4_x002B_djoIst_x002F_3vhuuv9XyApPIeyNvEcP2zTy7whk7cnV3y0OQDKfCn9JG9Ir61cKkP0WyrXxEL1BVoHgNpF_x002F_w_x002B_0rFJaF4T_x002B_lkGh3ix20g0cO49QPh7JIPjXMXNdr9wVOW5_x002B_7_x002F_ohWTiJIB_x002B_ls6DYit30q3Q3ZJi6uYp2si2aniicLvWXAc8qnuZ241mmc0LdkH8H2G8Q8HD2rrELaTAWCSJUiMHzyPYS5CFcrQsNp0MFxVx_x002F_QEujo_x002B_vYYHdltNK03k5oLzQEELCsQwErW5Bnn7TIam8wGWcizzPAwPVBwxinb8oCR6TbuzkbopV9oLQwVOJ9E5Q6RUK0rg5PK1s2ygWMZdq8b1iLJO5ysVuN_x002F_D7_x002B_8T1RLG6Qzvb00WeCw064vXItE_x002F_F0cCAkw7bKtRhnv_x002B_YmMRCxayO8x7_x002F_k5bR5f_x002B_2_x002B_e2Fb8uqGDlVYPsE_x002B_ZDraq6izsVhXQDE_x002F_TYmRzgJP7EJ1lgOsC0sS10G2Kj2OLFb4BJsLJT1zzpnvANMInCXsbAN_x002F_1LzcCp9ahcS_x002B_cL3KL705fY3QGROogdzOGq1e0E1ZlhINn52VBJJ85JedssjCqu0b5aklAcOlA_x002B_xxnYb2_x002F_LbMgvDiZ3K3R3ECx_x002F_tQX768zUUv1Dk1aWC72iM8BfwOD5MDnRXrTOwlCVrp1B0byVaoInPj8Xi96YzsLELaQQ95n7SV6dTJkL8Jj8npGMD5km3t6zx6BDoaq43I</value>
+    </Resources>
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="6" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <Text30 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10,4.3,0.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>{Labels.n0261}: {Variables.username}, {Variables.date}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text30>
+        <Text31 Ref="8" type="Text" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,10,1.5,0.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>{Labels.n0262} {PageNumber} {Labels.n0263} {TotalPageCount}</Text>
+          <TextBrush>[0:0:0]</TextBrush>
+          <Type>Expression</Type>
+        </Text31>
+        <Chart1 Ref="9" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+          <Area Ref="10" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+            <BorderColor>171, 172, 173</BorderColor>
+            <Brush>White</Brush>
+            <Chart isRef="9" />
+            <GridLinesHor Ref="11" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+              <Area isRef="10" />
+              <Color>100, 105, 105, 105</Color>
+              <MinorColor>100, 105, 105, 105</MinorColor>
+            </GridLinesHor>
+            <GridLinesHorRight Ref="12" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+              <Area isRef="10" />
+              <Color>Silver</Color>
+              <MinorColor>Gainsboro</MinorColor>
+              <Visible>False</Visible>
+            </GridLinesHorRight>
+            <GridLinesVert Ref="13" type="Stimulsoft.Report.Chart.StiGridLinesVert" isKey="true">
+              <Area isRef="10" />
+              <Color>100, 105, 105, 105</Color>
+              <MinorColor>100, 105, 105, 105</MinorColor>
+            </GridLinesVert>
+            <InterlacingHor Ref="14" type="Stimulsoft.Report.Chart.StiInterlacingHor" isKey="true">
+              <Area isRef="10" />
+              <InterlacedBrush>[10:155:155:155]</InterlacedBrush>
+            </InterlacingHor>
+            <InterlacingVert Ref="15" type="Stimulsoft.Report.Chart.StiInterlacingVert" isKey="true">
+              <Area isRef="10" />
+              <InterlacedBrush>[10:155:155:155]</InterlacedBrush>
+            </InterlacingVert>
+            <XAxis Ref="16" type="Stimulsoft.Report.Chart.StiXBottomAxis" isKey="true">
+              <Area isRef="10" />
+              <DateTimeStep Ref="17" type="Stimulsoft.Report.Chart.StiAxisDateTimeStep" isKey="true" />
+              <Interaction Ref="18" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="19" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Range Ref="20" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+              <Ticks Ref="21" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="22" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </XAxis>
+            <XTopAxis Ref="23" type="Stimulsoft.Report.Chart.StiXTopAxis" isKey="true">
+              <Area isRef="10" />
+              <Interaction Ref="24" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="25" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Ticks Ref="26" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="27" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </XTopAxis>
+            <YAxis Ref="28" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+              <Area isRef="10" />
+              <Interaction Ref="29" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="30" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Range Ref="31" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+              <Ticks Ref="32" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="33" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Direction>BottomToTop</Direction>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </YAxis>
+            <YRightAxis Ref="34" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+              <Area isRef="10" />
+              <Interaction Ref="35" type="Stimulsoft.Report.Chart.StiAxisInteraction" isKey="true" />
+              <Labels Ref="36" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Font>Tahoma,8</Font>
+                <TextAlignment>Left</TextAlignment>
+              </Labels>
+              <LineColor>140, 140, 140</LineColor>
+              <Range Ref="37" type="Stimulsoft.Report.Chart.StiAxisRange" isKey="true" />
+              <Ticks Ref="38" type="Stimulsoft.Report.Chart.StiAxisTicks" isKey="true" />
+              <Title Ref="39" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                <Color>140, 140, 140</Color>
+                <Direction>TopToBottom</Direction>
+                <Font>Tahoma,12,Bold</Font>
+              </Title>
+            </YRightAxis>
+          </Area>
+          <Brush>[255:255:255]</Brush>
+          <ClientRectangle>0,1.8,7.7,3.9</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName />
+          <Filters isList="true" count="0" />
+          <Legend Ref="40" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+            <BorderColor>225, 225, 225</BorderColor>
+            <Brush>[255:255:255]</Brush>
+            <Chart isRef="9" />
+            <Direction>LeftToRight</Direction>
+            <Font>Arial,8</Font>
+            <HorAlignment>Center</HorAlignment>
+            <LabelsColor>140, 140, 140</LabelsColor>
+            <MarkerSize>10, 10</MarkerSize>
+            <ShowShadow>False</ShowShadow>
+            <TitleColor>105, 105, 105</TitleColor>
+            <TitleFont>Arial,14,Bold</TitleFont>
+          </Legend>
+          <Name>Chart1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Series isList="true" count="2">
+            <Item9 Ref="41" type="Stimulsoft.Report.Chart.StiClusteredColumnSeries" isKey="true">
+              <ArgumentDataColumn>data.serie</ArgumentDataColumn>
+              <BorderColor>255, 255, 255</BorderColor>
+              <Brush>[112:173:71]</Brush>
+              <BrushNegative>Firebrick</BrushNegative>
+              <Chart isRef="9" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <SeriesLabels Ref="42" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="9" />
+                <Font>Arial,10</Font>
+                <LabelColor>51, 71, 91</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <Title>{Labels.n0438}</Title>
+              <TopN Ref="43" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <TrendLine Ref="44" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                <LineColor>105, 105, 105</LineColor>
+                <ShowShadow>False</ShowShadow>
+              </TrendLine>
+              <ValueDataColumn>data.cantmen</ValueDataColumn>
+            </Item9>
+            <Item10 Ref="45" type="Stimulsoft.Report.Chart.StiClusteredColumnSeries" isKey="true">
+              <ArgumentDataColumn>data.serie</ArgumentDataColumn>
+              <BorderColor>255, 255, 255</BorderColor>
+              <Brush>[68:114:196]</Brush>
+              <BrushNegative>Firebrick</BrushNegative>
+              <Chart isRef="9" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <SeriesLabels Ref="46" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>Transparent</Brush>
+                <Chart isRef="9" />
+                <Font>Arial,10</Font>
+                <LabelColor>51, 71, 91</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <Title>{Labels.n0439}</Title>
+              <TopN Ref="47" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <TrendLine Ref="48" type="Stimulsoft.Report.Chart.StiTrendLineNone" isKey="true">
+                <LineColor>105, 105, 105</LineColor>
+                <ShowShadow>False</ShowShadow>
+              </TrendLine>
+              <ValueDataColumn>data.cantwomen</ValueDataColumn>
+            </Item10>
+          </Series>
+          <SeriesLabels Ref="49" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+            <BorderColor>Transparent</BorderColor>
+            <Brush>Transparent</Brush>
+            <Chart isRef="9" />
+            <Font>Arial,10</Font>
+            <LabelColor>51, 71, 91</LabelColor>
+            <MarkerSize>8, 6</MarkerSize>
+            <ValueTypeSeparator>-</ValueTypeSeparator>
+            <Width>0</Width>
+          </SeriesLabels>
+          <SeriesLabelsConditions isList="true" count="0" />
+          <Sort isList="true" count="0" />
+          <Strips isList="true" count="0" />
+          <Style Ref="50" type="Stimulsoft.Report.Chart.StiStyle25" isKey="true">
+            <Conditions isList="true" count="0" />
+            <Name />
+          </Style>
+          <Table Ref="51" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+            <DataCells Ref="52" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+              <Font>Arial,8</Font>
+              <ShrinkFontToFit>False</ShrinkFontToFit>
+              <TextColor>140, 140, 140</TextColor>
+            </DataCells>
+            <GridLineColor>225, 225, 225</GridLineColor>
+            <Header Ref="53" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+              <Brush>White</Brush>
+              <Font>Arial,8</Font>
+              <TextColor>DarkGray</TextColor>
+            </Header>
+          </Table>
+          <Title Ref="54" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+            <Brush>[140:140:140]</Brush>
+            <Font>Tahoma,12,Bold</Font>
+          </Title>
+        </Chart1>
+        <ReportTitleBand1 Ref="55" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,1.4</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text4 Ref="56" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,3.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Variables.entity} ({Variables.abbreviation})</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text7 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Labels.n0075}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="58" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.2,1,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Labels.n0076}:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text12 Ref="59" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,1,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Variables.rangeInit}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="60" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.1,1,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>006146dcfb6d498f96697b39c9b1e4a0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Variables.rangeEnd}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text13>
+            <Text34 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,2.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Labels.n0034}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text34>
+            <Text3 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0.7,6.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Variables.test}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Text3>
+            <Text1 Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.7,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>84a06e4a2f55476b8082cf70c3c81533</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6" />
+              <Parent isRef="55" />
+              <Text>{Labels.n0459}:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </ReportTitleBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>a008cdc03fc1426e93db917ca41a3c79</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="64" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="65" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/24/2017 3:40:17 PM</ReportChanged>
+  <ReportCreated>11/24/2017 3:40:17 PM</ReportCreated>
+  <ReportGuid>06f781559b6d4e7cac1813d1cdd22714</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2018.1.6.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="66" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Style1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>

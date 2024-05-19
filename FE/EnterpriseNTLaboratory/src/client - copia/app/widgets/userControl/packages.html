@@ -1,0 +1,208 @@
+
+<style>
+  .item-pkg {
+    border-bottom: 1px solid #b5b5b5;
+    margin: 0px 10px 10px;
+  }
+</style>
+
+<div id="package" class="uk-modal uk-modal-card-fullscreen" aria-hidden="true">
+  <div class="uk-modal-dialog uk-modal-dialog-blank">
+    <div class="md-card uk-height-viewport">
+      <div class="md-card-toolbar md-bg-lime-700">
+        <div class="md-card-toolbar-actions">
+          <div>
+            <i class="md-icon material-icons  md-color-grey-50" data-uk-tooltip="{pos:'top'}"
+              title="{{'0329'| translate}}" ng-click="packages.closemodal()">&#xE5CD;</i>
+          </div>
+        </div>
+        <span style="float: left; margin: 8px 8px 0 0; display: block;">
+          <i class="material-icons md-color-grey-50" style="font-size: 33px;">inventory_2</i>
+        </span>
+        <h3 class="md-card-toolbar-heading-text md-color-grey-50">
+          {{'1933'| translate}}
+        </h3>
+      </div>
+      <div class="md-card-content">
+
+        <div class="uk-grid uk-grid-small" style="width: 100%;margin-left: 0px;">
+          <div class="uk-width-1-4">
+            <div style="margin-bottom: 20px;">
+              <cardpatient patientname="packages.patientname" patientdocument="packages.patientdocument"
+                patientage="packages.patientage" patientgender="packages.patientgender"
+                photopatient="packages.photopatient" patientid="packages.patientid"></cardpatient>
+            </div>
+            <div class="md-card md-card-hover md-card1-horizontal uk-animation-scale-up contentscroll">
+              <div class="md-card-content">
+                <div class="uk-grid">
+                  <div class="uk-width-1-1">
+                    <ul class="md-list md-list-addon">
+                      <li class="patient-demo-item">
+                        <div class="md-list-addon-element patient-addon-element">
+                          <img class="md-list-addon-icon material-icons md-22" ng-src="images/order/ordertype.png" src="images/order/ordertype.png">
+                        </div>
+                        <div class="md-list-content patient-list-content">
+                          <span class="uk-text-small uk-text-muted">{{'0088'| translate}}</span>
+                          <span class="md-list-heading uk-text-truncate" style="white-space: break-spaces;">{{packages.orderType}}</span>
+                        </div>
+                      </li>
+                      <li class="patient-demo-item">
+                        <div class="md-list-addon-element patient-addon-element">
+                          <img class="md-list-addon-icon material-icons md-22" ng-src="images/test/resulttest.png" src="images/test/resulttest.png">
+                        </div>
+                        <div class="md-list-content patient-list-content">
+                          <span class="uk-text-small uk-text-muted">{{'0090'| translate}}</span>
+                          <span class="md-list-heading uk-text-truncate" style="white-space: break-spaces;">{{packages.service}}</span>
+                        </div>
+                      </li>
+                      <li class="patient-demo-item">
+                        <div class="md-list-addon-element patient-addon-element">
+                          <img class="md-list-addon-icon material-icons md-22" ng-src="images/search.png" src="images/search.png">
+                        </div>
+                        <div class="md-list-content patient-addon-element">
+                          <span class="uk-text-small uk-text-muted">{{'2036'| translate}}</span>
+                          <span class="md-list-heading uk-text-truncate" style="white-space: break-spaces;">{{packages.origin}}</span>
+                        </div>
+                      </li>
+                      <li class="patient-demo-item">
+                        <div class="md-list-addon-element patient-addon-element">
+                          <img class="md-list-addon-icon material-icons md-22" ng-src="images/order/customer.png" src="images/order/customer.png">
+                        </div>
+                        <div class="md-list-content patient-addon-element">
+                          <span class="uk-text-small uk-text-muted">{{'0085'| translate}}</span>
+                          <span class="md-list-heading uk-text-truncate" style="white-space: break-spaces;">{{packages.customer}}</span>
+                        </div>
+                      </li>
+                      <li class="patient-demo-item">
+                        <div class="md-list-addon-element patient-addon-element">
+                          <img class="md-list-addon-icon material-icons md-22" ng-src="images/order/contract.png" src="images/order/contract.png">
+                        </div>
+                        <div class="md-list-content patient-list-content">
+                          <span class="uk-text-small uk-text-muted">{{'1934'| translate}}</span>
+                          <span class="md-list-heading uk-text-truncate" style="white-space: break-spaces;">{{packages.account}}</span>
+                        </div>
+                      </li>
+                      <li class="patient-demo-item">
+                        <div class="md-list-addon-element patient-addon-element">
+                          <img class="md-list-addon-icon material-icons md-22" ng-src="images/order/rate.png" src="images/order/rate.png">
+                        </div>
+                        <div class="md-list-content patient-list-content">
+                          <span class="uk-text-small uk-text-muted">{{'0087'| translate}}</span>
+                          <span class="md-list-heading uk-text-truncate" style="white-space: break-spaces;">{{packages.rate}}</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-width-1-3" style="width: 37.5%;">
+
+            <div angucomplete-alt id="orderentry_tests" placeholder="{{'0655' | translate}}" class="uk-width-1-1"
+              input-class="orderentry_tests_input uk-width-1-1 orderentrytab form-control-small" pause="20"
+              selected-object="packages.getSelectTest" local-data="packages.tests" search-fields="code,namesearch"
+              title-field="showValue" description-field="area.name" image-field="colorType" minlength="1"
+              match-class="highlight" focus-first="true" text-searching="Buscando pruebas" disable-input="false"
+              clear-selected="true" override-suggestions="true" search-fields local-search="packages.filterListTest"
+              focus-out="packages.focusOutListTest()" input-changed="packages.inputChangedTest">
+            </div>
+
+            <div class="md-card contentscroll md-card-warning" style="width: 100%;">
+              <div class="md-card-toolbar">
+                <h3 class="md-card-toolbar-heading-text">
+                  <strong>{{'0013' | translate}}</strong>
+                </h3>
+              </div>
+              <div class="md-card-content contentscroll" style="height: 490px;padding: 5px;overflow: auto;">
+
+                <div ng-repeat="package in packages.listpackages" ng-class="{'item-pkg': package.package !== null && package.package !== undefined}">
+                  <div class="uk-grid" ng-if="package.package !== null && package.package !== undefined">
+                    <div class="uk-width-9-10">
+                      <span style="font-weight: bold;text-transform: uppercase;font-size: 14px;">{{
+                        package.package.title }}</span>
+                    </div>
+                    <div class="uk-width-1-10 radio-check" style="padding-left: 38px;">
+                      <md-checkbox ng-model="package.allchilds" class="md-primary"
+                        ng-change="packages.selectall(package)"></md-checkbox>
+                    </div>
+                  </div>
+                  <ul class="md-list md-list-addon gmap_list" ng-if="package.package !== null && package.package !== undefined">
+                    <li ng-repeat="child in package.childs">
+                      <div class="uk-grid">
+                        <div class="uk-width-9-10">
+                          <span>{{ child.name }}</span>
+                        </div>
+                        <div class="uk-width-1-10 radio-check">
+                          <md-checkbox ng-model="child.selected" class="md-primary" ng-change="packages.selectchild(child, package)"></md-checkbox>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-width-1-3" style="width: 37.5%;">
+            <div class="md-card md-card-hover" style="margin: 0px 5px;">
+              <div class="md-card-content contentscroll" style="height: 545px;overflow: auto;">
+                <h3 class="heading_a uk-margin-bottom"> {{'0046' | translate}}</h3>
+                <div class="timeline">
+                  <div ng-repeat="tracking in packages.tracking  | orderBy:'date'" class="timeline_item">
+                    <div class="timeline_icon">
+                      <img class="md-image-timeline" ng-src="images/order/period.png" alt="" /></div>
+                    <div class="timeline_date" style="width: 67px;font-size: 12px;line-height: 15px">
+                      <span> {{tracking.date}} </span>
+                    </div>
+                    <div class="timeline_content">
+                      <div class="timeline_content_addon" style="margin-top: 0px; min-height: 60px">
+                        <ul class="md-list md-list-addon">
+                          <li>
+                            <div class="md-list-addon-element">
+                              <img class="md-user-image md-list-addon-avatar" ng-src="images/user1.png" alt="" />
+                            </div>
+                            <div class="md-list-content">
+                              <span class="md-list-heading" style="text-transform: capitalize;">{{tracking.user.name}} {{tracking.user.lastName}}</span>
+                              <span class="uk-text-small uk-text-muted">
+                                {{ tracking.codePackage }} - {{ tracking.namePackage }}
+                              </span>
+                              <span class="uk-text-small uk-text-muted" ng-if="tracking.partial === 1" style="font-weight: bold;">
+                                {{ '1937' | translate }}
+                              </span>
+                              <span class="uk-text-small uk-text-muted" ng-if="tracking.partial === 0" style="font-weight: bold;">
+                                {{ '1938' | translate }}
+                              </span>
+                              <ul class="md-list md-list-addon" ng-if="tracking.partial === 0">
+                                <li class="patient-demo-item" ng-repeat="child in tracking.childs" style="margin-left: 5px;">
+                                  <span class="md-list-heading">{{child}}</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 8%;background: #fff;">
+        <div class="md-fab-wrapper md-fab-in-card uk-flex uk-flex-column" style="bottom: 10px">
+          <button type="button" class="md-fab md-fab-small md-bg-lime-700" ng-click="packages.save()"
+            ng-disabled="packages.disabled"
+            ng-class="{'md-bg-blue-grey-100': packages.disabled }">
+            <i class="material-icons md-color-grey-50" data-uk-tooltip="{pos:'top'}"
+              title="{{'0007' | translate}}">&#xE161;
+            </i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
