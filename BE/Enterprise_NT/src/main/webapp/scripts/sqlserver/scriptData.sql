@@ -1864,6 +1864,12 @@ BEGIN
         ('ComentarioRegistroBloqueado', 'Bloqueado');
 END;
 
+IF NOT EXISTS(SELECT 1 FROM lab98 WHERE lab98c1 = 'RutaAdjuntos')
+BEGIN
+    INSERT INTO lab98 (lab98c1, lab98c2) VALUES
+        ('RutaAdjuntos', '');
+END;
+
 --------------------------------ACTUALIZACION-------------------------------
 --SEGMENT
 --ACTUALIZACIONES FINALES

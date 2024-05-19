@@ -48,6 +48,8 @@ public class Document implements Cloneable
     private String extension;
     @ApiObjectField(name = "viewresul", description = "Ver en reporte de resultados", required = true, order = 11)
     private boolean viewresul;
+    @ApiObjectField(name = "path", description = "Ruta del adjunto", required = true, order = 12)
+    private String path;
 
     @Override
     public Object clone() throws CloneNotSupportedException
@@ -164,4 +166,14 @@ public class Document implements Cloneable
     {
         this.viewresul = viewresul;
     }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+    
+    
 }

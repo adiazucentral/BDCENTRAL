@@ -69,3 +69,14 @@ IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='doc02'
 BEGIN
     ALTER TABLE doc02 ADD doc02c6 TINYINT  DEFAULT 1;
 END
+IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='doc02' AND column_name='doc02c7')
+BEGIN
+    ALTER TABLE doc02 ADD doc02c7 varchar(200);
+END
+
+IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='doc01' AND column_name='doc01c7')
+BEGIN
+    ALTER TABLE doc01 ADD doc01c7 varchar(200);
+END
+
+ ALTER TABLE doc01 ALTER COLUMN doc01c2 IMAGE NULL

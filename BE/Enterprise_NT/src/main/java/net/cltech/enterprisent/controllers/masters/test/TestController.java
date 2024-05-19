@@ -91,6 +91,37 @@ public class TestController
             return new ResponseEntity<>(list, HttpStatus.OK);
         }
     }
+    
+        //------------ LISTAR POR TIPO, ESTADO Y AREA ----------------
+    @ApiMethod(
+            description = "Lista las pruebas registradas por tipo, estado y area. <br> "
+            + "Tipo de prueba: 0 -> Examenes, 1 -> Perfiles, 2 -> Paquetes, 3 -> Examenes y Perfiles, 4 -> Perfiles y Paquetes, 5 -> Todos. <br>"
+            + "Estado: 0 -> Todos, 1 -> Activos, 2 -> Inactivos. <br>"
+            + "Area: idArea, 0 -> Todas",
+            path = "/api/tests/filter/laboratory/type/{type}/state/{state}/area/{area}",
+            visibility = ApiVisibility.PUBLIC,
+            verb = ApiVerb.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            responsestatuscode = "200 - OK, 204 - NO CONTENT. 401 - UNAUTHORIZED"
+    )
+    @ApiAuthToken(scheme = "JWT")
+    @ApiResponseObject(clazz = Test.class)
+    @RequestMapping(value = "/filter/laboratory/type/{type}/state/{state}/area/{area}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<TestBasic>> listTestLaboratory(
+            @ApiPathParam(name = "type", description = "Tipo Prueba") @PathVariable(name = "type") int type,
+            @ApiPathParam(name = "state", description = "Estado") @PathVariable(name = "state") int state,
+            @ApiPathParam(name = "area", description = "Area") @PathVariable(name = "area") int area
+    ) throws Exception
+    {
+        List<TestBasic> list = testService.listBranch(type, state == 0 ? null : state == 1, area == 0 ? null : area);
+        if (list.isEmpty())
+        {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else
+        {
+            return new ResponseEntity<>(list, HttpStatus.OK);
+        }
+    }
 
     //------------ LISTAR PRUEBAS DE FORMULA ----------------
     @ApiMethod(

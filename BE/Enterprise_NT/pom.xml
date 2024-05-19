@@ -347,7 +347,7 @@
             <version>2.10.10</version>
         </dependency>
 
-        <!--add Tyrus JSR 356 implementation related dependencies       -->    
+        <!--add Tyrus JSR 356 implementation related dependencies       
 
         <dependency>
             <groupId>org.glassfish.tyrus</groupId>
@@ -363,7 +363,7 @@
             <groupId>org.glassfish.tyrus</groupId>
             <artifactId>tyrus-container-grizzly</artifactId>
             <version>1.2.1</version>
-        </dependency>   
+        </dependency>   -->    
 
     </dependencies> 
 

@@ -1899,6 +1899,12 @@ BEGIN
         INSERT INTO lab98 (lab98c1, lab98c2) VALUES
             ('ComentarioRegistroBloqueado', 'Bloqueado');
     END IF;
+
+    IF NOT EXISTS(SELECT 1 FROM lab98 WHERE lab98c1 = 'RutaAdjuntos')
+    THEN
+        INSERT INTO lab98 (lab98c1, lab98c2) VALUES
+            ('RutaAdjuntos', '');
+    END IF;
    
 
     --ACTUALIZACION DE VERSION
