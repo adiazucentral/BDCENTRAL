@@ -2254,7 +2254,8 @@ public interface OrdersDao {
                 + ", lab19c1 = ? "
                 + ", lab14c1 = ? "
                 + ", lab904c1 = ? "
-                + ", lab22c13 = ? ";
+                + ", lab22c13 = ? "
+                + ", lab22c20 = 0 ";
         Object[] args = new Object[15 + (order.getDemographics() != null ? order.getDemographics().size() : 0)];
         args[0] = order.getType().getId();
         args[1] = order.getPatient() != null ? order.getPatient().getId() : 0;
@@ -2300,7 +2301,7 @@ public interface OrdersDao {
 
         String update = ""
                 + "UPDATE    " + lab22
-                + " SET      lab21c1 = ? "
+                + " SET      lab21c1 = ?, lab22c20 = 0 "
                 + " WHERE lab22c1 = ? ";
         return getJdbcTemplate().update(update, order.getPatient().getId(), order.getOrderNumber());
     }
@@ -2321,7 +2322,7 @@ public interface OrdersDao {
         Integer currentYear = DateTools.dateToNumberYear(new Date());
         String lab22 = year.equals(currentYear) ? "lab22" : "lab22_" + year;
 
-        String query = "UPDATE " + lab22 + " SET lab22c9 = lab07c1, lab07c1 = ? WHERE lab22c1 = ?";
+        String query = "UPDATE " + lab22 + " SET lab22c9 = lab07c1, lab07c1 = ?, lab22c20 = 0 WHERE lab22c1 = ?";
         for (Order order : orders) {
 
             parameters.add(new Object[]{
@@ -2345,7 +2346,7 @@ public interface OrdersDao {
      */
     default List<Order> updateToPreviousState(List<Order> orders) throws Exception {
         List<Object[]> parameters = new ArrayList<>(0);
-        String query = "UPDATE lab22 SET lab07c1 = lab22c9, lab22c9=? WHERE lab22c1 = ?";
+        String query = "UPDATE lab22 SET lab07c1 = lab22c9, lab22c9=?, lab22c20 = 0 WHERE lab22c1 = ?";
 
         for (Order order : orders) {
             parameters.add(new Object[]{
@@ -3066,7 +3067,7 @@ public interface OrdersDao {
     default int shiftOrders(ShiftOrder object) throws Exception {
         if (object.getOrders().size() > 0) {
             List<Object[]> parameters = new ArrayList<>(0);
-            String query = "UPDATE lab22 SET lab22c13 = ? WHERE lab22c1 = ?";
+            String query = "UPDATE lab22 SET lab22c13 = ?, lab22c20 = 0 WHERE lab22c1 = ?";
             object.getOrders().stream().forEach((String order)
                     -> {
                 parameters.add(new Object[]{
@@ -4559,7 +4560,7 @@ public interface OrdersDao {
     default Long updateOrderTurn(long order, String turn) throws Exception {
 
         List<Object[]> parameters = new ArrayList<>(0);
-        String query = "UPDATE lab22 SET lab22c13 = ? WHERE lab22c1 = ?";
+        String query = "UPDATE lab22 SET lab22c13 = ?, lab22c20 = 0 WHERE lab22c1 = ?";
 
         parameters.add(new Object[]{
             turn,
@@ -5078,7 +5079,7 @@ public interface OrdersDao {
      */
     default void returnToOriginalState(long idOrder) throws Exception {
         try {
-            getJdbcTemplate().update("UPDATE lab22 SET lab22c14 = NULL WHERE lab22c1 = ?", idOrder);
+            getJdbcTemplate().update("UPDATE lab22 SET lab22c14 = NULL, lab22c20 = 0 WHERE lab22c1 = ?", idOrder);
         } catch (Exception e) {
             e.getMessage();
         }
@@ -5660,7 +5661,7 @@ public interface OrdersDao {
         Integer currentYear = DateTools.dateToNumberYear(new Date());
         String lab22 = year.equals(currentYear) ? "lab22" : "lab22_" + year;
 
-        String query = "UPDATE " + lab22 + " SET lab22c9 = lab07c1, lab07c1 = ? WHERE lab22c1 = ?";
+        String query = "UPDATE " + lab22 + " SET lab22c9 = lab07c1, lab07c1 = ?, lab22c20 = 0 WHERE lab22c1 = ?";
 
         getJdbcTemplate().update(query, state.getValue(), order);
         return 1;

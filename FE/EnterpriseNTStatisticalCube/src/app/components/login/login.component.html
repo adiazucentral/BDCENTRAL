@@ -1,0 +1,432 @@
+<style>
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+  }
+
+  .content {
+    width: 100%;
+    max-height: 95.7vh;
+  }
+
+  .image-banner-login {
+    position: relative;
+    display: block;
+    height: 95.7vh;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95.7vh;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .user_avatar {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    background-position: 50% 1px;
+  }
+
+  .login_heading {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .ngplus-overlay-background {
+    top: 0px;
+    left: 0px;
+    padding-left: 100px;
+    position: absolute;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    background-color: #1976d2;
+  }
+
+  .ngplus-overlay-content {
+    position: absolute;
+    font-weight: bold;
+    height: 100px;
+    width: 300px;
+    height: 15em;
+    width: 20em;
+    z-index: 10000;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 470px) and (min-width: 5px) {
+    .zoomview {
+      zoom: 40%;
+      transform: translate(-604px, -853px) rotate(0rad) skewX(0rad) scale(0.40, 0.40);
+      transform-origin: 1010px 1429px 0px;
+      width: 248.7142%;
+    }
+
+    .material-icons {
+      font-size: 10px !important;
+    }
+
+    .md-fab>i {
+      line-height: 48px;
+    }
+
+    .measureButtons>div>span {
+      font-size: 5px !important;
+    }
+
+    label {
+      font-size: 10px !important;
+    }
+
+    .textbutton {
+      font-size: 5px !important;
+    }
+
+    .orderfield-label {
+      font-size: 9px;
+    }
+
+    .uk-h3,
+    h3 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    legend {
+      font-size: 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (min-width: 471px) {
+    .zoomview {
+      zoom: 45%;
+      transform: translate(-555px, -785px) rotate(0rad) skewX(0rad) scale(0.45, 0.45);
+      transform-origin: 1010px 1429px 0px;
+      width: 222.2222%
+    }
+
+
+    .material-icons {
+      font-size: 10px !important;
+    }
+
+    .md-fab>i {
+      line-height: 48px;
+    }
+
+    .measureButtons>div>span {
+      font-size: 5px !important;
+    }
+
+    .textbutton {
+      font-size: 5px !important;
+    }
+
+    .orderfield-label {
+      font-size: 9px;
+    }
+
+    .uk-h3,
+    h3 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    label {
+      font-size: 10px !important;
+    }
+
+    legend {
+      font-size: 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) and (min-width: 601px) {
+    .zoomview {
+      zoom: 53%;
+      transform: translate(-475px, -670px) rotate(0rad) skewX(0rad) scale(0.53, 0.53);
+      transform-origin: 1010px 1429px 0px;
+      width: 188.67924%;
+    }
+
+
+    .material-icons {
+      font-size: 10px !important;
+    }
+
+    .md-fab>i {
+      line-height: 48px;
+    }
+
+    .measureButtons>div>span {
+      font-size: 5px !important;
+    }
+
+    .textbutton {
+      font-size: 5px !important;
+    }
+
+    .orderfield-label {
+      font-size: 9px;
+    }
+
+    .uk-h3,
+    h3 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    label {
+      font-size: 10px !important;
+    }
+
+    legend {
+      font-size: 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 950px) and (min-width: 768px) {
+    .material-icons {
+      font-size: 10px !important;
+    }
+
+    .md-fab>i {
+      line-height: 48px;
+    }
+
+    .measureButtons>div>span {
+      font-size: 5px !important;
+    }
+
+    .textbutton {
+      font-size: 5px !important;
+    }
+
+    .orderfield-label {
+      font-size: 9px;
+    }
+
+    .uk-h3,
+    h3 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    label {
+      font-size: 10px !important;
+    }
+
+    legend {
+      font-size: 10px !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .zoomview {
+      zoom: 62%;
+      transform: translate(-390px, -540px) rotate(0rad) skewX(0rad) scale(0.62, 0.62);
+      transform-origin: 1010px 1429px 0px;
+      width: 161.29032%;
+    }
+
+  }
+
+  @media only screen and (max-width: 1068px) and (min-width: 1001px) {
+    .zoomview {
+      zoom: 73%;
+    }
+
+    .viewmenudash {
+      zoom: 73%;
+    }
+  }
+
+  @media only screen and (max-width: 1252px) and (min-width: 1069px) {
+    .zoomview {
+      zoom: 80%;
+    }
+
+    .viewmenudash {
+      zoom: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 1362px) and (min-width: 1253px) {
+    .zoomview {
+      zoom: 92%;
+    }
+
+    .viewmenudash {
+      zoom: 92%;
+    }
+  }
+
+  .general-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .header-color {
+    background: url(assets/images/vectorbanner.png);
+    background-repeat: repeat-x;
+  }
+
+  .header-text {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    color: #ffffff;
+    width: 66%;
+    align-items: end;
+  }
+
+  .header-image {
+    margin-left: 10px;
+    float: left;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 35px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center
+  }
+</style>
+
+<div style="height: 100%;" class="general-container zoomview">
+  <header id="header-container" class="clearfix header-color">
+    <div class="header-image">
+      <img class="img-responsive" src="assets/images/logo_.png">
+    </div>
+    <div class="header-text uk-text-right uk-hidden-small">
+      <strong>Laboratory Information Management System</strong>
+    </div>
+  </header>
+</div>
+
+<main class="main">
+  <div class="content">
+    <div class="col-md-12 row">
+
+      <div class="col-md-5">
+        <ngb-carousel [showNavigationArrows]="false">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/7-24.png" />
+            </div>
+            <div class="carousel-caption">
+              <h3>SkyLab</h3>
+              <p> {{ '0754' | transloco }} </p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/Databank-1.png" />
+            </div>
+            <div class="carousel-caption">
+              <h3>Databank</h3>
+              <p>{{ '0754' | transloco }}</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/LIS.png" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>LIS</h3>
+              <p>{{ '0759' | transloco }}</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/SIGA.png" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>SIGA</h3>
+              <p>{{ '0759' | transloco }}</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/Skylab_.png" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>SkyLab</h3>
+              <p>{{ '0759' | transloco }}</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/kepler.png" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>KEPLER</h3>
+              <p>{{ '1080' | transloco }}</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="image-banner-login" src="assets/images/login/QM.png" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>QUALITY</h3>
+              <p>{{ '1079' | transloco }}</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+      <div class="col-md-7">
+        <div class="container">
+          <div class="card">
+            <div class="login_heading" style="margin-top: -60px">
+              <div class="user_avatar">
+                <img src="assets/images/user.png" class="profile-image">
+              </div>
+            </div>
+            <div class="card-body">
+
+              <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                  <label for="user" class="form-label">{{ '0001' | transloco }}</label>
+                  <input type="text" class="form-control" id="user" formControlName="user">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">{{ '0002' | transloco }}</label>
+                  <input type="password" class="form-control" id="password" formControlName="password">
+                </div>
+                <div class="text-center mb-4">
+                  <button type="submit" class="btn btn-primary">{{ '0004' | transloco }}</button>
+                </div>
+              </form>
+
+              <div class="logo-container" style="margin-top: 10px;">
+                <img class="img-responsive" src="assets/images/CLTechLogo.png"
+                  onclick="javascript:window.open('http://www.cltech.net','','width=1100,height=600,left=50,top=50,toolbar=yes')">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

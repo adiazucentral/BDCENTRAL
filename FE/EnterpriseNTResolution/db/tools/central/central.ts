@@ -7,6 +7,8 @@ import { getResultsByYear } from "./results";
 import { sendResultsCentral } from "../../../helpers/central/results/result";
 import { getMicrobialDetection } from "./microbiology";
 import { getGeneralTemplate } from "./resultsTemplates";
+import { getAttachmentsByTest } from "./attachments";
+import { getAnalyzerGraphs } from "./graphs";
 
 export const sendDataCentralBD = async () => {
     try {
@@ -44,15 +46,27 @@ export const sendDataCentralBD = async () => {
                 if(resp.length > 0) {
 
                     for (const listResultsByYear of resp) {
+                        //Antibiograma
                         const resultsAntibiogram = listResultsByYear.results.filter( (result: Result) => result.lab57c26 === 1 );
                         if(resultsAntibiogram) {
                             await getMicrobialDetection(resultsAntibiogram, listResultsByYear.year);
                         }
 
+                        //Plantillas
                         const resultsTemplates = listResultsByYear.results.filter( (result: Result) => result.lab57c42 === 1 );
                         if(resultsTemplates) {
                             await getGeneralTemplate(resultsTemplates, listResultsByYear.year);
                         }
+
+                        //Adjuntos
+                        const resultsAttachments = listResultsByYear.results.filter( (result: Result) => result.lab57c41 > 0 );
+                        if(resultsAttachments) {
+                            await getAttachmentsByTest(resultsAttachments, listResultsByYear.year);
+                        }
+
+                        //Graficas de resultados
+                        await getAnalyzerGraphs(listResultsByYear.results, listResultsByYear.year);
+
                     }
 
                     sendResultsCentral(resp);

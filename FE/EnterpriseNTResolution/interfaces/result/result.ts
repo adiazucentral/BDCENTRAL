@@ -97,5 +97,7 @@ interface Result {
     lab57c75    : Date,
     lab95       : String[],
     lab206      : Microorganism[],
-    lab58       : OptionTemplate[]
+    lab58       : OptionTemplate[],
+    doc02       : Attachment[],
+    doc03       : Graphs[]
 }

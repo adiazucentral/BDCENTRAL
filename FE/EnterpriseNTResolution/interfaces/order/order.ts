@@ -3,7 +3,8 @@ interface Order {
     lab22c2     : number
     lab103      : OrderType,
     lab22c3     : Date,
-    lab21c1     : number,
+    lab21c2     : string,
+    lab54       : DocumentT,
     lab22c4     : number,
     lab22c5     : number,
     lab22c6     : Date,

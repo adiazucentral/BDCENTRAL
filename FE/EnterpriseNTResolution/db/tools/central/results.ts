@@ -235,7 +235,9 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                             },
                             lab95           : [],
                             lab206          : [],
-                            lab58           : []
+                            lab58           : [],
+                            doc02           : [],
+                            doc03           : []
                         });
                     } else {
                         resultExists.lab95.push(resp.lab95c1);
@@ -275,7 +277,7 @@ const getResults = async (year: number) => {
 
     let query = " ";
  
-    query += ` SELECT lab57.lab22c1, lab57c1, lab57c2, lab57c4, lab57c6, lab57c7, lab57c8, lab57c9, lab57c10, lab57c11, lab57c16, lab57c17, lab57c18, 
+    query += ` SELECT TOP 100 lab57.lab22c1, lab57c1, lab57c2, lab57c4, lab57c6, lab57c7, lab57c8, lab57c9, lab57c10, lab57c11, lab57c16, lab57c17, lab57c18, 
     lab57c20, lab57c22, lab45c2, lab48c1, lab57c24, lab57c25, lab57c26, lab57c27, lab57c28, lab57c29, lab48c5, lab48c6, lab48c12, 
     lab48c13, lab48c14, lab48c15, lab57c30, lab57c31, lab57c32, lab57c33, lab57c34, lab57c35, lab57c36, lab57c37, lab57c39, 
     lab158c1, lab201c1, lab57c41, lab57c42, lab57c43, lab57c44, lab57c46, lab57c48, lab57c49, lab57c50, lab57c51, lab57c52, 
@@ -306,8 +308,7 @@ const getResults = async (year: number) => {
     lab57lab57c58.lab04c1 as lab57lab57c58lab04c1, lab57lab57c58.lab04c2 as lab57lab57c58lab04c2, lab57lab57c58.lab04c3 as lab57lab57c58lab04c3, lab57lab57c58.lab04c4 as lab57lab57c58lab04c4,
     lab57lab57c60.lab04c1 as lab57lab57c60lab04c1, lab57lab57c60.lab04c2 as lab57lab57c60lab04c2, lab57lab57c60.lab04c3 as lab57lab57c60lab04c3, lab57lab57c60.lab04c4 as lab57lab57c60lab04c4,
     lab57lab57c66.lab04c1 as lab57lab57c66lab04c1, lab57lab57c66.lab04c2 as lab57lab57c66lab04c2, lab57lab57c66.lab04c3 as lab57lab57c66lab04c3, lab57lab57c66.lab04c4 as lab57lab57c66lab04c4,
-    lab95c1   
-    `;
+    lab95c1  `;
     
     let from = ` `;
 
@@ -349,21 +350,21 @@ const getResults = async (year: number) => {
     return orders;
 }
 
-export const changeFlagOrder = async( docsInserted: any[] ) => {
+export const changeFlagResult = async( docsInserted: any[] ) => {
     if(docsInserted !== null && docsInserted !== undefined && docsInserted.length > 0) {
         let currentYear = new Date().getFullYear();
-        let lab22 = "";
+        let lab57 = "";
         for (const listDocs of docsInserted) {
-            lab22 = currentYear === listDocs.year ? "lab22" : "lab22_" + listDocs.year;
-            const query = `UPDATE ${lab22} SET lab22c20 = 1, lab22c21 = :date WHERE lab22c1 = :idOrder`; 
-            for (const docs of listDocs.orders) {
+            lab57 = currentYear === listDocs.year ? "lab57" : "lab57_" + listDocs.year;
+            const query = `UPDATE ${lab57} SET lab57c74 = 1, lab57c75 = :date WHERE lab22c1 = :idOrder AND lab39c1 = :idTest `; 
+            for (const docs of listDocs.results) {
                 let date = docs.created;
                 if(date < docs.updated) {
                     date = docs.updated;
                 }
                 const [numFiles] = await db.query(query,
                     {
-                      replacements: { date: date, idOrder: docs.lab22c1 }
+                      replacements: { date: date, idOrder: docs.lab22c1, idTest: docs.lab39c1  }
                     }
                 );
             }

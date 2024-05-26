@@ -1028,7 +1028,8 @@ public interface PatientsDao
                 + " , lab21c17 = ? "
                 + " , lab21c18 = ? "
                 + " , lab21c19 = ? "
-                + " , lab21c24 = 1 ";
+                + " , lab21c24 = 1 "
+                + " , lab21c25 = 0 ";
         Object[] args = new Object[20 + (patient.getDemographics() != null ? patient.getDemographics().size() : 0)];
         args[0] = patient.getPatientId();
         args[1] = patient.getName1();
@@ -1326,7 +1327,7 @@ public interface PatientsDao
     {
         getJdbcTemplate().update(""
                 + "UPDATE   lab21 "
-                + "SET      lab21c14 = ? "
+                + "SET      lab21c14 = ? , lab21c25 = 0 "
                 + "WHERE    lab21c1 = ? ",
                 photo.getPhotoInBase64(),
                 photo.getId());
@@ -2008,7 +2009,8 @@ public interface PatientsDao
                     + "lab21c22 = ?, "
                     + "lab21c23 = ?, "
                     + "lab54c1 = ?, "
-                    + "lab80c1 = ? "
+                    + "lab80c1 = ?, "
+                    + " lab21c25 = 0 "
                     + "WHERE lab21c1 = ? ",
                     patient.getName1(),
                     patient.getName2(),
@@ -2029,7 +2031,7 @@ public interface PatientsDao
                 try
                 {
                     return getJdbcTemplate().update("UPDATE lab21 SET "
-                            + "lab21c22 = ?, lab21c23 = ? "
+                            + "lab21c22 = ?, lab21c23 = ?, lab21c25 = 0 "
                             + "WHERE lab21c1 = ? ",
                             5,
                             timestamp,
@@ -2059,7 +2061,7 @@ public interface PatientsDao
         {
             Timestamp timestamp = new Timestamp(new Date().getTime());
             return getJdbcTemplate().update("UPDATE lab21 set "
-                    + "lab21c22 = ? "
+                    + "lab21c22 = ?, lab21c25 = 0 "
                     + "WHERE lab21c1 = ? ",
                     patient.getStatus(),
                     patient.getId());

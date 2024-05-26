@@ -41,7 +41,7 @@ export const getOrderByYear = (parameters: any, index: any, final: any) => {
                             lab22c1         : resp.lab22c1,
                             lab22c2         : resp.lab22c2,
                             lab22c3         : resp.lab22c3,
-                            lab21c1         : resp.lab21c1,
+                            lab21c2         : resp.lab21c2,
                             lab22c4         : resp.lab22c4,
                             lab22c5         : resp.lab22c5,
                             lab22c6         : resp.lab22c6,
@@ -59,6 +59,11 @@ export const getOrderByYear = (parameters: any, index: any, final: any) => {
                             lab22c18        : resp.lab22c18,
                             lab22c19        : resp.lab22c19,
                             lab62           : listDemoOrder,
+                            lab54:          {
+                                lab54c1     : resp.lab54c1,
+                                lab54c2     : resp.lab54c2,
+                                lab54c3     : resp.lab54c3
+                            },
                             lab103          :  {
                                 lab103c1    : resp.lab103c1,
                                 lab103c2    : resp.lab103c2,
@@ -155,7 +160,7 @@ const getOrders = async (year: number, demographics: any) => {
 
     let query = " ";
  
-    query += ` SELECT lab22c1, lab22c2, lab22c3, lab21c1, lab22c4, lab22c5, lab22c6, lab22c7, lab22c8, lab22c9, lab22c10, 
+    query += ` SELECT TOP 100 lab22c1, lab22c2, lab22c3, lab22c4, lab22c5, lab22c6, lab22c7, lab22c8, lab22c9, lab22c10, 
         lab22c11, lab22c12, lab22c13, lab22c14, lab22c15, lab22c16, lab22c17, lab22c18, lab22c19,
         lab103.lab103c1, lab103c2, lab103c3,
         lab22lab04c1.lab04c1 as lab22lab04c1lab04c1, lab22lab04c1.lab04c2 as lab22lab04c1lab04c2, lab22lab04c1.lab04c3 as lab22lab04c1lab04c3, lab22lab04c1.lab04c4 as lab22lab04c1lab04c4,
@@ -168,7 +173,8 @@ const getOrders = async (year: number, demographics: any) => {
         lab57c9,
         lab22lab04c1_1.lab04c1 as lab22lab04c1_1lab04c1, lab22lab04c1_1.lab04c2 as lab22lab04c1_1lab04c2, lab22lab04c1_1.lab04c3 as lab22lab04c1_1lab04c3, lab22lab04c1_1.lab04c4 as lab22lab04c1_1lab04c4,
         lab930c1,
-        lab60.lab60c1, lab60c3, lab60c4, lab60c6
+        lab60.lab60c1, lab60c3, lab60c4, lab60c6,
+        lab21c2, lab54.lab54c1, lab54c2, lab54c3
     `;
     
     let from = ` `;
@@ -183,6 +189,8 @@ const getOrders = async (year: number, demographics: any) => {
         LEFT JOIN lab904 ON lab904.lab904c1 = lab22.lab904c1
         LEFT JOIN lab04 lab22lab04c1_1 ON lab22lab04c1_1.lab04c1 = lab22.lab04c1_1
         LEFT JOIN ${lab60} as lab60 ON lab60.lab60c2 = lab22.lab22c1
+        LEFT JOIN lab21 ON lab21.lab21c1 = lab22.lab21c1
+        LEFT JOIN lab54 ON lab54.lab54c1 = lab21.lab54c1
     `;
 
     if(demographics !== null && demographics !== undefined && demographics.length > 0) {

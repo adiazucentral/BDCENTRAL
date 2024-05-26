@@ -103,7 +103,7 @@ const getPatients = async( demographics:any ) => {
 
     let query = " ";
 
-    query += ` SELECT lab21c1, lab21c2, lab21c3, lab21c4, lab21c5, lab21c6, lab21c7, lab21c8, lab21c9, lab21c10, lab21c11, lab21c12, lab21c13, lab21c14, 
+    query += ` SELECT TOP 100 lab21c1, lab21c2, lab21c3, lab21c4, lab21c5, lab21c6, lab21c7, lab21c8, lab21c9, lab21c10, lab21c11, lab21c12, lab21c13, lab21c14, 
         lab21c15, lab21c16, lab21c17, lab21c18, lab21c19, lab21c20, lab21c21, lab21c22, lab21c23, lab21c24,
         lab80.lab80c1, lab80c2, lab80c3, lab80c4, lab80c5,
         lab21lab04c1.lab04c1 as lab21lab04c1lab04c1, lab21lab04c1.lab04c2 as lab21lab04c1lab04c2, lab21lab04c1.lab04c3 as lab21lab04c1lab04c3, lab21lab04c1.lab04c4 as lab21lab04c1lab04c4,

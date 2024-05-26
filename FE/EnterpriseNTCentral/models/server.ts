@@ -5,9 +5,9 @@ import * as https from 'https';
 import * as fs from 'fs';
 import * as util from 'util';
 import dbConnection from '../database/config';
-import orderRoutes from "../routes/order/order";
-import patientRoutes from "../routes/patient/patient";
-import resultRoutes from "../routes/result/result";
+import orderRoutes from "../routes/central/order";
+import patientRoutes from "../routes/central/patient";
+import resultRoutes from "../routes/central/result";
 
 const readFile = util.promisify(fs.readFile);
 

@@ -12,7 +12,7 @@ import statisticsRoutes from "../routes/statistics/statistics";
 import cubeRoutes from "../routes/statistics/statisticalcube";
 import emailRoutes from "../routes/tools/emai";
 
-import { db, dbStat } from '../db/conection';
+import { db, dbStat, dbDocs } from '../db/conection';
 import { toISOStringLocal } from '../tools/common';
 import { sendDataCentralBD } from '../db/tools/central/central';
 
@@ -37,6 +37,7 @@ class Server {
         //Conexion a la bd
         this.dbConnection();
         this.dbConnectionStat();
+        this.dbConnectionDocs();
 
         //Middlewares;
         this.middlewares();
@@ -78,6 +79,17 @@ class Server {
             console.log('Problemas de conexión con la base de datos de estadisticas', error);
         }
     }
+
+    async dbConnectionDocs() {
+        try {
+            await dbDocs.authenticate();
+            console.log('Conexión exitosa con la base de datos de documentos');
+        } catch(error) {
+            console.log('Problemas de conexión con la base de datos de documentos', error);
+        }
+    }
+
+    
 
     loadCron()  {
         cron.schedule('* * * * *', () => {
