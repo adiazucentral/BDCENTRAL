@@ -5,13 +5,6 @@
  */
 package net.cltech.enterprisent.service.impl.enterprisent.document;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,13 +19,11 @@ import net.cltech.enterprisent.domain.masters.user.User;
 import net.cltech.enterprisent.domain.operation.common.AuditOperation;
 import net.cltech.enterprisent.domain.operation.results.ResultTest;
 import net.cltech.enterprisent.service.interfaces.document.DocumentService;
-import net.cltech.enterprisent.service.interfaces.masters.configuration.ConfigurationService;
 import net.cltech.enterprisent.service.interfaces.masters.tracking.TrackingService;
 import net.cltech.enterprisent.service.interfaces.operation.results.ResultsService;
 import net.cltech.enterprisent.tools.Constants;
 import net.cltech.enterprisent.tools.JWT;
 import net.cltech.enterprisent.tools.enums.LISEnum;
-import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -60,8 +51,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
     private ResultTestDao resultTestDao;
     @Autowired
     private ResultsService resultService;
-    @Autowired
-    private ConfigurationService configurationService;
 
     @Override
     public List<Document> listattachments(Long idOrder) throws Exception
@@ -71,7 +60,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
         {
             try
             {
-                item.setFile(getAttachmentBase64(item.getPath()));
                 User objUser = userDao.get(item.getUser().getId(), null, null, null);
                 item.getUser().setUserName(objUser.getUserName());
             } catch (Exception e)
@@ -96,7 +84,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
         {
             try
             {
-                item.setFile(getAttachmentBase64(item.getPath()));
                 User objUser = userDao.get(item.getUser().getId(), null, null, null);
                 item.getUser().setUserName(objUser.getUserName());
             } catch (Exception e)
@@ -104,18 +91,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
             }
         });
         return objDoc;
-    }
-    
-    public String getAttachmentBase64(String url) throws Exception
-    {
-        File file = new File(url);
-        FileInputStream fis = new FileInputStream(file);
-        byte[] buffer = new byte[(int) file.length()];
-        fis.read(buffer);
-        fis.close();
-
-        String base64 = java.util.Base64.getEncoder().encodeToString(buffer);
-        return base64;
     }
 
     @Override
@@ -126,7 +101,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
         {
             try
             {
-                item.setFile(getAttachmentBase64(item.getPath()));
                 User objUser = userDao.get(item.getUser().getId(), null, null, null);
                 item.getUser().setUserName(objUser.getUserName());
             } catch (Exception e)
@@ -151,7 +125,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
         {
             try
             {
-                item.setFile(getAttachmentBase64(item.getPath()));
                 User objUser = userDao.get(item.getUser().getId(), null, null, null);
                 item.getUser().setUserName(objUser.getUserName());
             } catch (Exception e)
@@ -169,8 +142,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
         Document obj;
         List<AuditOperation> audit = new ArrayList<>();
         List<Document> documents;
-        String path = configurationService.get("RutaAdjuntos").getValue();
-        
         if (document.getIdOrder() != null)
         {
             if (document.getIdTest() == null || document.getIdTest() == 0)
@@ -180,13 +151,7 @@ public class DocumentServiceEnterpriseNT implements DocumentService
                 {
                     if (document.isReplace())
                     {
-                        document.setPath(path + "/Adjuntos/" + document.getIdOrder() + "/"+ document.getName());
                         obj = dao.updateOrderDocument(document);
-                        
-                        byte[] ImaBytes = Base64.decodeBase64(obj.getFile());
-                        InputStream inputStream = new ByteArrayInputStream(ImaBytes);
-                        saveFileAttachment(inputStream, path + "\\Adjuntos\\" + obj.getIdOrder() + "\\"  , obj.getName()  );
-                        
                         audit.add(new AuditOperation(obj.getIdOrder(), null, null, document.isReplace() ? AuditOperation.ACTION_UPDATE : AuditOperation.ACTION_INSERT, AuditOperation.TYPE_DOCUMENT, document.getName(), null, null, null, null));
                     } else
                     {
@@ -194,13 +159,7 @@ public class DocumentServiceEnterpriseNT implements DocumentService
                     }
                 } else
                 {
-                    document.setPath(path + "/Adjuntos/" + document.getIdOrder() + "/"+ document.getName());
                     obj = dao.saveOrderDocument(document);
-                    
-                    byte[] ImaBytes = Base64.decodeBase64(obj.getFile());
-                    InputStream inputStream = new ByteArrayInputStream(ImaBytes);
-                    saveFileAttachment(inputStream, path + "\\Adjuntos\\" + obj.getIdOrder() + "\\" , obj.getName() );
-                    
                     audit.add(new AuditOperation(obj.getIdOrder(), null, null, document.isReplace() ? AuditOperation.ACTION_UPDATE : AuditOperation.ACTION_INSERT, AuditOperation.TYPE_DOCUMENT, document.getName(), null, null, null, null));
                 }
             } else
@@ -210,12 +169,7 @@ public class DocumentServiceEnterpriseNT implements DocumentService
                 {
                     if (document.isReplace())
                     {
-                        document.setPath(path + "/Adjuntos/" + document.getIdOrder() + "/" + document.getIdTest() + "/" +  document.getName());
                         obj = dao.updateResultDocument(document);
-                        byte[] ImaBytes = Base64.decodeBase64(obj.getFile());
-                        InputStream inputStream = new ByteArrayInputStream(ImaBytes);
-                        saveFileAttachment(inputStream, path + "\\Adjuntos\\" + obj.getIdOrder() + "\\ " + obj.getIdTest() + "\\ ", obj.getName()  );
-
                         audit.add(new AuditOperation(document.getIdOrder(), document.getIdTest(), null, document.isReplace() ? AuditOperation.ACTION_UPDATE : AuditOperation.ACTION_INSERT, AuditOperation.TYPE_DOCUMENT, document.getName(), null, null, null, null));
                     } else
                     {
@@ -223,12 +177,7 @@ public class DocumentServiceEnterpriseNT implements DocumentService
                     }
                 } else
                 {
-                    document.setPath(path + "/Adjuntos/" + document.getIdOrder() + "/" + document.getIdTest() + "/" +  document.getName());
                     obj = dao.saveResultDocument(document);
-                    byte[] ImaBytes = Base64.decodeBase64(obj.getFile());
-                    InputStream inputStream = new ByteArrayInputStream(ImaBytes);
-                    saveFileAttachment(inputStream, path + "\\Adjuntos\\" + obj.getIdOrder() + "\\" + obj.getIdTest() + "\\", obj.getName() );
-               
                     audit.add(new AuditOperation(obj.getIdOrder(), document.getIdTest(), null, document.isReplace() ? AuditOperation.ACTION_UPDATE : AuditOperation.ACTION_INSERT, AuditOperation.TYPE_DOCUMENT, document.getName(), null, null, null, null));
                 }
                 //Actualiza resultado
@@ -258,38 +207,6 @@ public class DocumentServiceEnterpriseNT implements DocumentService
         trackingService.registerOperationTracking(audit);
 
         return obj;
-    }
-    
-    
-    public static void saveFileAttachment(InputStream inputFile, String folderPath, String fileName) throws IOException {
-        OutputStream outputFile = null;
-
-        try {
-            // Create the folder if it doesn't exist
-            File folder = new File(folderPath);
-            if (!folder.exists()) {
-                folder.mkdirs(); // Create the folder and any parent directories if necessary
-            }
-
-            // Create the output file in the specified path
-            File file = new File(folderPath + fileName);
-            outputFile = new FileOutputStream(file);
-
-            // Transfer data from input stream to output stream
-            byte[] buffer = new byte[1024];
-            int length;
-            while ((length = inputFile.read(buffer)) > 0) {
-                outputFile.write(buffer, 0, length);
-            }
-        } finally {
-            // Close input and output streams
-            if (outputFile != null) {
-                outputFile.close();
-            }
-            if (inputFile != null) {
-                inputFile.close();
-            }
-        }
     }
 
     @Override

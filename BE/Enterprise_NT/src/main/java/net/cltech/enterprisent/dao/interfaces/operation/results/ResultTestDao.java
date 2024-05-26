@@ -1867,7 +1867,8 @@ public interface ResultTestDao
                         + "         lab57c65 = 0, " //Resultado Anterior
                         + "         lab57c18 = ?, " //Fecha de validacion
                         + "         lab57c19 = ?, " //Usuario validacion
-                        + "         lab57c70 = ? "; //Resultado en ingles
+                        + "         lab57c70 = ?, " //Resultado en ingles
+                        + "         lab57c74 = 0 "; //Envio a bd central
                 String where = ""
                         + " WHERE "
                         + " lab39c1 = ? "

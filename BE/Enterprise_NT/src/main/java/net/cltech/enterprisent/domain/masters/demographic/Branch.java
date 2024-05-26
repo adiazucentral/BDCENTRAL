@@ -29,32 +29,36 @@ public class Branch extends MasterAudit {
     private Integer id;
     @ApiObjectField(name = "code", description = "Codigo de la sede", required = true, order = 2)
     private String code;
-    @ApiObjectField(name = "abbreviation", description = "Abreviación de la sede", required = true, order = 2)
+    @ApiObjectField(name = "abbreviation", description = "Abreviación de la sede", required = true, order = 3)
     private String abbreviation;
-    @ApiObjectField(name = "responsable", description = "Responsable de la sede", required = true, order = 2)
+    @ApiObjectField(name = "responsable", description = "Responsable de la sede", required = true, order = 4)
     private String responsable;
-    @ApiObjectField(name = "name", description = "Nombre de la sede", required = true, order = 4)
+    @ApiObjectField(name = "name", description = "Nombre de la sede", required = true, order = 5)
     private String name;
-    @ApiObjectField(name = "address", description = "Dirección de la sede", required = true, order = 5)
+    @ApiObjectField(name = "address", description = "Dirección de la sede", required = true, order = 6)
     private String address;
-    @ApiObjectField(name = "phone", description = "Telefono de la sede", required = true, order = 6)
+    @ApiObjectField(name = "phone", description = "Telefono de la sede", required = true, order = 7)
     private String phone;
-    @ApiObjectField(name = "email", description = "Email de la sede", required = true, order = 6)
+    @ApiObjectField(name = "email", description = "Email de la sede", required = true, order = 8)
     private String email;
-    @ApiObjectField(name = "minimum", description = "Minimo", required = true, order = 7)
+    @ApiObjectField(name = "minimum", description = "Minimo", required = true, order = 9)
     private Integer minimum;
-    @ApiObjectField(name = "maximum", description = "Telefono de la sede", required = true, order = 8)
+    @ApiObjectField(name = "maximum", description = "Telefono de la sede", required = true, order = 10)
     private Integer maximum;
-    @ApiObjectField(name = "state", description = "Estado de la sede", required = true, order = 9)
+    @ApiObjectField(name = "state", description = "Estado de la sede", required = true, order = 11)
     private boolean state;
-    @ApiObjectField(name = "urlConnection", description = "URL de conexión", required = true, order = 10)
+    @ApiObjectField(name = "urlConnection", description = "URL de conexión", required = true, order = 12)
     private String urlConnection;
-    @ApiObjectField(name = "imageMinistry", description = "Imagen del ministerio de salud", required = false, order = 11)
+    @ApiObjectField(name = "imageMinistry", description = "Imagen del ministerio de salud", required = false, order = 13)
     private String imageMinistry;
-    @ApiObjectField(name = "numberAppointments", description = "cantidad de citas", required = true, order = 7)
+    @ApiObjectField(name = "numberAppointments", description = "cantidad de citas", required = true, order = 14)
     private Integer numberAppointments;
-    @ApiObjectField(name = "shifts", description = "Jornadas asociadas a el rutero", required = true, order = 11)
+    @ApiObjectField(name = "shifts", description = "Jornadas asociadas a el rutero", required = true, order = 15)
     private List<Shift> shifts;
+    @ApiObjectField(name = "urlFront", description = "URL de conexión del front", required = true, order = 16)
+    private String urlFront;
+    @ApiObjectField(name = "urlBackend", description = "URL de conexión del front", required = true, order = 17)
+    private String urlBackend;
 
     public Branch() {
     }
@@ -194,7 +198,23 @@ public class Branch extends MasterAudit {
     public void setShifts(List<Shift> shifts) {
         this.shifts = shifts;
     }
-    
+
+    public String getUrlFront() {
+        return urlFront;
+    }
+
+    public void setUrlFront(String urlFront) {
+        this.urlFront = urlFront;
+    }
+
+    public String getUrlBackend() {
+        return urlBackend;
+    }
+
+    public void setUrlBackend(String urlBackend) {
+        this.urlBackend = urlBackend;
+    }
+
     @Override
     public int hashCode() {
         int hash = 5;

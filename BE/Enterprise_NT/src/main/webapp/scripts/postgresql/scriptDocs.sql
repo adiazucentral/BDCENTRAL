@@ -76,20 +76,6 @@ BEGIN
     THEN      
          ALTER TABLE doc02 ADD COLUMN doc02c6 smallint;
     END IF;
-    -- Adicion campo para almacenar la ruta del adjunto
-    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='doc02' AND column_name='doc02c7')
-    THEN      
-         ALTER TABLE doc02 ADD COLUMN doc02c7 varchar(200);
-    END IF;
-
-     -- Adicion campo para almacenar la ruta del adjunto
-    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='doc01' AND column_name='doc01c7')
-    THEN      
-         ALTER TABLE doc01 ADD COLUMN doc01c7 varchar(200);
-    END IF;
-
-    ALTER TABLE doc01 ALTER COLUMN doc01c2 BYTEA NULL
-
     RETURN 0;
 END;
 $$ LANGUAGE plpgsql;

@@ -3453,8 +3453,8 @@ BEGIN
         ALTER TABLE lab14 ALTER COLUMN lab14c35 TYPE VARCHAR(64);
     END IF;
 
--- CLIENTE (campo uso Regimen Fiscal)
-  IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='lab14' AND column_name='lab14c36')
+    -- CLIENTE (campo uso Regimen Fiscal)
+    IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='lab14' AND column_name='lab14c36')
     THEN
         ALTER TABLE lab14 ADD lab14c36 VARCHAR(64);
     END IF;
@@ -4650,6 +4650,53 @@ BEGIN
             lab166c7    VARCHAR(256)
         );
         ALTER TABLE lab166 ADD CONSTRAINT lab166_pk PRIMARY KEY ( lab166c1 );
+    END IF;
+
+       --Modificacion de la tabla Sedes lab05 adicion de campo URL de front
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab05' AND column_name='lab05c16')
+    THEN      
+         ALTER TABLE lab05 ADD lab05c16 VARCHAR(128);
+    END IF;
+   --Modificacion de la tabla Sedes lab05 adicion de campo URL de backend
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab05' AND column_name='lab05c17')
+    THEN      
+         ALTER TABLE lab05 ADD lab05c17 VARCHAR(128);
+    END IF;
+
+    --indicador para envio a bd central --RESULTADOS
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab57' AND column_name='lab57c74')
+    THEN
+        ALTER TABLE lab57 ADD lab57c74 SMALLINT;
+    END IF;
+
+    --fecha de envio a bd central --RESULTADOS
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab57' AND column_name='lab57c75')
+    THEN
+        ALTER TABLE lab57 ADD lab57c75 TIMESTAMP;
+    END IF;
+
+    -- indicador para envio a bd central --PACIENTE
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab21' AND column_name='lab21c25')
+    THEN      
+        ALTER TABLE lab21 ADD lab21c25 SMALLINT;        
+    END IF;
+
+    -- fecha de envio a bd central --PACIENTE
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab21' AND column_name='lab21c26')
+    THEN      
+        ALTER TABLE lab21 ADD lab21c26 TIMESTAMP;        
+    END IF;
+
+    -- indicador para envio a bd central --ORDEN
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab22' AND column_name='lab22c20')
+    THEN
+        ALTER TABLE lab22 ADD lab22c20 SMALLINT;
+    END IF;
+
+    -- fecha de envio a bd central --ORDEN
+    IF NOT EXISTS (SELECT * FROM information_schema.columns WHERE table_name='lab22' AND column_name='lab22c21')
+    THEN
+        ALTER TABLE lab22 ADD lab22c21 TIMESTAMP;
     END IF;
 
     RETURN 0;

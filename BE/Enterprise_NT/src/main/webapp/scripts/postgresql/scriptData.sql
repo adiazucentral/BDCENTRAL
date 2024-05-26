@@ -1900,16 +1900,21 @@ BEGIN
             ('ComentarioRegistroBloqueado', 'Bloqueado');
     END IF;
 
-    IF NOT EXISTS(SELECT 1 FROM lab98 WHERE lab98c1 = 'RutaAdjuntos')
+    --Integración con la api derecho del validador
+    IF NOT EXISTS(SELECT 1 FROM lab98 WHERE lab98c1 = 'ActivarDerechoValidador')
     THEN
         INSERT INTO lab98 (lab98c1, lab98c2) VALUES
-            ('RutaAdjuntos', '');
+            ('ActivarDerechoValidador', 'False'),
+            ('URLDerechoValidador', ''),
+            ('DemoDerechoValidador', '0'),
+            ('ITemSiDerechoValidador', '0'),
+            ('ITemNoDerechoValidador', '0');
     END IF;
    
 
     --ACTUALIZACION DE VERSION
-    UPDATE lab98 SET lab98c2 = '1.0.2' WHERE lab98c1 = 'Version';
-    UPDATE lab98 SET lab98c2 = '20240314' WHERE lab98c1 = 'FechaVersion';
+    UPDATE lab98 SET lab98c2 = '1.0.3' WHERE lab98c1 = 'Version';
+    UPDATE lab98 SET lab98c2 = '20240412' WHERE lab98c1 = 'FechaVersion';
 
     RETURN 0;
 END;

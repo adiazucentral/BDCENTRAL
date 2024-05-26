@@ -73,7 +73,8 @@ public class JWTFilter extends GenericFilterBean
         SecurityLog.info(url);
         List<String> urlsExcluded = new ArrayList<>();
         urlsExcluded.add("/api/authentication");
-        urlsExcluded.add("/api/integration/branches");
+        urlsExcluded.add("/api/integration/branches");        
+        urlsExcluded.add("/api/authentication/brancheslogin");
         urlsExcluded.add("/api/integration/users");
         urlsExcluded.add("/api/integration/authentications/laboratory");
         urlsExcluded.add("/api/dashboard");

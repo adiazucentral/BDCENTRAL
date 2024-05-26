@@ -197,11 +197,23 @@ public class BranchServiceEnterpriseNT implements BranchService
 
         return errors;
     }
+    
+     @Override
+    public List<Branch> listLogin() throws Exception
+    {
+        return dao.listLogin();
+    }
 
     @Override
     public List<Branch> filterByUsername(String username) throws Exception
     {
         return dao.filterByUsername(username);
+    }
+    
+    @Override
+    public List<Branch> filterByUsernameLogin(String username) throws Exception
+    {
+        return dao.filterByUsernameLogin(username);
     }
 
     /**

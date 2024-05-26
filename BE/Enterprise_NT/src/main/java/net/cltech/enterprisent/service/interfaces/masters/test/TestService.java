@@ -36,18 +36,6 @@ public interface TestService
      * @throws Exception Error en la base de datos.
      */
     public List<TestBasic> list(int type, Boolean state, Integer area) throws Exception;
-    
-      /**
-     * Obtener información de una prueba por tipo, estado y area.
-     *
-     * @param type Tipo de las pruebas a ser consultadas
-     * @param state Estado de las pruebas a ser consultadas
-     * @param area Area de las pruebas a ser consultadas
-     *
-     * @return Instancia con los datos de la prueba.
-     * @throws Exception Error en la base de datos.
-     */
-    public List<TestBasic> listBranch(int type, Boolean state, Integer area) throws Exception;
 
     /**
      * Obtener lista de pruebas en las que la prueba forme parte de la formula.

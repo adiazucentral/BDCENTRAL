@@ -47,8 +47,7 @@ import org.springframework.web.bind.annotation.RestController;
 @ApiVersion(since = "1.0.0")
 @RestController
 @RequestMapping("/api/authentication")
-public class AuthenticationController
-{
+public class AuthenticationController {
 
     @Autowired
     private UserService userService;
@@ -67,8 +66,7 @@ public class AuthenticationController
     )
     @ApiResponseObject(clazz = JWTToken.class)
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<JWTToken> authentication(@ApiBodyObject(clazz = AuthenticationUser.class) @RequestBody AuthenticationUser user) throws Exception
-    {
+    public ResponseEntity<JWTToken> authentication(@ApiBodyObject(clazz = AuthenticationUser.class) @RequestBody AuthenticationUser user) throws Exception {
 
         return new ResponseEntity(userService.authenticate(user), HttpStatus.OK);
     }
@@ -84,16 +82,51 @@ public class AuthenticationController
     )
     @ApiResponseObject(clazz = Branch.class)
     @RequestMapping(value = "/branches", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Branch>> list() throws Exception
-    {
+    public ResponseEntity<List<Branch>> list() throws Exception {
         List<Branch> list = branchService.list(true);
 
-        if (list.isEmpty())
-        {
+        if (list.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(list, HttpStatus.OK);
         }
-        else
-        {
+    }
+
+    @ApiMethod(
+            description = "Lista las sedes registradas",
+            path = "/api/authentication/brancheslogin",
+            visibility = ApiVisibility.PUBLIC,
+            verb = ApiVerb.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            responsestatuscode = "200 - OK, 204 - NO CONTENT. 401 - UNAUTHORIZED"
+    )
+    @ApiResponseObject(clazz = Branch.class)
+    @RequestMapping(value = "/brancheslogin", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Branch>> listLogin() throws Exception {
+        List<Branch> list = branchService.listLogin();
+
+        if (list.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(list, HttpStatus.OK);
+        }
+    }
+    
+     @ApiMethod(
+            description = "Lista las sedes registradas para el usuario",
+            path = "/api/authentication/branches/filter/usernameLogin/{username}",
+            visibility = ApiVisibility.PUBLIC,
+            verb = ApiVerb.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            responsestatuscode = "200 - OK, 204 - NO CONTENT. 401 - UNAUTHORIZED"
+    )
+    @ApiResponseObject(clazz = Branch.class)
+    @RequestMapping(value = "/branches/filter/usernameLogin/{username}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Branch>> assignBranchesLogin(@ApiPathParam(name = "username", description = "nombre con el que se autentica el usuario") @PathVariable(name = "username") String username) throws Exception {
+        List<Branch> list = branchService.filterByUsernameLogin(username);
+        if (list.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
             return new ResponseEntity<>(list, HttpStatus.OK);
         }
     }
@@ -108,15 +141,11 @@ public class AuthenticationController
     )
     @ApiResponseObject(clazz = Branch.class)
     @RequestMapping(value = "/branches/filter/username/{username}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Branch>> assignBranches(@ApiPathParam(name = "username", description = "nombre con el que se autentica el usuario") @PathVariable(name = "username") String username) throws Exception
-    {
+    public ResponseEntity<List<Branch>> assignBranches(@ApiPathParam(name = "username", description = "nombre con el que se autentica el usuario") @PathVariable(name = "username") String username) throws Exception {
         List<Branch> list = branchService.filterByUsername(username);
-        if (list.isEmpty())
-        {
+        if (list.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        else
-        {
+        } else {
             return new ResponseEntity<>(list, HttpStatus.OK);
         }
     }
@@ -134,8 +163,7 @@ public class AuthenticationController
     @ApiAuthToken(scheme = "JWT")
     @ApiResponseObject(clazz = User.class)
     @RequestMapping(value = "/updateprofile", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> updateProfile(@ApiBodyObject(clazz = User.class) @RequestBody User user) throws Exception
-    {
+    public ResponseEntity<Boolean> updateProfile(@ApiBodyObject(clazz = User.class) @RequestBody User user) throws Exception {
         return new ResponseEntity<>(userService.updateProfile(user), HttpStatus.OK);
     }
 
@@ -152,13 +180,12 @@ public class AuthenticationController
     @RequestMapping(value = "/updatepassword", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updatepassword(
             @ApiBodyObject(clazz = UserPassword.class) @RequestBody UserPassword userPassword
-    ) throws Exception
-    {
+    ) throws Exception {
         userService.updatePassword(userPassword);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-    
-     @ApiMethod(
+
+    @ApiMethod(
             description = "Recuperar la contraseña de los usuarios del laboratorio",
             path = "/api/authentication/recoverpassword",
             visibility = ApiVisibility.PUBLIC,
@@ -166,20 +193,15 @@ public class AuthenticationController
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE,
             responsestatuscode = "200 - OK, 204 - NO CONTENT. 401 - UNAUTHORIZED"
-    )    
+    )
     @ApiResponseObject(clazz = Boolean.class)
     @RequestMapping(value = "/recoverpassword", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> UserRecoveryPassword(
             @ApiBodyObject(clazz = UserRecoveryPassword.class) @RequestBody UserRecoveryPassword userRecoveryPassword
-    ) throws Exception
-    {
+    ) throws Exception {
         userService.recoverPassword(userRecoveryPassword);
         return new ResponseEntity<>(HttpStatus.OK);
-    }       
-
-    
-    
-    
+    }
 
     //-----------------INICIO DE SESIÓN CON TOKEN HTTP EN HOME BOUND------------------------
     @ApiMethod(
@@ -192,8 +214,7 @@ public class AuthenticationController
     )
     @ApiResponseObject(clazz = JWTToken.class)
     @RequestMapping(value = "/laboratory", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<JWTToken> authenticateHomeBound(@ApiBodyObject(clazz = UserHomeBound.class) @RequestBody UserHomeBound user) throws Exception
-    {
+    public ResponseEntity<JWTToken> authenticateHomeBound(@ApiBodyObject(clazz = UserHomeBound.class) @RequestBody UserHomeBound user) throws Exception {
         return new ResponseEntity(userService.authenticateLaboratory(user), HttpStatus.OK);
     }
 
@@ -208,15 +229,11 @@ public class AuthenticationController
     )
     @ApiResponseObject(clazz = License.class)
     @RequestMapping(value = "/licenses", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<License>> licenses() throws Exception
-    {
+    public ResponseEntity<List<License>> licenses() throws Exception {
         List<License> licenses = licenseService.licenses();
-        if (licenses.size() < 1)
-        {
+        if (licenses.size() < 1) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        else
-        {
+        } else {
             return new ResponseEntity<>(licenses, HttpStatus.OK);
         }
     }
@@ -233,8 +250,7 @@ public class AuthenticationController
     @RequestMapping(value = "/integrationAuthentication", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<JWTToken> integrationAuthentication(
             @ApiBodyObject(clazz = AuthenticationUser.class) @RequestBody AuthenticationUser user
-    ) throws Exception
-    {
+    ) throws Exception {
         return new ResponseEntity(userService.integrationAuthentication(user), HttpStatus.OK);
     }
 }

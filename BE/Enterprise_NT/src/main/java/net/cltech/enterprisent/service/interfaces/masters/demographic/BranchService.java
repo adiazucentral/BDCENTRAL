@@ -87,6 +87,15 @@ public interface BranchService
      * @throws Exception Error en la base de datos.
      */
     public List<Branch> list(boolean state) throws Exception;
+    
+     /**
+     * Lista sedes asignadas al usuario
+     *
+     *
+     * @return Lista {@link Branch} sedes
+     * @throws Exception
+     */
+    public List<Branch> listLogin() throws Exception;
 
     /**
      * Lista sedes asignadas al usuario
@@ -97,5 +106,14 @@ public interface BranchService
      * @throws Exception
      */
     public List<Branch> filterByUsername(String username) throws Exception;
+    /**
+     * Lista sedes asignadas al usuario
+     *
+     * @param username
+     *
+     * @return Lista {@link Branch} sedes
+     * @throws Exception
+     */
+    public List<Branch> filterByUsernameLogin(String username) throws Exception;
 
 }

@@ -76,6 +76,15 @@ public interface BranchDao
      * @throws Exception Error en base de datos.
      */
     public void delete(Integer id) throws Exception;
+    
+     /**
+     * Lista las sedes a las que tiene acceso el usuario
+     *  
+     *
+     * @return Lista de sedes
+     * @throws Exception
+     */
+    public List<Branch> listLogin() throws Exception;
 
     /**
      * Lista las sedes a las que tiene acceso el usuario
@@ -86,4 +95,14 @@ public interface BranchDao
      * @throws Exception
      */
     public List<Branch> filterByUsername(String username) throws Exception;
+    
+    /**
+     * Lista las sedes a las que tiene acceso el usuario
+     *
+     * @param username de usuario
+     *
+     * @return Lista de sedes
+     * @throws Exception
+     */
+    public List<Branch> filterByUsernameLogin(String username) throws Exception;
 }

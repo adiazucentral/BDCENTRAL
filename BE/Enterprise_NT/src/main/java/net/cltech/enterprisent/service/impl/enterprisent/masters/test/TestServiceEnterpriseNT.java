@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import javax.servlet.http.HttpServletRequest;
 import net.cltech.enterprisent.dao.interfaces.integration.IntegrationConsultaWebHisDao;
 import net.cltech.enterprisent.dao.interfaces.masters.demographic.BranchDao;
 import net.cltech.enterprisent.dao.interfaces.masters.test.LaboratoryDao;
@@ -30,7 +29,6 @@ import net.cltech.enterprisent.service.interfaces.common.ListService;
 import net.cltech.enterprisent.service.interfaces.masters.test.TestService;
 import net.cltech.enterprisent.service.interfaces.masters.tracking.TrackingService;
 import net.cltech.enterprisent.tools.Constants;
-import net.cltech.enterprisent.tools.JWT;
 import net.cltech.enterprisent.tools.enums.LISEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -58,23 +56,12 @@ public class TestServiceEnterpriseNT implements TestService
     @Autowired
     private ListService listService;
     @Autowired
-    private HttpServletRequest request;
+    private IntegrationConsultaWebHisDao consultaWebHisDao;
     
     @Override
     public List<TestBasic> list(int type, Boolean state, Integer area) throws Exception
     {
         return testDao.listAll().stream()
-                .filter(filterType(type))
-                .filter(filter -> state == null || filter.isState() == state)
-                .filter(filter -> area == null || area.equals(filter.getArea().getId()))
-                .collect(Collectors.toList());
-    }
-    
-    @Override
-    public List<TestBasic> listBranch(int type, Boolean state, Integer area) throws Exception
-    {
-        int idbranch = JWT.decode(request).getBranch();
-        return testDao.listAll(idbranch).stream()
                 .filter(filterType(type))
                 .filter(filter -> state == null || filter.isState() == state)
                 .filter(filter -> area == null || area.equals(filter.getArea().getId()))
@@ -983,8 +970,7 @@ public class TestServiceEnterpriseNT implements TestService
     @Override
     public List<TestBasic> getForOrderEntry() throws Exception
     {
-        int idbranch = JWT.decode(request).getBranch();
-        return testDao.listTestByBranch(idbranch).stream()
+        return testDao.list().stream()
                 .filter(filter -> filter.isState())
                 .filter(filter -> filter.getViewInOrderEntry() == 1 || filter.getDeleteProfile() == 1)
                 .collect(Collectors.toList());
