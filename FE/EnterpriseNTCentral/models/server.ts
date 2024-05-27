@@ -8,6 +8,7 @@ import dbConnection from '../database/config';
 import orderRoutes from "../routes/central/order";
 import patientRoutes from "../routes/central/patient";
 import resultRoutes from "../routes/central/result";
+import outreachorderRoutes from "../routes/outreach/outreachorder";
 
 const readFile = util.promisify(fs.readFile);
 
@@ -19,11 +20,12 @@ class Server {
         order       : '/api/order',
         patient     : '/api/patient',
         result      : '/api/result',
+        outreachorder      : '/api/outreachorder',
     }
 
     constructor() {
         this.app = express();
-        this.port = process.env.PORT === undefined ? 5200 : +process.env.PORT;
+        this.port = process.env.PORT === undefined ? 5200 : + process.env.PORT;
 
         //Conexion a la bd
         this.connectDatabase();
@@ -49,6 +51,7 @@ class Server {
         this.app.use( this.apiPaths.order, orderRoutes );
         this.app.use( this.apiPaths.patient, patientRoutes );
         this.app.use( this.apiPaths.result, resultRoutes );
+        this.app.use( this.apiPaths.outreachorder, outreachorderRoutes );
     }
 
     async listen() {
