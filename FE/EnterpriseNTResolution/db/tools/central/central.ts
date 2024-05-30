@@ -71,7 +71,7 @@ export const sendDataCentralBD = async () => {
 
                     sendResultsCentral(resp);
                 } else {
-                    console.log('No existen ordenes para enviar');
+                    console.log('No existen resultados para enviar');
                 }
             });
         });

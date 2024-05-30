@@ -6,11 +6,12 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { HeaderComponent } from '../common/header/header.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule, NgbCarouselModule, TranslocoModule],
+  imports: [ReactiveFormsModule, NgbCarouselModule, TranslocoModule, HeaderComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -30,6 +31,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    sessionStorage.clear();
     this.form = this.formBuilder.group({
       user      : ['', Validators.required],
       password  : ['', Validators.required],
@@ -45,7 +47,7 @@ export class LoginComponent implements OnInit {
     this.auth = this.form.value;
 
     Swal.fire({
-      html:  this.translocoService.getTranslation('0005'),
+      html:  this.translocoService.translate('0005'),
       icon: 'info',
       allowOutsideClick: false
     })
@@ -64,7 +66,7 @@ export class LoginComponent implements OnInit {
         Swal.fire({
           icon: 'error',
           title: 'Error',
-          text: err.error.msg
+          text: this.translocoService.translate('0006')
         });
       },
     });

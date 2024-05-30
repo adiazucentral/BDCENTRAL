@@ -3,6 +3,8 @@
     "0002": "Password",
     "0004": "Login",
     "0005": "Logging in",
+    "0006": "Authentication Error",
+    "0007": "An error has occurred, please contact the administrator",
     "0754": "Position, temperature and humidity monitoring system",
     "0757": "Software for blood bank and transfusion service",
     "0759": "Information system for clinical laboratory",

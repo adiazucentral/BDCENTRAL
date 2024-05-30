@@ -8,6 +8,10 @@ import dbConnection from '../database/config';
 import orderRoutes from "../routes/central/order";
 import patientRoutes from "../routes/central/patient";
 import resultRoutes from "../routes/central/result";
+import templateRoutes from "../routes/cube/templates";
+import demographicsRoutes from "../routes/configuration/demographics";
+import cubeRoutes from "../routes/cube/cube";
+
 
 const readFile = util.promisify(fs.readFile);
 
@@ -16,9 +20,12 @@ class Server {
     private app; 
     private port: number;
     private apiPaths = {
-        order       : '/api/order',
-        patient     : '/api/patient',
-        result      : '/api/result',
+        order           : '/api/order',
+        patient         : '/api/patient',
+        result          : '/api/result',
+        template        : '/api/template',
+        demographics    : '/api/demographics',
+        cube            : '/api/cube'
     }
 
     constructor() {
@@ -49,6 +56,10 @@ class Server {
         this.app.use( this.apiPaths.order, orderRoutes );
         this.app.use( this.apiPaths.patient, patientRoutes );
         this.app.use( this.apiPaths.result, resultRoutes );
+        this.app.use( this.apiPaths.template, templateRoutes );
+        this.app.use( this.apiPaths.demographics, demographicsRoutes );
+        this.app.use( this.apiPaths.cube, cubeRoutes );
+        
     }
 
     async listen() {

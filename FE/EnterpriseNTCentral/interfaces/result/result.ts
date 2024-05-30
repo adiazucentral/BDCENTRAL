@@ -1,4 +1,4 @@
-interface ResultDB {
+export interface ResultDB {
     lab22c1     : bigint,
     lab39       : Test,
     lab57c1     : string,
@@ -95,11 +95,14 @@ interface ResultDB {
     lab57c73    : number,
     lab57c74    : number,
     lab57c75    : Date,
-    lab95       : String[],
+    lab95c1     : String,
     lab206      : Microorganism[],
     lab58       : OptionTemplate[],
     doc02       : Attachment[],
     doc03       : Graphs[],
+    lab900c2    : number,
+    lab900c3    : number,
+    lab900c4    : number,
     createdAt   : Date,
     updatedAt   : Date
 }

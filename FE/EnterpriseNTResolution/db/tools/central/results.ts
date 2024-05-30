@@ -233,14 +233,15 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab04c3     : resp.lab57lab57c66lab04c3,
                                 lab04c4     : resp.lab57lab57c66lab04c4
                             },
-                            lab95           : [],
+                            lab95c1         : resp.lab95c1,
                             lab206          : [],
                             lab58           : [],
                             doc02           : [],
-                            doc03           : []
+                            doc03           : [],
+                            lab900c2        : resp.lab900c2,
+                            lab900c3        : resp.lab900c3,
+                            lab900c4        : resp.lab900c4,
                         });
-                    } else {
-                        resultExists.lab95.push(resp.lab95c1);
                     }
                 });
     
@@ -269,15 +270,17 @@ const getResults = async (year: number) => {
 
     let lab57 = "lab57";
     let lab95 = "lab95";
+    let lab900 = "lab900";
 
     if(year !== currentYear) {
         lab57 = "lab57_" + year;
         lab95 = "lab95_" + year;
+        lab900 = "lab900_" + year;
     }
 
     let query = " ";
  
-    query += ` SELECT TOP 100 lab57.lab22c1, lab57c1, lab57c2, lab57c4, lab57c6, lab57c7, lab57c8, lab57c9, lab57c10, lab57c11, lab57c16, lab57c17, lab57c18, 
+    query += ` SELECT TOP 5000 lab57.lab22c1, lab57c1, lab57c2, lab57c4, lab57c6, lab57c7, lab57c8, lab57c9, lab57c10, lab57c11, lab57c16, lab57c17, lab57c18, 
     lab57c20, lab57c22, lab45c2, lab48c1, lab57c24, lab57c25, lab57c26, lab57c27, lab57c28, lab57c29, lab48c5, lab48c6, lab48c12, 
     lab48c13, lab48c14, lab48c15, lab57c30, lab57c31, lab57c32, lab57c33, lab57c34, lab57c35, lab57c36, lab57c37, lab57c39, 
     lab158c1, lab201c1, lab57c41, lab57c42, lab57c43, lab57c44, lab57c46, lab57c48, lab57c49, lab57c50, lab57c51, lab57c52, 
@@ -308,7 +311,9 @@ const getResults = async (year: number) => {
     lab57lab57c58.lab04c1 as lab57lab57c58lab04c1, lab57lab57c58.lab04c2 as lab57lab57c58lab04c2, lab57lab57c58.lab04c3 as lab57lab57c58lab04c3, lab57lab57c58.lab04c4 as lab57lab57c58lab04c4,
     lab57lab57c60.lab04c1 as lab57lab57c60lab04c1, lab57lab57c60.lab04c2 as lab57lab57c60lab04c2, lab57lab57c60.lab04c3 as lab57lab57c60lab04c3, lab57lab57c60.lab04c4 as lab57lab57c60lab04c4,
     lab57lab57c66.lab04c1 as lab57lab57c66lab04c1, lab57lab57c66.lab04c2 as lab57lab57c66lab04c2, lab57lab57c66.lab04c3 as lab57lab57c66lab04c3, lab57lab57c66.lab04c4 as lab57lab57c66lab04c4,
-    lab95c1  `;
+    lab95c1,
+    lab900c2, lab900c3, lab900c4  
+    `;
     
     let from = ` `;
 
@@ -339,9 +344,10 @@ const getResults = async (year: number) => {
     LEFT JOIN lab04 lab57lab57c60 ON lab57lab57c60.lab04c1 = lab57.lab57c60
     LEFT JOIN lab04 lab57lab57c66 ON lab57lab57c66.lab04c1 = lab57.lab57c66
     LEFT JOIN ${lab95} as lab95 ON lab95.lab22c1 = lab57.lab22c1 AND lab95.lab39c1 = lab57.lab39c1
+    LEFT JOIN ${lab900} as lab900 ON lab900.lab39c1 = lab57.lab39c1 AND lab900.lab22c1 = lab57.lab22c1
     `;
 
-    from += " WHERE lab57c8 >= 4 AND (lab57c74 = 0 OR lab57c74 IS NULL) ";
+    from += " WHERE (lab39.lab39c37 = 0 AND lab57c8 >= 4 AND (lab57c74 = 0 OR lab57c74 IS NULL)) OR (lab39.lab39c37 >= 1 AND (lab57c74 = 0 OR lab57c74 IS NULL))  ";
 
     const [orders] = await db.query(query + from);
 

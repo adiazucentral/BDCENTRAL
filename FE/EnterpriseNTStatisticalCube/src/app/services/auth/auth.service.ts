@@ -3,6 +3,7 @@ import { Auth } from '../../intefaces/auth/auth';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 import { map } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class AuthService {
 
   Security_URL: string;
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient, private router: Router) { 
     this.Security_URL = environment.Security_URL;
   }
 
@@ -38,6 +39,11 @@ export class AuthService {
   isLoggedIn(): boolean {
     const authToken = sessionStorage.getItem('authToken');
     return !!authToken;
+  }
+
+  logout() {
+    sessionStorage.removeItem('token');
+    this.router.navigate(['/login']);
   }
 
 }
