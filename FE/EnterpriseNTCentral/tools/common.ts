@@ -13,20 +13,6 @@ export const getValueKey = async (value: string, token: string) => {
     return data;
 }
 
-export const encryptData = async (json : any) => {
-    let data : any[] = [];
-    const urlServices = process.env.URL_NT || "http://192.168.1.6:8080/Enterprise_NT_PRU/api";
-    await axios.patch(urlServices + '/encode/encrypt', json)
-        .then(function (response) {
-            data = response.data;
-            console.log('Respondio encriptación: ', toISOStringLocal(new Date()));
-        }).catch(function (error) {
-            console.log("Problemas con el servicio de desencriptar datos " + error);
-        });
-    return data;
-}
-
-
 export const htmlEntities = (str: any) => {
     let valorhtml = String(str).replace(/&ntilde;/g, 'ñ')
         .replace(/\n/g, "  ")
@@ -225,6 +211,20 @@ export const decryptData = async (json : any) => {
     let data : any[] = [];
     const urlServices = process.env.URL_NT || "http://192.168.1.6:8080/Enterprise_NT_PRU/api";
     await axios.patch(urlServices + '/encode/decrypt', json)
+        .then(function (response) {
+            data = response.data;
+            console.log('Respondio encriptación: ', toISOStringLocal(new Date()));
+        }).catch(function (error) {
+            console.log("Problemas con el servicio de desencriptar datos " + error);
+        });
+    return data;
+}
+
+//Funcion para encriptar datos
+export const encryptData = async (json : any) => {
+    let data : any[] = [];
+    const urlServices = process.env.URL_NT || "http://192.168.1.6:8080/Enterprise_NT_PRU/api";
+    await axios.patch(urlServices + '/encode/encrypt', json)
         .then(function (response) {
             data = response.data;
             console.log('Respondio encriptación: ', toISOStringLocal(new Date()));

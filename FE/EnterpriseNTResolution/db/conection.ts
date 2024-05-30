@@ -7,7 +7,7 @@ export const db = new Sequelize(process.env.DATABASE || 'EnterpriseNT_CSS', proc
     dialectOptions: {
         options: { 
             requestTimeout: 500000,
-            instanceName: process.env.INSTANCENAME || 'SQLEXPRESS',
+            instanceName: process.env.INSTANCENAME || '',
 			encrypt: false, 
 			trustServerCertificate: true
         }
@@ -22,7 +22,7 @@ export const dbStat = new Sequelize(process.env.DATABASE_STAT || 'EnterpriseNT_S
     dialectOptions: {
         options: { 
             requestTimeout: 500000,
-            instanceName: process.env.INSTANCENAME || 'SQLEXPRESS',
+            instanceName: process.env.INSTANCENAME || '',
 			encrypt: false, 
 			trustServerCertificate: true
         }
@@ -37,7 +37,7 @@ export const dbDocs = new Sequelize(process.env.DATABASE_DOCS || 'EnterpriseNT_D
     dialectOptions: {
         options: { 
             requestTimeout: 500000,
-            instanceName: process.env.INSTANCENAME || 'SQLEXPRESS',
+            instanceName: process.env.INSTANCENAME || '',
 			encrypt: false, 
 			trustServerCertificate: true
         }

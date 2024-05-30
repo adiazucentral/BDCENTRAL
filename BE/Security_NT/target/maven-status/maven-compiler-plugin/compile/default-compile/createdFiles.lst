@@ -10,7 +10,6 @@ net\cltech\securitynt\dao\interfaces\masters\user\UserWebDao.class
 net\cltech\securitynt\tools\enums\ListEnum$Gender.class
 net\cltech\securitynt\service\impl\securitynt\security\SessionServiceSecurityNT.class
 net\cltech\securitynt\domain\masters\common\MasterAudit.class
-net\cltech\securitynt\domain\masters\tracking\Destination.class
 net\cltech\securitynt\service\impl\securitynt\security\LicenseServiceSecurityNT.class
 net\cltech\securitynt\dao\impl\postgresql\masters\demographic\BranchDaoPostgreSQL.class
 net\cltech\securitynt\domain\exception\WebException.class
