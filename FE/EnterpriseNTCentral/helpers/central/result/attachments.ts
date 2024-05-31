@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { ResultDB } from '../../../interfaces/result/result';
 
 export const processAttachments = async (result: ResultDB) => {
     if (result.lab57c41 > 0 && result.doc02.length > 0) {

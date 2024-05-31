@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { ResultDB } from '../../../interfaces/result/result';
 
 export const processGraphs = async (result: ResultDB) => {
     if (result.doc03.length > 0) {

@@ -1,4 +1,5 @@
-import { model, Schema, Model } from 'mongoose';
+import mongoose, { model, Schema, Model } from 'mongoose';
+import { ResultDB } from '../../interfaces/result/result';
 
 const ResultSchema = new Schema<ResultDB>({
     lab22c1: {
@@ -243,7 +244,7 @@ const ResultSchema = new Schema<ResultDB>({
             }
         },
         required: [true, "El usuario de ingreso es requerido"],
-        alias: 'userEntry',
+        alias: 'userBlocking',
         _id: false
     },
     lab57c14: {
@@ -947,9 +948,9 @@ const ResultSchema = new Schema<ResultDB>({
         type: Date,
         alias: 'dateCentral'
     },
-    lab95:  {
-        type: [String],
-        alias: 'comments'
+    lab95c1:  {
+        type: String,
+        alias: 'comment'
     },
     lab206: {
         type: [
@@ -1232,6 +1233,18 @@ const ResultSchema = new Schema<ResultDB>({
         ],
         alias: 'graphs',
         _id: false
+    },
+    lab900c2: {
+        type: Number,
+        alias: 'servicePrice'
+    },
+    lab900c3: {
+        type: Number,
+        alias: 'patientPrice'
+    },
+    lab900c4: {
+        type: Number,
+        alias: 'insurancePrice'
     }
 }, { timestamps: true, versionKey: false });
 

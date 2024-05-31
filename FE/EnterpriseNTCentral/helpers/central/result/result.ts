@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import { processAttachments } from "./attachments";
 import { processGraphs } from "./graphs";
 import ResultSchema from "../../../models/central/result";
+import { ResultDB } from "../../../interfaces/result/result";
+import { ResultsByYear } from "../../../interfaces/result/resultsByYear";
 
 export const saveResults = async (listResultsByYear: ResultsByYear[]) => {
   const listDocsInserted = [];
