@@ -40,6 +40,7 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                             lab48c13        : resp.lab48c13,
                             lab48c14        : resp.lab48c14,
                             lab48c15        : resp.lab48c15,
+                            lab48c9         : resp.lab48c9,
                             lab57c30        : resp.lab57c30,
                             lab57c31        : resp.lab57c31,
                             lab57c32        : resp.lab57c32,
@@ -99,6 +100,8 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab39c22    : resp.lab39c22,
                                 lab39c23    : resp.lab39c23,
                                 lab39c37    : resp.lab39c37,
+                                lab39c27    : resp.lab39c27,
+                                lab39c42    : resp.lab39c42,
                                 lab43       : {
                                     lab43c1 : resp.lab43c1,
                                     lab43c2 : resp.lab43c2,
@@ -112,25 +115,32 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab57lab57c3lab04c1,
                                 lab04c2     : resp.lab57lab57c3lab04c2,
                                 lab04c3     : resp.lab57lab57c3lab04c3,
-                                lab04c4     : resp.lab57lab57c3lab04c4
+                                lab04c4     : resp.lab57lab57c3lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c5         : {
                                 lab04c1     : resp.lab57lab57c5lab04c1,
                                 lab04c2     : resp.lab57lab57c5lab04c2,
                                 lab04c3     : resp.lab57lab57c5lab04c3,
-                                lab04c4     : resp.lab57lab57c5lab04c4
+                                lab04c4     : resp.lab57lab57c5lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c12         : {
                                 lab04c1     : resp.lab57lab57c12lab04c1,
                                 lab04c2     : resp.lab57lab57c12lab04c2,
                                 lab04c3     : resp.lab57lab57c12lab04c3,
-                                lab04c4     : resp.lab57lab57c12lab04c4
+                                lab04c4     : resp.lab57lab57c12lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c14        : {
                                 lab39c1     : resp.lab57lab57c14lab39c1,     
                                 lab39c2     : resp.lab57lab57c14lab39c2,
                                 lab39c3     : resp.lab57lab57c14lab39c3,
-                                lab39c4     : resp.lab57lab57c14lab39c4
+                                lab39c4     : resp.lab57lab57c14lab39c4,
+                                lab39c42     : resp.lab57lab57c14lab39c42,
                             },
                             lab57c15        : {
                                 lab39c1     : resp.lab57lab57c15lab39c1,     
@@ -142,19 +152,25 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab57lab57c19lab04c1,
                                 lab04c2     : resp.lab57lab57c19lab04c2,
                                 lab04c3     : resp.lab57lab57c19lab04c3,
-                                lab04c4     : resp.lab57lab57c19lab04c4
+                                lab04c4     : resp.lab57lab57c19lab04c4,
+                                lab04c10    : resp.lab57lab57c19lab04c10,
+                                lab04c13    : resp.lab57lab57c19lab04c13,
                             },
                             lab57c21         : {
                                 lab04c1     : resp.lab57lab57c21lab04c1,
                                 lab04c2     : resp.lab57lab57c21lab04c2,
                                 lab04c3     : resp.lab57lab57c21lab04c3,
-                                lab04c4     : resp.lab57lab57c21lab04c4
+                                lab04c4     : resp.lab57lab57c21lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c23         : {
                                 lab04c1     : resp.lab57lab57c23lab04c1,
                                 lab04c2     : resp.lab57lab57c23lab04c2,
                                 lab04c3     : resp.lab57lab57c23lab04c3,
-                                lab04c4     : resp.lab57lab57c23lab04c4
+                                lab04c4     : resp.lab57lab57c23lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab64           : {
                                 lab64c1     : resp.lab64c1,
@@ -180,13 +196,17 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab57lab57c38lab04c1,
                                 lab04c2     : resp.lab57lab57c38lab04c2,
                                 lab04c3     : resp.lab57lab57c38lab04c3,
-                                lab04c4     : resp.lab57lab57c38lab04c4
+                                lab04c4     : resp.lab57lab57c38lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c40         : {
                                 lab04c1     : resp.lab57lab57c40lab04c1,
                                 lab04c2     : resp.lab57lab57c40lab04c2,
                                 lab04c3     : resp.lab57lab57c40lab04c3,
-                                lab04c4     : resp.lab57lab57c40lab04c4
+                                lab04c4     : resp.lab57lab57c40lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab24c1         : {
                                 lab24c1     : resp.lab57lab24c1lab24c1,
@@ -202,13 +222,17 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab57lab57c45lab04c1,
                                 lab04c2     : resp.lab57lab57c45lab04c2,
                                 lab04c3     : resp.lab57lab57c45lab04c3,
-                                lab04c4     : resp.lab57lab57c45lab04c4
+                                lab04c4     : resp.lab57lab57c45lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c47        : {
                                 lab04c1     : resp.lab57lab57c47lab04c1,
                                 lab04c2     : resp.lab57lab57c47lab04c2,
                                 lab04c3     : resp.lab57lab57c47lab04c3,
-                                lab04c4     : resp.lab57lab57c47lab04c4
+                                lab04c4     : resp.lab57lab57c47lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab40c1a        : {
                                 lab40c1     : resp.lab40c1alab40c1,
@@ -219,19 +243,25 @@ export const getResultsByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab57lab57c58lab04c1,
                                 lab04c2     : resp.lab57lab57c58lab04c2,
                                 lab04c3     : resp.lab57lab57c58lab04c3,
-                                lab04c4     : resp.lab57lab57c58lab04c4
+                                lab04c4     : resp.lab57lab57c58lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c60        : {
                                 lab04c1     : resp.lab57lab57c60lab04c1,
                                 lab04c2     : resp.lab57lab57c60lab04c2,
                                 lab04c3     : resp.lab57lab57c60lab04c3,
-                                lab04c4     : resp.lab57lab57c60lab04c4
+                                lab04c4     : resp.lab57lab57c60lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab57c66        : {
                                 lab04c1     : resp.lab57lab57c66lab04c1,
                                 lab04c2     : resp.lab57lab57c66lab04c2,
                                 lab04c3     : resp.lab57lab57c66lab04c3,
-                                lab04c4     : resp.lab57lab57c66lab04c4
+                                lab04c4     : resp.lab57lab57c66lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab95c1         : resp.lab95c1,
                             lab206          : [],
@@ -281,19 +311,19 @@ const getResults = async (year: number) => {
     let query = " ";
  
     query += ` SELECT TOP 5000 lab57.lab22c1, lab57c1, lab57c2, lab57c4, lab57c6, lab57c7, lab57c8, lab57c9, lab57c10, lab57c11, lab57c16, lab57c17, lab57c18, 
-    lab57c20, lab57c22, lab45c2, lab48c1, lab57c24, lab57c25, lab57c26, lab57c27, lab57c28, lab57c29, lab48c5, lab48c6, lab48c12, 
-    lab48c13, lab48c14, lab48c15, lab57c30, lab57c31, lab57c32, lab57c33, lab57c34, lab57c35, lab57c36, lab57c37, lab57c39, 
+    lab57c20, lab57c22, lab45c2, lab57.lab48c1, lab57c24, lab57c25, lab57c26, lab57c27, lab57c28, lab57c29, lab57.lab48c5, lab57.lab48c6, lab57.lab48c12, 
+    lab57.lab48c13, lab57.lab48c14, lab57.lab48c15, lab48c9,  lab57c30, lab57c31, lab57c32, lab57c33, lab57c34, lab57c35, lab57c36, lab57c37, lab57c39, 
     lab158c1, lab201c1, lab57c41, lab57c42, lab57c43, lab57c44, lab57c46, lab57c48, lab57c49, lab57c50, lab57c51, lab57c52, 
     lab57c53, lab57c54, lab57c55, lab57c56, lab57c57, lab57c59, lab57c61, lab57c62, lab57c63, lab57c64, lab57c65, lab57c67, 
     lab57c68, lab57c69, lab57c70, lab57c71, lab57c72, lab57c73, lab57c74, lab57c75,
-    lab39.lab39c1, lab39.lab39c2, lab39.lab39c3, lab39.lab39c4, lab39.lab39c5, lab39.lab39c6, lab39.lab39c7, lab39.lab39c8, lab39.lab39c9, lab39.lab39c11, lab39.lab39c12, lab39.lab39c19, lab39.lab39c20, lab39.lab39c21, lab39.lab39c22, lab39.lab39c23, lab39.lab39c37, lab39.lab39c58,
+    lab39.lab39c1, lab39.lab39c2, lab39.lab39c3, lab39.lab39c4, lab39.lab39c5, lab39.lab39c6, lab39.lab39c7, lab39.lab39c8, lab39.lab39c9, lab39.lab39c11, lab39.lab39c12, lab39.lab39c19, lab39.lab39c20, lab39.lab39c21, lab39.lab39c22, lab39.lab39c23, lab39.lab39c37, lab39.lab39c58, lab39.lab39c27, lab39.lab39c42, 
     lab43.lab43c1, lab43c2, lab43c3, lab43c4, lab43c6, lab43c9,
     lab57lab57c3.lab04c1 as lab57lab57c3lab04c1, lab57lab57c3.lab04c2 as lab57lab57c3lab04c2, lab57lab57c3.lab04c3 as lab57lab57c3lab04c3, lab57lab57c3.lab04c4 as lab57lab57c3lab04c4,
     lab57lab57c5.lab04c1 as lab57lab57c5lab04c1, lab57lab57c5.lab04c2 as lab57lab57c5lab04c2, lab57lab57c5.lab04c3 as lab57lab57c5lab04c3, lab57lab57c5.lab04c4 as lab57lab57c5lab04c4,
     lab57lab57c12.lab04c1 as lab57lab57c12lab04c1, lab57lab57c12.lab04c2 as lab57lab57c12lab04c2, lab57lab57c12.lab04c3 as lab57lab57c12lab04c3, lab57lab57c12.lab04c4 as lab57lab57c12lab04c4,
-    lab57lab57c14.lab39c1 as lab57lab57c14lab39c1, lab57lab57c14.lab39c2 as lab57lab57c14lab39c2, lab57lab57c14.lab39c3 as lab57lab57c14lab39c3, lab57lab57c14.lab39c4 as lab57lab57c14lab39c4,
+    lab57lab57c14.lab39c1 as lab57lab57c14lab39c1, lab57lab57c14.lab39c2 as lab57lab57c14lab39c2, lab57lab57c14.lab39c3 as lab57lab57c14lab39c3, lab57lab57c14.lab39c4 as lab57lab57c14lab39c4, lab57lab57c14.lab39c42 as lab57lab57c14lab39c42,
     lab57lab57c15.lab39c1 as lab57lab57c15lab39c1, lab57lab57c15.lab39c2 as lab57lab57c15lab39c2, lab57lab57c15.lab39c3 as lab57lab57c15lab39c3, lab57lab57c15.lab39c4 as lab57lab57c15lab39c4,
-    lab57lab57c19.lab04c1 as lab57lab57c19lab04c1, lab57lab57c19.lab04c2 as lab57lab57c19lab04c2, lab57lab57c19.lab04c3 as lab57lab57c19lab04c3, lab57lab57c19.lab04c4 as lab57lab57c19lab04c4,
+    lab57lab57c19.lab04c1 as lab57lab57c19lab04c1, lab57lab57c19.lab04c2 as lab57lab57c19lab04c2, lab57lab57c19.lab04c3 as lab57lab57c19lab04c3, lab57lab57c19.lab04c4 as lab57lab57c19lab04c4, lab57lab57c19.lab04c10 as lab57lab57c19lab04c10, lab57lab57c19.lab04c13 as lab57lab57c19lab04c13, 
     lab57lab57c21.lab04c1 as lab57lab57c21lab04c1, lab57lab57c21.lab04c2 as lab57lab57c21lab04c2, lab57lab57c21.lab04c3 as lab57lab57c21lab04c3, lab57lab57c21.lab04c4 as lab57lab57c21lab04c4,
     lab57lab57c23.lab04c1 as lab57lab57c23lab04c1, lab57lab57c23.lab04c2 as lab57lab57c23lab04c2, lab57lab57c23.lab04c3 as lab57lab57c23lab04c3, lab57lab57c23.lab04c4 as lab57lab57c23lab04c4,
     lab64.lab64c1, lab64c2, lab64c3,
@@ -320,6 +350,7 @@ const getResults = async (year: number) => {
     from += ` FROM ${lab57} as lab57
     INNER JOIN lab39 ON lab39.lab39c1 = lab57.lab39c1
     LEFT JOIN lab43 ON lab43.lab43c1 = lab39.lab43c1
+    LEFT JOIN lab48 ON lab48.lab48c1 = lab57.lab48c1
     LEFT JOIN lab04 lab57lab57c3 ON lab57lab57c3.lab04c1 = lab57.lab57c3
     LEFT JOIN lab04 lab57lab57c5 ON lab57lab57c5.lab04c1 = lab57.lab57c5
     LEFT JOIN lab04 lab57lab57c12 ON lab57lab57c12.lab04c1 = lab57.lab57c12

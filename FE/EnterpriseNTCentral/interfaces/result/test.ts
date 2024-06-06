@@ -16,5 +16,8 @@ interface Test {
     lab39c21    : string,
     lab39c22    : number,
     lab39c23    : number,
-    lab39c37    : number
+    lab39c27    : number,
+    lab39c37    : number,
+    lab39c42    : number
+
 }

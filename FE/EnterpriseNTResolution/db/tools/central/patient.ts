@@ -69,7 +69,9 @@ export const sendPatients = async( demographics:any ) => {
                     lab04c1     : resp.lab21lab04c1lab04c1,
                     lab04c2     : resp.lab21lab04c1lab04c2,
                     lab04c3     : resp.lab21lab04c1lab04c3,
-                    lab04c4     : resp.lab21lab04c1lab04c4
+                    lab04c4     : resp.lab21lab04c1lab04c4,
+                    lab04c10    : "",
+                    lab04c13    : ""
                 },
                 lab08:          {
                     lab08c1     : resp.lab08c1,
@@ -85,7 +87,9 @@ export const sendPatients = async( demographics:any ) => {
                     lab04c1     : resp.lab21lab04c1_2lab04c1,
                     lab04c2     : resp.lab21lab04c1_2lab04c2,
                     lab04c3     : resp.lab21lab04c1_2lab04c3,
-                    lab04c4     : resp.lab21lab04c1_2lab04c4
+                    lab04c4     : resp.lab21lab04c1_2lab04c4,
+                    lab04c10    : "",
+                    lab04c13    : ""
                 },
                 lab62           : listDemoPatient
             });

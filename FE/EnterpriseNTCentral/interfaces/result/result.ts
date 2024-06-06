@@ -44,6 +44,7 @@ export interface ResultDB {
     lab50c1_4   : string,
     lab48c14    : number,
     lab48c15    : number,
+    lab48c9     : string,
     lab57c30    : string,
     lab57c31    : Date,
     lab57c32    : number,

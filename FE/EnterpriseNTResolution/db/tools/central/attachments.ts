@@ -2,11 +2,11 @@ import { dbDocs } from "../../conection";
 import * as fs from 'fs';
 
 export const getAttachmentsByTest = async (results: Result[], year: number) => {
-
+    console.log("entra metodo adjuntos")
     for (const result of results) {
 
         let attachmentsResponse: any = await getByTest(result.lab22c1, result.lab39.lab39c1);
-
+        console.log("responde consulta")
         if (attachmentsResponse.length > 0) {
 
             let attachments: Attachment[] = [];
@@ -44,7 +44,7 @@ const getByTest = async (idOrder: bigint, idTest: number) => {
 const processAttachment = async (response: Attachment) => {
     return new Promise<Attachment>((resolve, reject) => {
         const filePath: string = response.doc02c7;
-
+        console.log("responde consulta path" + filePath)
         fs.readFile(filePath, (err: NodeJS.ErrnoException | null, data: Buffer) => {
             let attachment: Attachment = {
                 lab22c1 : response.lab22c1,

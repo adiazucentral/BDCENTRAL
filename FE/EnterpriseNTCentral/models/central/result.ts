@@ -120,6 +120,14 @@ const ResultSchema = new Schema<ResultDB>({
                 type: Number,
                 required: [true, "El tipo de prueba es requerido"],
                 alias: 'type'
+            },
+            lab39c27: {
+                type: Number,
+                alias: 'confidential'
+            },
+            lab39c42: {
+                type: Number,
+                alias: 'printOrder'
             }
         },
         required: [true, "El examen es requerido"],
@@ -268,6 +276,10 @@ const ResultSchema = new Schema<ResultDB>({
                 type: String,
                 required: [true, "El nombre es requerido"],
                 alias: 'name'
+            },
+            lab39c42: {
+                type: Number,
+                alias: 'printOrder'
             }
         },
         alias: 'profile',
@@ -333,6 +345,14 @@ const ResultSchema = new Schema<ResultDB>({
                 type: String,
                 required: [true, "El nombre de usuario es requerido"],
                 alias: 'username'
+            },
+            lab04c10: {
+                type: String,
+                alias: 'userIdentification'
+            },
+            lab04c13: {
+                type: String,
+                alias: 'userSignatureCode'
             }
         },
         alias: 'userValidation',
@@ -537,6 +557,10 @@ const ResultSchema = new Schema<ResultDB>({
     lab48c15: {
         type: Number,
         alias: 'maximumReportable'
+    },
+    lab48c9: {
+        type: String,
+        alias: 'refComment'
     },
     lab57c30: {
         type: String,
