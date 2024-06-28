@@ -7,27 +7,26 @@ import fs from 'fs';
 
 export const listorderfilter = async (filter: Outreachfilterorder) => {
     let ordersInserted: any[] = [];
- 
-    //const nameCollectionOrders = `lab22_` + filter.year;
-    const nameCollectionOrders = `lab22_2024`;
-    const CollectionOrders = mongoose.model(nameCollectionOrders, OrderSchema);
-
     let filters: any = {} 
+    let year = "";
 
     if(filter.order != null){
         filters["lab22c1"] =  { $eq:Number(filter.order.toString()) }
     }
-    if(filter.year != undefined){
-        filters["lab22c2"] = {
-            $gte: parseInt(filter.year + "0101")
-        }
-    }
-
+    
     if(filter.dateNumber != null){
         filters["lab22c2"] = {
             $eq: parseInt(filter.dateNumber.toString())
         }
+        year = filter.dateNumber.toString().slice(0, 4);
     } 
+    else if(filter.year != undefined){
+        filters["lab22c2"] = {
+            $gte: parseInt(filter.year + "0101")
+        }
+        year = filter.year.toString();
+    }
+
     if(filter.documentType != null && filter.documentType  > 0){
         filters["lab21.lab54.lab54c1"] = filter.documentType
     } 
@@ -64,6 +63,12 @@ export const listorderfilter = async (filter: Outreachfilterorder) => {
         }
     }
     filters["lab39.lab39.lab39c37"] =  { $eq: 0 }
+
+
+    const nameCollectionOrders = `lab22_` + year;
+    const CollectionOrders = mongoose.model(nameCollectionOrders, OrderSchema);
+    const nameCollectionResult = `lab57_` + year;
+    
     try {
         await CollectionOrders.aggregate([
             {
@@ -95,7 +100,7 @@ export const listorderfilter = async (filter: Outreachfilterorder) => {
             },
             {
                 $lookup: {
-                    from: "lab57_2024", 
+                    from: nameCollectionResult, 
                     localField: 'lab22c1', 
                     foreignField: 'lab22c1', 
                     as: 'lab39' 
@@ -160,7 +165,8 @@ export const listorderfilter = async (filter: Outreachfilterorder) => {
 export const listResults = async (orderNumber: String, area: String ) => {
     let ordersInserted: any[] = [];
 
-    const nameCollectionResult = `lab57_2024`;
+    let year = orderNumber.slice(0, 4);
+    const nameCollectionResult = "lab57_" + year;
     const CollectionOrders = mongoose.model(nameCollectionResult, ResultSchema);
     let filters: any = { };
 
@@ -253,11 +259,11 @@ export const listResults = async (orderNumber: String, area: String ) => {
                 ordersInserted = doc;
             }
         }).catch(err => {
-            console.error('Error al insertar la orden:', err);
+            console.error('Error al consultar resultado:', err);
         });
 
         } catch (error) {
-            console.log("Error al guardar ordenes: ", error);
+            console.log("Error al consultar resultado: ", error);
         }
     
 
@@ -299,7 +305,6 @@ export const listResults = async (orderNumber: String, area: String ) => {
                 test.panicMax = 0;
                 test.panicInterval = test.panicMin + " - " + test.panicMax;
             }
-
             
             if (test.reportedMin != null) {
                 test.reportedInterval = test.reportedMin + " - " + test.reportedMax;
@@ -307,8 +312,6 @@ export const listResults = async (orderNumber: String, area: String ) => {
                 test.reportedMin = 0;
                 test.reportedMax = 0;
             }
-
-
         });
     }
 
@@ -318,7 +321,7 @@ export const listResults = async (orderNumber: String, area: String ) => {
 
 export const listResultHistory = async (filter: Outreachhistoryfilter) => {
     let ordersInserted: any[] = [];
- 
+    
     //const nameCollectionOrders = `lab22_` + filter.year;
     const nameCollectionOrders = `lab22_2024`;
     const CollectionOrders = mongoose.model(nameCollectionOrders, OrderSchema);
@@ -455,9 +458,10 @@ export const listResultHistory = async (filter: Outreachhistoryfilter) => {
 
 export const listreport = async (orderNumber: String) => {
     let ordersInserted: any[] = [];
- 
-    //const nameCollectionOrders = `lab22_` + filter.year;
-    const nameCollectionOrders = `lab22_2024`;
+    let year = orderNumber.slice(0, 4);
+    const nameCollectionOrders = `lab22_` + year;
+    let nameCollectionResult = "lab57_" + year;
+    //const nameCollectionOrders = `lab22_2024`;
     const CollectionOrders = mongoose.model(nameCollectionOrders, OrderSchema);
 
     let filters: any = {} 
@@ -497,7 +501,7 @@ export const listreport = async (orderNumber: String) => {
             },
             {
                 $lookup: {
-                    from: "lab57_2024", 
+                    from: nameCollectionResult, 
                     localField: "lab22c1", 
                     foreignField: "lab22c1", 
                     as: "lab39"
@@ -788,10 +792,7 @@ export const listreport = async (orderNumber: String) => {
                         }
                     }
                 }
-                   
-                
-                  
-                }
+            }
         }
 
         ]).then(doc => {
