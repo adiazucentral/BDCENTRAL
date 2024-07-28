@@ -73,7 +73,9 @@ export const getOrderByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab22lab04c1lab04c1,
                                 lab04c2     : resp.lab22lab04c1lab04c2,
                                 lab04c3     : resp.lab22lab04c1lab04c3,
-                                lab04c4     : resp.lab22lab04c1lab04c4
+                                lab04c4     : resp.lab22lab04c1lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab07c1         : resp.statusOrder,
                             lab05           : {
@@ -109,7 +111,9 @@ export const getOrderByYear = (parameters: any, index: any, final: any) => {
                                 lab04c1     : resp.lab22lab04c1_1lab04c1,
                                 lab04c2     : resp.lab22lab04c1_1lab04c2,
                                 lab04c3     : resp.lab22lab04c1_1lab04c3,
-                                lab04c4     : resp.lab22lab04c1_1lab04c4
+                                lab04c4     : resp.lab22lab04c1_1lab04c4,
+                                lab04c10    : "",
+                                lab04c13    : ""
                             },
                             lab930c1        : resp.lab930c1,
                             lab60           : []
