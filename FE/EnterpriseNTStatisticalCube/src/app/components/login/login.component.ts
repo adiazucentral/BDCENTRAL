@@ -7,6 +7,7 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../common/header/header.component';
+import { LoaderService } from '../../services/common/loader/loader.service';
 
 @Component({
   selector: 'app-login',
@@ -25,8 +26,10 @@ export class LoginComponent implements OnInit {
     private authService: AuthService,
     private translocoService: TranslocoService,
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private loaderDS: LoaderService
   ) {
+    this.loaderDS.loading(false);
     this.translocoService.setActiveLang( 'es' );
   }
 
