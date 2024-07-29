@@ -12,6 +12,7 @@ import templateRoutes from "../routes/cube/templates";
 import demographicsRoutes from "../routes/configuration/demographics";
 import cubeRoutes from "../routes/cube/cube";
 import outreachorderRoutes from "../routes/outreach/outreachorder";
+import remissionRoutes from "../routes/remission/remission";
 
 const readFile = util.promisify(fs.readFile);
 
@@ -27,6 +28,7 @@ class Server {
         demographics    : '/api/demographics',
         cube            : '/api/cube',
         outreachorder   : '/api/outreachorder',
+        remission       : '/api/remission'
     }
 
     constructor() {
@@ -61,6 +63,7 @@ class Server {
         this.app.use( this.apiPaths.demographics, demographicsRoutes );
         this.app.use( this.apiPaths.cube, cubeRoutes );
         this.app.use( this.apiPaths.outreachorder, outreachorderRoutes );
+        this.app.use( this.apiPaths.remission, remissionRoutes );
     }
 
     async listen() {
