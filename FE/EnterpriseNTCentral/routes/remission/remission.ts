@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { findRemission, insert } from "../../controllers/remission/remission";
+import { findRemission, getResultsRemission, insert } from "../../controllers/remission/remission";
 import validate from "../../middleware/validate";
 import { body } from "express-validator";
 const router = Router();
@@ -18,5 +18,11 @@ router.patch('/', [ validate([
     body('sample').notEmpty(),
     body('branch').notEmpty(),
 ])] , findRemission);
+
+router.patch('/results', [ validate([
+    body('order').notEmpty(),
+    body('testId').notEmpty(),
+    body('profile').notEmpty(),
+])] , getResultsRemission);
 
 export default router;

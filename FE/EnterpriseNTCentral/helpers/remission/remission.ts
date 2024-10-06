@@ -16,7 +16,6 @@ export const insertRemission = async (body: any) => {
         lab05c1_1   : body.branchOrigin,
         lab05c1_2   : body.branchDestination,
         lab57rc1    : 0
-
     });
     return remission;
 }
@@ -193,4 +192,43 @@ export const setJsonOrder = async( order:any, patient:any, tests:any ) => {
     };
 
     return json;
+}
+
+export const getResultRemission = async (body: any) => {
+
+    const orderNumber = String(body.order);
+    const year: string = orderNumber.substring(0, 4);
+    const nameCollectionResults = `lab57_${year}`;
+    const CollectionResults = mongoose.model(nameCollectionResults, ResultSchema);
+
+    let results:any = [];
+
+    try {
+        const filtrosGenerales = {
+            lab22c1: body.order,
+            lab57c1: { $exists: true, $ne: '' }
+        };
+
+        const filtroExamenPerfil = body.profile ? "lab57c14.lab39c1" : "lab39.lab39c1";
+
+        results = await CollectionResults.find({
+            [filtroExamenPerfil]: body.testId,
+            ...filtrosGenerales
+        }, {
+            _id: 0,
+            "lab39.lab39c1": 1,
+            "lab57c1": 1,
+            "lab57c2": 1,
+            "lab57c3": 1,
+            "lab57c18": 1,
+            "lab57c19": 1,
+            "lab206": 1,
+            "lab58": 1
+        }).exec();
+    } catch (error) {
+        console.error('Error consultando resultados de remisiones:', error);
+        results = [];
+    }
+
+    return results;
 }
