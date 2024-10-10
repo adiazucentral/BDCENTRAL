@@ -6,7 +6,7 @@ export const savePatients = async (patients: PatientDB[]) => {
         let patientsInserted: any[] = [];
         for (const patient of patients) {
             patient.lab21c12 = new Date(patient.lab21c12);
-            let filter = { lab21c1: patient.lab21c1, lab21c12: { $lte: patient.lab21c12 } };
+            let filter = { lab21c1: patient.lab21c1 };
             await Patient.findOneAndUpdate(filter, { $set: { ...patient } }, options)
                 .then(doc => {
                     if (doc) {
